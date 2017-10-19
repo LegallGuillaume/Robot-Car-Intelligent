@@ -4,7 +4,11 @@
 #include "manager/car.h"
 #include "manager/bloc.h"
 #include "manager/chemin.h"
+#include "manager/arrive.h"
 #include <string>
+#include <utility>
+#include <stdlib.h>
+
 
 /**
  * Example of Scene Matrice
@@ -31,15 +35,31 @@ public:
     Car *car;
     Bloc *bloc;
     Chemin *chemin;
-    int** getTable(){
-        return generalTable;
+    Arrive *arrive;
+
+    int getCoordonate(int x, int y){
+        return generalTable[x][y];
     }
     void update();
+
     int getSceneCarrer(){
         return scenecarrer;
     }
     void initScene(int nb_carrer){
         scenecarrer = nb_carrer;
+        generalTable = (int**)malloc(nb_carrer * sizeof(*generalTable));
+        if(generalTable == NULL){
+            std::cout << "ERREUR ALLOC Manager TABLES" << std::endl;
+            return;
+        }
+        for(int i = 0; i < nb_carrer; ++i){
+            generalTable[i] = (int*)malloc(nb_carrer * sizeof(**generalTable) );       //On alloue des tableaux de 'taille2' variables.
+            if(generalTable[i] == NULL){                              //En cas d'erreur d'allocation
+                for(int a=0 ; a < nb_carrer ; a++){
+                     free(generalTable[a]);
+                }
+            }
+        }
     }
 
     bool sceneIsDefine(){
@@ -47,18 +67,20 @@ public:
     }
 
     std::string toString();
+    std::string forDevelopper();
 
-  private:
+private:
     int **generalTable;
     static Manager * instance;
     int scenecarrer;
     void cleanMatrice();
+
     Manager()
     {
         car = Car::getInstance();
         bloc = Bloc::getInstance();
         chemin = Chemin::getInstance();
-        generalTable = new int*();
+        arrive = Arrive::getInstance();
         scenecarrer = -1;
     }
 };

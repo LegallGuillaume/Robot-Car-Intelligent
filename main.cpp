@@ -1,6 +1,7 @@
 #include <iostream>
 #include "headers/manager.h"
 #include "headers/definition.h"
+#include <unistd.h>
 
 void unitest(int x, int y){
     Manager *test1 = Manager::getInstance();
@@ -36,6 +37,37 @@ void unitest(int x, int y){
 
 
 int main(){
-    unitest(5, 8);
+    //unitest(5, 8);
+    Manager *manager = Manager::getInstance();
+    manager->initScene(8);
+    manager->car->setPosition(0, 0);
+    manager->arrive->setPosition(7, 5);
+    manager->bloc->add(5, 2);
+    manager->bloc->add(1, 7);
+    manager->bloc->add(2, 1);
+    manager->update();
+    std::cout<<manager->forDevelopper()<<std::endl;
+    int x=0;
+    int y=0;
+    int findit = 0;
+    while(true){
+        usleep(10000*60);
+        ++findit;
+        if(y >= manager->getSceneCarrer() - 1 || x >= manager->getSceneCarrer() - 1){
+            x=0;
+            y=2;
+        }else{
+            x = (rand()%manager->getSceneCarrer()); 
+            y = (rand()%manager->getSceneCarrer()); 
+        }
+        manager->car->setPosition(x, y);
+        manager->update();
+        std::cout<<manager->forDevelopper()<<std::endl;
+        if(manager->car->getPosition() == manager->arrive->getPosition()){
+            std::cout<<"ARRIVER TROUVée !!! en "<< findit <<" coups"<<std::endl;
+            break;
+        }
+    }
+
     return 0;
 }

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <sstream>
 #include "../headers/manager.h"
 #include "../headers/definition.h"
 
@@ -22,13 +23,17 @@ void Manager::update(){
     }
 
     /*Car*/
-    generalTable[car->getPosition().first][car->getPosition().second] = CAR_DEF;
+    if(car->getPosition().first > 0)
+        generalTable[car->getPosition().first][car->getPosition().second] = CAR_DEF;
 
     /*Chemin*/
     for (int index = 0; index < chemin->list_chemin->size(); ++index){
         generalTable[chemin->list_chemin->at(index).first][chemin->list_chemin->at(index).second] = CHEMIN_DEF;
     }
 
+    /*Arrive*/
+    if(arrive->getPosition().first > 0)
+        generalTable[arrive->getPosition().first][arrive->getPosition().second] = ARRIVE_DEF;
 }
 
 void Manager::cleanMatrice(){
@@ -41,4 +46,17 @@ void Manager::cleanMatrice(){
 
 std::string Manager::toString(){
     return "";
+}
+
+std::string Manager::forDevelopper(){
+    stringstream buf;
+    buf << "---|---|---|---|---|---|---|---\n";
+    for (int x = 0; x < getSceneCarrer();++x){
+        for (int y = 0; y < getSceneCarrer();++y){
+            buf << "-" + to_string(generalTable[x][y]) + "-|";
+        }
+        buf << "\n";
+    }
+    buf << "---|---|---|---|---|---|---|---\n";
+    return buf.str();
 }

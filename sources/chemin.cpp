@@ -34,7 +34,8 @@ string Chemin::toString(){
     int size = list_chemin->size();
     stringstream value;
     value << "";
-    std::for_each(list_bloc->begin(), list_bloc->end(), [&](std::pair<int, int> _b){
+    int i =0;
+    std::for_each(list_chemin->begin(), list_chemin->end(), [&](std::pair<int, int> _b){
         value << "{\""<<i<<"\": \""<<_b.first<< "," <<_b.second<<"\"}, ";
         ++i;
     });

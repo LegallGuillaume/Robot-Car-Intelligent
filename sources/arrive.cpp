@@ -1,23 +1,19 @@
 #include <iostream>
-#include "../headers/manager/car.h"
+#include "../headers/manager/arrive.h"
 
 #include <string>
 #include <sstream>
 
-Car * Car::instance = nullptr;
+Arrive * Arrive::instance = nullptr;
 
-Car * Car::getInstance(){
+Arrive * Arrive::getInstance(){
     if(instance == nullptr){
-        instance = new Car();
+        instance = new Arrive();
     }
     return instance;
 }
 
-void Car::sendCommand(){
-    //TODO send command from wifi to Car
-}
-
-std::string Car::toString(){
+std::string Arrive::toString(){
     stringstream buf;
     buf<<"{ \"X\": "<<getPosition().first<<", \"Y\": "<<getPosition().second<<" }";
     return buf.str();
