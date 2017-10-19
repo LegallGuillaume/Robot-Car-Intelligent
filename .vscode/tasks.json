@@ -1,0 +1,18 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "taskName": "build test",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g", "-std=c++11", "main.cpp", "sources/manager.cpp", 
+                "sources/car.cpp", "sources/bloc.cpp"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
