@@ -34,19 +34,12 @@ string Bloc::toString(){
     int size = list_bloc->size();
     stringstream value;
     value << "";
-    for(int i=0; i<size; ++i)
-        value << "{\""<<i<<"\": \""<<list_bloc->at(i).first<< "," <<list_bloc->at(i).second<<"\"}, ";
+    int i =0;
+    std::for_each(list_bloc->begin(), list_bloc->end(), [&](std::pair<int, int> _b){
+        value << "{\""<<i<<"\": \""<<_b.first<< "," <<_b.second<<"\"}, ";
+        ++i;
+    });
     stringstream buf;
     buf <<"{ \"Number\": "<<size<<", \"Position\": "<<value.str().substr(0, value.str().size()-2)<<" }";
     return buf.str();
 }
-
-/*
-void Bloc::update_tab(){
-    int size = list_bloc->size();
-    int y = 0;
-    for(int x=0; x<size; ++x){
-        tab_bloc[list_bloc->at(x).first][list_bloc->at(x).second] = BLOC_DEF;
-    }
-}
-*/

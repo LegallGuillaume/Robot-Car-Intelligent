@@ -4,10 +4,9 @@
         {
             "taskName": "build test",
             "type": "shell",
-            "command": "g++",
+            "command": "make",
             "args": [
-                "-g", "-std=c++11", "main.cpp", "sources/manager.cpp", 
-                "sources/car.cpp", "sources/bloc.cpp"
+                ""
             ],
             "group": {
                 "kind": "build",

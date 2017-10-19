@@ -2,21 +2,25 @@
 #define CAR_H
 
 #include <utility> //pair<>
+#include <string>
+#include "../abstract/simpleobject.h"
 
 using namespace std;
 
-class Car{
+class Car : public SimpleObject{
 
 public:
     static Car * getInstance();
     void sendCommand(); //send command to car from position X & Y
-    bool setPosition(int x, int y){
+    bool setPosition(int x, int y) override{
         position->first = x;
         position->second = y;
     }
-    pair<int, int> getPosition(){
+    pair<int, int> getPosition() override{
         return *position;
     }
+    string toString() override;
+    
 private:
     static Car * instance;
     pair<int, int> *position;

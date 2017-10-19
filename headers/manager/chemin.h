@@ -1,5 +1,6 @@
-#ifndef BLOC_H
-#define BLOC_H
+#ifndef CHEMIN_H
+#define CHEMIN_H
+
 
 #include <utility> //pair<>
 #include <vector>
@@ -8,24 +9,24 @@
 using namespace std;
 
 
-class Bloc : public MultipleObject{
+class Chemin : public MultipleObject{
 
 public:
-    static Bloc * getInstance();
-    vector<pair<int,int>> *list_bloc;
+    static Chemin * getInstance();
+    vector<pair<int,int>> *list_chemin;
     bool add(int x, int y) override;
     bool remove(int x, int y) override;
     bool has(int x, int y) override;
     bool clear() override{
-        list_bloc->clear();
-        return list_bloc->size() == 0;
+        list_chemin->clear();
+        return list_chemin->size() == 0;
     }
     string toString() override;
 
 private:
-    static Bloc * instance;
-    Bloc(){
-        list_bloc = new vector<pair<int, int>>();
+    static Chemin * instance;
+    Chemin(){
+        list_chemin = new vector<pair<int, int>>();
     }
 };
 

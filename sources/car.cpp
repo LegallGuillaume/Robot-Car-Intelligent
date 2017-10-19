@@ -1,6 +1,9 @@
 #include <iostream>
 #include "../headers/manager/car.h"
 
+#include <string>
+#include <sstream>
+
 Car * Car::instance = nullptr;
 
 Car * Car::getInstance(){
@@ -12,4 +15,10 @@ Car * Car::getInstance(){
 
 void Car::sendCommand(){
     //TODO send command from wifi to Car
+}
+
+std::string Car::toString(){
+    stringstream buf;
+    buf<<"";
+    return buf.str();
 }
