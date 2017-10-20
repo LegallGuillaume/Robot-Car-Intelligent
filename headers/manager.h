@@ -8,6 +8,7 @@
 #include <string>
 #include <utility>
 #include <stdlib.h>
+#include <iostream>
 
 
 /**
@@ -41,6 +42,10 @@ public:
         return generalTable[x][y];
     }
     void update();
+
+    int** getGeneralTable(){
+        return generalTable;
+    }
 
     int getSceneCarrer(){
         return scenecarrer;
