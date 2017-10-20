@@ -23,7 +23,7 @@ void Manager::update(){
     }
 
     /*Car*/
-    if(car->getPosition().first > 0)
+    if(car->getPosition().first >= 0)
         generalTable[car->getPosition().first][car->getPosition().second] = CAR_DEF;
 
     /*Chemin*/
@@ -32,7 +32,7 @@ void Manager::update(){
     }
 
     /*Arrive*/
-    if(arrive->getPosition().first > 0)
+    if(arrive->getPosition().first >= 0)
         generalTable[arrive->getPosition().first][arrive->getPosition().second] = ARRIVE_DEF;
 }
 
@@ -42,10 +42,6 @@ void Manager::cleanMatrice(){
             generalTable[x][y] = 0;
         }
     }
-}
-
-std::string Manager::toString(){
-    return "";
 }
 
 std::string Manager::forDevelopper(){
@@ -58,5 +54,16 @@ std::string Manager::forDevelopper(){
         buf << "\n";
     }
     buf << "---|---|---|---|---|---|---|---\n";
+    return buf.str();
+}
+
+std::string Manager::toString(){
+    stringstream buf;
+    buf << "{\n";
+      buf <<"\t{\"Scene\": " <<scenecarrer<<"},\n";
+      buf << "\t{\"Bloc\": "<<bloc->toString()<<"},\n";
+      buf << "\t{\"Arrive\": "<<arrive->toString()<<"},\n";
+      buf << "\t{\"Chemin\": "<<chemin->toString()<<"}\n";
+      buf << "}";
     return buf.str();
 }

@@ -32,17 +32,17 @@ int PathFinding::remplissage(int width, int height, int **tab, int nb_points, in
     int *new_listY = (int*)malloc(sizeof(int)*nb_points*4);
     int new_nb_points=0;
     int i;
-    bool hasPosibility;
+    bool toContinue;
     for(i=0;i<nb_points;i++)
     {
-        hasPosibility = false;
+        toContinue = false;
         if(test_case(width,height,tab,listX[i]+1,listY[i]))
         {
             new_listX[new_nb_points] = listX[i]+1;
             new_listY[new_nb_points] = listY[i];
             tab[new_listX[new_nb_points]][new_listY[new_nb_points]] = tab[listX[i]][listY[i]] + 1;
             new_nb_points++;
-            hasPosibility = true;
+            toContinue = true;
         }
         if(test_case(width,height,tab,listX[i]-1,listY[i]))
         {
@@ -50,7 +50,7 @@ int PathFinding::remplissage(int width, int height, int **tab, int nb_points, in
             new_listY[new_nb_points] = listY[i];
             tab[new_listX[new_nb_points]][new_listY[new_nb_points]] = tab[listX[i]][listY[i]] + 1;
             new_nb_points++;
-            hasPosibility = true;
+            toContinue = true;
         }
         if(test_case(width,height,tab,listX[i],listY[i]+1))
         {
@@ -58,7 +58,7 @@ int PathFinding::remplissage(int width, int height, int **tab, int nb_points, in
             new_listY[new_nb_points] = listY[i]+1;
             tab[new_listX[new_nb_points]][new_listY[new_nb_points]] = tab[listX[i]][listY[i]] + 1;
             new_nb_points++;
-            hasPosibility = true;
+            toContinue = true;
         }
         if(test_case(width,height,tab,listX[i],listY[i]-1))
         {
@@ -66,24 +66,24 @@ int PathFinding::remplissage(int width, int height, int **tab, int nb_points, in
             new_listY[new_nb_points] = listY[i]-1;
             tab[new_listX[new_nb_points]][new_listY[new_nb_points]] = tab[listX[i]][listY[i]] + 1;
             new_nb_points++;
-            hasPosibility = true;
+            toContinue = true;
         }
     }
     free(listX);
     free(listY);
-    if(hasPosibility){
-        if(tab[Bx][By]!=0)
-            return 1;
-        else return remplissage(width, height, tab, new_nb_points, new_listX, new_listY,Bx, By);
-    }else{
+    if(new_listX[new_nb_points] > (width*height))
         return -1;
+    if(tab[Bx][By]!=0){
+        return 1;
     }
+    else return remplissage(width, height, tab, new_nb_points, new_listX, new_listY,Bx, By);
 }
 
-int PathFinding::test()
+std::vector<std::pair<int, int>> PathFinding::find()
 {
+    std::vector<std::pair<int, int>> coord;
+    coord = vector<pair<int, int>>();
     if(Manager::getInstance()->getSceneCarrer() > 0){
-        int **tab;
         int Ax = Manager::getInstance()->car->getPosition().first;
         int Ay = Manager::getInstance()->car->getPosition().second;
         int Bx = Manager::getInstance()->arrive->getPosition().first;
@@ -91,22 +91,34 @@ int PathFinding::test()
         int i,j;
         int width = Manager::getInstance()->getSceneCarrer();
         int height = width;
-        tab = Manager::getInstance()->getGeneralTable();
+        int **tab = (int**)malloc(width * sizeof(*tab));
+        if(tab == NULL){
+            std::cout << "ERREUR ALLOC Manager TABLES" << std::endl;
+            return coord;
+        }
+        for(int aa = 0; aa < width; ++aa){
+            tab[aa] = (int*)malloc(width * sizeof(**tab) );
+            if(tab[aa] == NULL){
+                for(int a=0 ; a < width ; a++){
+                     free(tab[a]);
+                }
+            }
+        }
+        for(int xx=0; xx<width; ++xx){
+            for(int yy=0; yy<height; ++yy){
+                tab[xx][yy] = Manager::getInstance()->getCoordonate(xx, yy);
+            }
+        }
         tab[Bx][By] = 0;
         int *listX = (int*)malloc(sizeof(int)*1);
         int *listY = (int*)malloc(sizeof(int)*1);
         listX[0] = Ax;
         listY[0] = Ay;
         tab[Ax][Ay] = 1;
-        int check = remplissage(width, width, tab, 1, listX, listY,Bx,By);
-        if(check == -1){
-            tab[Bx][By] = ARRIVE_DEF;
-            return -1;
-        }
-
-        std::vector<std::pair<int, int>> *coord;
-        coord = new vector<pair<int, int>>();
-        coord->push_back(make_pair(Bx, By));
+        int check = remplissage(width, height, tab, 1, listX, listY,Bx,By);
+        if(check == -1)
+            return coord;
+        coord.push_back(make_pair(Bx, By));
         int index = tab[Bx][By];
         int indexX = Bx;
         int indexY = By;
@@ -115,7 +127,7 @@ int PathFinding::test()
             hasPosibility = false;
             if(indexY-1 >=0){
                 if(arround(tab[indexX][indexY-1], index - 1, indexX, indexY-1, width, height)){
-                    coord->push_back(make_pair(indexX, indexY-1));
+                    coord.push_back(make_pair(indexX, indexY-1));
                     --indexY;
                     --index;
                     hasPosibility = true;
@@ -123,7 +135,7 @@ int PathFinding::test()
             }
             if(indexX-1 >=0){
                 if(arround(tab[indexX-1][indexY], index - 1, indexX-1, indexY, width, height)){
-                    coord->push_back(make_pair(indexX-1, indexY));
+                    coord.push_back(make_pair(indexX-1, indexY));
                     --indexX;
                     --index;
                     hasPosibility = true;
@@ -131,7 +143,7 @@ int PathFinding::test()
             }
             if(indexY+1 <height){
                 if(arround(tab[indexX][indexY+1], index - 1, indexX, indexY+1, width, height)){
-                    coord->push_back(make_pair(indexX, indexY+1));
+                    coord.push_back(make_pair(indexX, indexY+1));
                     ++indexY;
                     --index;
                     hasPosibility = true;
@@ -139,30 +151,30 @@ int PathFinding::test()
             }
             if(indexX+1 < width){
                 if(arround(tab[indexX+1][indexY], index - 1, indexX+1, indexY, width, height)){
-                    coord->push_back(make_pair(indexX+1, indexY));
+                    coord.push_back(make_pair(indexX+1, indexY));
                     ++indexX;
                     --index;
                     hasPosibility = true;
                 }
             }
             if(!hasPosibility){
-                return -1;
+                coord.clear();
+                return coord;
             }
             if(index == 1){
                 break;
             }
         }
-        tab[Bx][By] = ARRIVE_DEF;
         if(hasPosibility){
-            for(int ad = coord->size() -1; ad > -1; --ad){
-                printf("X%d Y%d, ", coord->at(ad).first, coord->at(ad).second);
+            for(int xx=0; xx<width; ++xx){
+                free(tab[xx]);
             }
-            printf("\n");
-            return 0;
+            free(tab);
         }else{
-            return -1;
+            coord.clear();
         }
+        return coord;
     }else{
-        return -1;
+        return coord;
     }
 }

@@ -8,7 +8,7 @@ class PathFinding{
 
 public:
     //static std::vector<std::pair<int, int>> find();
-    static int test();
+    static std::vector<std::pair<int, int>> find();
 private:
     static int remplissage(int width, int height, int **tab, int nb_points, int *listX, int *listY,int Bx, int By);
     static int test_case(int width, int height, int **tab, int x, int y);
