@@ -20,7 +20,12 @@ public:
         return *position;
     }
     string toString() override;
-    
+    ~Car(){
+        delete position;
+        position = nullptr;
+        delete instance;
+        instance = nullptr;
+    }
 private:
     static Car * instance;
     pair<int, int> *position;

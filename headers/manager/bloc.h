@@ -21,6 +21,12 @@ public:
         return list_bloc->size() == 0;
     }
     string toString() override;
+    ~Bloc(){
+        delete list_bloc;
+        list_bloc = nullptr;
+        delete instance;
+        instance = nullptr;
+    }
 
 private:
     static Bloc * instance;

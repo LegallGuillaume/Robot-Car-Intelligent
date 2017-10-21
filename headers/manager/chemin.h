@@ -22,6 +22,12 @@ public:
         return list_chemin->size() == 0;
     }
     string toString() override;
+    ~Chemin(){
+        delete list_chemin;
+        list_chemin = nullptr;
+        delete instance;
+        instance = nullptr;
+    }
 
 private:
     static Chemin * instance;

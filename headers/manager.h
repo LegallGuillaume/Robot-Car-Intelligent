@@ -73,7 +73,22 @@ public:
 
     std::string toString();
     std::string forDevelopper();
-
+    ~Manager(){
+        delete car;
+        car = nullptr;
+        delete bloc;
+        bloc = nullptr;
+        delete chemin;
+        chemin = nullptr;
+        delete arrive;
+        arrive = nullptr;
+        for(int i=0; i<scenecarrer; i++){
+            delete generalTable[i];
+            generalTable[i] = nullptr;
+        }
+        delete generalTable;
+        generalTable = nullptr;
+    }
 private:
     int **generalTable;
     static Manager * instance;

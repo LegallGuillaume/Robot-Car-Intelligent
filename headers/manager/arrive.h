@@ -19,6 +19,12 @@ public:
         return *position;
     }
     string toString() override;
+    ~Arrive(){
+        delete position;
+        position = nullptr;
+        delete instance;
+        instance=nullptr;
+    }
     
 private:
     static Arrive * instance;
