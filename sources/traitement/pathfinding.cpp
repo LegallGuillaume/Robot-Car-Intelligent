@@ -4,6 +4,7 @@
 #include "../../headers/definition.h"
 #include <utility>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
@@ -31,18 +32,14 @@ int PathFinding::remplissage(int width, int height, int **tab, int nb_points, in
     int *new_listX = (int*)malloc(sizeof(int)*nb_points*4);
     int *new_listY = (int*)malloc(sizeof(int)*nb_points*4);
     int new_nb_points=0;
-    int i;
-    bool toContinue;
-    for(i=0;i<nb_points;i++)
+    for(int i=0;i<nb_points;i++)
     {
-        toContinue = false;
         if(test_case(width,height,tab,listX[i]+1,listY[i]))
         {
             new_listX[new_nb_points] = listX[i]+1;
             new_listY[new_nb_points] = listY[i];
             tab[new_listX[new_nb_points]][new_listY[new_nb_points]] = tab[listX[i]][listY[i]] + 1;
             new_nb_points++;
-            toContinue = true;
         }
         if(test_case(width,height,tab,listX[i]-1,listY[i]))
         {
@@ -50,7 +47,6 @@ int PathFinding::remplissage(int width, int height, int **tab, int nb_points, in
             new_listY[new_nb_points] = listY[i];
             tab[new_listX[new_nb_points]][new_listY[new_nb_points]] = tab[listX[i]][listY[i]] + 1;
             new_nb_points++;
-            toContinue = true;
         }
         if(test_case(width,height,tab,listX[i],listY[i]+1))
         {
@@ -58,7 +54,6 @@ int PathFinding::remplissage(int width, int height, int **tab, int nb_points, in
             new_listY[new_nb_points] = listY[i]+1;
             tab[new_listX[new_nb_points]][new_listY[new_nb_points]] = tab[listX[i]][listY[i]] + 1;
             new_nb_points++;
-            toContinue = true;
         }
         if(test_case(width,height,tab,listX[i],listY[i]-1))
         {
@@ -66,12 +61,11 @@ int PathFinding::remplissage(int width, int height, int **tab, int nb_points, in
             new_listY[new_nb_points] = listY[i]-1;
             tab[new_listX[new_nb_points]][new_listY[new_nb_points]] = tab[listX[i]][listY[i]] + 1;
             new_nb_points++;
-            toContinue = true;
         }
     }
     free(listX);
     free(listY);
-    if(new_listX[new_nb_points] > (width*height))
+    if(new_listX[new_nb_points] >= 35635)
         return -1;
     if(tab[Bx][By]!=0){
         return 1;
@@ -165,7 +159,7 @@ std::vector<std::pair<int, int>> PathFinding::find()
                 break;
             }
         }
-        if(hasPosibility){
+        if(coord.size() > 1 || hasPosibility){
             for(int xx=0; xx<width; ++xx){
                 free(tab[xx]);
             }
@@ -173,6 +167,7 @@ std::vector<std::pair<int, int>> PathFinding::find()
         }else{
             coord.clear();
         }
+        std::reverse(coord.begin(),coord.end()); //inverse le trajet (défaut: Arrivée -> Départ)
         return coord;
     }else{
         return coord;
