@@ -2,6 +2,7 @@ TODO list:
     ✔ init Ordonnanceur 
     ✔ Recherche automatique de chemin (PathFinding)
     → Traitement vidéo
+    → Update test U
     → Correction Trajectoire
     → Manager -> Serveur
     ✘ ...
