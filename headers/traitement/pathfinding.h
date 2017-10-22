@@ -1,3 +1,7 @@
+#ifndef PATHFINDING_H
+#define PATHFINDING_H
+
+
 #include <iostream>
 #include <vector>
 #include <utility>
@@ -199,3 +203,5 @@ private:
     std::pair<uint8_t, uint8_t> end_coord;
 
 };
+
+#endif
