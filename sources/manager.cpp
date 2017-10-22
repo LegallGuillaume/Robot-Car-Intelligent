@@ -18,7 +18,7 @@ void Manager::update(){
     cleanMatrice();
     
     /*Bloc*/
-    for (int index = 0; index < bloc->list_bloc->size(); ++index){
+    for (int16_t index = 0; index < bloc->list_bloc->size(); ++index){
         generalTable[bloc->list_bloc->at(index).first][bloc->list_bloc->at(index).second] = BLOC_DEF;
     }
 
@@ -27,7 +27,7 @@ void Manager::update(){
         generalTable[car->getPosition().first][car->getPosition().second] = CAR_DEF;
 
     /*Chemin*/
-    for (int index = 0; index < chemin->list_chemin->size(); ++index){
+    for (int16_t index = 0; index < chemin->list_chemin->size(); ++index){
         generalTable[chemin->list_chemin->at(index).first][chemin->list_chemin->at(index).second] = CHEMIN_DEF;
     }
 
@@ -37,8 +37,8 @@ void Manager::update(){
 }
 
 void Manager::cleanMatrice(){
-    for (int x = 0; x < getSceneCarrer(); ++x){
-        for (int y = 0; y < getSceneCarrer(); ++y){
+    for (int8_t x = 0; x < getSceneCarrer(); ++x){
+        for (int8_t y = 0; y < getSceneCarrer(); ++y){
             generalTable[x][y] = 0;
         }
     }
@@ -47,8 +47,8 @@ void Manager::cleanMatrice(){
 std::string Manager::forDevelopper(){
     stringstream buf;
     buf << "---|---|---|---|---|---|---|---\n";
-    for (int x = 0; x < getSceneCarrer();++x){
-        for (int y = 0; y < getSceneCarrer();++y){
+    for (int8_t x = 0; x < getSceneCarrer();++x){
+        for (int8_t y = 0; y < getSceneCarrer();++y){
             buf << "-" + to_string(generalTable[x][y]) + "-|";
         }
         buf << "\n";

@@ -8,8 +8,8 @@
 class SimpleObject{
 
 public:
-    virtual bool setPosition(int x, int y) =0;
-    virtual std::pair<int, int> getPosition() =0;
+    virtual bool setPosition(int8_t x, int8_t y) =0;
+    virtual std::pair<int8_t, int8_t> getPosition() =0;
     virtual std::string toString() =0;
 };
 

@@ -38,33 +38,36 @@ public:
     Chemin *chemin;
     Arrive *arrive;
 
-    int getCoordonate(int x, int y){
+    int8_t getCoordonate(int8_t x, int8_t y){
         return generalTable[x][y];
     }
     void update();
 
-    int** getGeneralTable(){
+    int8_t** getGeneralTable(){
         return generalTable;
     }
 
-    int getSceneCarrer(){
+    int8_t getSceneCarrer(){
         return scenecarrer;
     }
-    void initScene(int nb_carrer){
+    bool initScene(int8_t nb_carrer){
         scenecarrer = nb_carrer;
-        generalTable = (int**)malloc(nb_carrer * sizeof(*generalTable));
+        bool boolean=true;
+        generalTable = (int8_t**)malloc(nb_carrer * sizeof(*generalTable));
         if(generalTable == NULL){
             std::cout << "ERREUR ALLOC Manager TABLES" << std::endl;
-            return;
+            return false;
         }
         for(int i = 0; i < nb_carrer; ++i){
-            generalTable[i] = (int*)malloc(nb_carrer * sizeof(**generalTable) );       //On alloue des tableaux de 'taille2' variables.
-            if(generalTable[i] == NULL){                              //En cas d'erreur d'allocation
+            generalTable[i] = (int8_t*)malloc(nb_carrer * sizeof(**generalTable) );
+            if(generalTable[i] == NULL){
+                boolean = false;
                 for(int a=0 ; a < nb_carrer ; a++){
                      free(generalTable[a]);
                 }
             }
         }
+        return boolean;
     }
 
     bool sceneIsDefine(){
@@ -74,15 +77,7 @@ public:
     std::string toString();
     std::string forDevelopper();
     ~Manager(){
-        delete car;
-        car = nullptr;
-        delete bloc;
-        bloc = nullptr;
-        delete chemin;
-        chemin = nullptr;
-        delete arrive;
-        arrive = nullptr;
-        for(int i=0; i<scenecarrer; i++){
+        for(int8_t i=0; i<scenecarrer; i++){
             delete generalTable[i];
             generalTable[i] = nullptr;
         }
@@ -90,9 +85,9 @@ public:
         generalTable = nullptr;
     }
 private:
-    int **generalTable;
+    int8_t **generalTable;
     static Manager * instance;
-    int scenecarrer;
+    int8_t scenecarrer;
     void cleanMatrice();
 
     Manager()

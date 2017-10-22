@@ -13,12 +13,12 @@ Bloc * Bloc::getInstance(){
     return instance;
 }
 
-bool Bloc::add(int x, int y){
+bool Bloc::add(int8_t x, int8_t y){
     list_bloc->push_back(std::make_pair(x,y));
     return std::find(list_bloc->begin(), list_bloc->end(), std::make_pair(x,y)) != list_bloc->end();
 }
 
-bool Bloc::remove(int x, int y){
+bool Bloc::remove(int8_t x, int8_t y){
     if(has(x,y)){
         list_bloc->erase(std::remove(list_bloc->begin(), list_bloc->end(), std::make_pair(x,y)), list_bloc->end());
         return !has(x,y);
@@ -26,17 +26,17 @@ bool Bloc::remove(int x, int y){
         return true; //default true if isn't in table.
 }
 
-bool Bloc::has(int x, int y){
+bool Bloc::has(int8_t x, int8_t y){
     return std::find(list_bloc->begin(), list_bloc->end(), std::make_pair(x,y)) != list_bloc->end();
 }
 
 string Bloc::toString(){
-    int size = list_bloc->size();
+    int16_t size = list_bloc->size();
     stringstream value;
     value << "";
-    int i =0;
-    std::for_each(list_bloc->begin(), list_bloc->end(), [&](std::pair<int, int> _b){
-        value << "{\""<<i<<"\": \""<<_b.first<< "," <<_b.second<<"\"}, ";
+    int16_t i =0;
+    std::for_each(list_bloc->begin(), list_bloc->end(), [&](std::pair<int8_t, int8_t> _b){
+        value << "{\""<<i<<"\": \""<<(int)_b.first<< "," <<(int)_b.second<<"\"}, ";
         ++i;
     });
     stringstream buf;

@@ -13,12 +13,12 @@ Chemin * Chemin::getInstance(){
     return instance;
 }
 
-bool Chemin::add(int x, int y){
+bool Chemin::add(int8_t x, int8_t y){
     list_chemin->push_back(std::make_pair(x,y));
     return std::find(list_chemin->begin(), list_chemin->end(), std::make_pair(x,y)) != list_chemin->end();
 }
 
-bool Chemin::remove(int x, int y){
+bool Chemin::remove(int8_t x, int8_t y){
     if(has(x,y)){
         list_chemin->erase(std::remove(list_chemin->begin(), list_chemin->end(), std::make_pair(x,y)), list_chemin->end());
         return !has(x,y);
@@ -26,17 +26,17 @@ bool Chemin::remove(int x, int y){
         return true; //default true if isn't in table.
 }
 
-bool Chemin::has(int x, int y){
+bool Chemin::has(int8_t x, int8_t y){
     return std::find(list_chemin->begin(), list_chemin->end(), std::make_pair(x,y)) != list_chemin->end();
 }
 
 string Chemin::toString(){
-    int size = list_chemin->size();
+    int16_t size = list_chemin->size();
     stringstream value;
     value << "";
-    int i =0;
-    std::for_each(list_chemin->begin(), list_chemin->end(), [&](std::pair<int, int> _b){
-        value << "{\""<<i<<"\": \""<<_b.first<< "," <<_b.second<<"\"}, ";
+    int16_t i =0;
+    std::for_each(list_chemin->begin(), list_chemin->end(), [&](std::pair<int8_t, int8_t> _b){
+        value << "{\""<<i<<"\": \""<<(int)_b.first<< "," <<(int)_b.second<<"\"}, ";
         ++i;
     });
     stringstream buf;

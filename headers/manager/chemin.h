@@ -13,10 +13,10 @@ class Chemin : public MultipleObject{
 
 public:
     static Chemin * getInstance();
-    vector<pair<int,int>> *list_chemin;
-    bool add(int x, int y) override;
-    bool remove(int x, int y) override;
-    bool has(int x, int y) override;
+    vector<pair<int8_t,int8_t>> *list_chemin;
+    bool add(int8_t x, int8_t y) override;
+    bool remove(int8_t x, int8_t y) override;
+    bool has(int8_t x, int8_t y) override;
     bool clear() override{
         list_chemin->clear();
         return list_chemin->size() == 0;
@@ -32,7 +32,7 @@ public:
 private:
     static Chemin * instance;
     Chemin(){
-        list_chemin = new vector<pair<int, int>>();
+        list_chemin = new vector<pair<int8_t, int8_t>>();
     }
 };
 

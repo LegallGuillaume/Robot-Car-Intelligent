@@ -6,7 +6,7 @@
 #include <utility>
 #include <vector>
 
-void unitest(int x, int y){
+void unitest(int8_t x, int8_t y){
     Manager *test1 = Manager::getInstance();
     Manager *test2 = Manager::getInstance();
     printf("No Duplicate Manager\t\t | \t\t%s\n", (
@@ -40,7 +40,8 @@ void unitest(int x, int y){
 
 
 int main(){
-    /*Manager *manager = Manager::getInstance();
+    //unitest(3, 5);
+    Manager *manager = Manager::getInstance();
     manager->initScene(8);
     manager->bloc->add(1, 1);
     manager->bloc->add(3, 2);
@@ -63,50 +64,26 @@ int main(){
     manager->bloc->add(6, 7);
     manager->bloc->add(0, 5);
     manager->arrive->setPosition(1, 7);
+    //manager->bloc->add(0, 7);
+    //manager->bloc->add(2, 7);
+    //manager->bloc->add(1, 8);
     manager->car->setPosition(7, 7);
     manager->update();
-    std::vector<std::pair<int, int>> result_chemin = PathFinding::find();
     std::cout<<manager->forDevelopper()<<std::endl;
-    if(result_chemin.size() == 0){
-        std::cout<<"\nPas de solution Possible\n"<<std::endl;
-        return -1;
+    PathFinding *path = new PathFinding(
+        manager->getGeneralTable(), manager->getSceneCarrer(), manager->getSceneCarrer(), 
+        manager->car->getPosition(), manager->arrive->getPosition()
+    );
+    if(!path->hasPossibility()){
+        std::cout<<"NO POSSIBILITY"<<std::endl;
+        return 1;
     }
-    for(int i=result_chemin.size()-2; i>0; --i) //ne prend pas le bloc de départ avec -2
-        manager->chemin->add(result_chemin.at(i).first, result_chemin.at(i).second);
-    manager->bloc->clear();
-    manager->update();
-    //std::cout<<manager->toString()<<std::endl;
-    std::cout<<manager->forDevelopper()<<std::endl;*/
-    unitest(5, 2);
-    /*Manager *manager = Manager::getInstance();
-    manager->initScene(8);
-    manager->car->setPosition(0, 0);
-    manager->arrive->setPosition(7, 5);
-    manager->bloc->add(5, 2);
-    manager->bloc->add(1, 7);
-    manager->bloc->add(2, 1);
+    std::vector<std::pair<int8_t, int8_t>> *cheminTerminate = path->getChemin();
+    for(int index=0; index < (int)cheminTerminate->size() - 1; ++index)
+        manager->chemin->add(cheminTerminate->at(index).first, cheminTerminate->at(index).second);
+//
+    std::cout<<manager->toString()<<std::endl;
     manager->update();
     std::cout<<manager->forDevelopper()<<std::endl;
-    signed char x=0;
-    signed char y=0;
-    signed char findit = 0;
-    while(true){
-        usleep(10000*60);
-        ++findit;
-        if(y >= manager->getSceneCarrer() - 1 || x >= manager->getSceneCarrer() - 1){
-            x=0;
-            y=2;
-        }else{
-            x = (rand()%manager->getSceneCarrer()); 
-            y = (rand()%manager->getSceneCarrer()); 
-        }
-        manager->car->setPosition(x, y);
-        manager->update();
-        std::cout<<manager->forDevelopper()<<std::endl;
-        if(manager->car->getPosition() == manager->arrive->getPosition()){
-            std::cout<<"ARRIVER TROUVée !!! en "<< findit <<" coups"<<std::endl;
-            break;
-        }
-    }*/
     return 0;
 }
