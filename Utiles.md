@@ -26,6 +26,9 @@ std::vector<int8_t> *ptr = new std::vector<int8_t>();
 std::vector<int8_t> non_ptr;
 
 ptr->reserve(10);
+non_ptr.reserve(10);
+
+delete ptr;
 ```
 
 ## Allocation dynamique
