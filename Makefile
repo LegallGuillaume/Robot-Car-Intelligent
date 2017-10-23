@@ -1,7 +1,10 @@
 GPP = g++ 
 TARGET = robot 
+UNITEST = unitest
 SRC = $(wildcard *.cpp) 
 COMPILE_FILE = main.cpp sources/manager.cpp sources/bloc.cpp sources/car.cpp sources/chemin.cpp sources/arrive.cpp \
+					sources/traitement/calibration.cpp
+UNITEST_FILE = unitest.cpp sources/manager.cpp sources/bloc.cpp sources/car.cpp sources/chemin.cpp sources/arrive.cpp \
 					sources/traitement/calibration.cpp
 CFLAGS = -std=c++11
 OPENCV = `pkg-config --cflags --libs opencv`
@@ -11,6 +14,9 @@ OPENCV = `pkg-config --cflags --libs opencv`
 # @$(GPP) -c -o $@ $< $(CFLAGS) 
 # @rm -f *.o 
 
+$(UNITEST) : ${UNITEST_FILE}
+	$(GPP) -o $@ $^ $(CFLAGS) $(OPENCV)
+
 $(TARGET) : ${COMPILE_FILE}
 	$(GPP) -o $@ $^ $(CFLAGS) $(OPENCV)
  
@@ -18,4 +24,4 @@ $(TARGET) : ${COMPILE_FILE}
 	$(GPP) -c -o $@ $< $(CFLAGS) $(OPENCV)
 
 clean: 
-	rm -f *.o ${TARGET}
+	rm -f *.o ${TARGET} ${UNITEST}
