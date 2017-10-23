@@ -6,13 +6,19 @@ Valeur qui peut etre Négative !! /!\ ATTENTION, PRENDRE LA VALEUR ASSOCIER
 ---
 
 > Valeur signé:
+
 > int8_t = valeur de -128 à 127
+
 > int16_t = valeur de -32 768 à 32 767
+
 > int32_t = valeur de -2 147 483 648 à 2 147 483 647
 
 > Valeur non signé:
+
 > uint8_t = valeur de 0 à 255
+
 > uint16_t = valeur de 0 à 65 535
+
 > uint32_t = valeur de 0 à 4 294 967 295
 
 ## Vector
@@ -34,8 +40,11 @@ delete ptr;
 ## Allocation dynamique
 
 ---
+
 - Création tableau à 2 dimensions de 20x20.
+
 - -128 < 20 < 127 --> int8_t
+
 ```cpp
 int8_t **tableau;
 uint8_t allocmem = 0;
@@ -56,6 +65,7 @@ try{
 ```
 
 - Destruction du tableau 20x20
+
 ```cpp
 for(int8_t i=0; i<20; i++){
     delete [] tableau[i];
@@ -69,6 +79,7 @@ tableau = nullptr;
 ---
 
 - position x3 & y5
+
 ```cpp
 #include <utility>
 
