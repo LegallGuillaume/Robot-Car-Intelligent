@@ -11,8 +11,8 @@ In this project you will find:
   - Pathfinding
   - Trajectory Correction
   - Server (who send command to car)
-  - TODO list (TODO)
-  - Useful things (Utile.md)
+  - TODO list ([TODO here](https://github.com/LegallGuillaume/Robot-Car-Intelligent/blob/master/TODO))
+  - Useful things ([Utile.md](https://github.com/LegallGuillaume/Robot-Car-Intelligent/blob/master/Utile.md))
 
 ---
 
