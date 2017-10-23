@@ -23,7 +23,7 @@ public:
     }
     string toString() override;
     ~Chemin(){
-        delete list_chemin;
+        delete []list_chemin;
         list_chemin = nullptr;
         delete instance;
         instance = nullptr;

@@ -22,14 +22,14 @@ void Manager::update(){
         generalTable[bloc->list_bloc->at(index).first][bloc->list_bloc->at(index).second] = BLOC_DEF;
     }
 
-    /*Car*/
-    if(car->getPosition().first >= 0)
-        generalTable[car->getPosition().first][car->getPosition().second] = CAR_DEF;
-
     /*Chemin*/
     for (int16_t index = 0; index < chemin->list_chemin->size(); ++index){
         generalTable[chemin->list_chemin->at(index).first][chemin->list_chemin->at(index).second] = CHEMIN_DEF;
     }
+
+    /*Car*/
+    if(car->getPosition().first >= 0)
+        generalTable[car->getPosition().first][car->getPosition().second] = CAR_DEF;
 
     /*Arrive*/
     if(arrive->getPosition().first >= 0)

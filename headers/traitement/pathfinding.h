@@ -66,6 +66,20 @@ public:
         return list_cheminOk;
     }
 
+    ~PathFinding(){
+        delete _pathfinding;
+        _pathfinding = nullptr;
+        delete []list_cheminOk;
+        list_cheminOk = nullptr;
+        for(uint16_t i=0; i<all_cellules.size(); ++i){
+            delete all_cellules[i];
+            all_cellules[i] = nullptr;
+        }
+        for(uint16_t i=0; i<current_list.size(); ++i){
+            delete current_list[i];
+            current_list[i] = nullptr;
+        }
+    }
 private:
     Cellule *_pathfinding;
     std::vector<std::pair<int8_t,int8_t>> *list_cheminOk;

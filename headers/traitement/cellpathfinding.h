@@ -16,6 +16,10 @@ public:
     uint16_t m_P; /*Poid*/
     void setBloc(bool b){m_bloc = b;}
     bool isBloc(){return m_bloc;}
+    ~Cellule(){
+        delete m_parent;
+        m_parent = nullptr;
+    }
 private:
     bool m_bloc;
     std::pair<int8_t, int8_t> m_coord;

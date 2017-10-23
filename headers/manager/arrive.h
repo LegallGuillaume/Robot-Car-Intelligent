@@ -1,3 +1,11 @@
+/*Nombre d'otect en Allocation Max de la class:
+ *
+ *    - int8_t (1octet)                       : 008 octets
+ *    - string (1octet/lettre) (1*6)octet     : 006 octets
+ *    - bool (1octet)                         : 001 octets
+ *
+ * = 015 octets
+*/
 #ifndef ARRIVE_H
 #define ARRIVE_H
 

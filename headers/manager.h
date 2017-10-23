@@ -53,19 +53,19 @@ public:
     bool initScene(int8_t nb_carrer){
         scenecarrer = nb_carrer;
         bool boolean=true;
-        generalTable = (int8_t**)malloc(nb_carrer * sizeof(*generalTable));
-        if(generalTable == NULL){
-            std::cout << "ERREUR ALLOC Manager TABLES" << std::endl;
-            return false;
-        }
-        for(int i = 0; i < nb_carrer; ++i){
-            generalTable[i] = (int8_t*)malloc(nb_carrer * sizeof(**generalTable) );
-            if(generalTable[i] == NULL){
-                boolean = false;
-                for(int a=0 ; a < nb_carrer ; a++){
-                     free(generalTable[a]);
-                }
+        uint8_t allocmem = 0;
+        try{
+            generalTable = new int8_t * [nb_carrer];
+            std::fill_n( generalTable, nb_carrer, static_cast<int8_t*>(0));
+            for(allocmem = 0; allocmem < nb_carrer; ++allocmem){
+                generalTable[ allocmem ] = new int8_t[nb_carrer];
             }
+        }catch( const std::bad_alloc &) {
+            for( uint8_t i = 0; i < allocmem; ++i ){
+                delete [] generalTable[ i ];
+            }
+            delete [] generalTable;
+            throw;
         }
         return boolean;
     }
@@ -78,10 +78,10 @@ public:
     std::string forDevelopper();
     ~Manager(){
         for(int8_t i=0; i<scenecarrer; i++){
-            delete generalTable[i];
+            delete [] generalTable[i];
             generalTable[i] = nullptr;
         }
-        delete generalTable;
+        delete []generalTable;
         generalTable = nullptr;
     }
 private:
