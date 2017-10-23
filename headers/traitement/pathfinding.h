@@ -18,8 +18,8 @@ public:
             end_coord = end;
             width = width_scene;
             height = height_scene;
+            _pathfinding = nullptr;
             if(surroundedBlocs(end.first, end.second, matrice) || surroundedBlocs(start.first, start.second, matrice)){
-                has_possibility = false;
                 return;
             }
             for(int8_t i_width = 0; i_width < width_scene; ++i_width){
@@ -33,10 +33,10 @@ public:
                     all_cellules.push_back(new Cellule(i_width, i_height, isbloc));
                 }
             }
-            if(all_cellules.size() == 0){
-                has_possibility = false;
+            /*Check if there are no block (not compatibility with surroundedBlocs check)*/
+            /*if(all_cellules.size() == 0){
                 return;
-            }
+            }*/
             Cellule *firstCell = getCellule(start.first, start.second);
             firstCell->m_P = 0;
             current_list.push_back(firstCell);
@@ -45,7 +45,7 @@ public:
         }
     
     bool hasPossibility(){
-        return has_possibility;
+        return _pathfinding != nullptr;
     }
 
     std::vector<std::pair<int8_t, int8_t>>* getChemin(){
@@ -54,7 +54,8 @@ public:
         while(true){
             if(current == nullptr)
                 break;
-            list_cheminOk->push_back(current->getCoord());
+            if(current->getCoord() != start_coord)
+                list_cheminOk->push_back(current->getCoord());
             if(current->m_parent != nullptr){
                 current = current->m_parent;
             }else{
@@ -198,9 +199,8 @@ private:
     std::vector<Cellule*> current_list;
     int8_t width;
     int8_t height;
-    bool has_possibility = true;
-    std::pair<uint8_t, uint8_t> start_coord;
-    std::pair<uint8_t, uint8_t> end_coord;
+    std::pair<int8_t, int8_t> start_coord;
+    std::pair<int8_t, int8_t> end_coord;
 
 };
 

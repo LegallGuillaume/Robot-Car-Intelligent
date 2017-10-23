@@ -6,9 +6,9 @@ Valeur qui peut etre Négative !! /!\ ATTENTION, PRENDRE LA VALEUR ASSOCIER
 ---
 
 > Valeur signé:
-> int8_t = valeur de -127 à 127
-> int16_t = valeur de -32 767 à 32 767
-> int32_t = valeur de -2 147 483 647 à 2 147 483 647
+> int8_t = valeur de -128 à 127
+> int16_t = valeur de -32 768 à 32 767
+> int32_t = valeur de -2 147 483 648 à 2 147 483 647
 
 > Valeur non signé:
 > uint8_t = valeur de 0 à 255
@@ -35,7 +35,7 @@ delete ptr;
 
 ---
 - Création tableau à 2 dimensions de 20x20.
-- 0 > 20 < 127 --> int8_t
+- -128 < 20 < 127 --> int8_t
 ```cpp
 int8_t **tableau;
 uint8_t allocmem = 0;
