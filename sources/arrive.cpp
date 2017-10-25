@@ -15,6 +15,6 @@ Arrive * Arrive::getInstance(){
 
 std::string Arrive::toString(){
     stringstream buf;
-    buf<<"{ \"X\": "<<(int)getPosition().first<<", \"Y\": "<<(int)getPosition().second<<" }";
+    buf<<"\"Arrive\": { \"X\": "<<(int)getPosition().first<<", \"Y\": "<<(int)getPosition().second<<" }";
     return buf.str();
 }

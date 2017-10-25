@@ -19,6 +19,6 @@ void Car::sendCommand(){
 
 std::string Car::toString(){
     stringstream buf;
-    buf<<"{ \"X\": "<<(int)getPosition().first<<", \"Y\": "<<(int)getPosition().second<<" }";
+    buf<<"\"Voiture\": { \"X\": "<<(int)getPosition().first<<", \"Y\": "<<(int)getPosition().second<<" }";
     return buf.str();
 }

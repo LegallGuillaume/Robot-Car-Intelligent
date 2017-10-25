@@ -22,6 +22,7 @@ public:
     bool setPosition(int8_t x, int8_t y) override{
         position->first = x;
         position->second = y;
+        return (position->first == x && position->second == y);
     }
     pair<int8_t, int8_t> getPosition() override{
         return *position;

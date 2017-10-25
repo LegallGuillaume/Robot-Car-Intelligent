@@ -2,6 +2,7 @@ TODO list:
     ✔ init Ordonnanceur 
     ✔ Recherche automatique de chemin (PathFinding)
     ✔ Update test U
+    → test.json --> arrive.cpp/bloc.cpp
     → Traitement image -> calibration auto
     → Traitement image -> tracking object
     → Correction Trajectoire

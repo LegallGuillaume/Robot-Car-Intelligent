@@ -59,11 +59,12 @@ std::string Manager::forDevelopper(){
 
 std::string Manager::toString(){
     stringstream buf;
-    buf << "{\n";
-      buf <<"\t{\"Scene\": " <<scenecarrer<<"},\n";
-      buf << "\t{\"Bloc\": "<<bloc->toString()<<"},\n";
-      buf << "\t{\"Arrive\": "<<arrive->toString()<<"},\n";
-      buf << "\t{\"Chemin\": "<<chemin->toString()<<"}\n";
+    buf << "{";
+      buf <<"\"Scene\": "<<(int)scenecarrer<<",";
+      buf <<bloc->toString()<<",";
+      buf <<arrive->toString()<<",";
+      buf <<car->toString()<<",";
+      buf <<chemin->toString()<<"";
       buf << "}";
     return buf.str();
 }

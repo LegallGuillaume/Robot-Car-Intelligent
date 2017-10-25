@@ -36,10 +36,10 @@ string Chemin::toString(){
     value << "";
     int16_t i =0;
     std::for_each(list_chemin->begin(), list_chemin->end(), [&](std::pair<int8_t, int8_t> _b){
-        value << "{\""<<i<<"\": \""<<(int)_b.first<< "," <<(int)_b.second<<"\"}, ";
+        value << "\""<<i<<"\": \""<<(int)_b.first<< "," <<(int)_b.second<<"\", ";
         ++i;
     });
     stringstream buf;
-    buf <<"{ \"Number\": "<<size<<", \"Position\": "<<value.str().substr(0, value.str().size()-2)<<" }";
+    buf <<" \"Chemin\": { \"Number\": "<<size<<", \"Position\": {"<<value.str().substr(0, value.str().size()-1)<<"} }";
     return buf.str();
 }

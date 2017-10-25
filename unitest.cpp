@@ -34,8 +34,10 @@ void unitest_pathfinding(int8_t x, int8_t y){
     b->add(0, 2);
     b->add(1, 2);
     b->add(3, 2);
-    std::string comp = "{ \"Number\": 4, \"Position\": {\"0\": \"" +
-                       to_string(x) + "," + to_string(y) + "\"}, {\"1\": \"0,2\"}, {\"2\": \"1,2\"}, {\"3\": \"3,2\"} }";
+    std::string comp = " \"Bloc\": { \"Number\": 4, \"Position\": {\"0\": \""+ 
+                        to_string(x) +","+ to_string(y) +"\", \"1\": \"0,2\", \"2\": \"1,2\", \"3\": \"3,2\",} }";
+    std::cout<<comp<<std::endl;
+    std::cout<<b->toString()<<std::endl;
     printf("toString function\t\t | \t\t%s\n", (comp == b->toString() ? "OK" : "KO <-~-~-~"));
     printf("Remove Bloc \tx%d y%d\t\t | \t\t%s\n",x,y, (b->remove(x, y) ? "OK" : "KO <-~-~-~"));
     printf("Dont Exist Bloc \tx%d y%d\t | \t\t%s\n",x,y, (!b->has(x, y) ? "OK" : "KO <-~-~-~"));
@@ -52,6 +54,7 @@ void unitest_pathfinding(int8_t x, int8_t y){
     printf("Position Arrive \tx%d y%d\t | \t\t%s\n",0,3, (
                         arrive->getPosition().first == 0 && arrive->getPosition().second == 3  ? "OK" : "KO <-~-~-~"));
     test1->update();
+    std::cout<<test1->forDevelopper()<<std::endl;
     PathFinding *path = new PathFinding(
         test1->getGeneralTable(), test1->getSceneCarrer(), test1->getSceneCarrer(), 
         car->getPosition(), arrive->getPosition()
@@ -66,7 +69,6 @@ void unitest_pathfinding(int8_t x, int8_t y){
     }else{
         printf("Not Possible\t\t\t | \t\tOK\n");
     }
-    std::cout<<test1->forDevelopper()<<std::endl;
     delete test1;
     test1 = nullptr;
     printf("Delete Manager\t\t\t | \t\t%s\n", (test1 == nullptr ? "OK" : "KO <-~-~-~"));
