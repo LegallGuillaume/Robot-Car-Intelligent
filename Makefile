@@ -3,10 +3,10 @@ TARGET = robot
 UNITEST = unitest
 SRC = $(wildcard *.cpp) 
 COMPILE_FILE = main.cpp sources/manager.cpp sources/bloc.cpp sources/car.cpp sources/chemin.cpp sources/arrive.cpp \
-					sources/traitement/calibration.cpp
+					sources/traitement/calibration.cpp sources/serveur.cpp
 UNITEST_FILE = unitest.cpp sources/manager.cpp sources/bloc.cpp sources/car.cpp sources/chemin.cpp sources/arrive.cpp \
 					sources/traitement/calibration.cpp
-CFLAGS = -std=c++11
+CFLAGS = -std=c++11 #-pthread
 OPENCV = `pkg-config --cflags --libs opencv`
 # Toutes les commandes qui suivent peuvent commencer par @ 
 # pour empêcher l'affichage : 

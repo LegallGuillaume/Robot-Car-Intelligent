@@ -16,5 +16,20 @@
 
 /*SERVEUR DEFINITION*/
 
-#define MAX_CONNECTION_CLIENT   10
+#define MAX_CONNECTION_CLIENT   5
 #define PORT_SERVEUR            975
+
+#define ID_PC                   "bFd6-a2e8-9Dff\n"
+#define ID_CAR                  "59ef-6F70-4bM7\n"
+#define ID_REMOTE               "c3Z8-4b86-95Ax\n"
+
+#define REQ_CODE                "<ID-CODE>"
+#define VAL_CODE                "<ID-VALID>"
+#define INVAL_CODE              "<ID-INVALID>"
+#define STOP_CONN               "<STOP>"
+
+/*THREAD ID*/
+
+#define PATHFINDING             0
+#define IMAGES                  1
+#define SERVEUR                 2
