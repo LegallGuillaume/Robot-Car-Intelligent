@@ -7,6 +7,12 @@
 
 using namespace std;
 
+/**
+ * @file                car.h
+ * @brief               Abstract of SimpleObject
+ * @function            Virtual function
+ * @version             1.0
+ */
 class Car : public SimpleObject{
 
 public:

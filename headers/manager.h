@@ -38,18 +38,58 @@ public:
     Chemin *chemin;
     Arrive *arrive;
 
+    /**
+     *
+     * @file                manager.h
+     * @brief               allow to know *_DEF into the matrix (include "definition.h")
+     * @version             1.0
+     *
+     * 
+     * @param x             position X 0 to 127
+     * @param y             position Y 0 to 127
+     * @return int8_t       return (BLOC_DEF, VIDE_DEF, CAR_DEF, ARRIVE_DEF, ...) 
+     */
     int8_t getCoordonate(int8_t x, int8_t y){
         return generalTable[x][y];
     }
+
+    /**
+     * @file                manager.h
+     * @brief               update add all block, car, arrive, path into matrix
+     * @version             1.0 
+     */
     void update();
 
+    /**
+     * @file                manager.h
+     * @brief               have the Matrix
+     * @version             1.0
+     * 
+     * @return int8_t**     return the matrix max size 127x127
+     */
     int8_t** getGeneralTable(){
         return generalTable;
     }
 
+    /**
+     * @file                manager.h
+     * @brief               have the size of scene
+     * @version             1.0
+     * 
+     * @return int8_t       return size 0 to 127
+     */
     int8_t getSceneCarrer(){
         return scenecarrer;
     }
+
+    /**
+     * @file                manager.h
+     * @brief               create the Matrix
+     * @version             1.0
+     * 
+     * @return true         matrix correctly created
+     * @return false        matrix not correctly created
+     */
     bool initScene(int8_t nb_carrer){
         scenecarrer = nb_carrer;
         bool boolean=true;
@@ -70,12 +110,34 @@ public:
         return boolean;
     }
 
+
     bool sceneIsDefine(){
         return scenecarrer > -1;
     }
 
+    /**
+     * @file                manager.h
+     * @brief               Display info send to remote control (APPLI)
+     * @version             1.0
+     * 
+     * @return std::string  String to send in remote control
+     */
     std::string toString();
+
+    /**
+     * @file                manager.h
+     * @brief               Display the matrix into terminal
+     * @version             1.0
+     * 
+     * @return std::string  String to send in remote control
+     */
     std::string forDevelopper();
+
+    /**
+     * @file                manager.h
+     * @brief               Destructor of the class
+     * @version             1.0
+     */
     ~Manager(){
         for(int8_t i=0; i<scenecarrer; i++){
             delete [] generalTable[i];
@@ -90,6 +152,11 @@ private:
     int8_t scenecarrer;
     void cleanMatrice();
 
+    /**
+     * @file                manager.h
+     * @brief               Singleton Manager()
+     * @version             1.0
+     */
     Manager()
     {
         car = Car::getInstance();

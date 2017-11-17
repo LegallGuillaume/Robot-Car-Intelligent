@@ -141,7 +141,6 @@ private:
         current_list.clear();
         for(uint8_t index=0; index<(uint8_t)actuel_list.size(); ++index){
             Cellule* _currentCell = actuel_list.at(index);
-            bool culsac = true;
             uint8_t newP = _currentCell->m_P+10;
             Cellule* down = getCellule(_currentCell->getCoord().first + 1, _currentCell->getCoord().second);
             Cellule* up = getCellule(_currentCell->getCoord().first - 1, _currentCell->getCoord().second);

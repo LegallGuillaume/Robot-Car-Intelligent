@@ -15,10 +15,17 @@
 
 using namespace std;
 
+/**
+ * @file                arrive.h
+ * @brief               Abstract of SimpleObject
+ * @function            Virtual function
+ * @version             1.0
+ */
 class Arrive : public SimpleObject{
 
 public:
     static Arrive * getInstance();
+
     bool setPosition(int8_t x, int8_t y) override{
         position->first = x;
         position->second = y;

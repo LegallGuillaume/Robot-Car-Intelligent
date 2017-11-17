@@ -8,7 +8,12 @@
 #include "../abstract/multipleobject.h"
 using namespace std;
 
-
+/**
+ * @file                arrive.h
+ * @brief               Abstract of MultipleObject
+ * @function            Virtual function
+ * @version             1.0
+ */
 class Chemin : public MultipleObject{
 
 public:

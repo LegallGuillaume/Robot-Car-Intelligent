@@ -18,7 +18,12 @@
 #include "../definition.h"
 using namespace std;
 
-
+/**
+ * @file                bloc.h
+ * @brief               Abstract of MultipleObject
+ * @function            Virtual function
+ * @version             1.0
+ */
 class Bloc : public MultipleObject{
 
 public:
