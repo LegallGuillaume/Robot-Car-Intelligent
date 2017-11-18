@@ -5,6 +5,7 @@
 #include "manager/bloc.h"
 #include "manager/chemin.h"
 #include "manager/arrive.h"
+#include "serveur/share_server.h"
 #include <string>
 #include <utility>
 #include <stdlib.h>
@@ -37,6 +38,7 @@ public:
     Bloc *bloc;
     Chemin *chemin;
     Arrive *arrive;
+    sServer *server;
 
     /**
      *
@@ -163,6 +165,7 @@ private:
         bloc = Bloc::getInstance();
         chemin = Chemin::getInstance();
         arrive = Arrive::getInstance();
+        server = sServer::getInstance();
         scenecarrer = -1;
     }
 };

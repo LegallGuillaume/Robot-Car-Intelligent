@@ -2,7 +2,7 @@
 
 #define VIDE_DEF                0
 #define CAR_DEF                 1
-#define BLOC_DEF                -2
+#define BLOC_DEF                2
 #define CHEMIN_DEF              3
 #define ARRIVE_DEF              4
 #define CHEMIN_FAIT_DEF         5
@@ -22,7 +22,9 @@
 #define ID_PC                   "bFd6-a2e8-9Dff\n"
 #define ID_CAR                  "59ef-6F70-4bM7\n"
 #define ID_REMOTE               "c3Z8-4b86-95Ax\n"
+#define ID_CONNECTION           "xxxx-xxxx-xxxx\n"
 
+#define INTER_PROC              "<PROC_ETABLISH>"
 #define REQ_CODE                "<ID-CODE>"
 #define VAL_CODE                "<ID-VALID>"
 #define INVAL_CODE              "<ID-INVALID>"
@@ -33,3 +35,7 @@
 #define PATHFINDING             0
 #define IMAGES                  1
 #define SERVEUR                 2
+
+/*SHARED MEMORY*/
+
+
