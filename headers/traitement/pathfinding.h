@@ -49,7 +49,20 @@ public:
             list_cheminOk = new std::vector<std::pair<int8_t, int8_t>>();
             list_cheminOk->reserve(width_scene*(width_scene/2));
         }
-    
+
+    bool everParent(Cellule *current, Cellule *parent){
+        Cellule *_current = current;
+        if(current->m_parent == nullptr)
+            return false;
+        while(_current != nullptr){
+            if(_current == parent){
+                return true;
+            }else{
+                _current = _current->m_parent;
+            }
+        }
+        return false;
+    }
     /**
      * @file                pathfinding.h
      * @brief               Check if there are a solution
@@ -141,7 +154,7 @@ private:
         current_list.clear();
         for(uint8_t index=0; index<(uint8_t)actuel_list.size(); ++index){
             Cellule* _currentCell = actuel_list.at(index);
-            uint8_t newP = _currentCell->m_P+10;
+            uint16_t newP = _currentCell->m_P+10;
             Cellule* down = getCellule(_currentCell->getCoord().first + 1, _currentCell->getCoord().second);
             Cellule* up = getCellule(_currentCell->getCoord().first - 1, _currentCell->getCoord().second);
             Cellule* right = getCellule(_currentCell->getCoord().first, _currentCell->getCoord().second + 1);
@@ -160,10 +173,9 @@ private:
             Cellule* b1 = getCellule(_currentCell->getCoord().first - 2, _currentCell->getCoord().second);
             Cellule* a2 = getCellule(_currentCell->getCoord().first - 2, _currentCell->getCoord().second -1);
 
-
             if(g1 != nullptr && h1 != nullptr && i1 != nullptr && down->m_parent != _currentCell){
                 if(!g1->isBloc() && !h1->isBloc() && !i1->isBloc()){
-                    if(newP < down->m_P && _currentCell->m_parent != down){
+                    if(newP < down->m_P && !everParent(_currentCell->m_parent, down)){
                         down->m_parent = _currentCell;
                         down->m_P = newP;
                         current_list.push_back(down);
@@ -176,7 +188,7 @@ private:
             }
             if(a2 != nullptr && b1 != nullptr && c1 != nullptr && up->m_parent != _currentCell){
                 if(!a2->isBloc() && !b1->isBloc() && !c1->isBloc()){
-                    if(newP < up->m_P && _currentCell->m_parent != up){
+                    if(newP < up->m_P && !everParent(_currentCell, up)){
                         up->m_parent = _currentCell;
                         up->m_P = newP;
                         current_list.push_back(up);
@@ -189,7 +201,7 @@ private:
             }
             if(a1 != nullptr && d1 != nullptr && g2 != nullptr && left->m_parent != _currentCell){
                 if(!a1->isBloc() && !d1->isBloc() && !g2->isBloc()){
-                    if(newP < left->m_P && _currentCell->m_parent != left ){
+                    if(newP < left->m_P && !everParent(_currentCell->m_parent, left)){
                         left->m_parent = _currentCell;
                         left->m_P = newP;
                         current_list.push_back(left);
@@ -202,7 +214,7 @@ private:
             }
             if(c2 != nullptr && f1 !=nullptr && i2 != nullptr && right->m_parent != _currentCell){
                 if(!c2->isBloc() && !f1->isBloc() && !i2->isBloc()){
-                    if(newP < right->m_P && _currentCell->m_parent != right){
+                    if(newP < right->m_P && !everParent(_currentCell->m_parent, right)){
                         right->m_parent = _currentCell;
                         right->m_P = newP;
                         current_list.push_back(right);

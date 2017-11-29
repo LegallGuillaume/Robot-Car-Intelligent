@@ -91,14 +91,15 @@ void ImagesP::markersProcessing(std::vector<Marker> Markers, Point2f centerPt){
         int16_t x = (int16_t)Markers[i].getCenter().x;
         int16_t y = (int16_t)Markers[i].getCenter().y;
         if(Markers[i].id == 12){
-            drawMatrix(markerCpy, Point(x, y));
+            drawMatrix(markerCpy, Point(240,240));
         }else{ /*bloc*/
             std::vector<Point> point_marker;
+            Point2f new_center = Markers[i].getCenter() - centerPt;
             fillRotatedRect(
-                markerCpy, Markers[i].getCenter(), Size2f(60, 60), Scalar(255,255,255), getAngle(Markers[i])
+                markerCpy, Point2f(240,240) + new_center, Size2f(60, 60), Scalar(255,255,255), getAngle(Markers[i])
             );
             Point2f pts = getBlockMatrice(
-                centerPt, 
+                Point2f(240,240), 
                 Markers[i].getCenter().x - (MARGE_BLOCK_PROCESSING*sqrt(2)), 
                 Markers[i].getCenter().y - (MARGE_BLOCK_PROCESSING*sqrt(2))
             );
@@ -143,11 +144,5 @@ void ImagesP::start(){
             markersProcessing(Markers, centerPt);
             break;
         }
-    }
-    cv::imshow("Matrice", markerCpy);
-
-
-    if(waitKey(5000000) == 0){
-        exit(0);
     }
 }
