@@ -1,5 +1,5 @@
 #include "../../headers/traitement/images.h"
-
+#include <fstream>
 
 
 ImagesP::ImagesP(){
@@ -15,16 +15,33 @@ Point ImagesP::getXYMatrix(int16_t x_matrix, int16_t y_matrix){
 }
 
 float ImagesP::getAngle(Marker marker){
-    Point center = marker.getCenter();
-    Point p_a = marker[1];
-    Point p_b = marker[2];
-    Point p_c = marker[0];
-    float deno = sqrt(pow(center.x - p_b.x, 2) + pow(center.y - p_b.y, 2));
+    Point2f p_a = marker[1];
+    Point2f p_b = marker[2];
 
-    float r = acos((p_b.x - center.x)/deno);
-    float result =(r*180/M_PI);
+    Point2f p_m(0,-1);
+    Point2f p_i((p_a.x+p_b.x)/2, (p_a.y+p_b.y)/2);
 
-    return (result - 45); /*diagonal = 45°*/
+    Point2f vec = marker.getCenter() - p_i;
+
+    float scal = vec.x*p_m.x + vec.y*p_m.y;
+    float deno = sqrt(pow(vec.x,2) + pow(vec.y,2)) * sqrt(pow(p_m.x,2) + pow(p_m.y,2));
+
+    float r = acos(scal/deno);
+    float result = (r*180/M_PI)-90;
+    if(p_a.x > p_b.x && p_a.y >= p_b.y){
+        result = 0 - result - 180;
+    }else if(p_a.x<p_b.x && p_a.y > p_b.y){
+        result = 180 - result;
+    }
+    /*Correction cause by pixel (angle sup 180 and inf to -180*/
+    if(result > 180){
+        result = 0 - 180 + (sqrt(pow(result,2)) - 180);
+    }
+    if(result < -180){
+        result = 180 - (sqrt(pow(result,2)) - 180);
+    }
+    return result;
+
 }
 
 bool ImagesP::willbeBlock(Mat& frame, Point leftTop, int8_t pixelMax){
@@ -128,8 +145,34 @@ void ImagesP::init(){
     cap >> markerImg;
 }
 
-void ImagesP::start(){
-    all_block = std::vector<Point>(0);
+void ImagesP::saveCalib(std::string str){
+    ofstream file("ressources/calib_file.txt");
+    file << str.c_str();
+    file.close();
+}
+
+Point2f ImagesP::loadCalib(){
+    Point2f centerPt(-1,-1);
+    std::string line;
+    ifstream file("ressources/calib_file.txt");
+    if(file.is_open()){
+        uint8_t count = 0;
+        while(getline(file, line)){
+            if(count == 0){
+                centerPt.x = std::stod(line);
+                count++;
+            }else if(count == 1){
+                centerPt.y = std::stod(line);
+            }else{
+                return centerPt;
+            }
+        }
+        file.close();
+    }
+    return centerPt;
+}
+
+void ImagesP::calibration(){
     while(true){
         if(!cap.read(markerImg))
             break;
@@ -137,12 +180,26 @@ void ImagesP::start(){
         Point2f centerPt(0,0);
         for(int i=0; i<Markers.size();i++){
             if(Markers[i].id == 12){
+                std::cout<<"MARKER ID FOUND ..."<<std::endl;
                 centerPt = Markers[i].getCenter();
+                std::string save(std::to_string(centerPt.x) +"\n"+ std::to_string(centerPt.y));
+                std::cout<<"SAVE IN FILE ==> "<<save<<std::endl;
+                saveCalib(save);
+                return;
             }
         }
-        if(centerPt.x > 0){
-            markersProcessing(Markers, centerPt);
-            break;
-        }
     }
+}
+
+void ImagesP::startBlock(){
+    all_block = std::vector<Point>(0);
+    Point2f centerPt = loadCalib();
+    if(centerPt.x > 0){
+        markersProcessing(Markers, centerPt);
+    }else{
+        std::cout<<"ERROR CALIB LOAD"<<std::endl;
+    }
+    /*DEBUG*/
+    imshow("TEST", markerCpy);
+    waitKey(30000);
 }

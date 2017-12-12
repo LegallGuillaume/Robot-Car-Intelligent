@@ -1,18 +1,23 @@
 /*MATRICE SCENE DEFINITION*/
 
 #define VIDE_DEF                0
-#define CAR_DEF                 1
-#define BLOC_DEF                2
-#define CHEMIN_DEF              3
-#define ARRIVE_DEF              4
-#define CHEMIN_FAIT_DEF         5
+#define CAR_DEF                 3
+#define BLOC_DEF                1
+#define CHEMIN_DEF              4
+#define ARRIVE_DEF              2
+//#define CHEMIN_FAIT_DEF         5
 
 /*SCENE DEFINITION*/
 
 #define CAM_WIDTH               640
 #define CAM_HEIGHT              480
 #define MAX_BLOC_SCENE          30
-#define ECHANTILLION_CALIB      40
+
+#define MARGE_BLOCK_PROCESSING  30
+#define MARKER_ID_CAR           0
+#define MARKER_ID_ARRIVAL       8
+#define MARKER_ID_AREA          12
+
 
 /*SERVEUR DEFINITION*/
 
@@ -24,7 +29,7 @@
 #define ID_REMOTE               "c3Z8-4b86-95Ax\n"
 #define ID_CONNECTION           "xxxx-xxxx-xxxx\n"
 
-#define INTER_PROC              "<PROC_ETABLISH>"
+#define INTER_PROC              "<PROC_ESTABLISHED>"
 #define REQ_CODE                "<ID-CODE>"
 #define VAL_CODE                "<ID-VALID>"
 #define INVAL_CODE              "<ID-INVALID>"
@@ -35,7 +40,5 @@
 #define PATHFINDING             0
 #define IMAGES                  1
 #define SERVEUR                 2
-
-/*SHARED MEMORY*/
 
 
