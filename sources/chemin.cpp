@@ -40,6 +40,6 @@ string Chemin::toString(){
         ++i;
     });
     stringstream buf;
-    buf <<" \"Chemin\": { \"Number\": "<<size<<", \"Position\": {"<<value.str().substr(0, value.str().size()-1)<<"} }";
+    buf <<" \"Chemin\": { \"Number\": "<<size<<", \"Position\": {"<<value.str().substr(0, value.str().size()-2)<<"} }";
     return buf.str();
 }
