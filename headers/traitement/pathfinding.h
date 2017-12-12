@@ -96,6 +96,8 @@ public:
                 break;
             }
         }
+        if(current != nullptr)
+            list_cheminOk->push_back(current->getCoord());
         //list_cheminOk->pop_back();
         return list_cheminOk;
     }
