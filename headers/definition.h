@@ -1,3 +1,9 @@
+#ifndef CONST_DEFINITION
+#define CONST_DEFINITION
+
+
+static bool DEBUG = true;
+
 /*MATRICE SCENE DEFINITION*/
 
 #define VIDE_DEF                0
@@ -5,7 +11,6 @@
 #define BLOC_DEF                1
 #define CHEMIN_DEF              4
 #define ARRIVE_DEF              2
-//#define CHEMIN_FAIT_DEF         5
 
 /*SCENE DEFINITION*/
 
@@ -14,8 +19,8 @@
 #define MAX_BLOC_SCENE          30
 
 #define MARGE_BLOCK_PROCESSING  30
-#define MARKER_ID_CAR           0
-#define MARKER_ID_ARRIVAL       8
+#define MARKER_ID_CAR           1
+#define MARKER_ID_ARRIVAL       0
 #define MARKER_ID_AREA          12
 
 
@@ -42,3 +47,4 @@
 #define SERVEUR                 2
 
 
+#endif

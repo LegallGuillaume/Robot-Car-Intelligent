@@ -68,3 +68,12 @@ std::string Manager::toString(){
       buf << "}";
     return buf.str();
 }
+
+
+void Manager::reset(){
+    cleanMatrice();
+    car->setPosition(-1,-1);
+    arrive->setPosition(-1,-1);
+    bloc->clear();
+    chemin->clear();
+}

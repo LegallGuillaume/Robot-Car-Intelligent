@@ -10,6 +10,11 @@ ImagesP::~ImagesP(){
     cap.release();
 }
 
+
+uint8_t ImagesP::getSizeMarker(){
+    return Markers.size();
+}
+
 Point ImagesP::getXYMatrix(int16_t x_matrix, int16_t y_matrix){
     return Point((int)(x_matrix/20), (int)(y_matrix/20));
 }
@@ -103,22 +108,23 @@ void ImagesP::fillRotatedRect(Mat& frame, Point2f center, Size2f size, Scalar co
     cv::fillConvexPoly(frame,vertices, 4, color);
 }
 
-void ImagesP::markersProcessing(std::vector<Marker> Markers, Point2f centerPt){
+void ImagesP::markersProcessing(Point2f centerPt){
     for (int16_t i=0;i<Markers.size();i++) {
         int16_t x = (int16_t)Markers[i].getCenter().x;
         int16_t y = (int16_t)Markers[i].getCenter().y;
-        if(Markers[i].id == 12){
+        Point2f new_center = Markers[i].getCenter() - centerPt;
+        new_center += Point2f(240,240);
+        if(Markers[i].id == MARKER_ID_AREA){
             drawMatrix(markerCpy, Point(240,240));
-        }else{ /*bloc*/
+        }else if (Markers[i].id != MARKER_ID_CAR && Markers[i].id != MARKER_ID_ARRIVAL){ /*bloc*/
             std::vector<Point> point_marker;
-            Point2f new_center = Markers[i].getCenter() - centerPt;
             fillRotatedRect(
-                markerCpy, Point2f(240,240) + new_center, Size2f(60, 60), Scalar(255,255,255), getAngle(Markers[i])
+                markerCpy, new_center, Size2f(60, 60), Scalar(255,255,255), getAngle(Markers[i])
             );
             Point2f pts = getBlockMatrice(
                 Point2f(240,240), 
-                Markers[i].getCenter().x - (MARGE_BLOCK_PROCESSING*sqrt(2)), 
-                Markers[i].getCenter().y - (MARGE_BLOCK_PROCESSING*sqrt(2))
+                new_center.x - (MARGE_BLOCK_PROCESSING*sqrt(2)), 
+                new_center.y - (MARGE_BLOCK_PROCESSING*sqrt(2))
             );
             int16_t p_x = pts.x;
             int16_t p_y = pts.y;
@@ -136,6 +142,15 @@ void ImagesP::markersProcessing(std::vector<Marker> Markers, Point2f centerPt){
             }
             all_block.insert(all_block.end(), point_marker.begin(), point_marker.end());
         }
+        else if (Markers[i].id == MARKER_ID_CAR){
+            angleCar = getAngle(Markers[i]);
+            posCar = getXYMatrix(new_center.y,new_center.x); //x and y are inversed with axis openCV
+        }
+        else if (Markers[i].id == MARKER_ID_ARRIVAL){
+            angleArrival = getAngle(Markers[i]);
+            posArrival = getXYMatrix(new_center.y,new_center.x); //x and y are inversed with axis openCV
+            
+        }
     }
 }
 
@@ -143,6 +158,9 @@ void ImagesP::init(){
     cap = VideoCapture(0);
     markerCpy = Mat(480,480, CV_8UC3, Scalar(0));
     cap >> markerImg;
+
+    posCar = Point2f(-1,-1);
+    posArrival = Point2f(-1,-1);
 }
 
 void ImagesP::saveCalib(std::string str){
@@ -173,21 +191,29 @@ Point2f ImagesP::loadCalib(){
 }
 
 void ImagesP::calibration(){
+    saveCalib("-1\n-1\n"); //reset last calib
+    std::vector<Marker> Markers_wait;
+    int index=0;
     while(true){
         if(!cap.read(markerImg))
             break;
-        MDetector.detect(markerImg,Markers);
-        Point2f centerPt(0,0);
-        for(int i=0; i<Markers.size();i++){
-            if(Markers[i].id == 12){
-                std::cout<<"MARKER ID FOUND ..."<<std::endl;
-                centerPt = Markers[i].getCenter();
-                std::string save(std::to_string(centerPt.x) +"\n"+ std::to_string(centerPt.y));
-                std::cout<<"SAVE IN FILE ==> "<<save<<std::endl;
-                saveCalib(save);
-                return;
+        MDetector.detect(markerImg,Markers_wait);
+        if(Markers_wait.size() > Markers.size()){
+            Point2f centerPt(0,0);
+            for(int i=0; i<Markers_wait.size();i++){
+                if(Markers_wait[i].id == MARKER_ID_AREA){
+                    centerPt = Markers_wait[i].getCenter();
+                    std::string save(std::to_string(centerPt.x) +"\n"+ std::to_string(centerPt.y));
+                    saveCalib(save);
+                    break;
+                }
             }
+            Markers = Markers_wait;
+        }else{
+            index++;
         }
+        if(index==5)
+            break;
     }
 }
 
@@ -195,11 +221,30 @@ void ImagesP::startBlock(){
     all_block = std::vector<Point>(0);
     Point2f centerPt = loadCalib();
     if(centerPt.x > 0){
-        markersProcessing(Markers, centerPt);
+        markersProcessing(centerPt);
     }else{
         std::cout<<"ERROR CALIB LOAD"<<std::endl;
     }
-    /*DEBUG*/
-    imshow("TEST", markerCpy);
-    waitKey(30000);
 }
+
+Point ImagesP::getCarPosition(){
+    return Point((int)posCar.x, (int)posCar.y);
+}
+
+
+Point ImagesP::getArrivalPosition(){
+    return Point((int)posArrival.x, (int)posArrival.y);
+}
+
+/*
+Point2f ImagesP::trackingCar(std::vector<Marker> Markers){
+    Point2f centerCar(-1,-1);
+    for(int i=0; i<Markers.size();i++){
+        if(Markers[i].id == MARKER_ID_CAR){
+            centerCar = Markers[i].getCenter();
+            return;
+        }
+    }
+    return centerCar;
+}
+*/

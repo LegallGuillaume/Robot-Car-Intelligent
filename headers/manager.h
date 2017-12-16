@@ -5,7 +5,7 @@
 #include "manager/bloc.h"
 #include "manager/chemin.h"
 #include "manager/arrive.h"
-#include "serveur/share_server.h"
+//#include "serveur/share_server.h"
 #include <string>
 #include <utility>
 #include <stdlib.h>
@@ -38,7 +38,7 @@ public:
     Bloc *bloc;
     Chemin *chemin;
     Arrive *arrive;
-    sServer *server;
+    //sServer *server;
 
     /**
      *
@@ -148,6 +148,8 @@ public:
         delete []generalTable;
         generalTable = nullptr;
     }
+    void reset();
+
 private:
     int8_t **generalTable;
     static Manager * instance;
@@ -165,7 +167,7 @@ private:
         bloc = Bloc::getInstance();
         chemin = Chemin::getInstance();
         arrive = Arrive::getInstance();
-        server = sServer::getInstance();
+        //server = sServer::getInstance();
         scenecarrer = -1;
     }
 };

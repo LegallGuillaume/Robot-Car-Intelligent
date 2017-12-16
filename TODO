@@ -4,6 +4,7 @@ TODO list:
     ✔ Update test U
     ✔ test.json --> arrive.cpp/bloc.cpp
     ✔ Traitement image -> calibration auto
+    ✔ Scheduler Core -> core.cpp
     → Traitement image -> tracking object
     → Correction Trajectoire
     → Manager -> Serveur

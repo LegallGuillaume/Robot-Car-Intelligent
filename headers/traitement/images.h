@@ -23,9 +23,13 @@ public:
     void startBlock();
     std::vector<Point> all_block;
     Point posCar, posArrival;
+    float angleCar, angleArrival;
     void saveCalib(std::string str);
     Point2f loadCalib();
     void calibration();
+    Point getCarPosition();
+    Point getArrivalPosition();
+    uint8_t getSizeMarker();
 
 private:
     MarkerDetector MDetector;
@@ -50,7 +54,7 @@ private:
      * @param std::vector<Marker> Markers   vector of Markers
      * @param Point2f centerPt      center of frame
      */
-    void markersProcessing(std::vector<Marker> Markers, Point2f centerPt);
+    void markersProcessing(Point2f centerPt);
 
     /**
      * @file                images.h
