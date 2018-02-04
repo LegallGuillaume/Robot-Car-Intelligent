@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Robot Avec Intelligence déporté:  Fichier source de headers/traitement/cellule.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Robot Avec Intelligence déporté
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_7f57b1e41c5acd0e859ae5f3a2b075a9.html">headers</a></li><li class="navelem"><a class="el" href="dir_1853b9e8c537f37fa261060a0cc78b6e.html">traitement</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">cellule.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="cellule_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CELLULE_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CELLULE_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;utility&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="classCellule.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCellule.html">Cellule</a>{</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classCellule.html#af506f7549ec9855560d6e6c5f2988501">   19</a></span>&#160;        <a class="code" href="classCellule.html#af506f7549ec9855560d6e6c5f2988501">Cellule</a>(int8_t x, int8_t y, <span class="keywordtype">bool</span> is_bloc){</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <a class="code" href="classCellule.html#a9573d226e0df26453a67fb3730794444">m_coord</a>.first = x;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <a class="code" href="classCellule.html#a9573d226e0df26453a67fb3730794444">m_coord</a>.second = y;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <a class="code" href="classCellule.html#af7cb9856701ea3e423f58b09bb7dfdbd">m_P</a>= 60000;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <a class="code" href="classCellule.html#adf634a9bd573a298652d70a93f3e5c6e">m_bloc</a> = is_bloc;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <a class="code" href="classCellule.html#abd3eef3d41bf99ca3a1d9edc97aa8282">is_center</a>=<span class="keyword">false</span>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <a class="code" href="classCellule.html#a9c368e6fb89c5ea1e31b810207eca9ee">everfind</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        }</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classCellule.html#a3f4117017976fde614e72d38ea10d734">   27</a></span>&#160;        <a class="code" href="classCellule.html">Cellule</a> *<a class="code" href="classCellule.html#a3f4117017976fde614e72d38ea10d734">m_parent</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classCellule.html#a50698c84ba5a043a148a594552189427">   36</a></span>&#160;        std::pair&lt;int8_t, int8_t&gt; <a class="code" href="classCellule.html#a50698c84ba5a043a148a594552189427">getCoord</a>(){</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classCellule.html#a9573d226e0df26453a67fb3730794444">m_coord</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        }</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classCellule.html#af7cb9856701ea3e423f58b09bb7dfdbd">   39</a></span>&#160;        uint16_t <a class="code" href="classCellule.html#af7cb9856701ea3e423f58b09bb7dfdbd">m_P</a>; <span class="comment">/*Poid*/</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classCellule.html#a4f021d3669d6688999f6299372670a60">   49</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classCellule.html#a4f021d3669d6688999f6299372670a60">isBloc</a>(){</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classCellule.html#adf634a9bd573a298652d70a93f3e5c6e">m_bloc</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        }</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classCellule.html#a9c368e6fb89c5ea1e31b810207eca9ee">   52</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classCellule.html#a9c368e6fb89c5ea1e31b810207eca9ee">everfind</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classCellule.html#a62c79c012c471f8dc74714c3262a696c">   60</a></span>&#160;        <a class="code" href="classCellule.html#a62c79c012c471f8dc74714c3262a696c">~Cellule</a>(){</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keyword">delete</span> <a class="code" href="classCellule.html#a3f4117017976fde614e72d38ea10d734">m_parent</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <a class="code" href="classCellule.html#a3f4117017976fde614e72d38ea10d734">m_parent</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classCellule.html#adf634a9bd573a298652d70a93f3e5c6e">   66</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classCellule.html#adf634a9bd573a298652d70a93f3e5c6e">m_bloc</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classCellule.html#abd3eef3d41bf99ca3a1d9edc97aa8282">   67</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classCellule.html#abd3eef3d41bf99ca3a1d9edc97aa8282">is_center</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classCellule.html#a9573d226e0df26453a67fb3730794444">   68</a></span>&#160;        std::pair&lt;int8_t, int8_t&gt; <a class="code" href="classCellule.html#a9573d226e0df26453a67fb3730794444">m_coord</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;};</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classCellule_html"><div class="ttname"><a href="classCellule.html">Cellule</a></div><div class="ttdef"><b>Definition:</b> cellule.h:6</div></div>
+<div class="ttc" id="classCellule_html_af7cb9856701ea3e423f58b09bb7dfdbd"><div class="ttname"><a href="classCellule.html#af7cb9856701ea3e423f58b09bb7dfdbd">Cellule::m_P</a></div><div class="ttdeci">uint16_t m_P</div><div class="ttdef"><b>Definition:</b> cellule.h:39</div></div>
+<div class="ttc" id="classCellule_html_a4f021d3669d6688999f6299372670a60"><div class="ttname"><a href="classCellule.html#a4f021d3669d6688999f6299372670a60">Cellule::isBloc</a></div><div class="ttdeci">bool isBloc()</div><div class="ttdef"><b>Definition:</b> cellule.h:49</div></div>
+<div class="ttc" id="classCellule_html_a9c368e6fb89c5ea1e31b810207eca9ee"><div class="ttname"><a href="classCellule.html#a9c368e6fb89c5ea1e31b810207eca9ee">Cellule::everfind</a></div><div class="ttdeci">bool everfind</div><div class="ttdef"><b>Definition:</b> cellule.h:52</div></div>
+<div class="ttc" id="classCellule_html_a50698c84ba5a043a148a594552189427"><div class="ttname"><a href="classCellule.html#a50698c84ba5a043a148a594552189427">Cellule::getCoord</a></div><div class="ttdeci">std::pair&lt; int8_t, int8_t &gt; getCoord()</div><div class="ttdef"><b>Definition:</b> cellule.h:36</div></div>
+<div class="ttc" id="classCellule_html_a62c79c012c471f8dc74714c3262a696c"><div class="ttname"><a href="classCellule.html#a62c79c012c471f8dc74714c3262a696c">Cellule::~Cellule</a></div><div class="ttdeci">~Cellule()</div><div class="ttdef"><b>Definition:</b> cellule.h:60</div></div>
+<div class="ttc" id="classCellule_html_abd3eef3d41bf99ca3a1d9edc97aa8282"><div class="ttname"><a href="classCellule.html#abd3eef3d41bf99ca3a1d9edc97aa8282">Cellule::is_center</a></div><div class="ttdeci">bool is_center</div><div class="ttdef"><b>Definition:</b> cellule.h:67</div></div>
+<div class="ttc" id="classCellule_html_af506f7549ec9855560d6e6c5f2988501"><div class="ttname"><a href="classCellule.html#af506f7549ec9855560d6e6c5f2988501">Cellule::Cellule</a></div><div class="ttdeci">Cellule(int8_t x, int8_t y, bool is_bloc)</div><div class="ttdef"><b>Definition:</b> cellule.h:19</div></div>
+<div class="ttc" id="classCellule_html_adf634a9bd573a298652d70a93f3e5c6e"><div class="ttname"><a href="classCellule.html#adf634a9bd573a298652d70a93f3e5c6e">Cellule::m_bloc</a></div><div class="ttdeci">bool m_bloc</div><div class="ttdef"><b>Definition:</b> cellule.h:66</div></div>
+<div class="ttc" id="classCellule_html_a3f4117017976fde614e72d38ea10d734"><div class="ttname"><a href="classCellule.html#a3f4117017976fde614e72d38ea10d734">Cellule::m_parent</a></div><div class="ttdeci">Cellule * m_parent</div><div class="ttdef"><b>Definition:</b> cellule.h:27</div></div>
+<div class="ttc" id="classCellule_html_a9573d226e0df26453a67fb3730794444"><div class="ttname"><a href="classCellule.html#a9573d226e0df26453a67fb3730794444">Cellule::m_coord</a></div><div class="ttdeci">std::pair&lt; int8_t, int8_t &gt; m_coord</div><div class="ttdef"><b>Definition:</b> cellule.h:68</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Dimanche 4 Février 2018 20:33:06 pour Robot Avec Intelligence déporté par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

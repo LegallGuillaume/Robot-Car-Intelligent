@@ -1,0 +1,477 @@
+\hypertarget{classCalibration}{\section{Référence de la classe Calibration}
+\label{classCalibration}\index{Calibration@{Calibration}}
+}
+
+
+{\ttfamily \#include $<$calibration.\-h$>$}
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCalibration_a420bea981d91ac69161e400644ec7dd8}{Calibration} (cv\-::\-Video\-Capture cap\-Video)
+\item 
+bool \hyperlink{classCalibration_a066922eb7b40419ed4f850b3c6b4148d}{start} ()
+\item 
+std\-::pair$<$ uint8\-\_\-t, uint8\-\_\-t $>$ \hyperlink{classCalibration_ad5f6fcb712cd2ad1a44e19ff4e9058be}{get\-H} ()
+\item 
+std\-::pair$<$ uint8\-\_\-t, uint8\-\_\-t $>$ \hyperlink{classCalibration_a6bf68284373ae2468bd85043e48b8f25}{get\-S} ()
+\item 
+std\-::pair$<$ uint8\-\_\-t, uint8\-\_\-t $>$ \hyperlink{classCalibration_ac6b160de7e16702bb7938342c034477a}{get\-V} ()
+\item 
+\hyperlink{classCalibration_a108efb6ccd8c98e5cac950be4bf0ac26}{$\sim$\-Calibration} ()
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classCalibration_adef7ee6cc7d95ea809c1cccd4d41ce02}{define\-H\-S\-V} ()
+\item 
+void \hyperlink{classCalibration_ad8250297ea60fa9c0ad1e38a70cca880}{search} (cv\-::\-Mat hsv\-\_\-frame)
+\item 
+void \hyperlink{classCalibration_ac4bdcbef3a615877cbeed352ea74c312}{add\-Color} (uint8\-\_\-t H\-\_\-min, uint8\-\_\-t H\-\_\-max, uint8\-\_\-t S\-\_\-min, uint8\-\_\-t S\-\_\-max, uint8\-\_\-t V\-\_\-min, uint8\-\_\-t V\-\_\-max)
+\item 
+uint8\-\_\-t \hyperlink{classCalibration_a0eb486ca50923fab9a39d4403c18d4cf}{min\-C} (uint8\-\_\-t, uint8\-\_\-t, int8\-\_\-t marge)
+\item 
+uint8\-\_\-t \hyperlink{classCalibration_a26be0ee9644bd758d60a22ffe1281bd6}{max\-C} (uint8\-\_\-t, uint8\-\_\-t, int8\-\_\-t marge)
+\item 
+void \hyperlink{classCalibration_ac016f08b033ba23b3036a87ab610946f}{filtre\-C} ()
+\end{DoxyCompactItemize}
+\subsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+std\-::vector$<$ struct \hyperlink{calibration_8h_structColorInfo}{Color\-Info} $>$ $\ast$ \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibration\-Colors}
+\item 
+cv\-::\-Rect \hyperlink{classCalibration_aa3fc415d57199effd80858c330ba5caa}{rectangle\-Calib}
+\item 
+cv\-::\-Video\-Capture \hyperlink{classCalibration_a9e0da36de8c79fd1a8f5952723f3e464}{capture}
+\item 
+uint8\-\_\-t \hyperlink{classCalibration_a1d7d84d44fc3abbf136ce9dc964aa02a}{i\-Low\-H}
+\item 
+uint8\-\_\-t \hyperlink{classCalibration_a91d2ce954d66d7c5156d331f67573921}{i\-High\-H}
+\item 
+uint8\-\_\-t \hyperlink{classCalibration_a258a3e9be8b3269a3e1e921da88e5b5a}{i\-Low\-S}
+\item 
+uint8\-\_\-t \hyperlink{classCalibration_a216315dfc878e13e9e5b0f487845a627}{i\-High\-S}
+\item 
+uint8\-\_\-t \hyperlink{classCalibration_a852abbbb791c1625252d3d23825e7648}{i\-Low\-V}
+\item 
+uint8\-\_\-t \hyperlink{classCalibration_ab9838bcf2d96445da4a79ccafc7aee4c}{i\-High\-V}
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{classCalibration_a420bea981d91ac69161e400644ec7dd8}{\index{Calibration@{Calibration}!Calibration@{Calibration}}
+\index{Calibration@{Calibration}!Calibration@{Calibration}}
+\subsubsection[{Calibration}]{\setlength{\rightskip}{0pt plus 5cm}Calibration\-::\-Calibration (
+\begin{DoxyParamCaption}
+\item[{cv\-::\-Video\-Capture}]{cap\-Video}
+\end{DoxyParamCaption}
+)}}\label{classCalibration_a420bea981d91ac69161e400644ec7dd8}
+
+
+Références C\-A\-M\-\_\-\-H\-E\-I\-G\-H\-T, C\-A\-M\-\_\-\-W\-I\-D\-T\-H, Manager\-::get\-Instance(), et Manager\-::get\-Scene\-Carrer().
+
+
+\begin{DoxyCode}
+18                                                \{
+19     \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors} = \textcolor{keyword}{new} std::vector<struct ColorInfo>();
+20     \hyperlink{classCalibration_a9e0da36de8c79fd1a8f5952723f3e464}{capture} = capVideo;
+21     \hyperlink{classCalibration_a1d7d84d44fc3abbf136ce9dc964aa02a}{iLowH} = 255;
+22     \hyperlink{classCalibration_a91d2ce954d66d7c5156d331f67573921}{iHighH} = 0;
+23     \hyperlink{classCalibration_a258a3e9be8b3269a3e1e921da88e5b5a}{iLowS} = 255;
+24     \hyperlink{classCalibration_a216315dfc878e13e9e5b0f487845a627}{iHighS} = 0;
+25     \hyperlink{classCalibration_a852abbbb791c1625252d3d23825e7648}{iLowV} = 255;
+26     \hyperlink{classCalibration_ab9838bcf2d96445da4a79ccafc7aee4c}{iHighV} = 0;
+27     int8\_t scene = \hyperlink{classManager_a5d783bd86e9be93235898a46de80847f}{Manager::getInstance}()->\hyperlink{classManager_a18e77e06ef097db9e010835e7930bd3f}{getSceneCarrer}(); \textcolor{comment}{/* (matrice
+       127x127)*/}
+28     int16\_t to\_calibX = (\hyperlink{definition_8h_ad2cc26b8da12f6603455f84312aa649b}{CAM\_WIDTH} / scene) / 2;
+29     int16\_t to\_calibY = (\hyperlink{definition_8h_ac88d2707293a4af9e155d57e3651162e}{CAM\_HEIGHT} / scene) / 2;
+30     \hyperlink{classCalibration_aa3fc415d57199effd80858c330ba5caa}{rectangleCalib} = Rect(
+31         Point((\hyperlink{definition_8h_ad2cc26b8da12f6603455f84312aa649b}{CAM\_WIDTH} / 2) - to\_calibX, (\hyperlink{definition_8h_ac88d2707293a4af9e155d57e3651162e}{CAM\_HEIGHT} / 2) - to\_calibY), 
+32         Point((\hyperlink{definition_8h_ad2cc26b8da12f6603455f84312aa649b}{CAM\_WIDTH} / 2) + to\_calibX, (\hyperlink{definition_8h_ac88d2707293a4af9e155d57e3651162e}{CAM\_HEIGHT} / 2) + to\_calibY)
+33     );
+34 \}
+\end{DoxyCode}
+\hypertarget{classCalibration_a108efb6ccd8c98e5cac950be4bf0ac26}{\index{Calibration@{Calibration}!$\sim$\-Calibration@{$\sim$\-Calibration}}
+\index{$\sim$\-Calibration@{$\sim$\-Calibration}!Calibration@{Calibration}}
+\subsubsection[{$\sim$\-Calibration}]{\setlength{\rightskip}{0pt plus 5cm}Calibration\-::$\sim$\-Calibration (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classCalibration_a108efb6ccd8c98e5cac950be4bf0ac26}
+
+
+Références calibration\-Colors.
+
+
+\begin{DoxyCode}
+33                   \{
+34         \textcolor{keyword}{delete} []\hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors};
+35         \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors} = \textcolor{keyword}{nullptr};
+36     \}
+\end{DoxyCode}
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{classCalibration_ac4bdcbef3a615877cbeed352ea74c312}{\index{Calibration@{Calibration}!add\-Color@{add\-Color}}
+\index{add\-Color@{add\-Color}!Calibration@{Calibration}}
+\subsubsection[{add\-Color}]{\setlength{\rightskip}{0pt plus 5cm}void Calibration\-::add\-Color (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{H\-\_\-min, }
+\item[{uint8\-\_\-t}]{H\-\_\-max, }
+\item[{uint8\-\_\-t}]{S\-\_\-min, }
+\item[{uint8\-\_\-t}]{S\-\_\-max, }
+\item[{uint8\-\_\-t}]{V\-\_\-min, }
+\item[{uint8\-\_\-t}]{V\-\_\-max}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classCalibration_ac4bdcbef3a615877cbeed352ea74c312}
+
+
+Références Color\-Info\-::i\-High\-H, Color\-Info\-::i\-High\-S, Color\-Info\-::i\-High\-V, Color\-Info\-::i\-Low\-H, Color\-Info\-::i\-Low\-S, et Color\-Info\-::i\-Low\-V.
+
+
+\begin{DoxyCode}
+36                                                                                                            
+                  \{
+37     \textcolor{keyword}{struct }\hyperlink{calibration_8h_structColorInfo}{ColorInfo} addcolor;
+38     addcolor.\hyperlink{calibration_8h_a5ceb201f85a16581f118c9e7ff83ff7f}{iLowH} = H\_min;
+39     addcolor.iHighH = H\_max;
+40     addcolor.iLowS = S\_min;
+41     addcolor.iHighS = S\_max;
+42     addcolor.iLowV = V\_min;
+43     addcolor.iHighV = V\_max;
+44     \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->push\_back(addcolor);
+45 \}
+\end{DoxyCode}
+\hypertarget{classCalibration_adef7ee6cc7d95ea809c1cccd4d41ce02}{\index{Calibration@{Calibration}!define\-H\-S\-V@{define\-H\-S\-V}}
+\index{define\-H\-S\-V@{define\-H\-S\-V}!Calibration@{Calibration}}
+\subsubsection[{define\-H\-S\-V}]{\setlength{\rightskip}{0pt plus 5cm}void Calibration\-::define\-H\-S\-V (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classCalibration_adef7ee6cc7d95ea809c1cccd4d41ce02}
+
+
+Références Color\-Info\-::i\-High\-H, Color\-Info\-::i\-High\-S, Color\-Info\-::i\-High\-V, Color\-Info\-::i\-Low\-H, Color\-Info\-::i\-Low\-S, et Color\-Info\-::i\-Low\-V.
+
+
+\begin{DoxyCode}
+126                            \{
+127     int8\_t marge = 15; \textcolor{comment}{/*+- 15 */}
+128     \hyperlink{classCalibration_ac016f08b033ba23b3036a87ab610946f}{filtreC}();
+129     \textcolor{keywordflow}{for}(int8\_t index = 0; index<\hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->size(); ++index)\{
+130         \hyperlink{classCalibration_a1d7d84d44fc3abbf136ce9dc964aa02a}{iLowH} = \hyperlink{classCalibration_a0eb486ca50923fab9a39d4403c18d4cf}{minC}(\hyperlink{classCalibration_a1d7d84d44fc3abbf136ce9dc964aa02a}{iLowH}, \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index).iLowH, marge);
+131         \hyperlink{classCalibration_a91d2ce954d66d7c5156d331f67573921}{iHighH} = \hyperlink{classCalibration_a26be0ee9644bd758d60a22ffe1281bd6}{maxC}(iHighH, \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index).iHighH, marge);
+132         \hyperlink{classCalibration_a258a3e9be8b3269a3e1e921da88e5b5a}{iLowS} = \hyperlink{classCalibration_a0eb486ca50923fab9a39d4403c18d4cf}{minC}(iLowS, \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index).iLowS, marge);
+133         \hyperlink{classCalibration_a216315dfc878e13e9e5b0f487845a627}{iHighS} = \hyperlink{classCalibration_a26be0ee9644bd758d60a22ffe1281bd6}{maxC}(iHighS, \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index).iHighS, marge);
+134         \hyperlink{classCalibration_a852abbbb791c1625252d3d23825e7648}{iLowV} = \hyperlink{classCalibration_a0eb486ca50923fab9a39d4403c18d4cf}{minC}(iLowV, \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index).iLowV, marge);
+135         \hyperlink{classCalibration_ab9838bcf2d96445da4a79ccafc7aee4c}{iHighV} = \hyperlink{classCalibration_a26be0ee9644bd758d60a22ffe1281bd6}{maxC}(iHighV, \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index).iHighV, marge);
+136     \}
+137     printf(\textcolor{stringliteral}{"DEFINE HSV: \(\backslash\)nHlow %d, Hhigh %d, Slow %d, SHigh %d, VLow %d, VHigh %d\(\backslash\)n\(\backslash\)n"}, 
+      \hyperlink{classCalibration_a1d7d84d44fc3abbf136ce9dc964aa02a}{iLowH}, iHighH, iLowS, iHighS, iLowV, iHighV);
+138 \}
+\end{DoxyCode}
+\hypertarget{classCalibration_ac016f08b033ba23b3036a87ab610946f}{\index{Calibration@{Calibration}!filtre\-C@{filtre\-C}}
+\index{filtre\-C@{filtre\-C}!Calibration@{Calibration}}
+\subsubsection[{filtre\-C}]{\setlength{\rightskip}{0pt plus 5cm}void Calibration\-::filtre\-C (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classCalibration_ac016f08b033ba23b3036a87ab610946f}
+
+\begin{DoxyCode}
+65                          \{
+66     uint16\_t Hl=0, Hh=0, Sl=0, Sh=0, Vl=0, Vh=0;
+67     uint8\_t size = \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->size();
+68     vector<int8\_t> ref\_todel;
+69     int8\_t marge = 30;
+70     \textcolor{keywordflow}{for}(int8\_t index = 2; index<size-2; ++index)\{
+71         Hl = (
+72             \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index-2).iLowH + 
+      \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index-1).iLowH + 
+73             \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index).iLowH + 
+      \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index+1).iLowH + 
+74             \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index+2).iLowH
+75         )/5;
+76         Hh = (
+77             \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index-2).iHighH + 
+      \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index-1).iHighH + 
+78             \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index).iHighH + 
+      \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index+1).iHighH + 
+79             \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index+2).iHighH
+80         )/5;
+81         Sl = (
+82             \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index-2).iLowS + 
+      \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index-1).iLowS + 
+83             \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index).iLowS + 
+      \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index+1).iLowS + 
+84             \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index+2).iLowS
+85         )/5;
+86         Sh = (
+87             \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index-2).iHighS + 
+      \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index-1).iHighS + 
+88             \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index).iHighS + 
+      \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index+1).iHighS + 
+89             \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index+2).iHighS
+90         )/5;
+91         Vl = (
+92             \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index-2).iLowV + 
+      \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index-1).iLowV + 
+93             \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index).iLowV + 
+      \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index+1).iLowV + 
+94             \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index+2).iLowV
+95         )/5;
+96         Vh = (
+97             \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index-2).iHighV + 
+      \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index-1).iHighV + 
+98             \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index).iHighV + 
+      \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index+1).iHighV + 
+99             \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index+2).iHighV
+100         )/5;
+101         \textcolor{keywordflow}{for}(int8\_t ref = 0; ref < 4; ++ref)\{
+102             \textcolor{keywordflow}{if}(Hl-marge >= \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index-(ref-2)).iLowH && Hl+marge <= 
+      \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index-(ref-2)).iLowH)\{
+103                 ref\_todel.push\_back(index-(ref-2));
+104             \}
+105             \textcolor{keywordflow}{if}(Hl-marge >= \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index-(ref-2)).iHighH && Hl+marge <= 
+      \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index-(ref-2)).iHighH)\{
+106                 ref\_todel.push\_back(index-(ref-2));
+107             \}
+108             \textcolor{keywordflow}{if}(Hl-marge >= \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index-(ref-2)).iLowS && Hl+marge <= 
+      \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index-(ref-2)).iLowS)\{
+109                 ref\_todel.push\_back(index-(ref-2));
+110             \}
+111             \textcolor{keywordflow}{if}(Hl-marge >= \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index-(ref-2)).iHighS && Hl+marge <= 
+      \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index-(ref-2)).iHighS)\{
+112                 ref\_todel.push\_back(index-(ref-2));
+113             \}
+114             \textcolor{keywordflow}{if}(Hl-marge >= \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index-(ref-2)).iLowV && Hl+marge <= 
+      \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index-(ref-2)).iLowV)\{
+115                 ref\_todel.push\_back(index-(ref-2));
+116             \}
+117             \textcolor{keywordflow}{if}(Hl-marge >= \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index-(ref-2)).iHighV && Hl+marge <= 
+      \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->at(index-(ref-2)).iHighV)\{
+118                 ref\_todel.push\_back(index-(ref-2));
+119             \}
+120         \}
+121     \}
+122     \textcolor{keywordflow}{for}(int8\_t index = 0; index<ref\_todel.size(); ++index)
+123         \hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->erase(\hyperlink{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{calibrationColors}->begin()+ref\_todel.at(
+      index));
+124 \}
+\end{DoxyCode}
+\hypertarget{classCalibration_ad5f6fcb712cd2ad1a44e19ff4e9058be}{\index{Calibration@{Calibration}!get\-H@{get\-H}}
+\index{get\-H@{get\-H}!Calibration@{Calibration}}
+\subsubsection[{get\-H}]{\setlength{\rightskip}{0pt plus 5cm}std\-::pair$<$uint8\-\_\-t, uint8\-\_\-t$>$ Calibration\-::get\-H (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classCalibration_ad5f6fcb712cd2ad1a44e19ff4e9058be}
+
+
+Références i\-High\-H, et i\-Low\-H.
+
+
+\begin{DoxyCode}
+24                                     \{
+25         \textcolor{keywordflow}{return} std::make\_pair(\hyperlink{classCalibration_a1d7d84d44fc3abbf136ce9dc964aa02a}{iLowH}, \hyperlink{classCalibration_a91d2ce954d66d7c5156d331f67573921}{iHighH});
+26     \}
+\end{DoxyCode}
+\hypertarget{classCalibration_a6bf68284373ae2468bd85043e48b8f25}{\index{Calibration@{Calibration}!get\-S@{get\-S}}
+\index{get\-S@{get\-S}!Calibration@{Calibration}}
+\subsubsection[{get\-S}]{\setlength{\rightskip}{0pt plus 5cm}std\-::pair$<$uint8\-\_\-t, uint8\-\_\-t$>$ Calibration\-::get\-S (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classCalibration_a6bf68284373ae2468bd85043e48b8f25}
+
+
+Références i\-High\-S, et i\-Low\-S.
+
+
+\begin{DoxyCode}
+27                                     \{
+28         \textcolor{keywordflow}{return} std::make\_pair(\hyperlink{classCalibration_a258a3e9be8b3269a3e1e921da88e5b5a}{iLowS}, \hyperlink{classCalibration_a216315dfc878e13e9e5b0f487845a627}{iHighS});
+29     \}
+\end{DoxyCode}
+\hypertarget{classCalibration_ac6b160de7e16702bb7938342c034477a}{\index{Calibration@{Calibration}!get\-V@{get\-V}}
+\index{get\-V@{get\-V}!Calibration@{Calibration}}
+\subsubsection[{get\-V}]{\setlength{\rightskip}{0pt plus 5cm}std\-::pair$<$uint8\-\_\-t, uint8\-\_\-t$>$ Calibration\-::get\-V (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classCalibration_ac6b160de7e16702bb7938342c034477a}
+
+
+Références i\-High\-V, et i\-Low\-V.
+
+
+\begin{DoxyCode}
+30                                     \{
+31         \textcolor{keywordflow}{return} std::make\_pair(\hyperlink{classCalibration_a852abbbb791c1625252d3d23825e7648}{iLowV}, \hyperlink{classCalibration_ab9838bcf2d96445da4a79ccafc7aee4c}{iHighV});
+32     \}
+\end{DoxyCode}
+\hypertarget{classCalibration_a26be0ee9644bd758d60a22ffe1281bd6}{\index{Calibration@{Calibration}!max\-C@{max\-C}}
+\index{max\-C@{max\-C}!Calibration@{Calibration}}
+\subsubsection[{max\-C}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t Calibration\-::max\-C (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{max, }
+\item[{uint8\-\_\-t}]{compare, }
+\item[{int8\-\_\-t}]{marge}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classCalibration_a26be0ee9644bd758d60a22ffe1281bd6}
+
+\begin{DoxyCode}
+56                                                                    \{
+57     cout<<\textcolor{stringliteral}{"Value max, compare, marge => "}<<(int)max<<\textcolor{stringliteral}{" "}<<(\textcolor{keywordtype}{int})compare<<" "<<(\textcolor{keywordtype}{int})marge<<endl;
+58     if(max+marge < 256)\{
+59         \textcolor{keywordflow}{if}(max+marge <= compare)
+60             \textcolor{keywordflow}{return} compare;
+61     \}
+62     \textcolor{keywordflow}{return} max;
+63 \}
+\end{DoxyCode}
+\hypertarget{classCalibration_a0eb486ca50923fab9a39d4403c18d4cf}{\index{Calibration@{Calibration}!min\-C@{min\-C}}
+\index{min\-C@{min\-C}!Calibration@{Calibration}}
+\subsubsection[{min\-C}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t Calibration\-::min\-C (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{min, }
+\item[{uint8\-\_\-t}]{compare, }
+\item[{int8\-\_\-t}]{marge}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classCalibration_a0eb486ca50923fab9a39d4403c18d4cf}
+
+\begin{DoxyCode}
+47                                                                    \{
+48     cout<<\textcolor{stringliteral}{"Value min, compare, marge =>"}<<(int)min<<\textcolor{stringliteral}{" "}<<(\textcolor{keywordtype}{int})compare<<" "<<(\textcolor{keywordtype}{int})marge<<endl;
+49     if(min-marge >= 0)\{
+50         \textcolor{keywordflow}{if}(compare >= min-marge)
+51             \textcolor{keywordflow}{return} compare;
+52     \}
+53     \textcolor{keywordflow}{return} min;
+54 \}
+\end{DoxyCode}
+\hypertarget{classCalibration_ad8250297ea60fa9c0ad1e38a70cca880}{\index{Calibration@{Calibration}!search@{search}}
+\index{search@{search}!Calibration@{Calibration}}
+\subsubsection[{search}]{\setlength{\rightskip}{0pt plus 5cm}void Calibration\-::search (
+\begin{DoxyParamCaption}
+\item[{cv\-::\-Mat}]{hsv\-\_\-frame}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classCalibration_ad8250297ea60fa9c0ad1e38a70cca880}
+
+\begin{DoxyCode}
+140                                       \{
+141     std::vector<uint8\_t> H\_values, S\_values, V\_values;
+142     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} x = \hyperlink{classCalibration_aa3fc415d57199effd80858c330ba5caa}{rectangleCalib}.x; x<\hyperlink{classCalibration_aa3fc415d57199effd80858c330ba5caa}{rectangleCalib}.x + 
+      \hyperlink{classCalibration_aa3fc415d57199effd80858c330ba5caa}{rectangleCalib}.width; ++x)\{
+143         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} y = \hyperlink{classCalibration_aa3fc415d57199effd80858c330ba5caa}{rectangleCalib}.y; y<\hyperlink{classCalibration_aa3fc415d57199effd80858c330ba5caa}{rectangleCalib}.y + 
+      \hyperlink{classCalibration_aa3fc415d57199effd80858c330ba5caa}{rectangleCalib}.height; ++y)\{
+144             H\_values.push\_back((\textcolor{keywordtype}{int})HSVframe.at<cv::Vec3b>(y, x)[0]);
+145             S\_values.push\_back((\textcolor{keywordtype}{int})HSVframe.at<cv::Vec3b>(y, x)[1]);
+146             V\_values.push\_back((\textcolor{keywordtype}{int})HSVframe.at<cv::Vec3b>(y, x)[2]);
+147         \}
+148     \}
+149     uint8\_t H\_min=0, H\_max=0, S\_min=0, S\_max=0, V\_min=0, V\_max=0;         
+150     \textcolor{keywordflow}{if} (H\_values.size()>0 || S\_values.size()>0 || V\_values.size()>0)\{
+151         H\_min = *std::min\_element(H\_values.begin(), H\_values.end());
+152         H\_max = *std::max\_element(H\_values.begin(), H\_values.end());
+153 
+154         S\_min = *std::min\_element(S\_values.begin(), S\_values.end());
+155         S\_max = *std::max\_element(S\_values.begin(), S\_values.end());
+156 
+157         V\_min = *std::min\_element(V\_values.begin(), V\_values.end());
+158         V\_max = *std::max\_element(V\_values.begin(), V\_values.end());
+159         \hyperlink{classCalibration_ac4bdcbef3a615877cbeed352ea74c312}{addColor}(H\_min, H\_max, S\_min, S\_max, V\_min, V\_max);
+160     \}
+161 \}
+\end{DoxyCode}
+\hypertarget{classCalibration_a066922eb7b40419ed4f850b3c6b4148d}{\index{Calibration@{Calibration}!start@{start}}
+\index{start@{start}!Calibration@{Calibration}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}bool Calibration\-::start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCalibration_a066922eb7b40419ed4f850b3c6b4148d}
+
+
+Références Color\-Info\-::i\-High\-H, Color\-Info\-::i\-High\-S, Color\-Info\-::i\-High\-V, Color\-Info\-::i\-Low\-H, Color\-Info\-::i\-Low\-S, et Color\-Info\-::i\-Low\-V.
+
+
+\begin{DoxyCode}
+163                        \{
+164     Mat cameraFeed;
+165     Mat HSV;
+166     \textcolor{keywordflow}{for}(uint8\_t i=0; i<ECHANTILLION\_CALIB;++i)\{
+167         \hyperlink{classCalibration_a9e0da36de8c79fd1a8f5952723f3e464}{capture}.read(cameraFeed);
+168         cvtColor(cameraFeed, HSV, COLOR\_BGR2HSV);
+169         \hyperlink{classCalibration_ad8250297ea60fa9c0ad1e38a70cca880}{search}(HSV);
+170     \}
+171     \hyperlink{classCalibration_adef7ee6cc7d95ea809c1cccd4d41ce02}{defineHSV}();
+172     printf(\textcolor{stringliteral}{"Hlow %d, Hhigh %d, Slow %d, SHigh %d, VLow %d, VHigh %d\(\backslash\)n"}, \hyperlink{classCalibration_a1d7d84d44fc3abbf136ce9dc964aa02a}{iLowH}, 
+      \hyperlink{classCalibration_a91d2ce954d66d7c5156d331f67573921}{iHighH}, \hyperlink{classCalibration_a258a3e9be8b3269a3e1e921da88e5b5a}{iLowS}, \hyperlink{classCalibration_a216315dfc878e13e9e5b0f487845a627}{iHighS}, \hyperlink{classCalibration_a852abbbb791c1625252d3d23825e7648}{iLowV}, \hyperlink{classCalibration_ab9838bcf2d96445da4a79ccafc7aee4c}{iHighV});
+173     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+174 \}
+\end{DoxyCode}
+
+
+\subsection{Documentation des données membres}
+\hypertarget{classCalibration_a062b450b8f24d5eadab562b3ed929f89}{\index{Calibration@{Calibration}!calibration\-Colors@{calibration\-Colors}}
+\index{calibration\-Colors@{calibration\-Colors}!Calibration@{Calibration}}
+\subsubsection[{calibration\-Colors}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$struct {\bf Color\-Info}$>$$\ast$ Calibration\-::calibration\-Colors\hspace{0.3cm}{\ttfamily [private]}}}\label{classCalibration_a062b450b8f24d5eadab562b3ed929f89}
+
+
+Référencé par $\sim$\-Calibration().
+
+\hypertarget{classCalibration_a9e0da36de8c79fd1a8f5952723f3e464}{\index{Calibration@{Calibration}!capture@{capture}}
+\index{capture@{capture}!Calibration@{Calibration}}
+\subsubsection[{capture}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::\-Video\-Capture Calibration\-::capture\hspace{0.3cm}{\ttfamily [private]}}}\label{classCalibration_a9e0da36de8c79fd1a8f5952723f3e464}
+\hypertarget{classCalibration_a91d2ce954d66d7c5156d331f67573921}{\index{Calibration@{Calibration}!i\-High\-H@{i\-High\-H}}
+\index{i\-High\-H@{i\-High\-H}!Calibration@{Calibration}}
+\subsubsection[{i\-High\-H}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t Calibration\-::i\-High\-H\hspace{0.3cm}{\ttfamily [private]}}}\label{classCalibration_a91d2ce954d66d7c5156d331f67573921}
+
+
+Référencé par get\-H().
+
+\hypertarget{classCalibration_a216315dfc878e13e9e5b0f487845a627}{\index{Calibration@{Calibration}!i\-High\-S@{i\-High\-S}}
+\index{i\-High\-S@{i\-High\-S}!Calibration@{Calibration}}
+\subsubsection[{i\-High\-S}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t Calibration\-::i\-High\-S\hspace{0.3cm}{\ttfamily [private]}}}\label{classCalibration_a216315dfc878e13e9e5b0f487845a627}
+
+
+Référencé par get\-S().
+
+\hypertarget{classCalibration_ab9838bcf2d96445da4a79ccafc7aee4c}{\index{Calibration@{Calibration}!i\-High\-V@{i\-High\-V}}
+\index{i\-High\-V@{i\-High\-V}!Calibration@{Calibration}}
+\subsubsection[{i\-High\-V}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t Calibration\-::i\-High\-V\hspace{0.3cm}{\ttfamily [private]}}}\label{classCalibration_ab9838bcf2d96445da4a79ccafc7aee4c}
+
+
+Référencé par get\-V().
+
+\hypertarget{classCalibration_a1d7d84d44fc3abbf136ce9dc964aa02a}{\index{Calibration@{Calibration}!i\-Low\-H@{i\-Low\-H}}
+\index{i\-Low\-H@{i\-Low\-H}!Calibration@{Calibration}}
+\subsubsection[{i\-Low\-H}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t Calibration\-::i\-Low\-H\hspace{0.3cm}{\ttfamily [private]}}}\label{classCalibration_a1d7d84d44fc3abbf136ce9dc964aa02a}
+
+
+Référencé par get\-H().
+
+\hypertarget{classCalibration_a258a3e9be8b3269a3e1e921da88e5b5a}{\index{Calibration@{Calibration}!i\-Low\-S@{i\-Low\-S}}
+\index{i\-Low\-S@{i\-Low\-S}!Calibration@{Calibration}}
+\subsubsection[{i\-Low\-S}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t Calibration\-::i\-Low\-S\hspace{0.3cm}{\ttfamily [private]}}}\label{classCalibration_a258a3e9be8b3269a3e1e921da88e5b5a}
+
+
+Référencé par get\-S().
+
+\hypertarget{classCalibration_a852abbbb791c1625252d3d23825e7648}{\index{Calibration@{Calibration}!i\-Low\-V@{i\-Low\-V}}
+\index{i\-Low\-V@{i\-Low\-V}!Calibration@{Calibration}}
+\subsubsection[{i\-Low\-V}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t Calibration\-::i\-Low\-V\hspace{0.3cm}{\ttfamily [private]}}}\label{classCalibration_a852abbbb791c1625252d3d23825e7648}
+
+
+Référencé par get\-V().
+
+\hypertarget{classCalibration_aa3fc415d57199effd80858c330ba5caa}{\index{Calibration@{Calibration}!rectangle\-Calib@{rectangle\-Calib}}
+\index{rectangle\-Calib@{rectangle\-Calib}!Calibration@{Calibration}}
+\subsubsection[{rectangle\-Calib}]{\setlength{\rightskip}{0pt plus 5cm}cv\-::\-Rect Calibration\-::rectangle\-Calib\hspace{0.3cm}{\ttfamily [private]}}}\label{classCalibration_aa3fc415d57199effd80858c330ba5caa}
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+headers/traitement/\hyperlink{calibration_8h}{calibration.\-h}\item 
+sources/traitement/\hyperlink{calibration_8cpp}{calibration.\-cpp}\end{DoxyCompactItemize}

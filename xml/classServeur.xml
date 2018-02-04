@@ -1,0 +1,357 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classServeur" kind="class" prot="public">
+    <compoundname>Serveur</compoundname>
+    <includes refid="serveur_8h" local="no">serveur.h</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classServeur_1a489b673bfbcfa8f6909b793fe15e9cf7" prot="private" static="yes" mutable="no">
+        <type><ref refid="classServeur" kindref="compound">Serveur</ref> *</type>
+        <definition>Serveur * Serveur::instance</definition>
+        <argsstring></argsstring>
+        <name>instance</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/serveur.h" line="26" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/serveur.h" bodystart="26" bodyend="-1"/>
+        <referencedby refid="classServeur_1af45129123392e1bee01b09201945aab1" compoundref="serveur_8cpp" startline="10" endline="15">getInstance</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classServeur_1a1c50d68dd630c95e89f0bb7467f818a6" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classClient" kindref="compound">Client</ref> &gt; *</type>
+        <definition>std::vector&lt;Client&gt;* Serveur::clients</definition>
+        <argsstring></argsstring>
+        <name>clients</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/serveur.h" line="28" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/serveur.h" bodystart="28" bodyend="-1"/>
+        <referencedby refid="classServeur_1a12d924e325b3fa6a65a4e70986114625" compoundref="serveur_8cpp" startline="37" endline="73">AcceptAndDispatch</referencedby>
+        <referencedby refid="classServeur_1a8eed76b45aaa11b0a1f51ff133735dec" compoundref="serveur_8cpp" startline="90" endline="96">getClient</referencedby>
+        <referencedby refid="classServeur_1aa3084842ce1be2065239b1afcf384cc0" compoundref="serveur_8cpp" startline="75" endline="81">sendToAll</referencedby>
+        <referencedby refid="classServeur_1a8a7a1df15a07e095436dedd0d40a0196" compoundref="serveur_8cpp" startline="17" endline="35">Serveur</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classServeur_1aff31b98591fc01c7deb0d1ad1052c4a3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Serveur::serverSock</definition>
+        <argsstring></argsstring>
+        <name>serverSock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/serveur.h" line="29" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/serveur.h" bodystart="29" bodyend="-1"/>
+        <referencedby refid="classServeur_1a12d924e325b3fa6a65a4e70986114625" compoundref="serveur_8cpp" startline="37" endline="73">AcceptAndDispatch</referencedby>
+        <referencedby refid="classServeur_1a8a7a1df15a07e095436dedd0d40a0196" compoundref="serveur_8cpp" startline="17" endline="35">Serveur</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classServeur_1adf04df85df6e35a94fedcacb037abc97" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Serveur::clientSock</definition>
+        <argsstring></argsstring>
+        <name>clientSock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/serveur.h" line="29" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/serveur.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classServeur_1a326fa962e0672b4da2027f320d561e63" prot="private" static="no" mutable="no">
+        <type>struct sockaddr_in serverAddr</type>
+        <definition>struct sockaddr_in serverAddr Serveur::clientAddr</definition>
+        <argsstring></argsstring>
+        <name>clientAddr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/serveur.h" line="29" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/serveur.h" bodystart="30" bodyend="-1"/>
+        <referencedby refid="classServeur_1a12d924e325b3fa6a65a4e70986114625" compoundref="serveur_8cpp" startline="37" endline="73">AcceptAndDispatch</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classServeur_1a8e6e5a2629cf14c4411b0fdae061444c" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Serveur::buffer[256]</definition>
+        <argsstring>[256]</argsstring>
+        <name>buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/serveur.h" line="31" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/serveur.h" bodystart="31" bodyend="-1"/>
+        <referencedby refid="classServeur_1ae4c196fb5ff5fffe40d480e5575570d9" compoundref="serveur_8cpp" startline="105" endline="111">receive</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classServeur_1af45129123392e1bee01b09201945aab1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classServeur" kindref="compound">Serveur</ref> *</type>
+        <definition>Serveur * Serveur::getInstance</definition>
+        <argsstring>()</argsstring>
+        <name>getInstance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/serveur.h" line="19" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/sources/serveur.cpp" bodystart="10" bodyend="15"/>
+        <references refid="classServeur_1a489b673bfbcfa8f6909b793fe15e9cf7" compoundref="serveur_8h" startline="26">instance</references>
+        <references refid="classServeur_1a8a7a1df15a07e095436dedd0d40a0196" compoundref="serveur_8cpp" startline="17" endline="35">Serveur</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classServeur_1a3f79c4ba0f58e4573709575cf8110459" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Serveur::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/serveur.h" line="20" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classServeur_1a12d924e325b3fa6a65a4e70986114625" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Serveur::AcceptAndDispatch</definition>
+        <argsstring>()</argsstring>
+        <name>AcceptAndDispatch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/serveur.h" line="21" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/sources/serveur.cpp" bodystart="37" bodyend="73"/>
+        <references refid="classManager_1a2803dff8e8f2912242f4098991d91415" compoundref="manager_8h" startline="37">Manager::car</references>
+        <references refid="classServeur_1a326fa962e0672b4da2027f320d561e63" compoundref="serveur_8h" startline="30">clientAddr</references>
+        <references refid="classServeur_1a1c50d68dd630c95e89f0bb7467f818a6" compoundref="serveur_8h" startline="28">clients</references>
+        <references refid="classManager_1a5d783bd86e9be93235898a46de80847f" compoundref="manager_8cpp" startline="8" endline="13">Manager::getInstance</references>
+        <references refid="classCar_1a20dd521474ee36b144bde58e3359eed6" compoundref="car_8h" startline="25" endline="27">Car::getPosition</references>
+        <references refid="definition_8h_1aecf05b6e6a060d8da044532e9db74e2f" compoundref="definition_8h" startline="33">ID_CAR</references>
+        <references refid="definition_8h_1a6360244e5a8f026f28f31db5966308b4" compoundref="definition_8h" startline="40">INVAL_CODE</references>
+        <references refid="classClient_1af29655fb85148cf9cff9c94af770c023" compoundref="client_8h" startline="13">Client::m_id</references>
+        <references refid="classClient_1a80564d281c880f1e80b6e1b54ae6e71e" compoundref="client_8h" startline="14">Client::m_sock</references>
+        <references refid="definition_8h_1a5c060ba02a1c2de42097ec04c0da0ea7" compoundref="definition_8h" startline="29">MAX_CONNECTION_CLIENT</references>
+        <references refid="classServeur_1ae4c196fb5ff5fffe40d480e5575570d9" compoundref="serveur_8cpp" startline="105" endline="111">receive</references>
+        <references refid="classServeur_1a5307c171fde619d6441ba9d89aaa3b1a" compoundref="serveur_8cpp" startline="86" endline="88">sendToClient</references>
+        <references refid="classServeur_1aff31b98591fc01c7deb0d1ad1052c4a3" compoundref="serveur_8h" startline="29">serverSock</references>
+        <references refid="definition_8h_1ab172dfb54371246ff3b8edc32639c033" compoundref="definition_8h" startline="41">STOP_CONN</references>
+        <references refid="classServeur_1a01ac17dffbd9801773f89f033dfb7f0b" compoundref="serveur_8cpp" startline="98" endline="103">synchronizeClient</references>
+        <references refid="struct__shareM_1a9b7627fd1c2693c3ecc662457fee4aba" compoundref="share__server_8h" startline="16">_shareM::tostring</references>
+        <references refid="definition_8h_1a812f73a3ea946dbc24662a8736f64e55" compoundref="definition_8h" startline="39">VAL_CODE</references>
+      </memberdef>
+      <memberdef kind="function" id="classServeur_1aa3084842ce1be2065239b1afcf384cc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t Serveur::sendToAll</definition>
+        <argsstring>(std::string message)</argsstring>
+        <name>sendToAll</name>
+        <param>
+          <type>std::string</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/serveur.h" line="22" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/sources/serveur.cpp" bodystart="75" bodyend="81"/>
+        <references refid="classServeur_1a1c50d68dd630c95e89f0bb7467f818a6" compoundref="serveur_8h" startline="28">clients</references>
+      </memberdef>
+      <memberdef kind="function" id="classServeur_1a5307c171fde619d6441ba9d89aaa3b1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t Serveur::sendToClient</definition>
+        <argsstring>(Client *c, std::string message)</argsstring>
+        <name>sendToClient</name>
+        <param>
+          <type><ref refid="classClient" kindref="compound">Client</ref> *</type>
+          <declname>c</declname>
+          <defname>client</defname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return nb of byte; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/serveur.h" line="23" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/sources/serveur.cpp" bodystart="86" bodyend="88"/>
+        <references refid="classClient_1a80564d281c880f1e80b6e1b54ae6e71e" compoundref="client_8h" startline="14">Client::m_sock</references>
+        <referencedby refid="classServeur_1a12d924e325b3fa6a65a4e70986114625" compoundref="serveur_8cpp" startline="37" endline="73">AcceptAndDispatch</referencedby>
+        <referencedby refid="classServeur_1a01ac17dffbd9801773f89f033dfb7f0b" compoundref="serveur_8cpp" startline="98" endline="103">synchronizeClient</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classServeur_1a8eed76b45aaa11b0a1f51ff133735dec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classClient" kindref="compound">Client</ref></type>
+        <definition>Client Serveur::getClient</definition>
+        <argsstring>(std::string id)</argsstring>
+        <name>getClient</name>
+        <param>
+          <type>std::string</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/serveur.h" line="24" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/sources/serveur.cpp" bodystart="90" bodyend="96"/>
+        <references refid="classServeur_1a1c50d68dd630c95e89f0bb7467f818a6" compoundref="serveur_8h" startline="28">clients</references>
+        <references refid="struct__shareM_1a30792c4b007e8273d3832fe2d5e70987" compoundref="share__server_8h" startline="14">_shareM::index</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classServeur_1a8a7a1df15a07e095436dedd0d40a0196" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Serveur::Serveur</definition>
+        <argsstring>()</argsstring>
+        <name>Serveur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/serveur.h" line="27" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/sources/serveur.cpp" bodystart="17" bodyend="35"/>
+        <references refid="classServeur_1a1c50d68dd630c95e89f0bb7467f818a6" compoundref="serveur_8h" startline="28">clients</references>
+        <references refid="definition_8h_1a5c060ba02a1c2de42097ec04c0da0ea7" compoundref="definition_8h" startline="29">MAX_CONNECTION_CLIENT</references>
+        <references refid="definition_8h_1a752f5b785b69372034ac87e1a1598ce3" compoundref="definition_8h" startline="30">PORT_SERVEUR</references>
+        <references refid="classServeur_1aff31b98591fc01c7deb0d1ad1052c4a3" compoundref="serveur_8h" startline="29">serverSock</references>
+        <referencedby refid="classServeur_1af45129123392e1bee01b09201945aab1" compoundref="serveur_8cpp" startline="10" endline="15">getInstance</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classServeur_1a01ac17dffbd9801773f89f033dfb7f0b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Serveur::synchronizeClient</definition>
+        <argsstring>(Client *c)</argsstring>
+        <name>synchronizeClient</name>
+        <param>
+          <type><ref refid="classClient" kindref="compound">Client</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/serveur.h" line="32" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/sources/serveur.cpp" bodystart="98" bodyend="103"/>
+        <references refid="definition_8h_1aecf05b6e6a060d8da044532e9db74e2f" compoundref="definition_8h" startline="33">ID_CAR</references>
+        <references refid="struct__shareM_1ad57018c4c874c265b1dbfedba6c53e2c" compoundref="share__server_8h" startline="15">_shareM::id_code</references>
+        <references refid="definition_8h_1a0dec0c631f90a14aa6ff21617d54707a" compoundref="definition_8h" startline="32">ID_PC</references>
+        <references refid="definition_8h_1ad6b283a2d2326d0e040305c75ff08dc4" compoundref="definition_8h" startline="34">ID_REMOTE</references>
+        <references refid="classClient_1af29655fb85148cf9cff9c94af770c023" compoundref="client_8h" startline="13">Client::m_id</references>
+        <references refid="classServeur_1ae4c196fb5ff5fffe40d480e5575570d9" compoundref="serveur_8cpp" startline="105" endline="111">receive</references>
+        <references refid="definition_8h_1adffc78b5b975243958cd1258f3cfb911" compoundref="definition_8h" startline="38">REQ_CODE</references>
+        <references refid="classServeur_1a5307c171fde619d6441ba9d89aaa3b1a" compoundref="serveur_8cpp" startline="86" endline="88">sendToClient</references>
+        <referencedby refid="classServeur_1a12d924e325b3fa6a65a4e70986114625" compoundref="serveur_8cpp" startline="37" endline="73">AcceptAndDispatch</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classServeur_1ae4c196fb5ff5fffe40d480e5575570d9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Serveur::receive</definition>
+        <argsstring>(Client *c)</argsstring>
+        <name>receive</name>
+        <param>
+          <type><ref refid="classClient" kindref="compound">Client</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/serveur.h" line="33" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/sources/serveur.cpp" bodystart="105" bodyend="111"/>
+        <references refid="classServeur_1a8e6e5a2629cf14c4411b0fdae061444c" compoundref="serveur_8h" startline="31">buffer</references>
+        <references refid="classClient_1a80564d281c880f1e80b6e1b54ae6e71e" compoundref="client_8h" startline="14">Client::m_sock</references>
+        <referencedby refid="classServeur_1a12d924e325b3fa6a65a4e70986114625" compoundref="serveur_8cpp" startline="37" endline="73">AcceptAndDispatch</referencedby>
+        <referencedby refid="classServeur_1a01ac17dffbd9801773f89f033dfb7f0b" compoundref="serveur_8cpp" startline="98" endline="103">synchronizeClient</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="87">
+        <label>T</label>
+      </node>
+      <node id="86">
+        <label>std::vector&lt; T &gt;</label>
+        <childnode refid="87" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="81">
+        <label>Serveur</label>
+        <link refid="classServeur"/>
+        <childnode refid="82" relation="usage">
+          <edgelabel>-clients</edgelabel>
+        </childnode>
+        <childnode refid="81" relation="usage">
+          <edgelabel>-instance</edgelabel>
+        </childnode>
+      </node>
+      <node id="83">
+        <label>Client</label>
+        <link refid="classClient"/>
+        <childnode refid="84" relation="usage">
+          <edgelabel>+m_id</edgelabel>
+        </childnode>
+      </node>
+      <node id="85">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="82">
+        <label>std::vector&lt; Client &gt;</label>
+        <childnode refid="83" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+        <childnode refid="86" relation="template-instance">
+          <edgelabel>&lt; Client &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="84">
+        <label>std::string</label>
+        <childnode refid="85" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/serveur.h" line="16" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/serveur.h" bodystart="16" bodyend="34"/>
+    <listofallmembers>
+      <member refid="classServeur_1a12d924e325b3fa6a65a4e70986114625" prot="public" virt="non-virtual"><scope>Serveur</scope><name>AcceptAndDispatch</name></member>
+      <member refid="classServeur_1a8e6e5a2629cf14c4411b0fdae061444c" prot="private" virt="non-virtual"><scope>Serveur</scope><name>buffer</name></member>
+      <member refid="classServeur_1a326fa962e0672b4da2027f320d561e63" prot="private" virt="non-virtual"><scope>Serveur</scope><name>clientAddr</name></member>
+      <member refid="classServeur_1a1c50d68dd630c95e89f0bb7467f818a6" prot="private" virt="non-virtual"><scope>Serveur</scope><name>clients</name></member>
+      <member refid="classServeur_1adf04df85df6e35a94fedcacb037abc97" prot="private" virt="non-virtual"><scope>Serveur</scope><name>clientSock</name></member>
+      <member refid="classServeur_1a8eed76b45aaa11b0a1f51ff133735dec" prot="public" virt="non-virtual"><scope>Serveur</scope><name>getClient</name></member>
+      <member refid="classServeur_1af45129123392e1bee01b09201945aab1" prot="public" virt="non-virtual"><scope>Serveur</scope><name>getInstance</name></member>
+      <member refid="classServeur_1a489b673bfbcfa8f6909b793fe15e9cf7" prot="private" virt="non-virtual"><scope>Serveur</scope><name>instance</name></member>
+      <member refid="classServeur_1ae4c196fb5ff5fffe40d480e5575570d9" prot="private" virt="non-virtual"><scope>Serveur</scope><name>receive</name></member>
+      <member refid="classServeur_1aa3084842ce1be2065239b1afcf384cc0" prot="public" virt="non-virtual"><scope>Serveur</scope><name>sendToAll</name></member>
+      <member refid="classServeur_1a5307c171fde619d6441ba9d89aaa3b1a" prot="public" virt="non-virtual"><scope>Serveur</scope><name>sendToClient</name></member>
+      <member refid="classServeur_1aff31b98591fc01c7deb0d1ad1052c4a3" prot="private" virt="non-virtual"><scope>Serveur</scope><name>serverSock</name></member>
+      <member refid="classServeur_1a8a7a1df15a07e095436dedd0d40a0196" prot="private" virt="non-virtual"><scope>Serveur</scope><name>Serveur</name></member>
+      <member refid="classServeur_1a3f79c4ba0f58e4573709575cf8110459" prot="public" virt="non-virtual"><scope>Serveur</scope><name>stop</name></member>
+      <member refid="classServeur_1a01ac17dffbd9801773f89f033dfb7f0b" prot="private" virt="non-virtual"><scope>Serveur</scope><name>synchronizeClient</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

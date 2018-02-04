@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classMultipleObject" kind="class" prot="public" abstract="yes">
+    <compoundname>MultipleObject</compoundname>
+    <derivedcompoundref refid="classBloc" prot="public" virt="non-virtual">Bloc</derivedcompoundref>
+    <derivedcompoundref refid="classChemin" prot="public" virt="non-virtual">Chemin</derivedcompoundref>
+    <includes refid="multipleobject_8h" local="no">multipleobject.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMultipleObject_1aa5e743143bdedeb901c8e234162b3db1" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool MultipleObject::add</definition>
+        <argsstring>(int8_t x, int8_t y)=0</argsstring>
+        <name>add</name>
+        <reimplementedby refid="classChemin_1a2ee7b6a34082453fbdf890a49017aead">add</reimplementedby>
+        <reimplementedby refid="classBloc_1a02db4c95699ce40e8ad671ef759ebdb7">add</reimplementedby>
+        <param>
+          <type>int8_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/abstract/multipleobject.h" line="28" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMultipleObject_1ad57dd5fec65953bbce399afdca475a4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool MultipleObject::remove</definition>
+        <argsstring>(int8_t x, int8_t y)=0</argsstring>
+        <name>remove</name>
+        <reimplementedby refid="classChemin_1a1ee3f200283c2c401ef0ffd5800d946c">remove</reimplementedby>
+        <reimplementedby refid="classBloc_1a259248faed302444ba5424cdf6178681">remove</reimplementedby>
+        <param>
+          <type>int8_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/abstract/multipleobject.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMultipleObject_1a1703b0c461708fbb6985e87624f4b17b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool MultipleObject::has</definition>
+        <argsstring>(int8_t x, int8_t y)=0</argsstring>
+        <name>has</name>
+        <reimplementedby refid="classChemin_1aceccf541a2cdde27eb8f4bf541aff1b3">has</reimplementedby>
+        <reimplementedby refid="classBloc_1a03799c83e18411ab4ae4bf3e03aec975">has</reimplementedby>
+        <param>
+          <type>int8_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/abstract/multipleobject.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMultipleObject_1a980acdfb99e25ec0d5e61396f60517c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool MultipleObject::clear</definition>
+        <argsstring>()=0</argsstring>
+        <name>clear</name>
+        <reimplementedby refid="classChemin_1a67a8418164f0b2a4d1827e393ba859f7">clear</reimplementedby>
+        <reimplementedby refid="classBloc_1afa48be18bb2cd4e3240f4a165abef1c8">clear</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/abstract/multipleobject.h" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMultipleObject_1a5439a2ac4cc86c759ef1df8f6059947a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::string</type>
+        <definition>virtual std::string MultipleObject::toString</definition>
+        <argsstring>()=0</argsstring>
+        <name>toString</name>
+        <reimplementedby refid="classChemin_1a3b1754233eb79fb9f7d119a42efbda3c">toString</reimplementedby>
+        <reimplementedby refid="classBloc_1a040af8a2aefc1acaa0e2d9bfc5943fa3">toString</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/abstract/multipleobject.h" line="75" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="70">
+        <label>Bloc</label>
+        <link refid="classBloc"/>
+        <childnode refid="69" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>Chemin</label>
+        <link refid="classChemin"/>
+        <childnode refid="69" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>MultipleObject</label>
+        <link refid="classMultipleObject"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="72">
+        <label>MultipleObject</label>
+        <link refid="classMultipleObject"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/abstract/multipleobject.h" line="14" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/abstract/multipleobject.h" bodystart="14" bodyend="76"/>
+    <listofallmembers>
+      <member refid="classMultipleObject_1aa5e743143bdedeb901c8e234162b3db1" prot="public" virt="pure-virtual"><scope>MultipleObject</scope><name>add</name></member>
+      <member refid="classMultipleObject_1a980acdfb99e25ec0d5e61396f60517c3" prot="public" virt="pure-virtual"><scope>MultipleObject</scope><name>clear</name></member>
+      <member refid="classMultipleObject_1a1703b0c461708fbb6985e87624f4b17b" prot="public" virt="pure-virtual"><scope>MultipleObject</scope><name>has</name></member>
+      <member refid="classMultipleObject_1ad57dd5fec65953bbce399afdca475a4c" prot="public" virt="pure-virtual"><scope>MultipleObject</scope><name>remove</name></member>
+      <member refid="classMultipleObject_1a5439a2ac4cc86c759ef1df8f6059947a" prot="public" virt="pure-virtual"><scope>MultipleObject</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

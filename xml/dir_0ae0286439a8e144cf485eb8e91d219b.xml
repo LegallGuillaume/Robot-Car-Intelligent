@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_0ae0286439a8e144cf485eb8e91d219b" kind="dir">
+    <compoundname>sources/server</compoundname>
+    <innerfile refid="server_8cpp">server.cpp</innerfile>
+    <innerfile refid="sserver_8cpp">sserver.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/glegall/prog_workspace/Robot_car/prog/sources/server/"/>
+  </compounddef>
+</doxygen>

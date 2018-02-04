@@ -1,0 +1,448 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="core_8cpp" kind="file">
+    <compoundname>core.cpp</compoundname>
+    <includes local="no">iostream</includes>
+    <includes refid="core_8h" local="yes">../headers/core.h</includes>
+    <incdepgraph>
+      <node id="311">
+        <label>manager/bloc.h</label>
+        <link refid="bloc_8h"/>
+        <childnode refid="307" relation="include">
+        </childnode>
+        <childnode refid="312" relation="include">
+        </childnode>
+        <childnode refid="308" relation="include">
+        </childnode>
+        <childnode refid="313" relation="include">
+        </childnode>
+        <childnode refid="314" relation="include">
+        </childnode>
+      </node>
+      <node id="321">
+        <label>../headers/traitement/images.h</label>
+        <link refid="images_8h"/>
+        <childnode refid="303" relation="include">
+        </childnode>
+        <childnode refid="322" relation="include">
+        </childnode>
+        <childnode refid="312" relation="include">
+        </childnode>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="324" relation="include">
+        </childnode>
+        <childnode refid="325" relation="include">
+        </childnode>
+        <childnode refid="326" relation="include">
+        </childnode>
+        <childnode refid="314" relation="include">
+        </childnode>
+      </node>
+      <node id="324">
+        <label>aruco/cvdrawingutils.h</label>
+      </node>
+      <node id="317">
+        <label>stdlib.h</label>
+      </node>
+      <node id="322">
+        <label>cmath</label>
+      </node>
+      <node id="313">
+        <label>../abstract/multipleobject.h</label>
+        <link refid="multipleobject_8h"/>
+        <childnode refid="308" relation="include">
+        </childnode>
+      </node>
+      <node id="308">
+        <label>string</label>
+      </node>
+      <node id="320">
+        <label>cellule.h</label>
+        <link refid="cellule_8h"/>
+        <childnode refid="307" relation="include">
+        </childnode>
+      </node>
+      <node id="323">
+        <label>aruco/aruco.h</label>
+      </node>
+      <node id="304">
+        <label>../headers/core.h</label>
+        <link refid="core_8h"/>
+        <childnode refid="305" relation="include">
+        </childnode>
+        <childnode refid="318" relation="include">
+        </childnode>
+        <childnode refid="321" relation="include">
+        </childnode>
+      </node>
+      <node id="326">
+        <label>opencv2/imgproc/imgproc.hpp</label>
+      </node>
+      <node id="306">
+        <label>manager/car.h</label>
+        <link refid="car_8h"/>
+        <childnode refid="307" relation="include">
+        </childnode>
+        <childnode refid="308" relation="include">
+        </childnode>
+        <childnode refid="309" relation="include">
+        </childnode>
+      </node>
+      <node id="312">
+        <label>vector</label>
+      </node>
+      <node id="307">
+        <label>utility</label>
+      </node>
+      <node id="302">
+        <label>sources/core.cpp</label>
+        <link refid="core.cpp"/>
+        <childnode refid="303" relation="include">
+        </childnode>
+        <childnode refid="304" relation="include">
+        </childnode>
+      </node>
+      <node id="310">
+        <label>sstream</label>
+      </node>
+      <node id="325">
+        <label>opencv2/highgui/highgui.hpp</label>
+      </node>
+      <node id="305">
+        <label>../headers/manager.h</label>
+        <link refid="manager_8h"/>
+        <childnode refid="306" relation="include">
+        </childnode>
+        <childnode refid="311" relation="include">
+        </childnode>
+        <childnode refid="315" relation="include">
+        </childnode>
+        <childnode refid="316" relation="include">
+        </childnode>
+        <childnode refid="308" relation="include">
+        </childnode>
+        <childnode refid="307" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+        <childnode refid="303" relation="include">
+        </childnode>
+      </node>
+      <node id="303">
+        <label>iostream</label>
+      </node>
+      <node id="316">
+        <label>manager/arrive.h</label>
+        <link refid="arrive_8h"/>
+        <childnode refid="307" relation="include">
+        </childnode>
+        <childnode refid="308" relation="include">
+        </childnode>
+        <childnode refid="309" relation="include">
+        </childnode>
+      </node>
+      <node id="315">
+        <label>manager/chemin.h</label>
+        <link refid="chemin_8h"/>
+        <childnode refid="307" relation="include">
+        </childnode>
+        <childnode refid="312" relation="include">
+        </childnode>
+        <childnode refid="308" relation="include">
+        </childnode>
+        <childnode refid="313" relation="include">
+        </childnode>
+      </node>
+      <node id="309">
+        <label>../abstract/simpleobject.h</label>
+        <link refid="simpleobject_8h"/>
+        <childnode refid="310" relation="include">
+        </childnode>
+        <childnode refid="308" relation="include">
+        </childnode>
+        <childnode refid="307" relation="include">
+        </childnode>
+      </node>
+      <node id="319">
+        <label>algorithm</label>
+      </node>
+      <node id="318">
+        <label>../headers/traitement/pathfinding.h</label>
+        <link refid="pathfinding_8h"/>
+        <childnode refid="303" relation="include">
+        </childnode>
+        <childnode refid="312" relation="include">
+        </childnode>
+        <childnode refid="307" relation="include">
+        </childnode>
+        <childnode refid="319" relation="include">
+        </childnode>
+        <childnode refid="320" relation="include">
+        </childnode>
+        <childnode refid="314" relation="include">
+        </childnode>
+        <childnode refid="305" relation="include">
+        </childnode>
+      </node>
+      <node id="314">
+        <label>../definition.h</label>
+        <link refid="definition_8h"/>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../headers/core.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="classCore_1a14e63188e0aa7c4a6f72d5501384d1f9" refkind="member"><highlight class="normal"><ref refid="classCore_1a14e63188e0aa7c4a6f72d5501384d1f9" kindref="member">Core::Core</ref>(){</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCore_1a2ad48b714f575d3f3c25c80ffa72afad" kindref="member">init</ref>();</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classCore_1a776f8c46504b14183883c6273f93eaed" refkind="member"><highlight class="normal"><ref refid="classCore_1a776f8c46504b14183883c6273f93eaed" kindref="member">Core::~Core</ref>(){</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classCore_1a55b925c8acc13a0002112d48a054984e" kindref="member">path</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCore_1a55b925c8acc13a0002112d48a054984e" kindref="member">path</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classCore_1a7a18e37fde7d3ca4b1568225b51eaf0d" kindref="member">process</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCore_1a7a18e37fde7d3ca4b1568225b51eaf0d" kindref="member">process</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classCore_1a834f8de7a2b8f18b19af83d6c05b9b3a" kindref="member">manager</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCore_1a834f8de7a2b8f18b19af83d6c05b9b3a" kindref="member">manager</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="classCore_1ae03caf8d8abe9d4c3b875c6f6a5d40dd" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCore_1ae03caf8d8abe9d4c3b875c6f6a5d40dd" kindref="member">Core::drawDebug</ref>(Mat&amp;<sp/>frame){</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>RecX1<sp/>=<sp/>240-240;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>RecX2<sp/>=<sp/>240+240;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>RecY1<sp/>=<sp/>240-240;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>RecY2<sp/>=<sp/>240+240;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=1;<sp/>j&lt;25;j++){</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RecX2<sp/>=<sp/>RecX2<sp/>-<sp/>20;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rectangle(frame,<sp/>Point(RecX1,<sp/>RecY1),<sp/>Point(RecX2,<sp/>RecY2),<sp/>cv::Scalar(0,<sp/>255,<sp/>0));</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>RecX2<sp/>=<sp/>240+240;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//horizontal</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=1;<sp/>j&lt;25;j++){</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RecY2<sp/>=<sp/>RecY2<sp/>-<sp/>20;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rectangle(frame,<sp/>Point(RecX1,<sp/>RecY1),<sp/>Point(RecX2,<sp/>RecY2),<sp/>cv::Scalar(0,<sp/>255,<sp/>0));</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classCore_1a834f8de7a2b8f18b19af83d6c05b9b3a" kindref="member">manager</ref>-&gt;<ref refid="classManager_1abaeefec28074459f6dbdc64af9c6a3b9" kindref="member">chemin</ref>-&gt;<ref refid="classChemin_1a5acfc655d74effb1ed6eb14494c017b0" kindref="member">list_chemin</ref><sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index=0;<sp/>index<sp/>&lt;<sp/>(int)<ref refid="classCore_1a834f8de7a2b8f18b19af83d6c05b9b3a" kindref="member">manager</ref>-&gt;<ref refid="classManager_1abaeefec28074459f6dbdc64af9c6a3b9" kindref="member">chemin</ref>-&gt;<ref refid="classChemin_1a5acfc655d74effb1ed6eb14494c017b0" kindref="member">list_chemin</ref>-&gt;size()<sp/>-<sp/>1;<sp/>++index){</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::pair&lt;int8_t,<sp/>int8_t&gt;<sp/>_p<sp/>=<sp/><ref refid="classCore_1a834f8de7a2b8f18b19af83d6c05b9b3a" kindref="member">manager</ref>-&gt;<ref refid="classManager_1abaeefec28074459f6dbdc64af9c6a3b9" kindref="member">chemin</ref>-&gt;<ref refid="classChemin_1a5acfc655d74effb1ed6eb14494c017b0" kindref="member">list_chemin</ref>-&gt;at(index);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Point<sp/>point<sp/>=<sp/>Point((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)(_p.second*20),<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)(_p.first*20));</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rectangle(frame,<sp/>point<sp/>-<sp/>Point(-2,-2),<sp/><sp/>point<sp/>+<sp/>Point(18,18),<sp/>Scalar(255,255,255));</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index=0;<sp/>index<sp/>&lt;<sp/>(int)<ref refid="classCore_1a834f8de7a2b8f18b19af83d6c05b9b3a" kindref="member">manager</ref>-&gt;<ref refid="classManager_1a66599bf2bd10c95b9fb7be9c333e0ff9" kindref="member">bloc</ref>-&gt;<ref refid="classBloc_1a51ad89062b91675830e0285f992f3210" kindref="member">list_bloc</ref>-&gt;size()<sp/>-<sp/>1;<sp/>++index){</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::pair&lt;int8_t,<sp/>int8_t&gt;<sp/>_p<sp/>=<sp/><ref refid="classCore_1a834f8de7a2b8f18b19af83d6c05b9b3a" kindref="member">manager</ref>-&gt;<ref refid="classManager_1a66599bf2bd10c95b9fb7be9c333e0ff9" kindref="member">bloc</ref>-&gt;<ref refid="classBloc_1a51ad89062b91675830e0285f992f3210" kindref="member">list_bloc</ref>-&gt;at(index);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Point<sp/>point<sp/>=<sp/>Point((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)(_p.second*20),<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)(_p.first*20));</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rectangle(frame,<sp/>point<sp/>-<sp/>Point(-2,-2),<sp/><sp/>point<sp/>+<sp/>Point(18,18),<sp/>Scalar(0,<sp/>0,<sp/>255));</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>Point<sp/>point<sp/>=<sp/>Point((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)(<ref refid="classCore_1a834f8de7a2b8f18b19af83d6c05b9b3a" kindref="member">manager</ref>-&gt;<ref refid="classManager_1a2803dff8e8f2912242f4098991d91415" kindref="member">car</ref>-&gt;<ref refid="classCar_1a20dd521474ee36b144bde58e3359eed6" kindref="member">getPosition</ref>().second*20),<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)(<ref refid="classCore_1a834f8de7a2b8f18b19af83d6c05b9b3a" kindref="member">manager</ref>-&gt;<ref refid="classManager_1a2803dff8e8f2912242f4098991d91415" kindref="member">car</ref>-&gt;<ref refid="classCar_1a20dd521474ee36b144bde58e3359eed6" kindref="member">getPosition</ref>().first*20));</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>rectangle(frame,<sp/>point<sp/>-<sp/>Point(-2,-2),<sp/><sp/>point<sp/>+<sp/>Point(18,18),<sp/>Scalar(0,<sp/>255,<sp/>0));</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>rectangle(frame,<sp/>point<sp/>-<sp/>Point(-4,-4),<sp/><sp/>point<sp/>+<sp/>Point(16,16),<sp/>Scalar(0,<sp/>255,<sp/>0));</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>rectangle(frame,<sp/>point<sp/>-<sp/>Point(-6,-6),<sp/><sp/>point<sp/>+<sp/>Point(14,14),<sp/>Scalar(0,<sp/>255,<sp/>0));</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>point<sp/>=<sp/>Point((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)(<ref refid="classCore_1a834f8de7a2b8f18b19af83d6c05b9b3a" kindref="member">manager</ref>-&gt;<ref refid="classManager_1a6f99d8e25fc61a7fe0fdf160610b31cf" kindref="member">arrive</ref>-&gt;<ref refid="classArrive_1abe91e4a5bcf15ff987ab58c05b6bb537" kindref="member">getPosition</ref>().second*20),<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)(<ref refid="classCore_1a834f8de7a2b8f18b19af83d6c05b9b3a" kindref="member">manager</ref>-&gt;<ref refid="classManager_1a6f99d8e25fc61a7fe0fdf160610b31cf" kindref="member">arrive</ref>-&gt;<ref refid="classArrive_1abe91e4a5bcf15ff987ab58c05b6bb537" kindref="member">getPosition</ref>().first*20));</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>rectangle(frame,<sp/>point<sp/>-<sp/>Point(-2,-2),<sp/><sp/>point<sp/>+<sp/>Point(18,18),<sp/>Scalar(255,<sp/>0,<sp/>0));</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>rectangle(frame,<sp/>point<sp/>-<sp/>Point(-4,-4),<sp/><sp/>point<sp/>+<sp/>Point(16,16),<sp/>Scalar(255,<sp/>0,<sp/>0));</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>rectangle(frame,<sp/>point<sp/>-<sp/>Point(-6,-6),<sp/><sp/>point<sp/>+<sp/>Point(14,14),<sp/>Scalar(255,<sp/>0,<sp/>0));</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>imshow(</highlight><highlight class="stringliteral">&quot;TEST&quot;</highlight><highlight class="normal">,<sp/>frame);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(waitKey(30000)<sp/>==<sp/>0){</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(0);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="classCore_1a722434c9873d07d6b26a74e40e08eb9c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCore_1a722434c9873d07d6b26a74e40e08eb9c" kindref="member">Core::start</ref>(){</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCore_1a2ad48b714f575d3f3c25c80ffa72afad" kindref="member">init</ref>();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(</highlight><highlight class="keyword">true</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//listen<sp/>to<sp/>know<sp/>what<sp/>mode<sp/>is<sp/>select</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCore_1a9677503611528b6d6f2039eff6f80912" kindref="member">listenIPC</ref>();</highlight><highlight class="comment">//change<sp/>mode<sp/>selected<sp/>by<sp/>Stop_Mode<sp/>if<sp/>we<sp/>want<sp/>stop<sp/>car<sp/>or<sp/>any<sp/>things<sp/>as<sp/>this</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(<ref refid="classCore_1a05fa4660e945441b917880d1e148c89a" kindref="member">avm_mode</ref>){</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="core_8h_1a46c8a310cf4c094f8c80e1cb8dc1f911acf535b39ede8798cd6b56d99271afeef" kindref="member">Mode::Stop_Mode</ref>:</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="core_8h_1a46c8a310cf4c094f8c80e1cb8dc1f911a62a2c1fd120cdb7005bf42408c887d9d" kindref="member">Mode::Auto_Mode</ref>:</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCore_1a7fab8414125602f9f595143bb21d24c1" kindref="member">autoVirtualMode</ref>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="core_8h_1a46c8a310cf4c094f8c80e1cb8dc1f911a6879e8dabec58a1e3e670eaddfdc7bf7" kindref="member">Mode::Virtual_Mode</ref>:</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCore_1a7fab8414125602f9f595143bb21d24c1" kindref="member">autoVirtualMode</ref>(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="core_8h_1a46c8a310cf4c094f8c80e1cb8dc1f911a493c3024fdbbce51ec6d8d8b0feacf13" kindref="member">Mode::Manual_Mode</ref>:</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCore_1afcdd1611a6528fd3d597d719405493b4" kindref="member">manualMode</ref>();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>waitKey(100);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classCore_1a2eaa56d6855905faec8a1764db40892b" kindref="member">stateMachine</ref>.<ref refid="struct__stateMachine_1a79ce614ae01c3759d155c03026384ca7" kindref="member">_statePathfinding</ref><sp/>==<sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ae0aa021e21dddbd6d8cecec71e9cf564" kindref="member">State::OK</ref>)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="definition_8h_1a117352cc494cc62c6b2f1882786a332c" kindref="member">DEBUG</ref>){</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Mat<sp/>frame(480,<sp/>480,<sp/>CV_8UC3,<sp/>Scalar(0));</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCore_1ae03caf8d8abe9d4c3b875c6f6a5d40dd" kindref="member">drawDebug</ref>(frame);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="classCore_1a2ad48b714f575d3f3c25c80ffa72afad" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCore_1a2ad48b714f575d3f3c25c80ffa72afad" kindref="member">Core::init</ref>(){</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCore_1a834f8de7a2b8f18b19af83d6c05b9b3a" kindref="member">manager</ref><sp/>=<sp/><ref refid="classManager_1a5d783bd86e9be93235898a46de80847f" kindref="member">Manager::getInstance</ref>();</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCore_1a834f8de7a2b8f18b19af83d6c05b9b3a" kindref="member">manager</ref>-&gt;<ref refid="classManager_1a24a0a31be841d8707708874486cb1b7c" kindref="member">initScene</ref>(24);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCore_1a2eaa56d6855905faec8a1764db40892b" kindref="member">stateMachine</ref>.<ref refid="struct__stateMachine_1aaee24e4ab99a6f1243a46645188de8d0" kindref="member">_stateServer</ref><sp/>=<sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ab50339a10e1de285ac99d4c3990b8693" kindref="member">State::NONE</ref>;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCore_1a2eaa56d6855905faec8a1764db40892b" kindref="member">stateMachine</ref>.<ref refid="struct__stateMachine_1aa6cc70d0567b403fb9e993a681f48b85" kindref="member">_stateIPC</ref><sp/>=<sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ab50339a10e1de285ac99d4c3990b8693" kindref="member">State::NONE</ref>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCore_1a2eaa56d6855905faec8a1764db40892b" kindref="member">stateMachine</ref>.<ref refid="struct__stateMachine_1a157036ced733a021849ebcbc98c27200" kindref="member">_stateCalibration</ref><sp/>=<sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ab50339a10e1de285ac99d4c3990b8693" kindref="member">State::NONE</ref>;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCore_1a2eaa56d6855905faec8a1764db40892b" kindref="member">stateMachine</ref>.<ref refid="struct__stateMachine_1adbc0e51d4bed9b6da5c44e921e37dc32" kindref="member">_stateImageBlock</ref><sp/>=<sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ab50339a10e1de285ac99d4c3990b8693" kindref="member">State::NONE</ref>;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCore_1a2eaa56d6855905faec8a1764db40892b" kindref="member">stateMachine</ref>.<ref refid="struct__stateMachine_1a79ce614ae01c3759d155c03026384ca7" kindref="member">_statePathfinding</ref><sp/>=<sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ab50339a10e1de285ac99d4c3990b8693" kindref="member">State::NONE</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCore_1a2eaa56d6855905faec8a1764db40892b" kindref="member">stateMachine</ref>.<ref refid="struct__stateMachine_1a88c6e0c15cdd29b3eec2e842fa09b08f" kindref="member">_stateTrajectory</ref><sp/>=<sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ab50339a10e1de285ac99d4c3990b8693" kindref="member">State::NONE</ref>;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCore_1a92f7a9f089b3dca665ec0537fb554d1b" kindref="member">changeMode</ref>=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCore_1a1dac5f63296f11309c2f25770b30912b" kindref="member">setMode</ref>(<ref refid="core_8h_1a46c8a310cf4c094f8c80e1cb8dc1f911acf535b39ede8798cd6b56d99271afeef" kindref="member">Mode::Stop_Mode</ref>);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="classCore_1a0d0ccf9b40761ed8f88fe1d9a348fc02" refkind="member"><highlight class="normal"><ref refid="core_8h_1a46c8a310cf4c094f8c80e1cb8dc1f911" kindref="member">Mode</ref><sp/><ref refid="classCore_1a0d0ccf9b40761ed8f88fe1d9a348fc02" kindref="member">Core::getCurrentMode</ref>(){</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCore_1a05fa4660e945441b917880d1e148c89a" kindref="member">avm_mode</ref>;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="classCore_1a1dac5f63296f11309c2f25770b30912b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCore_1a1dac5f63296f11309c2f25770b30912b" kindref="member">Core::setMode</ref>(<ref refid="core_8h_1a46c8a310cf4c094f8c80e1cb8dc1f911" kindref="member">Mode</ref><sp/>_mode){</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCore_1a05fa4660e945441b917880d1e148c89a" kindref="member">avm_mode</ref><sp/>=<sp/>_mode;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCore_1a834f8de7a2b8f18b19af83d6c05b9b3a" kindref="member">manager</ref>-&gt;<ref refid="classManager_1a8cb433965677ad622ee43d59e24262e7" kindref="member">reset</ref>();</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCore_1a2eaa56d6855905faec8a1764db40892b" kindref="member">stateMachine</ref>.<ref refid="struct__stateMachine_1adbc0e51d4bed9b6da5c44e921e37dc32" kindref="member">_stateImageBlock</ref><sp/>=<sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ab50339a10e1de285ac99d4c3990b8693" kindref="member">State::NONE</ref>;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCore_1a2eaa56d6855905faec8a1764db40892b" kindref="member">stateMachine</ref>.<ref refid="struct__stateMachine_1a79ce614ae01c3759d155c03026384ca7" kindref="member">_statePathfinding</ref><sp/>=<sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ab50339a10e1de285ac99d4c3990b8693" kindref="member">State::NONE</ref>;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCore_1a2eaa56d6855905faec8a1764db40892b" kindref="member">stateMachine</ref>.<ref refid="struct__stateMachine_1a88c6e0c15cdd29b3eec2e842fa09b08f" kindref="member">_stateTrajectory</ref><sp/>=<sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ab50339a10e1de285ac99d4c3990b8693" kindref="member">State::NONE</ref>;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classCore_1a55b925c8acc13a0002112d48a054984e" kindref="member">path</ref>;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="classCore_1a7fab8414125602f9f595143bb21d24c1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCore_1a7fab8414125602f9f595143bb21d24c1" kindref="member">Core::autoVirtualMode</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_auto){</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classCore_1a2eaa56d6855905faec8a1764db40892b" kindref="member">stateMachine</ref>.<ref refid="struct__stateMachine_1aaee24e4ab99a6f1243a46645188de8d0" kindref="member">_stateServer</ref><sp/>==<sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ab50339a10e1de285ac99d4c3990b8693" kindref="member">State::NONE</ref><sp/>||<sp/><ref refid="classCore_1a2eaa56d6855905faec8a1764db40892b" kindref="member">stateMachine</ref>.<ref refid="struct__stateMachine_1aaee24e4ab99a6f1243a46645188de8d0" kindref="member">_stateServer</ref><sp/>==<sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ac2f3f489a00553e7a01d369c103c7251" kindref="member">State::NO</ref>){</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCore_1a2eaa56d6855905faec8a1764db40892b" kindref="member">stateMachine</ref>.<ref refid="struct__stateMachine_1aaee24e4ab99a6f1243a46645188de8d0" kindref="member">_stateServer</ref><sp/>=<sp/><ref refid="classCore_1a2a8efb95fadd86481ba62c98b72c7f1c" kindref="member">server</ref>();</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classCore_1a2eaa56d6855905faec8a1764db40892b" kindref="member">stateMachine</ref>.<ref refid="struct__stateMachine_1aaee24e4ab99a6f1243a46645188de8d0" kindref="member">_stateServer</ref><sp/>==<sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8abb1ca97ec761fc37101737ba0aa2e7c5" kindref="member">State::ERROR</ref>){</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//TODO<sp/>ERROR<sp/>ecrit<sp/>dans<sp/>un<sp/>fichier<sp/>de<sp/>log<sp/>une<sp/>erreur</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classCore_1a2eaa56d6855905faec8a1764db40892b" kindref="member">stateMachine</ref>.<ref refid="struct__stateMachine_1aaee24e4ab99a6f1243a46645188de8d0" kindref="member">_stateServer</ref><sp/>==<sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ae0aa021e21dddbd6d8cecec71e9cf564" kindref="member">State::OK</ref>){</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="definition_8h_1a117352cc494cc62c6b2f1882786a332c" kindref="member">DEBUG</ref>)<sp/>std::cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;SERVER<sp/>OK&quot;</highlight><highlight class="normal">&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classCore_1a2eaa56d6855905faec8a1764db40892b" kindref="member">stateMachine</ref>.<ref refid="struct__stateMachine_1a157036ced733a021849ebcbc98c27200" kindref="member">_stateCalibration</ref><sp/>==<sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ab50339a10e1de285ac99d4c3990b8693" kindref="member">State::NONE</ref>){</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCore_1a2d832a5e544b5e76d03a7fd596522b42" kindref="member">calibration</ref>();</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classCore_1a2eaa56d6855905faec8a1764db40892b" kindref="member">stateMachine</ref>.<ref refid="struct__stateMachine_1a157036ced733a021849ebcbc98c27200" kindref="member">_stateCalibration</ref><sp/>==<sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8abb1ca97ec761fc37101737ba0aa2e7c5" kindref="member">State::ERROR</ref>){</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//TODO<sp/>NO<sp/>CENTER<sp/>OF<sp/>AREA<sp/>NO<sp/>FOUND,<sp/>turn<sp/>arround<sp/>car</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="definition_8h_1a117352cc494cc62c6b2f1882786a332c" kindref="member">DEBUG</ref>)<sp/>std::cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;CALIBRATION<sp/>FAILED<sp/>(no<sp/>QRcenter)&quot;</highlight><highlight class="normal">&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classCore_1a2eaa56d6855905faec8a1764db40892b" kindref="member">stateMachine</ref>.<ref refid="struct__stateMachine_1a157036ced733a021849ebcbc98c27200" kindref="member">_stateCalibration</ref><sp/>==<sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ae0aa021e21dddbd6d8cecec71e9cf564" kindref="member">State::OK</ref>){</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="definition_8h_1a117352cc494cc62c6b2f1882786a332c" kindref="member">DEBUG</ref>)<sp/>std::cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;CALIBRATION<sp/>OK&quot;</highlight><highlight class="normal">&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classCore_1a2eaa56d6855905faec8a1764db40892b" kindref="member">stateMachine</ref>.<ref refid="struct__stateMachine_1adbc0e51d4bed9b6da5c44e921e37dc32" kindref="member">_stateImageBlock</ref><sp/>==<sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ab50339a10e1de285ac99d4c3990b8693" kindref="member">State::NONE</ref>){</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCore_1a8648fac82f0324cead88c8fa2731b286" kindref="member">blockProcessing</ref>(is_auto);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classCore_1a2eaa56d6855905faec8a1764db40892b" kindref="member">stateMachine</ref>.<ref refid="struct__stateMachine_1adbc0e51d4bed9b6da5c44e921e37dc32" kindref="member">_stateImageBlock</ref><sp/>==<sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8abb1ca97ec761fc37101737ba0aa2e7c5" kindref="member">State::ERROR</ref>){</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//TODO<sp/>ERROR<sp/>detect<sp/>block<sp/>&gt;<sp/>3<sp/>(Arrival,<sp/>Car<sp/>and<sp/>Area)<sp/>and<sp/>0<sp/>case<sp/>found<sp/>(Block<sp/>devide<sp/>9)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="definition_8h_1a117352cc494cc62c6b2f1882786a332c" kindref="member">DEBUG</ref>)<sp/>std::cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;IMAGES<sp/>PROCESSING<sp/>FAILED<sp/>(no<sp/>case<sp/>found<sp/>1<sp/>of<sp/>9x9)&quot;</highlight><highlight class="normal">&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classCore_1a2eaa56d6855905faec8a1764db40892b" kindref="member">stateMachine</ref>.<ref refid="struct__stateMachine_1adbc0e51d4bed9b6da5c44e921e37dc32" kindref="member">_stateImageBlock</ref><sp/>==<sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ae0aa021e21dddbd6d8cecec71e9cf564" kindref="member">State::OK</ref>){</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="definition_8h_1a117352cc494cc62c6b2f1882786a332c" kindref="member">DEBUG</ref>)<sp/>std::cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;IMAGES<sp/>BLOCK<sp/>OK&quot;</highlight><highlight class="normal">&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classCore_1a2eaa56d6855905faec8a1764db40892b" kindref="member">stateMachine</ref>.<ref refid="struct__stateMachine_1a79ce614ae01c3759d155c03026384ca7" kindref="member">_statePathfinding</ref><sp/>==<sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ab50339a10e1de285ac99d4c3990b8693" kindref="member">State::NONE</ref>){</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCore_1a333060e38c961d6fbf4ba4d01a84e48b" kindref="member">pathfinding</ref>();</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classCore_1a2eaa56d6855905faec8a1764db40892b" kindref="member">stateMachine</ref>.<ref refid="struct__stateMachine_1a79ce614ae01c3759d155c03026384ca7" kindref="member">_statePathfinding</ref><sp/>==<sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ac2f3f489a00553e7a01d369c103c7251" kindref="member">State::NO</ref>){</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//TODO<sp/>no<sp/>possibility<sp/>to<sp/>found<sp/>arrival</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="definition_8h_1a117352cc494cc62c6b2f1882786a332c" kindref="member">DEBUG</ref>)<sp/>std::cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;NO<sp/>POSSIBILITY<sp/>PATHFINDING&quot;</highlight><highlight class="normal">&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classCore_1a2eaa56d6855905faec8a1764db40892b" kindref="member">stateMachine</ref>.<ref refid="struct__stateMachine_1a79ce614ae01c3759d155c03026384ca7" kindref="member">_statePathfinding</ref><sp/>==<sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ae0aa021e21dddbd6d8cecec71e9cf564" kindref="member">State::OK</ref>){</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="definition_8h_1a117352cc494cc62c6b2f1882786a332c" kindref="member">DEBUG</ref>)<sp/>std::cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;PATHFINDING<sp/>OK&quot;</highlight><highlight class="normal">&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classCore_1a2eaa56d6855905faec8a1764db40892b" kindref="member">stateMachine</ref>.<ref refid="struct__stateMachine_1a88c6e0c15cdd29b3eec2e842fa09b08f" kindref="member">_stateTrajectory</ref><sp/>==<sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ab50339a10e1de285ac99d4c3990b8693" kindref="member">State::NONE</ref>){</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCore_1a185801ec33fe24b0f36e4d9e474403ca" kindref="member">trajectory</ref>();</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classCore_1a2eaa56d6855905faec8a1764db40892b" kindref="member">stateMachine</ref>.<ref refid="struct__stateMachine_1a88c6e0c15cdd29b3eec2e842fa09b08f" kindref="member">_stateTrajectory</ref><sp/>==<sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8abb1ca97ec761fc37101737ba0aa2e7c5" kindref="member">State::ERROR</ref>){</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//TODO<sp/>Car<sp/>is<sp/>blocked<sp/>or<sp/>some<sp/>things<sp/>like<sp/>this</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="definition_8h_1a117352cc494cc62c6b2f1882786a332c" kindref="member">DEBUG</ref>)<sp/>std::cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;CAR<sp/>is<sp/>blocked&quot;</highlight><highlight class="normal">&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classCore_1a2eaa56d6855905faec8a1764db40892b" kindref="member">stateMachine</ref>.<ref refid="struct__stateMachine_1a88c6e0c15cdd29b3eec2e842fa09b08f" kindref="member">_stateTrajectory</ref><sp/>==<sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ae0aa021e21dddbd6d8cecec71e9cf564" kindref="member">State::OK</ref>){</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//TODO<sp/>Car<sp/>is<sp/>on<sp/>Arrival<sp/>!!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCore_1a1dac5f63296f11309c2f25770b30912b" kindref="member">setMode</ref>(<ref refid="core_8h_1a46c8a310cf4c094f8c80e1cb8dc1f911acf535b39ede8798cd6b56d99271afeef" kindref="member">Mode::Stop_Mode</ref>);<sp/></highlight><highlight class="comment">//wait<sp/>new<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165" refid="classCore_1afcdd1611a6528fd3d597d719405493b4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCore_1afcdd1611a6528fd3d597d719405493b4" kindref="member">Core::manualMode</ref>(){</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//TODO<sp/>just<sp/>listen<sp/>IPC<sp/>to<sp/>know<sp/>if<sp/>the<sp/>mode<sp/>has<sp/>change</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="classCore_1a9677503611528b6d6f2039eff6f80912" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCore_1a9677503611528b6d6f2039eff6f80912" kindref="member">Core::listenIPC</ref>(){</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classCore_1a05fa4660e945441b917880d1e148c89a" kindref="member">avm_mode</ref><sp/>!=<sp/><ref refid="core_8h_1a46c8a310cf4c094f8c80e1cb8dc1f911a62a2c1fd120cdb7005bf42408c887d9d" kindref="member">Mode::Auto_Mode</ref>)</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCore_1a1dac5f63296f11309c2f25770b30912b" kindref="member">setMode</ref>(<ref refid="core_8h_1a46c8a310cf4c094f8c80e1cb8dc1f911a62a2c1fd120cdb7005bf42408c887d9d" kindref="member">Mode::Auto_Mode</ref>);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176" refid="classCore_1a2a8efb95fadd86481ba62c98b72c7f1c" refkind="member"><highlight class="normal"><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8" kindref="member">State</ref><sp/><ref refid="classCore_1a2a8efb95fadd86481ba62c98b72c7f1c" kindref="member">Core::server</ref>(){</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//TODO<sp/>do<sp/>server<sp/>function<sp/>after<sp/>all<sp/>works.<sp/>(connect<sp/>to<sp/>the<sp/>server<sp/>with<sp/>IPC)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ae0aa021e21dddbd6d8cecec71e9cf564" kindref="member">State::OK</ref>;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181" refid="classCore_1a2d832a5e544b5e76d03a7fd596522b42" refkind="member"><highlight class="normal"><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8" kindref="member">State</ref><sp/><ref refid="classCore_1a2d832a5e544b5e76d03a7fd596522b42" kindref="member">Core::calibration</ref>(){</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classCore_1a7a18e37fde7d3ca4b1568225b51eaf0d" kindref="member">process</ref><sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCore_1a7a18e37fde7d3ca4b1568225b51eaf0d" kindref="member">process</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classImagesP" kindref="compound">ImagesP</ref>();</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCore_1a7a18e37fde7d3ca4b1568225b51eaf0d" kindref="member">process</ref>-&gt;<ref refid="classImagesP_1a799c4550d96659d7d188b03f52bb9f4a" kindref="member">calibration</ref>();</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classCore_1a7a18e37fde7d3ca4b1568225b51eaf0d" kindref="member">process</ref>-&gt;<ref refid="classImagesP_1a4048e5f515cb51cbf25211ec8b4854b7" kindref="member">loadCalib</ref>()<sp/>!=<sp/>Point2f(-1,-1)){</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCore_1a2eaa56d6855905faec8a1764db40892b" kindref="member">stateMachine</ref>.<ref refid="struct__stateMachine_1a157036ced733a021849ebcbc98c27200" kindref="member">_stateCalibration</ref><sp/>=<sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ae0aa021e21dddbd6d8cecec71e9cf564" kindref="member">State::OK</ref>;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCore_1a2eaa56d6855905faec8a1764db40892b" kindref="member">stateMachine</ref>.<ref refid="struct__stateMachine_1a157036ced733a021849ebcbc98c27200" kindref="member">_stateCalibration</ref><sp/>=<sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8abb1ca97ec761fc37101737ba0aa2e7c5" kindref="member">State::ERROR</ref>;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ae0aa021e21dddbd6d8cecec71e9cf564" kindref="member">State::OK</ref>;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193" refid="classCore_1a8648fac82f0324cead88c8fa2731b286" refkind="member"><highlight class="normal"><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8" kindref="member">State</ref><sp/><ref refid="classCore_1a8648fac82f0324cead88c8fa2731b286" kindref="member">Core::blockProcessing</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_auto){</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(is_auto){</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="definition_8h_1a117352cc494cc62c6b2f1882786a332c" kindref="member">DEBUG</ref>)<sp/>std::cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;SEARCH<sp/>BLOCK<sp/>...<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCore_1a7a18e37fde7d3ca4b1568225b51eaf0d" kindref="member">process</ref>-&gt;<ref refid="classImagesP_1ae2aecf8db20e7b3bcd14a7182dfdaf29" kindref="member">startBlock</ref>();</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(int8_t<sp/>i=0;<sp/>i&lt;<ref refid="classCore_1a7a18e37fde7d3ca4b1568225b51eaf0d" kindref="member">process</ref>-&gt;<ref refid="classImagesP_1ab9e279526694a7ce421cfa11b9309ed1" kindref="member">all_block</ref>.size();++i){</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCore_1a834f8de7a2b8f18b19af83d6c05b9b3a" kindref="member">manager</ref>-&gt;<ref refid="classManager_1a66599bf2bd10c95b9fb7be9c333e0ff9" kindref="member">bloc</ref>-&gt;<ref refid="classBloc_1a02db4c95699ce40e8ad671ef759ebdb7" kindref="member">add</ref>(<ref refid="classCore_1a7a18e37fde7d3ca4b1568225b51eaf0d" kindref="member">process</ref>-&gt;<ref refid="classImagesP_1ab9e279526694a7ce421cfa11b9309ed1" kindref="member">all_block</ref>.at(i).x,<sp/><ref refid="classCore_1a7a18e37fde7d3ca4b1568225b51eaf0d" kindref="member">process</ref>-&gt;<ref refid="classImagesP_1ab9e279526694a7ce421cfa11b9309ed1" kindref="member">all_block</ref>.at(i).y);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="definition_8h_1a117352cc494cc62c6b2f1882786a332c" kindref="member">DEBUG</ref>)<sp/>std::cout&lt;&lt;<ref refid="classCore_1a7a18e37fde7d3ca4b1568225b51eaf0d" kindref="member">process</ref>-&gt;<ref refid="classImagesP_1ab9e279526694a7ce421cfa11b9309ed1" kindref="member">all_block</ref>.size()&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/>FOUNDING&quot;</highlight><highlight class="normal">&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCore_1a834f8de7a2b8f18b19af83d6c05b9b3a" kindref="member">manager</ref>-&gt;<ref refid="classManager_1a2803dff8e8f2912242f4098991d91415" kindref="member">car</ref>-&gt;<ref refid="classCar_1a97e3c5de8eb65659ef520de6591f814d" kindref="member">setPosition</ref>(<ref refid="classCore_1a7a18e37fde7d3ca4b1568225b51eaf0d" kindref="member">process</ref>-&gt;<ref refid="classImagesP_1afe9cff50f49fc67bd8938d8d0223fe81" kindref="member">getCarPosition</ref>().x,<sp/><ref refid="classCore_1a7a18e37fde7d3ca4b1568225b51eaf0d" kindref="member">process</ref>-&gt;<ref refid="classImagesP_1afe9cff50f49fc67bd8938d8d0223fe81" kindref="member">getCarPosition</ref>().y);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCore_1a834f8de7a2b8f18b19af83d6c05b9b3a" kindref="member">manager</ref>-&gt;<ref refid="classManager_1a6f99d8e25fc61a7fe0fdf160610b31cf" kindref="member">arrive</ref>-&gt;<ref refid="classArrive_1ab0484a9338e3774c5fa824153b1470e2" kindref="member">setPosition</ref>(<ref refid="classCore_1a7a18e37fde7d3ca4b1568225b51eaf0d" kindref="member">process</ref>-&gt;<ref refid="classImagesP_1aaf0d33634f747f1defec833fbc6dfae2" kindref="member">getArrivalPosition</ref>().x,<sp/><ref refid="classCore_1a7a18e37fde7d3ca4b1568225b51eaf0d" kindref="member">process</ref>-&gt;<ref refid="classImagesP_1aaf0d33634f747f1defec833fbc6dfae2" kindref="member">getArrivalPosition</ref>().y);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCore_1a834f8de7a2b8f18b19af83d6c05b9b3a" kindref="member">manager</ref>-&gt;<ref refid="classManager_1af43da42550bd9746c5ea61a6aeee80de" kindref="member">update</ref>();</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)<ref refid="classCore_1a7a18e37fde7d3ca4b1568225b51eaf0d" kindref="member">process</ref>-&gt;<ref refid="classImagesP_1a002bb2f3148a85c46c954dcc98ad2760" kindref="member">getSizeMarker</ref>()<sp/>&gt;=<sp/>2){</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCore_1a2eaa56d6855905faec8a1764db40892b" kindref="member">stateMachine</ref>.<ref refid="struct__stateMachine_1adbc0e51d4bed9b6da5c44e921e37dc32" kindref="member">_stateImageBlock</ref><sp/>=<sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ae0aa021e21dddbd6d8cecec71e9cf564" kindref="member">State::OK</ref>;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCore_1a2eaa56d6855905faec8a1764db40892b" kindref="member">stateMachine</ref>.<ref refid="struct__stateMachine_1adbc0e51d4bed9b6da5c44e921e37dc32" kindref="member">_stateImageBlock</ref><sp/>=<sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8abb1ca97ec761fc37101737ba0aa2e7c5" kindref="member">State::ERROR</ref>;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ae0aa021e21dddbd6d8cecec71e9cf564" kindref="member">State::OK</ref>;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214" refid="classCore_1a333060e38c961d6fbf4ba4d01a84e48b" refkind="member"><highlight class="normal"><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8" kindref="member">State</ref><sp/><ref refid="classCore_1a333060e38c961d6fbf4ba4d01a84e48b" kindref="member">Core::pathfinding</ref>(){</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCore_1a55b925c8acc13a0002112d48a054984e" kindref="member">path</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classPathFinding" kindref="compound">PathFinding</ref>(</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCore_1a834f8de7a2b8f18b19af83d6c05b9b3a" kindref="member">manager</ref>-&gt;<ref refid="classManager_1a963d327a438d93b100ff68b475d2cf83" kindref="member">getGeneralTable</ref>(),<sp/><ref refid="classCore_1a834f8de7a2b8f18b19af83d6c05b9b3a" kindref="member">manager</ref>-&gt;<ref refid="classManager_1a18e77e06ef097db9e010835e7930bd3f" kindref="member">getSceneCarrer</ref>(),<sp/><ref refid="classCore_1a834f8de7a2b8f18b19af83d6c05b9b3a" kindref="member">manager</ref>-&gt;<ref refid="classManager_1a18e77e06ef097db9e010835e7930bd3f" kindref="member">getSceneCarrer</ref>(),<sp/></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCore_1a834f8de7a2b8f18b19af83d6c05b9b3a" kindref="member">manager</ref>-&gt;<ref refid="classManager_1a2803dff8e8f2912242f4098991d91415" kindref="member">car</ref>-&gt;<ref refid="classCar_1a20dd521474ee36b144bde58e3359eed6" kindref="member">getPosition</ref>(),<sp/><ref refid="classCore_1a834f8de7a2b8f18b19af83d6c05b9b3a" kindref="member">manager</ref>-&gt;<ref refid="classManager_1a6f99d8e25fc61a7fe0fdf160610b31cf" kindref="member">arrive</ref>-&gt;<ref refid="classArrive_1abe91e4a5bcf15ff987ab58c05b6bb537" kindref="member">getPosition</ref>()</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="classCore_1a55b925c8acc13a0002112d48a054984e" kindref="member">path</ref>-&gt;<ref refid="classPathFinding_1a8d70d17f06400cdcd5787331d7be38e2" kindref="member">hasPossibility</ref>()){</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCore_1a2eaa56d6855905faec8a1764db40892b" kindref="member">stateMachine</ref>.<ref refid="struct__stateMachine_1a79ce614ae01c3759d155c03026384ca7" kindref="member">_statePathfinding</ref><sp/>=<sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ac2f3f489a00553e7a01d369c103c7251" kindref="member">State::NO</ref>;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ac2f3f489a00553e7a01d369c103c7251" kindref="member">State::NO</ref>;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>waitKey(100);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::pair&lt;int8_t,<sp/>int8_t&gt;&gt;<sp/>*cheminTerminate<sp/>=<sp/><ref refid="classCore_1a55b925c8acc13a0002112d48a054984e" kindref="member">path</ref>-&gt;<ref refid="classPathFinding_1aff1ca43a0ea5e4b9e5e188f165f08cd2" kindref="member">getChemin</ref>();</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index=0;<sp/>index<sp/>&lt;<sp/>(int)cheminTerminate-&gt;size()<sp/>-<sp/>1;<sp/>++index)</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCore_1a834f8de7a2b8f18b19af83d6c05b9b3a" kindref="member">manager</ref>-&gt;<ref refid="classManager_1abaeefec28074459f6dbdc64af9c6a3b9" kindref="member">chemin</ref>-&gt;<ref refid="classChemin_1a2ee7b6a34082453fbdf890a49017aead" kindref="member">add</ref>(cheminTerminate-&gt;at(index).first,<sp/>cheminTerminate-&gt;at(index).second);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCore_1a834f8de7a2b8f18b19af83d6c05b9b3a" kindref="member">manager</ref>-&gt;<ref refid="classManager_1af43da42550bd9746c5ea61a6aeee80de" kindref="member">update</ref>();</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCore_1a2eaa56d6855905faec8a1764db40892b" kindref="member">stateMachine</ref>.<ref refid="struct__stateMachine_1a79ce614ae01c3759d155c03026384ca7" kindref="member">_statePathfinding</ref><sp/>=<sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ae0aa021e21dddbd6d8cecec71e9cf564" kindref="member">State::OK</ref>;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ae0aa021e21dddbd6d8cecec71e9cf564" kindref="member">State::OK</ref>;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233" refid="classCore_1a180fe625431721a94959a694fe91ef3f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCore_1a180fe625431721a94959a694fe91ef3f" kindref="member">Core::forward</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angle){</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237" refid="classCore_1a0639e803afd1447272759b6b0fa22f60" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCore_1a0639e803afd1447272759b6b0fa22f60" kindref="member">Core::rotation</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angle){</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241" refid="classCore_1a185801ec33fe24b0f36e4d9e474403ca" refkind="member"><highlight class="normal"><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8" kindref="member">State</ref><sp/><ref refid="classCore_1a185801ec33fe24b0f36e4d9e474403ca" kindref="member">Core::trajectory</ref>(){</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCore_1a2eaa56d6855905faec8a1764db40892b" kindref="member">stateMachine</ref>.<ref refid="struct__stateMachine_1a88c6e0c15cdd29b3eec2e842fa09b08f" kindref="member">_stateTrajectory</ref><sp/>=<sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ae0aa021e21dddbd6d8cecec71e9cf564" kindref="member">State::OK</ref>;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ae0aa021e21dddbd6d8cecec71e9cf564" kindref="member">State::OK</ref>;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/glegall/prog_workspace/Robot_car/prog/sources/core.cpp"/>
+  </compounddef>
+</doxygen>

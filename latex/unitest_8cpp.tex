@@ -1,0 +1,143 @@
+\hypertarget{unitest_8cpp}{\section{Référence du fichier unitest.\-cpp}
+\label{unitest_8cpp}\index{unitest.\-cpp@{unitest.\-cpp}}
+}
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include \char`\"{}headers/manager.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}headers/traitement/pathfinding.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}headers/definition.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$unistd.\-h$>$}\\*
+{\ttfamily \#include $<$utility$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{unitest_8cpp_a8fe7cee2b1a0e3b6c36ff74b48615626}{unitest\-\_\-pathfinding} (int8\-\_\-t x, int8\-\_\-t y)
+\item 
+int \hyperlink{unitest_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{unitest_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{\index{unitest.\-cpp@{unitest.\-cpp}!main@{main}}
+\index{main@{main}!unitest.cpp@{unitest.\-cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{unitest_8cpp_a0ddf1224851353fc92bfbff6f499fa97}
+
+
+Références unitest\-\_\-pathfinding().
+
+
+\begin{DoxyCode}
+77                                 \{
+78     \textcolor{keywordflow}{if}(argc > 1)\{
+79         \textcolor{keywordflow}{if}(argc == 2)\{ \textcolor{comment}{// ./unitest images}
+80             printf(\textcolor{stringliteral}{"[WAIT] No unitest for images processing NOW\(\backslash\)n"});
+81             \textcolor{keywordflow}{return} 0;
+82         \}
+83         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(argc == 4)\{ \textcolor{comment}{// ./unitest pathfinding <X> <Y>}
+84             \textcolor{keywordtype}{int} x = atoi(argv[2]);
+85             \textcolor{keywordtype}{int} y = atoi(argv[3]);
+86             \textcolor{keywordflow}{if}(x < 4 && x >= 0 && y >= 0 && y < 4)\{
+87                 \hyperlink{unitest_8cpp_a8fe7cee2b1a0e3b6c36ff74b48615626}{unitest\_pathfinding}((int8\_t)x, (int8\_t)y);
+88                 \textcolor{keywordflow}{return} 0;
+89             \}
+90         \}
+91 
+92     \}
+93     printf(\textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)t\(\backslash\)t---------UNITEST USAGE---------\(\backslash\)n\(\backslash\)tUsage:\(\backslash\)n\(\backslash\)n\(\backslash\)t./unitest images\(\backslash\)t\(\backslash\)t>\(\backslash\)tDisplay Unitest
+       from Images processing\(\backslash\)n\(\backslash\)n\(\backslash\)t./unitest pathfinding <X> <Y>\(\backslash\)t>\(\backslash\)tDisplay Unitest from Pathfinding processing\(\backslash\)n\(\backslash\)t\(\backslash\)t
+      <X> <Y> coordonate of a block (x2 y2 to have not possibility, 0 >= x and y < 4)\(\backslash\)n\(\backslash\)t\(\backslash\)t---------UNITEST
+       USAGE---------\(\backslash\)n"});
+94     \textcolor{keywordflow}{return} -1;
+95 \}\end{DoxyCode}
+\hypertarget{unitest_8cpp_a8fe7cee2b1a0e3b6c36ff74b48615626}{\index{unitest.\-cpp@{unitest.\-cpp}!unitest\-\_\-pathfinding@{unitest\-\_\-pathfinding}}
+\index{unitest\-\_\-pathfinding@{unitest\-\_\-pathfinding}!unitest.cpp@{unitest.\-cpp}}
+\subsubsection[{unitest\-\_\-pathfinding}]{\setlength{\rightskip}{0pt plus 5cm}void unitest\-\_\-pathfinding (
+\begin{DoxyParamCaption}
+\item[{int8\-\_\-t}]{x, }
+\item[{int8\-\_\-t}]{y}
+\end{DoxyParamCaption}
+)}}\label{unitest_8cpp_a8fe7cee2b1a0e3b6c36ff74b48615626}
+
+
+Références Chemin\-::add(), Bloc\-::add(), Manager\-::arrive, Manager\-::bloc, Manager\-::car, Manager\-::chemin, Manager\-::for\-Developper(), Path\-Finding\-::get\-Chemin(), Manager\-::get\-General\-Table(), Car\-::get\-Instance(), Bloc\-::get\-Instance(), Manager\-::get\-Instance(), Car\-::get\-Position(), Arrive\-::get\-Position(), Manager\-::get\-Scene\-Carrer(), Bloc\-::has(), Path\-Finding\-::has\-Possibility(), \-\_\-share\-M\-::index, Manager\-::init\-Scene(), Bloc\-::remove(), Car\-::set\-Position(), Arrive\-::set\-Position(), Bloc\-::to\-String(), et Manager\-::update().
+
+
+
+Référencé par main().
+
+
+\begin{DoxyCode}
+21                                             \{
+22     \hyperlink{classManager}{Manager} *test1 = \hyperlink{classManager_a5d783bd86e9be93235898a46de80847f}{Manager::getInstance}();
+23     \hyperlink{classManager}{Manager} *test2 = \hyperlink{classManager_a5d783bd86e9be93235898a46de80847f}{Manager::getInstance}();
+24     test1->\hyperlink{classManager_a24a0a31be841d8707708874486cb1b7c}{initScene}(4);
+25     printf(\textcolor{stringliteral}{"No Duplicate Manager\(\backslash\)t\(\backslash\)t | \(\backslash\)t\(\backslash\)t%s\(\backslash\)n"}, (
+26                                     test1->\hyperlink{classManager_a5d783bd86e9be93235898a46de80847f}{getInstance}() == test2->
+      \hyperlink{classManager_a5d783bd86e9be93235898a46de80847f}{getInstance}() ? \textcolor{stringliteral}{"OK"} : \textcolor{stringliteral}{"KO <-~-~-~"}));
+27     printf(\textcolor{stringliteral}{"No Duplicate Car\(\backslash\)t\(\backslash\)t | \(\backslash\)t\(\backslash\)t%s\(\backslash\)n"}, (
+28                                     test1->\hyperlink{classManager_a2803dff8e8f2912242f4098991d91415}{car}->\hyperlink{classCar_a40cbec40dad9ddda76c277da17f23528}{getInstance}() == test2->
+      \hyperlink{classManager_a2803dff8e8f2912242f4098991d91415}{car}->\hyperlink{classCar_a40cbec40dad9ddda76c277da17f23528}{getInstance}() ? \textcolor{stringliteral}{"OK"} : \textcolor{stringliteral}{"KO <-~-~-~"}));
+29     printf(\textcolor{stringliteral}{"No Duplicate Bloc\(\backslash\)t\(\backslash\)t | \(\backslash\)t\(\backslash\)t%s\(\backslash\)n"}, (
+30                                     test1->\hyperlink{classManager_a66599bf2bd10c95b9fb7be9c333e0ff9}{bloc}->\hyperlink{classBloc_af357c5eeff01b5b41d983b1e42f5c115}{getInstance}() == test2->
+      \hyperlink{classManager_a66599bf2bd10c95b9fb7be9c333e0ff9}{bloc}->\hyperlink{classBloc_af357c5eeff01b5b41d983b1e42f5c115}{getInstance}() ? \textcolor{stringliteral}{"OK"} : \textcolor{stringliteral}{"KO <-~-~-~"}));
+31     \hyperlink{classBloc}{Bloc} *b = test1->\hyperlink{classManager_a66599bf2bd10c95b9fb7be9c333e0ff9}{bloc};
+32     printf(\textcolor{stringliteral}{"Add Bloc \(\backslash\)tx%d y%d\(\backslash\)t\(\backslash\)t | \(\backslash\)t\(\backslash\)t%s\(\backslash\)n"},x,y, (b->\hyperlink{classBloc_a02db4c95699ce40e8ad671ef759ebdb7}{add}(x, y) ? \textcolor{stringliteral}{"OK"} : \textcolor{stringliteral}{"KO <-~-~-~"}));
+33     printf(\textcolor{stringliteral}{"Exist Bloc \(\backslash\)tx%d y%d\(\backslash\)t\(\backslash\)t | \(\backslash\)t\(\backslash\)t%s\(\backslash\)n"},x,y, (b->\hyperlink{classBloc_a03799c83e18411ab4ae4bf3e03aec975}{has}(x, y) ? \textcolor{stringliteral}{"OK"} : \textcolor{stringliteral}{"KO <-~-~-~"}));
+34     b->\hyperlink{classBloc_a02db4c95699ce40e8ad671ef759ebdb7}{add}(0, 2);
+35     b->\hyperlink{classBloc_a02db4c95699ce40e8ad671ef759ebdb7}{add}(1, 2);
+36     b->\hyperlink{classBloc_a02db4c95699ce40e8ad671ef759ebdb7}{add}(3, 2);
+37     std::string comp = \textcolor{stringliteral}{" \(\backslash\)"Bloc\(\backslash\)": \{ \(\backslash\)"Number\(\backslash\)": 4, \(\backslash\)"Position\(\backslash\)": \{\(\backslash\)"0\(\backslash\)": \(\backslash\)""}+ 
+38                         to\_string(x) +\textcolor{stringliteral}{","}+ to\_string(y) +\textcolor{stringliteral}{"\(\backslash\)", \(\backslash\)"1\(\backslash\)": \(\backslash\)"0,2\(\backslash\)", \(\backslash\)"2\(\backslash\)": \(\backslash\)"1,2\(\backslash\)", \(\backslash\)"3\(\backslash\)": \(\backslash\)"3,2
+      \(\backslash\)",\} \}"};
+39     std::cout<<comp<<std::endl;
+40     std::cout<<b->\hyperlink{classBloc_a040af8a2aefc1acaa0e2d9bfc5943fa3}{toString}()<<std::endl;
+41     printf(\textcolor{stringliteral}{"toString function\(\backslash\)t\(\backslash\)t | \(\backslash\)t\(\backslash\)t%s\(\backslash\)n"}, (comp == b->\hyperlink{classBloc_a040af8a2aefc1acaa0e2d9bfc5943fa3}{toString}() ? \textcolor{stringliteral}{"OK"} : \textcolor{stringliteral}{"KO <-~-~-~"}));
+42     printf(\textcolor{stringliteral}{"Remove Bloc \(\backslash\)tx%d y%d\(\backslash\)t\(\backslash\)t | \(\backslash\)t\(\backslash\)t%s\(\backslash\)n"},x,y, (b->\hyperlink{classBloc_a259248faed302444ba5424cdf6178681}{remove}(x, y) ? \textcolor{stringliteral}{"OK"} : \textcolor{stringliteral}{"KO <-~-~-~"}));
+43     printf(\textcolor{stringliteral}{"Dont Exist Bloc \(\backslash\)tx%d y%d\(\backslash\)t | \(\backslash\)t\(\backslash\)t%s\(\backslash\)n"},x,y, (!b->\hyperlink{classBloc_a03799c83e18411ab4ae4bf3e03aec975}{has}(x, y) ? \textcolor{stringliteral}{"OK"} : \textcolor{stringliteral}{"KO <-~-~-~"}));
+44     b->\hyperlink{classBloc_a02db4c95699ce40e8ad671ef759ebdb7}{add}(x, y);
+45     test1->\hyperlink{classManager_af43da42550bd9746c5ea61a6aeee80de}{update}();
+46     \hyperlink{classCar}{Car} *car = test1->\hyperlink{classManager_a2803dff8e8f2912242f4098991d91415}{car};
+47     printf(\textcolor{stringliteral}{"Default Position Car x-1 y-1\(\backslash\)t | \(\backslash\)t\(\backslash\)t%s\(\backslash\)n"}, (car->\hyperlink{classCar_a20dd521474ee36b144bde58e3359eed6}{getPosition}().first == -1 ? \textcolor{stringliteral}{"OK"} :
+       \textcolor{stringliteral}{"KO <-~-~-~"}));
+48     car->\hyperlink{classCar_a97e3c5de8eb65659ef520de6591f814d}{setPosition}(3, 0);
+49     printf(\textcolor{stringliteral}{"Position Car \(\backslash\)tx%d y%d\(\backslash\)t\(\backslash\)t | \(\backslash\)t\(\backslash\)t%s\(\backslash\)n"},3,0, (
+50                         car->\hyperlink{classCar_a20dd521474ee36b144bde58e3359eed6}{getPosition}().first == 3 && car->
+      \hyperlink{classCar_a20dd521474ee36b144bde58e3359eed6}{getPosition}().second == 0  ? \textcolor{stringliteral}{"OK"} : \textcolor{stringliteral}{"KO <-~-~-~"}));
+51     \hyperlink{classArrive}{Arrive} *arrive = test1->\hyperlink{classManager_a6f99d8e25fc61a7fe0fdf160610b31cf}{arrive};
+52     printf(\textcolor{stringliteral}{"Default Position Arrive x-1 y-1\(\backslash\)t | \(\backslash\)t\(\backslash\)t%s\(\backslash\)n"}, (arrive->\hyperlink{classArrive_abe91e4a5bcf15ff987ab58c05b6bb537}{getPosition}().first == -1 ? \textcolor{stringliteral}{
+      "OK"} : \textcolor{stringliteral}{"KO <-~-~-~"}));
+53     arrive->\hyperlink{classArrive_ab0484a9338e3774c5fa824153b1470e2}{setPosition}(0, 3);
+54     printf(\textcolor{stringliteral}{"Position Arrive \(\backslash\)tx%d y%d\(\backslash\)t | \(\backslash\)t\(\backslash\)t%s\(\backslash\)n"},0,3, (
+55                         arrive->\hyperlink{classArrive_abe91e4a5bcf15ff987ab58c05b6bb537}{getPosition}().first == 0 && arrive->
+      \hyperlink{classArrive_abe91e4a5bcf15ff987ab58c05b6bb537}{getPosition}().second == 3  ? \textcolor{stringliteral}{"OK"} : \textcolor{stringliteral}{"KO <-~-~-~"}));
+56     test1->\hyperlink{classManager_af43da42550bd9746c5ea61a6aeee80de}{update}();
+57     std::cout<<test1->\hyperlink{classManager_a21b3e54cbe4b045b9ac40ee53e403897}{forDevelopper}()<<std::endl;
+58     \hyperlink{classPathFinding}{PathFinding} *path = \textcolor{keyword}{new} \hyperlink{classPathFinding}{PathFinding}(
+59         test1->\hyperlink{classManager_a963d327a438d93b100ff68b475d2cf83}{getGeneralTable}(), test1->\hyperlink{classManager_a18e77e06ef097db9e010835e7930bd3f}{getSceneCarrer}(), test1->
+      \hyperlink{classManager_a18e77e06ef097db9e010835e7930bd3f}{getSceneCarrer}(), 
+60         car->\hyperlink{classCar_a20dd521474ee36b144bde58e3359eed6}{getPosition}(), arrive->\hyperlink{classArrive_abe91e4a5bcf15ff987ab58c05b6bb537}{getPosition}()
+61     );
+62     \textcolor{keywordflow}{if}(path->\hyperlink{classPathFinding_a8d70d17f06400cdcd5787331d7be38e2}{hasPossibility}())\{
+63         printf(\textcolor{stringliteral}{"Is Possible\(\backslash\)t\(\backslash\)t\(\backslash\)t | \(\backslash\)t\(\backslash\)tOK\(\backslash\)n"});
+64         std::vector<std::pair<int8\_t, int8\_t>> *cheminTerminate = path->
+      \hyperlink{classPathFinding_aff1ca43a0ea5e4b9e5e188f165f08cd2}{getChemin}();
+65         \textcolor{keywordflow}{for}(int8\_t \hyperlink{server_8cpp_a30792c4b007e8273d3832fe2d5e70987}{index}=0; \hyperlink{server_8cpp_a30792c4b007e8273d3832fe2d5e70987}{index} < (int8\_t)cheminTerminate->size() - 1; ++
+      \hyperlink{server_8cpp_a30792c4b007e8273d3832fe2d5e70987}{index})
+66             test1->\hyperlink{classManager_abaeefec28074459f6dbdc64af9c6a3b9}{chemin}->\hyperlink{classChemin_a2ee7b6a34082453fbdf890a49017aead}{add}(cheminTerminate->at(\hyperlink{server_8cpp_a30792c4b007e8273d3832fe2d5e70987}{index}).first, cheminTerminate->at(
+      \hyperlink{server_8cpp_a30792c4b007e8273d3832fe2d5e70987}{index}).second);
+67         test1->\hyperlink{classManager_af43da42550bd9746c5ea61a6aeee80de}{update}();
+68         printf(\textcolor{stringliteral}{"Chemin Correct\(\backslash\)t\(\backslash\)t\(\backslash\)t | \(\backslash\)t\(\backslash\)t%s\(\backslash\)n"}, ((\textcolor{keywordtype}{int})cheminTerminate->size() == 6 ? \textcolor{stringliteral}{"OK"} : \textcolor{stringliteral}{"KO <-~-~-~"})
+      );
+69     \}\textcolor{keywordflow}{else}\{
+70         printf(\textcolor{stringliteral}{"Not Possible\(\backslash\)t\(\backslash\)t\(\backslash\)t | \(\backslash\)t\(\backslash\)tOK\(\backslash\)n"});
+71     \}
+72     \textcolor{keyword}{delete} test1;
+73     test1 = \textcolor{keyword}{nullptr};
+74     printf(\textcolor{stringliteral}{"Delete Manager\(\backslash\)t\(\backslash\)t\(\backslash\)t | \(\backslash\)t\(\backslash\)t%s\(\backslash\)n"}, (test1 == \textcolor{keyword}{nullptr} ? \textcolor{stringliteral}{"OK"} : \textcolor{stringliteral}{"KO <-~-~-~"}));
+75 \}
+\end{DoxyCode}

@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Robot Avec Intelligence déporté:  Fichier source de headers/traitement/calibration.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Robot Avec Intelligence déporté
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_7f57b1e41c5acd0e859ae5f3a2b075a9.html">headers</a></li><li class="navelem"><a class="el" href="dir_1853b9e8c537f37fa261060a0cc78b6e.html">traitement</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">calibration.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="calibration_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CALIBRATION_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CALIBRATION_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;opencv2/highgui/highgui.hpp&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;opencv2/imgproc/imgproc.hpp&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;utility&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="calibration_8h.html">   10</a></span>&#160;<span class="keyword">struct </span><a class="code" href="calibration_8h.html#structColorInfo">ColorInfo</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="calibration_8h.html#a5ceb201f85a16581f118c9e7ff83ff7f">   11</a></span>&#160;    uint8_t <a class="code" href="calibration_8h.html#a5ceb201f85a16581f118c9e7ff83ff7f">iLowH</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="calibration_8h.html#ad6e7d1e25ecafb83a725f9ca95704745">   12</a></span>&#160;    uint8_t <a class="code" href="calibration_8h.html#ad6e7d1e25ecafb83a725f9ca95704745">iHighH</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="calibration_8h.html#a032b2484868139023c36cb2c7ae7dd9e">   13</a></span>&#160;    uint8_t <a class="code" href="calibration_8h.html#a032b2484868139023c36cb2c7ae7dd9e">iLowS</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="calibration_8h.html#afc281afa74af4b6bb6ff3dd12e62ea8d">   14</a></span>&#160;    uint8_t <a class="code" href="calibration_8h.html#afc281afa74af4b6bb6ff3dd12e62ea8d">iHighS</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="calibration_8h.html#ab169dd6230117ce5c2d305c88313ac95">   15</a></span>&#160;    uint8_t <a class="code" href="calibration_8h.html#ab169dd6230117ce5c2d305c88313ac95">iLowV</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="calibration_8h.html#af5f021160be39927fb5de69696b95a3b">   16</a></span>&#160;    uint8_t <a class="code" href="calibration_8h.html#af5f021160be39927fb5de69696b95a3b">iHighV</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;};</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classCalibration.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCalibration.html">Calibration</a>{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="classCalibration.html#a420bea981d91ac69161e400644ec7dd8">Calibration</a>(cv::VideoCapture capVideo);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classCalibration.html#a066922eb7b40419ed4f850b3c6b4148d">start</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classCalibration.html#ad5f6fcb712cd2ad1a44e19ff4e9058be">   24</a></span>&#160;    std::pair&lt;uint8_t, uint8_t&gt; <a class="code" href="classCalibration.html#ad5f6fcb712cd2ad1a44e19ff4e9058be">getH</a>(){</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">return</span> std::make_pair(<a class="code" href="classCalibration.html#a1d7d84d44fc3abbf136ce9dc964aa02a">iLowH</a>, <a class="code" href="classCalibration.html#a91d2ce954d66d7c5156d331f67573921">iHighH</a>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classCalibration.html#a6bf68284373ae2468bd85043e48b8f25">   27</a></span>&#160;    std::pair&lt;uint8_t, uint8_t&gt; <a class="code" href="classCalibration.html#a6bf68284373ae2468bd85043e48b8f25">getS</a>(){</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">return</span> std::make_pair(<a class="code" href="classCalibration.html#a258a3e9be8b3269a3e1e921da88e5b5a">iLowS</a>, <a class="code" href="classCalibration.html#a216315dfc878e13e9e5b0f487845a627">iHighS</a>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classCalibration.html#ac6b160de7e16702bb7938342c034477a">   30</a></span>&#160;    std::pair&lt;uint8_t, uint8_t&gt; <a class="code" href="classCalibration.html#ac6b160de7e16702bb7938342c034477a">getV</a>(){</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordflow">return</span> std::make_pair(<a class="code" href="classCalibration.html#a852abbbb791c1625252d3d23825e7648">iLowV</a>, <a class="code" href="classCalibration.html#ab9838bcf2d96445da4a79ccafc7aee4c">iHighV</a>);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classCalibration.html#a108efb6ccd8c98e5cac950be4bf0ac26">   33</a></span>&#160;    <a class="code" href="classCalibration.html#a108efb6ccd8c98e5cac950be4bf0ac26">~Calibration</a>(){</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">delete</span> []<a class="code" href="classCalibration.html#a062b450b8f24d5eadab562b3ed929f89">calibrationColors</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="classCalibration.html#a062b450b8f24d5eadab562b3ed929f89">calibrationColors</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCalibration.html#adef7ee6cc7d95ea809c1cccd4d41ce02">defineHSV</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCalibration.html#ad8250297ea60fa9c0ad1e38a70cca880">search</a>(cv::Mat hsv_frame);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCalibration.html#ac4bdcbef3a615877cbeed352ea74c312">addColor</a>(uint8_t H_min, uint8_t H_max, uint8_t S_min, uint8_t S_max, uint8_t V_min, uint8_t V_max);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    uint8_t <a class="code" href="classCalibration.html#a0eb486ca50923fab9a39d4403c18d4cf">minC</a>(uint8_t, uint8_t, int8_t marge);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    uint8_t <a class="code" href="classCalibration.html#a26be0ee9644bd758d60a22ffe1281bd6">maxC</a>(uint8_t, uint8_t, int8_t marge);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCalibration.html#ac016f08b033ba23b3036a87ab610946f">filtreC</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classCalibration.html#a062b450b8f24d5eadab562b3ed929f89">   45</a></span>&#160;    std::vector&lt;struct ColorInfo&gt; *<a class="code" href="classCalibration.html#a062b450b8f24d5eadab562b3ed929f89">calibrationColors</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classCalibration.html#aa3fc415d57199effd80858c330ba5caa">   46</a></span>&#160;    cv::Rect <a class="code" href="classCalibration.html#aa3fc415d57199effd80858c330ba5caa">rectangleCalib</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classCalibration.html#a9e0da36de8c79fd1a8f5952723f3e464">   47</a></span>&#160;    cv::VideoCapture <a class="code" href="classCalibration.html#a9e0da36de8c79fd1a8f5952723f3e464">capture</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classCalibration.html#a1d7d84d44fc3abbf136ce9dc964aa02a">   48</a></span>&#160;    uint8_t <a class="code" href="classCalibration.html#a1d7d84d44fc3abbf136ce9dc964aa02a">iLowH</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classCalibration.html#a91d2ce954d66d7c5156d331f67573921">   49</a></span>&#160;    uint8_t <a class="code" href="classCalibration.html#a91d2ce954d66d7c5156d331f67573921">iHighH</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classCalibration.html#a258a3e9be8b3269a3e1e921da88e5b5a">   50</a></span>&#160;    uint8_t <a class="code" href="classCalibration.html#a258a3e9be8b3269a3e1e921da88e5b5a">iLowS</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classCalibration.html#a216315dfc878e13e9e5b0f487845a627">   51</a></span>&#160;    uint8_t <a class="code" href="classCalibration.html#a216315dfc878e13e9e5b0f487845a627">iHighS</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classCalibration.html#a852abbbb791c1625252d3d23825e7648">   52</a></span>&#160;    uint8_t <a class="code" href="classCalibration.html#a852abbbb791c1625252d3d23825e7648">iLowV</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classCalibration.html#ab9838bcf2d96445da4a79ccafc7aee4c">   53</a></span>&#160;    uint8_t <a class="code" href="classCalibration.html#ab9838bcf2d96445da4a79ccafc7aee4c">iHighV</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classCalibration_html_a91d2ce954d66d7c5156d331f67573921"><div class="ttname"><a href="classCalibration.html#a91d2ce954d66d7c5156d331f67573921">Calibration::iHighH</a></div><div class="ttdeci">uint8_t iHighH</div><div class="ttdef"><b>Definition:</b> calibration.h:49</div></div>
+<div class="ttc" id="classCalibration_html_ad8250297ea60fa9c0ad1e38a70cca880"><div class="ttname"><a href="classCalibration.html#ad8250297ea60fa9c0ad1e38a70cca880">Calibration::search</a></div><div class="ttdeci">void search(cv::Mat hsv_frame)</div><div class="ttdef"><b>Definition:</b> calibration.cpp:140</div></div>
+<div class="ttc" id="classCalibration_html_ad5f6fcb712cd2ad1a44e19ff4e9058be"><div class="ttname"><a href="classCalibration.html#ad5f6fcb712cd2ad1a44e19ff4e9058be">Calibration::getH</a></div><div class="ttdeci">std::pair&lt; uint8_t, uint8_t &gt; getH()</div><div class="ttdef"><b>Definition:</b> calibration.h:24</div></div>
+<div class="ttc" id="classCalibration_html_a420bea981d91ac69161e400644ec7dd8"><div class="ttname"><a href="classCalibration.html#a420bea981d91ac69161e400644ec7dd8">Calibration::Calibration</a></div><div class="ttdeci">Calibration(cv::VideoCapture capVideo)</div><div class="ttdef"><b>Definition:</b> calibration.cpp:18</div></div>
+<div class="ttc" id="classCalibration_html_aa3fc415d57199effd80858c330ba5caa"><div class="ttname"><a href="classCalibration.html#aa3fc415d57199effd80858c330ba5caa">Calibration::rectangleCalib</a></div><div class="ttdeci">cv::Rect rectangleCalib</div><div class="ttdef"><b>Definition:</b> calibration.h:46</div></div>
+<div class="ttc" id="calibration_8h_html_a032b2484868139023c36cb2c7ae7dd9e"><div class="ttname"><a href="calibration_8h.html#a032b2484868139023c36cb2c7ae7dd9e">ColorInfo::iLowS</a></div><div class="ttdeci">uint8_t iLowS</div><div class="ttdef"><b>Definition:</b> calibration.h:13</div></div>
+<div class="ttc" id="classCalibration_html_a216315dfc878e13e9e5b0f487845a627"><div class="ttname"><a href="classCalibration.html#a216315dfc878e13e9e5b0f487845a627">Calibration::iHighS</a></div><div class="ttdeci">uint8_t iHighS</div><div class="ttdef"><b>Definition:</b> calibration.h:51</div></div>
+<div class="ttc" id="classCalibration_html_a108efb6ccd8c98e5cac950be4bf0ac26"><div class="ttname"><a href="classCalibration.html#a108efb6ccd8c98e5cac950be4bf0ac26">Calibration::~Calibration</a></div><div class="ttdeci">~Calibration()</div><div class="ttdef"><b>Definition:</b> calibration.h:33</div></div>
+<div class="ttc" id="classCalibration_html_ab9838bcf2d96445da4a79ccafc7aee4c"><div class="ttname"><a href="classCalibration.html#ab9838bcf2d96445da4a79ccafc7aee4c">Calibration::iHighV</a></div><div class="ttdeci">uint8_t iHighV</div><div class="ttdef"><b>Definition:</b> calibration.h:53</div></div>
+<div class="ttc" id="classCalibration_html_a9e0da36de8c79fd1a8f5952723f3e464"><div class="ttname"><a href="classCalibration.html#a9e0da36de8c79fd1a8f5952723f3e464">Calibration::capture</a></div><div class="ttdeci">cv::VideoCapture capture</div><div class="ttdef"><b>Definition:</b> calibration.h:47</div></div>
+<div class="ttc" id="calibration_8h_html_a5ceb201f85a16581f118c9e7ff83ff7f"><div class="ttname"><a href="calibration_8h.html#a5ceb201f85a16581f118c9e7ff83ff7f">ColorInfo::iLowH</a></div><div class="ttdeci">uint8_t iLowH</div><div class="ttdef"><b>Definition:</b> calibration.h:11</div></div>
+<div class="ttc" id="calibration_8h_html_ab169dd6230117ce5c2d305c88313ac95"><div class="ttname"><a href="calibration_8h.html#ab169dd6230117ce5c2d305c88313ac95">ColorInfo::iLowV</a></div><div class="ttdeci">uint8_t iLowV</div><div class="ttdef"><b>Definition:</b> calibration.h:15</div></div>
+<div class="ttc" id="classCalibration_html_a062b450b8f24d5eadab562b3ed929f89"><div class="ttname"><a href="classCalibration.html#a062b450b8f24d5eadab562b3ed929f89">Calibration::calibrationColors</a></div><div class="ttdeci">std::vector&lt; struct ColorInfo &gt; * calibrationColors</div><div class="ttdef"><b>Definition:</b> calibration.h:45</div></div>
+<div class="ttc" id="classCalibration_html_ac4bdcbef3a615877cbeed352ea74c312"><div class="ttname"><a href="classCalibration.html#ac4bdcbef3a615877cbeed352ea74c312">Calibration::addColor</a></div><div class="ttdeci">void addColor(uint8_t H_min, uint8_t H_max, uint8_t S_min, uint8_t S_max, uint8_t V_min, uint8_t V_max)</div><div class="ttdef"><b>Definition:</b> calibration.cpp:36</div></div>
+<div class="ttc" id="calibration_8h_html_ad6e7d1e25ecafb83a725f9ca95704745"><div class="ttname"><a href="calibration_8h.html#ad6e7d1e25ecafb83a725f9ca95704745">ColorInfo::iHighH</a></div><div class="ttdeci">uint8_t iHighH</div><div class="ttdef"><b>Definition:</b> calibration.h:12</div></div>
+<div class="ttc" id="classCalibration_html"><div class="ttname"><a href="classCalibration.html">Calibration</a></div><div class="ttdef"><b>Definition:</b> calibration.h:19</div></div>
+<div class="ttc" id="classCalibration_html_ac6b160de7e16702bb7938342c034477a"><div class="ttname"><a href="classCalibration.html#ac6b160de7e16702bb7938342c034477a">Calibration::getV</a></div><div class="ttdeci">std::pair&lt; uint8_t, uint8_t &gt; getV()</div><div class="ttdef"><b>Definition:</b> calibration.h:30</div></div>
+<div class="ttc" id="classCalibration_html_ac016f08b033ba23b3036a87ab610946f"><div class="ttname"><a href="classCalibration.html#ac016f08b033ba23b3036a87ab610946f">Calibration::filtreC</a></div><div class="ttdeci">void filtreC()</div><div class="ttdef"><b>Definition:</b> calibration.cpp:65</div></div>
+<div class="ttc" id="calibration_8h_html_af5f021160be39927fb5de69696b95a3b"><div class="ttname"><a href="calibration_8h.html#af5f021160be39927fb5de69696b95a3b">ColorInfo::iHighV</a></div><div class="ttdeci">uint8_t iHighV</div><div class="ttdef"><b>Definition:</b> calibration.h:16</div></div>
+<div class="ttc" id="classCalibration_html_adef7ee6cc7d95ea809c1cccd4d41ce02"><div class="ttname"><a href="classCalibration.html#adef7ee6cc7d95ea809c1cccd4d41ce02">Calibration::defineHSV</a></div><div class="ttdeci">void defineHSV()</div><div class="ttdef"><b>Definition:</b> calibration.cpp:126</div></div>
+<div class="ttc" id="classCalibration_html_a258a3e9be8b3269a3e1e921da88e5b5a"><div class="ttname"><a href="classCalibration.html#a258a3e9be8b3269a3e1e921da88e5b5a">Calibration::iLowS</a></div><div class="ttdeci">uint8_t iLowS</div><div class="ttdef"><b>Definition:</b> calibration.h:50</div></div>
+<div class="ttc" id="calibration_8h_html_afc281afa74af4b6bb6ff3dd12e62ea8d"><div class="ttname"><a href="calibration_8h.html#afc281afa74af4b6bb6ff3dd12e62ea8d">ColorInfo::iHighS</a></div><div class="ttdeci">uint8_t iHighS</div><div class="ttdef"><b>Definition:</b> calibration.h:14</div></div>
+<div class="ttc" id="classCalibration_html_a066922eb7b40419ed4f850b3c6b4148d"><div class="ttname"><a href="classCalibration.html#a066922eb7b40419ed4f850b3c6b4148d">Calibration::start</a></div><div class="ttdeci">bool start()</div><div class="ttdef"><b>Definition:</b> calibration.cpp:163</div></div>
+<div class="ttc" id="classCalibration_html_a26be0ee9644bd758d60a22ffe1281bd6"><div class="ttname"><a href="classCalibration.html#a26be0ee9644bd758d60a22ffe1281bd6">Calibration::maxC</a></div><div class="ttdeci">uint8_t maxC(uint8_t, uint8_t, int8_t marge)</div><div class="ttdef"><b>Definition:</b> calibration.cpp:56</div></div>
+<div class="ttc" id="classCalibration_html_a0eb486ca50923fab9a39d4403c18d4cf"><div class="ttname"><a href="classCalibration.html#a0eb486ca50923fab9a39d4403c18d4cf">Calibration::minC</a></div><div class="ttdeci">uint8_t minC(uint8_t, uint8_t, int8_t marge)</div><div class="ttdef"><b>Definition:</b> calibration.cpp:47</div></div>
+<div class="ttc" id="classCalibration_html_a6bf68284373ae2468bd85043e48b8f25"><div class="ttname"><a href="classCalibration.html#a6bf68284373ae2468bd85043e48b8f25">Calibration::getS</a></div><div class="ttdeci">std::pair&lt; uint8_t, uint8_t &gt; getS()</div><div class="ttdef"><b>Definition:</b> calibration.h:27</div></div>
+<div class="ttc" id="calibration_8h_html_structColorInfo"><div class="ttname"><a href="calibration_8h.html#structColorInfo">ColorInfo</a></div><div class="ttdef"><b>Definition:</b> calibration.h:10</div></div>
+<div class="ttc" id="classCalibration_html_a852abbbb791c1625252d3d23825e7648"><div class="ttname"><a href="classCalibration.html#a852abbbb791c1625252d3d23825e7648">Calibration::iLowV</a></div><div class="ttdeci">uint8_t iLowV</div><div class="ttdef"><b>Definition:</b> calibration.h:52</div></div>
+<div class="ttc" id="classCalibration_html_a1d7d84d44fc3abbf136ce9dc964aa02a"><div class="ttname"><a href="classCalibration.html#a1d7d84d44fc3abbf136ce9dc964aa02a">Calibration::iLowH</a></div><div class="ttdeci">uint8_t iLowH</div><div class="ttdef"><b>Definition:</b> calibration.h:48</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Dimanche 4 Février 2018 20:20:09 pour Robot Avec Intelligence déporté par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

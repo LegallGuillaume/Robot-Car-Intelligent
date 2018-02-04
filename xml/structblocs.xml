@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structblocs" kind="struct" prot="public">
+    <compoundname>blocs</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structblocs_1ab5e2639110ab5ff7f10df93ca5e33db8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int blocs::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/sources/traitement/tracking.cpp" line="42" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/sources/traitement/tracking.cpp" bodystart="42" bodyend="-1"/>
+        <referencedby refid="tracking_8cpp_1a1c1377796bd8d5b7853d64100cc5a599" compoundref="tracking_8cpp" startline="65" endline="115">trackFilteredObject</referencedby>
+        <referencedby refid="unitest_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="unitest_8cpp" startline="77" endline="95">main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structblocs_1a81fbf9bc71ec55c3ef555628fcb4057b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int blocs::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/sources/traitement/tracking.cpp" line="43" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/sources/traitement/tracking.cpp" bodystart="43" bodyend="-1"/>
+        <referencedby refid="tracking_8cpp_1a1c1377796bd8d5b7853d64100cc5a599" compoundref="tracking_8cpp" startline="65" endline="115">trackFilteredObject</referencedby>
+        <referencedby refid="unitest_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="unitest_8cpp" startline="77" endline="95">main</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="16">
+        <label>blocs</label>
+        <link refid="structblocs"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/glegall/prog_workspace/Robot_car/prog/sources/traitement/tracking.cpp" line="41" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/sources/traitement/tracking.cpp" bodystart="41" bodyend="44"/>
+    <listofallmembers>
+      <member refid="structblocs_1ab5e2639110ab5ff7f10df93ca5e33db8" prot="public" virt="non-virtual"><scope>blocs</scope><name>x</name></member>
+      <member refid="structblocs_1a81fbf9bc71ec55c3ef555628fcb4057b" prot="public" virt="non-virtual"><scope>blocs</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

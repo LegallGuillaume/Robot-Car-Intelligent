@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="calibration_8h" kind="file">
+    <compoundname>calibration.h</compoundname>
+    <includes local="yes">opencv2/highgui/highgui.hpp</includes>
+    <includes local="yes">opencv2/imgproc/imgproc.hpp</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">utility</includes>
+    <includedby refid="calibration_8cpp" local="yes">sources/traitement/calibration.cpp</includedby>
+    <incdepgraph>
+      <node id="212">
+        <label>headers/traitement/calibration.h</label>
+        <link refid="calibration.h"/>
+        <childnode refid="213" relation="include">
+        </childnode>
+        <childnode refid="214" relation="include">
+        </childnode>
+        <childnode refid="215" relation="include">
+        </childnode>
+        <childnode refid="216" relation="include">
+        </childnode>
+        <childnode refid="217" relation="include">
+        </childnode>
+      </node>
+      <node id="214">
+        <label>opencv2/imgproc/imgproc.hpp</label>
+      </node>
+      <node id="216">
+        <label>vector</label>
+      </node>
+      <node id="217">
+        <label>utility</label>
+      </node>
+      <node id="213">
+        <label>opencv2/highgui/highgui.hpp</label>
+      </node>
+      <node id="215">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="218">
+        <label>headers/traitement/calibration.h</label>
+        <link refid="calibration.h"/>
+        <childnode refid="219" relation="include">
+        </childnode>
+      </node>
+      <node id="219">
+        <label>sources/traitement/calibration.cpp</label>
+        <link refid="calibration_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structColorInfo" prot="public">ColorInfo</innerclass>
+    <innerclass refid="classCalibration" prot="public">Calibration</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>CALIBRATION_H</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CALIBRATION_H</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;opencv2/highgui/highgui.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;opencv2/imgproc/imgproc.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;utility&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="structColorInfo" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structColorInfo" kindref="compound">ColorInfo</ref><sp/>{</highlight></codeline>
+<codeline lineno="11" refid="structColorInfo_1a5ceb201f85a16581f118c9e7ff83ff7f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structColorInfo_1a5ceb201f85a16581f118c9e7ff83ff7f" kindref="member">iLowH</ref>;</highlight></codeline>
+<codeline lineno="12" refid="structColorInfo_1ad6e7d1e25ecafb83a725f9ca95704745" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structColorInfo_1ad6e7d1e25ecafb83a725f9ca95704745" kindref="member">iHighH</ref>;</highlight></codeline>
+<codeline lineno="13" refid="structColorInfo_1a032b2484868139023c36cb2c7ae7dd9e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structColorInfo_1a032b2484868139023c36cb2c7ae7dd9e" kindref="member">iLowS</ref>;</highlight></codeline>
+<codeline lineno="14" refid="structColorInfo_1afc281afa74af4b6bb6ff3dd12e62ea8d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structColorInfo_1afc281afa74af4b6bb6ff3dd12e62ea8d" kindref="member">iHighS</ref>;</highlight></codeline>
+<codeline lineno="15" refid="structColorInfo_1ab169dd6230117ce5c2d305c88313ac95" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structColorInfo_1ab169dd6230117ce5c2d305c88313ac95" kindref="member">iLowV</ref>;</highlight></codeline>
+<codeline lineno="16" refid="structColorInfo_1af5f021160be39927fb5de69696b95a3b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structColorInfo_1af5f021160be39927fb5de69696b95a3b" kindref="member">iHighV</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classCalibration" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCalibration" kindref="compound">Calibration</ref>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCalibration_1a420bea981d91ac69161e400644ec7dd8" kindref="member">Calibration</ref>(cv::VideoCapture<sp/>capVideo);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCalibration_1a066922eb7b40419ed4f850b3c6b4148d" kindref="member">start</ref>();</highlight></codeline>
+<codeline lineno="24" refid="classCalibration_1ad5f6fcb712cd2ad1a44e19ff4e9058be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::pair&lt;uint8_t,<sp/>uint8_t&gt;<sp/><ref refid="classCalibration_1ad5f6fcb712cd2ad1a44e19ff4e9058be" kindref="member">getH</ref>(){</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::make_pair(<ref refid="classCalibration_1a1d7d84d44fc3abbf136ce9dc964aa02a" kindref="member">iLowH</ref>,<sp/><ref refid="classCalibration_1a91d2ce954d66d7c5156d331f67573921" kindref="member">iHighH</ref>);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27" refid="classCalibration_1a6bf68284373ae2468bd85043e48b8f25" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::pair&lt;uint8_t,<sp/>uint8_t&gt;<sp/><ref refid="classCalibration_1a6bf68284373ae2468bd85043e48b8f25" kindref="member">getS</ref>(){</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::make_pair(<ref refid="classCalibration_1a258a3e9be8b3269a3e1e921da88e5b5a" kindref="member">iLowS</ref>,<sp/><ref refid="classCalibration_1a216315dfc878e13e9e5b0f487845a627" kindref="member">iHighS</ref>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30" refid="classCalibration_1ac6b160de7e16702bb7938342c034477a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::pair&lt;uint8_t,<sp/>uint8_t&gt;<sp/><ref refid="classCalibration_1ac6b160de7e16702bb7938342c034477a" kindref="member">getV</ref>(){</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::make_pair(<ref refid="classCalibration_1a852abbbb791c1625252d3d23825e7648" kindref="member">iLowV</ref>,<sp/><ref refid="classCalibration_1ab9838bcf2d96445da4a79ccafc7aee4c" kindref="member">iHighV</ref>);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33" refid="classCalibration_1a108efb6ccd8c98e5cac950be4bf0ac26" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCalibration_1a108efb6ccd8c98e5cac950be4bf0ac26" kindref="member">~Calibration</ref>(){</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>[]<ref refid="classCalibration_1a062b450b8f24d5eadab562b3ed929f89" kindref="member">calibrationColors</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCalibration_1a062b450b8f24d5eadab562b3ed929f89" kindref="member">calibrationColors</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCalibration_1adef7ee6cc7d95ea809c1cccd4d41ce02" kindref="member">defineHSV</ref>();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCalibration_1ad8250297ea60fa9c0ad1e38a70cca880" kindref="member">search</ref>(cv::Mat<sp/>hsv_frame);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCalibration_1ac4bdcbef3a615877cbeed352ea74c312" kindref="member">addColor</ref>(uint8_t<sp/>H_min,<sp/>uint8_t<sp/>H_max,<sp/>uint8_t<sp/>S_min,<sp/>uint8_t<sp/>S_max,<sp/>uint8_t<sp/>V_min,<sp/>uint8_t<sp/>V_max);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="classCalibration_1a0eb486ca50923fab9a39d4403c18d4cf" kindref="member">minC</ref>(uint8_t,<sp/>uint8_t,<sp/>int8_t<sp/>marge);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="classCalibration_1a26be0ee9644bd758d60a22ffe1281bd6" kindref="member">maxC</ref>(uint8_t,<sp/>uint8_t,<sp/>int8_t<sp/>marge);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCalibration_1ac016f08b033ba23b3036a87ab610946f" kindref="member">filtreC</ref>();</highlight></codeline>
+<codeline lineno="45" refid="classCalibration_1a062b450b8f24d5eadab562b3ed929f89" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;struct<sp/>ColorInfo&gt;<sp/>*<ref refid="classCalibration_1a062b450b8f24d5eadab562b3ed929f89" kindref="member">calibrationColors</ref>;</highlight></codeline>
+<codeline lineno="46" refid="classCalibration_1aa3fc415d57199effd80858c330ba5caa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>cv::Rect<sp/><ref refid="classCalibration_1aa3fc415d57199effd80858c330ba5caa" kindref="member">rectangleCalib</ref>;</highlight></codeline>
+<codeline lineno="47" refid="classCalibration_1a9e0da36de8c79fd1a8f5952723f3e464" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>cv::VideoCapture<sp/><ref refid="classCalibration_1a9e0da36de8c79fd1a8f5952723f3e464" kindref="member">capture</ref>;</highlight></codeline>
+<codeline lineno="48" refid="classCalibration_1a1d7d84d44fc3abbf136ce9dc964aa02a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="classCalibration_1a1d7d84d44fc3abbf136ce9dc964aa02a" kindref="member">iLowH</ref>;</highlight></codeline>
+<codeline lineno="49" refid="classCalibration_1a91d2ce954d66d7c5156d331f67573921" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="classCalibration_1a91d2ce954d66d7c5156d331f67573921" kindref="member">iHighH</ref>;</highlight></codeline>
+<codeline lineno="50" refid="classCalibration_1a258a3e9be8b3269a3e1e921da88e5b5a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="classCalibration_1a258a3e9be8b3269a3e1e921da88e5b5a" kindref="member">iLowS</ref>;</highlight></codeline>
+<codeline lineno="51" refid="classCalibration_1a216315dfc878e13e9e5b0f487845a627" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="classCalibration_1a216315dfc878e13e9e5b0f487845a627" kindref="member">iHighS</ref>;</highlight></codeline>
+<codeline lineno="52" refid="classCalibration_1a852abbbb791c1625252d3d23825e7648" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="classCalibration_1a852abbbb791c1625252d3d23825e7648" kindref="member">iLowV</ref>;</highlight></codeline>
+<codeline lineno="53" refid="classCalibration_1ab9838bcf2d96445da4a79ccafc7aee4c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="classCalibration_1ab9838bcf2d96445da4a79ccafc7aee4c" kindref="member">iHighV</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h"/>
+  </compounddef>
+</doxygen>

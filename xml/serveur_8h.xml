@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="serveur_8h" kind="file">
+    <compoundname>serveur.h</compoundname>
+    <includes refid="definition_8h" local="yes">../definition.h</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">cstdio</includes>
+    <includes local="no">cstdlib</includes>
+    <includes local="no">cstring</includes>
+    <includes local="no">unistd.h</includes>
+    <includes local="no">sys/socket.h</includes>
+    <includes local="no">netinet/in.h</includes>
+    <includes refid="client_8h" local="yes">../serveur/client.h</includes>
+    <includedby refid="serveur_8cpp" local="yes">sources/serveur.cpp</includedby>
+    <incdepgraph>
+      <node id="170">
+        <label>netinet/in.h</label>
+      </node>
+      <node id="171">
+        <label>../serveur/client.h</label>
+        <link refid="client_8h"/>
+        <childnode refid="163" relation="include">
+        </childnode>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="165" relation="include">
+        </childnode>
+        <childnode refid="166" relation="include">
+        </childnode>
+      </node>
+      <node id="172">
+        <label>string</label>
+      </node>
+      <node id="161">
+        <label>headers/manager/serveur.h</label>
+        <link refid="serveur.h"/>
+        <childnode refid="162" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+        <childnode refid="164" relation="include">
+        </childnode>
+        <childnode refid="165" relation="include">
+        </childnode>
+        <childnode refid="166" relation="include">
+        </childnode>
+        <childnode refid="167" relation="include">
+        </childnode>
+        <childnode refid="168" relation="include">
+        </childnode>
+        <childnode refid="169" relation="include">
+        </childnode>
+        <childnode refid="170" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+      </node>
+      <node id="165">
+        <label>cstdio</label>
+      </node>
+      <node id="168">
+        <label>unistd.h</label>
+      </node>
+      <node id="164">
+        <label>vector</label>
+      </node>
+      <node id="166">
+        <label>cstdlib</label>
+      </node>
+      <node id="163">
+        <label>iostream</label>
+      </node>
+      <node id="169">
+        <label>sys/socket.h</label>
+      </node>
+      <node id="162">
+        <label>../definition.h</label>
+        <link refid="definition_8h"/>
+      </node>
+      <node id="167">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="174">
+        <label>sources/serveur.cpp</label>
+        <link refid="serveur_8cpp"/>
+      </node>
+      <node id="173">
+        <label>headers/manager/serveur.h</label>
+        <link refid="serveur.h"/>
+        <childnode refid="174" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classServeur" prot="public">Serveur</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SERVEUR_H</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SERVEUR_H</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../definition.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdio&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdlib&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/socket.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;netinet/in.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../serveur/client.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classServeur" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classServeur" kindref="compound">Serveur</ref>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classServeur" kindref="compound">Serveur</ref><sp/>*<sp/><ref refid="classServeur_1af45129123392e1bee01b09201945aab1" kindref="member">getInstance</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classServeur_1a3f79c4ba0f58e4573709575cf8110459" kindref="member">stop</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classServeur_1a12d924e325b3fa6a65a4e70986114625" kindref="member">AcceptAndDispatch</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="classServeur_1aa3084842ce1be2065239b1afcf384cc0" kindref="member">sendToAll</ref>(std::string<sp/>message);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="classServeur_1a5307c171fde619d6441ba9d89aaa3b1a" kindref="member">sendToClient</ref>(<ref refid="classClient" kindref="compound">Client</ref><sp/>*c,<sp/>std::string<sp/>message);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classClient" kindref="compound">Client</ref><sp/><ref refid="classServeur_1a8eed76b45aaa11b0a1f51ff133735dec" kindref="member">getClient</ref>(std::string<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26" refid="classServeur_1a489b673bfbcfa8f6909b793fe15e9cf7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classServeur" kindref="compound">Serveur</ref><sp/>*<sp/><ref refid="classServeur_1a489b673bfbcfa8f6909b793fe15e9cf7" kindref="member">instance</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classServeur_1a8a7a1df15a07e095436dedd0d40a0196" kindref="member">Serveur</ref>();</highlight></codeline>
+<codeline lineno="28" refid="classServeur_1a1c50d68dd630c95e89f0bb7467f818a6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;Client&gt;<sp/>*<ref refid="classServeur_1a1c50d68dd630c95e89f0bb7467f818a6" kindref="member">clients</ref>;</highlight></codeline>
+<codeline lineno="29" refid="classServeur_1aff31b98591fc01c7deb0d1ad1052c4a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classServeur_1aff31b98591fc01c7deb0d1ad1052c4a3" kindref="member">serverSock</ref>,<sp/><ref refid="classServeur_1adf04df85df6e35a94fedcacb037abc97" kindref="member">clientSock</ref>;</highlight></codeline>
+<codeline lineno="30" refid="classServeur_1a326fa962e0672b4da2027f320d561e63" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sockaddr_in<sp/>serverAddr,<sp/><ref refid="classServeur_1a326fa962e0672b4da2027f320d561e63" kindref="member">clientAddr</ref>;</highlight></codeline>
+<codeline lineno="31" refid="classServeur_1a8e6e5a2629cf14c4411b0fdae061444c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="classServeur_1a8e6e5a2629cf14c4411b0fdae061444c" kindref="member">buffer</ref>[256];</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classServeur_1a01ac17dffbd9801773f89f033dfb7f0b" kindref="member">synchronizeClient</ref>(<ref refid="classClient" kindref="compound">Client</ref><sp/>*c);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classServeur_1ae4c196fb5ff5fffe40d480e5575570d9" kindref="member">receive</ref>(<ref refid="classClient" kindref="compound">Client</ref><sp/>*c);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/serveur.h"/>
+  </compounddef>
+</doxygen>

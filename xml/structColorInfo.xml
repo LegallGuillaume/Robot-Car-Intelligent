@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structColorInfo" kind="struct" prot="public">
+    <compoundname>ColorInfo</compoundname>
+    <includes refid="calibration_8h" local="no">calibration.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structColorInfo_1a5ceb201f85a16581f118c9e7ff83ff7f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ColorInfo::iLowH</definition>
+        <argsstring></argsstring>
+        <name>iLowH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" line="11" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" bodystart="11" bodyend="-1"/>
+        <referencedby refid="classCalibration_1ac4bdcbef3a615877cbeed352ea74c312" compoundref="calibration_8cpp" startline="36" endline="45">Calibration::addColor</referencedby>
+        <referencedby refid="classCalibration_1adef7ee6cc7d95ea809c1cccd4d41ce02" compoundref="calibration_8cpp" startline="126" endline="138">Calibration::defineHSV</referencedby>
+        <referencedby refid="classCalibration_1a066922eb7b40419ed4f850b3c6b4148d" compoundref="calibration_8cpp" startline="163" endline="174">Calibration::start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structColorInfo_1ad6e7d1e25ecafb83a725f9ca95704745" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ColorInfo::iHighH</definition>
+        <argsstring></argsstring>
+        <name>iHighH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" line="12" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" bodystart="12" bodyend="-1"/>
+        <referencedby refid="classCalibration_1ac4bdcbef3a615877cbeed352ea74c312" compoundref="calibration_8cpp" startline="36" endline="45">Calibration::addColor</referencedby>
+        <referencedby refid="classCalibration_1adef7ee6cc7d95ea809c1cccd4d41ce02" compoundref="calibration_8cpp" startline="126" endline="138">Calibration::defineHSV</referencedby>
+        <referencedby refid="classCalibration_1a066922eb7b40419ed4f850b3c6b4148d" compoundref="calibration_8cpp" startline="163" endline="174">Calibration::start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structColorInfo_1a032b2484868139023c36cb2c7ae7dd9e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ColorInfo::iLowS</definition>
+        <argsstring></argsstring>
+        <name>iLowS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" line="13" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" bodystart="13" bodyend="-1"/>
+        <referencedby refid="classCalibration_1ac4bdcbef3a615877cbeed352ea74c312" compoundref="calibration_8cpp" startline="36" endline="45">Calibration::addColor</referencedby>
+        <referencedby refid="classCalibration_1adef7ee6cc7d95ea809c1cccd4d41ce02" compoundref="calibration_8cpp" startline="126" endline="138">Calibration::defineHSV</referencedby>
+        <referencedby refid="classCalibration_1a066922eb7b40419ed4f850b3c6b4148d" compoundref="calibration_8cpp" startline="163" endline="174">Calibration::start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structColorInfo_1afc281afa74af4b6bb6ff3dd12e62ea8d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ColorInfo::iHighS</definition>
+        <argsstring></argsstring>
+        <name>iHighS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" line="14" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" bodystart="14" bodyend="-1"/>
+        <referencedby refid="classCalibration_1ac4bdcbef3a615877cbeed352ea74c312" compoundref="calibration_8cpp" startline="36" endline="45">Calibration::addColor</referencedby>
+        <referencedby refid="classCalibration_1adef7ee6cc7d95ea809c1cccd4d41ce02" compoundref="calibration_8cpp" startline="126" endline="138">Calibration::defineHSV</referencedby>
+        <referencedby refid="classCalibration_1a066922eb7b40419ed4f850b3c6b4148d" compoundref="calibration_8cpp" startline="163" endline="174">Calibration::start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structColorInfo_1ab169dd6230117ce5c2d305c88313ac95" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ColorInfo::iLowV</definition>
+        <argsstring></argsstring>
+        <name>iLowV</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" line="15" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" bodystart="15" bodyend="-1"/>
+        <referencedby refid="classCalibration_1ac4bdcbef3a615877cbeed352ea74c312" compoundref="calibration_8cpp" startline="36" endline="45">Calibration::addColor</referencedby>
+        <referencedby refid="classCalibration_1adef7ee6cc7d95ea809c1cccd4d41ce02" compoundref="calibration_8cpp" startline="126" endline="138">Calibration::defineHSV</referencedby>
+        <referencedby refid="classCalibration_1a066922eb7b40419ed4f850b3c6b4148d" compoundref="calibration_8cpp" startline="163" endline="174">Calibration::start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structColorInfo_1af5f021160be39927fb5de69696b95a3b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ColorInfo::iHighV</definition>
+        <argsstring></argsstring>
+        <name>iHighV</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" line="16" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" bodystart="16" bodyend="-1"/>
+        <referencedby refid="classCalibration_1ac4bdcbef3a615877cbeed352ea74c312" compoundref="calibration_8cpp" startline="36" endline="45">Calibration::addColor</referencedby>
+        <referencedby refid="classCalibration_1adef7ee6cc7d95ea809c1cccd4d41ce02" compoundref="calibration_8cpp" startline="126" endline="138">Calibration::defineHSV</referencedby>
+        <referencedby refid="classCalibration_1a066922eb7b40419ed4f850b3c6b4148d" compoundref="calibration_8cpp" startline="163" endline="174">Calibration::start</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="41">
+        <label>ColorInfo</label>
+        <link refid="structColorInfo"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" line="10" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" bodystart="10" bodyend="17"/>
+    <listofallmembers>
+      <member refid="structColorInfo_1ad6e7d1e25ecafb83a725f9ca95704745" prot="public" virt="non-virtual"><scope>ColorInfo</scope><name>iHighH</name></member>
+      <member refid="structColorInfo_1afc281afa74af4b6bb6ff3dd12e62ea8d" prot="public" virt="non-virtual"><scope>ColorInfo</scope><name>iHighS</name></member>
+      <member refid="structColorInfo_1af5f021160be39927fb5de69696b95a3b" prot="public" virt="non-virtual"><scope>ColorInfo</scope><name>iHighV</name></member>
+      <member refid="structColorInfo_1a5ceb201f85a16581f118c9e7ff83ff7f" prot="public" virt="non-virtual"><scope>ColorInfo</scope><name>iLowH</name></member>
+      <member refid="structColorInfo_1a032b2484868139023c36cb2c7ae7dd9e" prot="public" virt="non-virtual"><scope>ColorInfo</scope><name>iLowS</name></member>
+      <member refid="structColorInfo_1ab169dd6230117ce5c2d305c88313ac95" prot="public" virt="non-virtual"><scope>ColorInfo</scope><name>iLowV</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

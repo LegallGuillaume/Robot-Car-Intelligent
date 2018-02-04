@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Robot Avec Intelligence déporté: Référence du fichier sources/server/server.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Robot Avec Intelligence déporté
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li><li class="navelem"><a class="el" href="dir_0ae0286439a8e144cf485eb8e91d219b.html">server</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Définitions de type</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier server.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;sys/types.h&gt;</code><br/>
+<code>#include &lt;sys/ipc.h&gt;</code><br/>
+<code>#include &lt;sys/shm.h&gt;</code><br/>
+<code>#include &lt;iostream&gt;</code><br/>
+<code>#include &lt;string&gt;</code><br/>
+<code>#include &lt;cstring&gt;</code><br/>
+<code>#include &quot;<a class="el" href="definition_8h_source.html">../../headers/definition.h</a>&quot;</code><br/>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:struct__shareM"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8cpp.html#struct__shareM">_shareM</a></td></tr>
+<tr class="separator:struct__shareM"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Définitions de type</h2></td></tr>
+<tr class="memitem:ad73ea60fc164d7d224a2499bd77a1f35"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="server_8cpp.html#struct__shareM">_shareM</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8cpp.html#ad73ea60fc164d7d224a2499bd77a1f35">shareMemory_t</a></td></tr>
+<tr class="separator:ad73ea60fc164d7d224a2499bd77a1f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/><h2 class="groupheader">Documentation des classes</h2>
+<a name="struct__shareM" id="struct__shareM"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct _shareM</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Membres de classe</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="ad57018c4c874c265b1dbfedba6c53e2c"></a>char</td>
+<td class="fieldname">
+id_code[16]</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a30792c4b007e8273d3832fe2d5e70987"></a>uint8_t</td>
+<td class="fieldname">
+index</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a9b7627fd1c2693c3ecc662457fee4aba"></a>char</td>
+<td class="fieldname">
+tostring[255]</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des définitions de type</h2>
+<a class="anchor" id="ad73ea60fc164d7d224a2499bd77a1f35"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="server_8cpp.html#struct__shareM">_shareM</a> <a class="el" href="share__server_8h.html#ad73ea60fc164d7d224a2499bd77a1f35">shareMemory_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a class="anchor" id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Références <a class="el" href="server_8cpp.html#ad57018c4c874c265b1dbfedba6c53e2c">_shareM::id_code</a>, <a class="el" href="definition_8h.html#abc8437510f986871fa5cdbcc7ca4bc31">ID_CONNECTION</a>, <a class="el" href="server_8cpp.html#a30792c4b007e8273d3832fe2d5e70987">_shareM::index</a>, et <a class="el" href="server_8cpp.html#a9b7627fd1c2693c3ecc662457fee4aba">_shareM::tostring</a>.</p>
+<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;          {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="server_8cpp.html#struct__shareM">shareMemory_t</a> *data, *data2;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    key_t key;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">int</span> shmid;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    key = ftok(<span class="stringliteral">&quot;server.cpp&quot;</span>, <span class="charliteral">&#39;R&#39;</span>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    shmid = shmget(key, <span class="keyword">sizeof</span>(<a class="code" href="server_8cpp.html#struct__shareM">shareMemory_t</a>), 0444 | IPC_CREAT);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    data = (<a class="code" href="server_8cpp.html#struct__shareM">shareMemory_t</a>*)shmat(shmid, (<span class="keywordtype">void</span>*)0, 0);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">if</span>(strcmp(data-&gt;<a class="code" href="server_8cpp.html#ad57018c4c874c265b1dbfedba6c53e2c">id_code</a>, <a class="code" href="definition_8h.html#abc8437510f986871fa5cdbcc7ca4bc31">ID_CONNECTION</a>) == 0){</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        std::cout&lt;&lt;<span class="stringliteral">&quot;IPC Synchronized&quot;</span>&lt;&lt;std::endl;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    std::cout&lt;&lt;<span class="stringliteral">&quot;data id_code: &quot;</span>&lt;&lt;data-&gt;<a class="code" href="server_8cpp.html#ad57018c4c874c265b1dbfedba6c53e2c">id_code</a>&lt;&lt;std::endl;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    std::cout&lt;&lt;<span class="stringliteral">&quot;data tostring: &quot;</span>&lt;&lt;data-&gt;<a class="code" href="server_8cpp.html#a9b7627fd1c2693c3ecc662457fee4aba">tostring</a>&lt;&lt;std::endl;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    std::cout&lt;&lt;<span class="stringliteral">&quot;data index: &quot;</span>&lt;&lt;(int)data-&gt;<a class="code" href="server_8cpp.html#a30792c4b007e8273d3832fe2d5e70987">index</a>&lt;&lt;std::endl;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}<div class="ttc" id="server_8cpp_html_a30792c4b007e8273d3832fe2d5e70987"><div class="ttname"><a href="server_8cpp.html#a30792c4b007e8273d3832fe2d5e70987">_shareM::index</a></div><div class="ttdeci">uint8_t index</div><div class="ttdef"><b>Definition:</b> share_server.h:14</div></div>
+<div class="ttc" id="server_8cpp_html_struct__shareM"><div class="ttname"><a href="server_8cpp.html#struct__shareM">_shareM</a></div><div class="ttdef"><b>Definition:</b> share_server.h:13</div></div>
+<div class="ttc" id="definition_8h_html_abc8437510f986871fa5cdbcc7ca4bc31"><div class="ttname"><a href="definition_8h.html#abc8437510f986871fa5cdbcc7ca4bc31">ID_CONNECTION</a></div><div class="ttdeci">#define ID_CONNECTION</div><div class="ttdef"><b>Definition:</b> definition.h:35</div></div>
+<div class="ttc" id="server_8cpp_html_ad57018c4c874c265b1dbfedba6c53e2c"><div class="ttname"><a href="server_8cpp.html#ad57018c4c874c265b1dbfedba6c53e2c">_shareM::id_code</a></div><div class="ttdeci">char id_code[16]</div><div class="ttdef"><b>Definition:</b> share_server.h:15</div></div>
+<div class="ttc" id="server_8cpp_html_a9b7627fd1c2693c3ecc662457fee4aba"><div class="ttname"><a href="server_8cpp.html#a9b7627fd1c2693c3ecc662457fee4aba">_shareM::tostring</a></div><div class="ttdeci">char tostring[255]</div><div class="ttdef"><b>Definition:</b> share_server.h:16</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Dimanche 4 Février 2018 20:33:06 pour Robot Avec Intelligence déporté par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

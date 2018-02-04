@@ -1,0 +1,274 @@
+\hypertarget{classChemin}{\section{Référence de la classe Chemin}
+\label{classChemin}\index{Chemin@{Chemin}}
+}
+
+
+{\ttfamily \#include $<$chemin.\-h$>$}
+
+Graphe d'héritage de Chemin\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classChemin}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classChemin_a2ee7b6a34082453fbdf890a49017aead}{add} (int8\-\_\-t x, int8\-\_\-t y) override
+\item 
+bool \hyperlink{classChemin_a1ee3f200283c2c401ef0ffd5800d946c}{remove} (int8\-\_\-t x, int8\-\_\-t y) override
+\item 
+bool \hyperlink{classChemin_aceccf541a2cdde27eb8f4bf541aff1b3}{has} (int8\-\_\-t x, int8\-\_\-t y) override
+\item 
+bool \hyperlink{classChemin_a67a8418164f0b2a4d1827e393ba859f7}{clear} () override
+\item 
+string \hyperlink{classChemin_a3b1754233eb79fb9f7d119a42efbda3c}{to\-String} () override
+\item 
+\hyperlink{classChemin_a0024ec1de3487b44a51c095aca1b83dc}{$\sim$\-Chemin} ()
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classChemin}{Chemin} $\ast$ \hyperlink{classChemin_a82bfca776ad8bd221a5a430526f1d41f}{get\-Instance} ()
+\end{DoxyCompactItemize}
+\subsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ pair$<$ int8\-\_\-t, int8\-\_\-t $>$ $>$ $\ast$ \hyperlink{classChemin_a5acfc655d74effb1ed6eb14494c017b0}{list\-\_\-chemin}
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classChemin_a5858339cc57c83e756c8412764990f16}{Chemin} ()
+\end{DoxyCompactItemize}
+\subsection*{Attributs privés statiques}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classChemin}{Chemin} $\ast$ \hyperlink{classChemin_a068df8f068a5609d0e2db8442f5e3a38}{instance} = nullptr
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{classChemin_a0024ec1de3487b44a51c095aca1b83dc}{\index{Chemin@{Chemin}!$\sim$\-Chemin@{$\sim$\-Chemin}}
+\index{$\sim$\-Chemin@{$\sim$\-Chemin}!Chemin@{Chemin}}
+\subsubsection[{$\sim$\-Chemin}]{\setlength{\rightskip}{0pt plus 5cm}Chemin\-::$\sim$\-Chemin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classChemin_a0024ec1de3487b44a51c095aca1b83dc}
+
+\begin{DoxyCode}
+30              \{
+31         \textcolor{keyword}{delete} []\hyperlink{classChemin_a5acfc655d74effb1ed6eb14494c017b0}{list\_chemin};
+32         \hyperlink{classChemin_a5acfc655d74effb1ed6eb14494c017b0}{list\_chemin} = \textcolor{keyword}{nullptr};
+33         \textcolor{keyword}{delete} \hyperlink{classChemin_a068df8f068a5609d0e2db8442f5e3a38}{instance};
+34         \hyperlink{classChemin_a068df8f068a5609d0e2db8442f5e3a38}{instance} = \textcolor{keyword}{nullptr};
+35     \}
+\end{DoxyCode}
+\hypertarget{classChemin_a5858339cc57c83e756c8412764990f16}{\index{Chemin@{Chemin}!Chemin@{Chemin}}
+\index{Chemin@{Chemin}!Chemin@{Chemin}}
+\subsubsection[{Chemin}]{\setlength{\rightskip}{0pt plus 5cm}Chemin\-::\-Chemin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{classChemin_a5858339cc57c83e756c8412764990f16}
+
+
+Référencé par get\-Instance().
+
+
+\begin{DoxyCode}
+39             \{
+40         \hyperlink{classChemin_a5acfc655d74effb1ed6eb14494c017b0}{list\_chemin} = \textcolor{keyword}{new} vector<pair<int8\_t, int8\_t>>();
+41     \}
+\end{DoxyCode}
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{classChemin_a2ee7b6a34082453fbdf890a49017aead}{\index{Chemin@{Chemin}!add@{add}}
+\index{add@{add}!Chemin@{Chemin}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}bool Chemin\-::add (
+\begin{DoxyParamCaption}
+\item[{int8\-\_\-t}]{x, }
+\item[{int8\-\_\-t}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{classChemin_a2ee7b6a34082453fbdf890a49017aead}
+
+
+Implémente \hyperlink{classMultipleObject_aa5e743143bdedeb901c8e234162b3db1}{Multiple\-Object}.
+
+
+
+Références list\-\_\-chemin.
+
+
+
+Référencé par Core\-::pathfinding(), et unitest\-\_\-pathfinding().
+
+
+\begin{DoxyCode}
+16                                   \{
+17     \hyperlink{classChemin_a5acfc655d74effb1ed6eb14494c017b0}{list\_chemin}->push\_back(std::make\_pair(x,y));
+18     \textcolor{keywordflow}{return} std::find(\hyperlink{classChemin_a5acfc655d74effb1ed6eb14494c017b0}{list\_chemin}->begin(), \hyperlink{classChemin_a5acfc655d74effb1ed6eb14494c017b0}{list\_chemin}->end(), std::make\_pair(x,y)) 
+      != \hyperlink{classChemin_a5acfc655d74effb1ed6eb14494c017b0}{list\_chemin}->end();
+19 \}
+\end{DoxyCode}
+\hypertarget{classChemin_a67a8418164f0b2a4d1827e393ba859f7}{\index{Chemin@{Chemin}!clear@{clear}}
+\index{clear@{clear}!Chemin@{Chemin}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}bool Chemin\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}}\label{classChemin_a67a8418164f0b2a4d1827e393ba859f7}
+
+
+Implémente \hyperlink{classMultipleObject_a980acdfb99e25ec0d5e61396f60517c3}{Multiple\-Object}.
+
+
+
+Référencé par Manager\-::reset().
+
+
+\begin{DoxyCode}
+25                          \{
+26         \hyperlink{classChemin_a5acfc655d74effb1ed6eb14494c017b0}{list\_chemin}->clear();
+27         \textcolor{keywordflow}{return} \hyperlink{classChemin_a5acfc655d74effb1ed6eb14494c017b0}{list\_chemin}->size() == 0;
+28     \}
+\end{DoxyCode}
+\hypertarget{classChemin_a82bfca776ad8bd221a5a430526f1d41f}{\index{Chemin@{Chemin}!get\-Instance@{get\-Instance}}
+\index{get\-Instance@{get\-Instance}!Chemin@{Chemin}}
+\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chemin} $\ast$ Chemin\-::get\-Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classChemin_a82bfca776ad8bd221a5a430526f1d41f}
+
+
+Références Chemin(), et instance.
+
+
+
+Référencé par Manager\-::\-Manager().
+
+
+\begin{DoxyCode}
+9                             \{
+10     \textcolor{keywordflow}{if}(\hyperlink{classChemin_a068df8f068a5609d0e2db8442f5e3a38}{instance} == \textcolor{keyword}{nullptr})\{
+11         \hyperlink{classChemin_a068df8f068a5609d0e2db8442f5e3a38}{instance} = \textcolor{keyword}{new} \hyperlink{classChemin_a5858339cc57c83e756c8412764990f16}{Chemin}();
+12     \}
+13     \textcolor{keywordflow}{return} \hyperlink{classChemin_a068df8f068a5609d0e2db8442f5e3a38}{instance};
+14 \}
+\end{DoxyCode}
+\hypertarget{classChemin_aceccf541a2cdde27eb8f4bf541aff1b3}{\index{Chemin@{Chemin}!has@{has}}
+\index{has@{has}!Chemin@{Chemin}}
+\subsubsection[{has}]{\setlength{\rightskip}{0pt plus 5cm}bool Chemin\-::has (
+\begin{DoxyParamCaption}
+\item[{int8\-\_\-t}]{x, }
+\item[{int8\-\_\-t}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{classChemin_aceccf541a2cdde27eb8f4bf541aff1b3}
+
+
+Implémente \hyperlink{classMultipleObject_a1703b0c461708fbb6985e87624f4b17b}{Multiple\-Object}.
+
+
+
+Références list\-\_\-chemin.
+
+
+
+Référencé par remove().
+
+
+\begin{DoxyCode}
+29                                   \{
+30     \textcolor{keywordflow}{return} std::find(\hyperlink{classChemin_a5acfc655d74effb1ed6eb14494c017b0}{list\_chemin}->begin(), \hyperlink{classChemin_a5acfc655d74effb1ed6eb14494c017b0}{list\_chemin}->end(), std::make\_pair(x,y)) 
+      != \hyperlink{classChemin_a5acfc655d74effb1ed6eb14494c017b0}{list\_chemin}->end();
+31 \}
+\end{DoxyCode}
+\hypertarget{classChemin_a1ee3f200283c2c401ef0ffd5800d946c}{\index{Chemin@{Chemin}!remove@{remove}}
+\index{remove@{remove}!Chemin@{Chemin}}
+\subsubsection[{remove}]{\setlength{\rightskip}{0pt plus 5cm}bool Chemin\-::remove (
+\begin{DoxyParamCaption}
+\item[{int8\-\_\-t}]{x, }
+\item[{int8\-\_\-t}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{classChemin_a1ee3f200283c2c401ef0ffd5800d946c}
+
+
+Implémente \hyperlink{classMultipleObject_ad57dd5fec65953bbce399afdca475a4c}{Multiple\-Object}.
+
+
+
+Références has(), et list\-\_\-chemin.
+
+
+\begin{DoxyCode}
+21                                      \{
+22     \textcolor{keywordflow}{if}(\hyperlink{classChemin_aceccf541a2cdde27eb8f4bf541aff1b3}{has}(x,y))\{
+23         \hyperlink{classChemin_a5acfc655d74effb1ed6eb14494c017b0}{list\_chemin}->erase(std::remove(\hyperlink{classChemin_a5acfc655d74effb1ed6eb14494c017b0}{list\_chemin}->begin(), 
+      \hyperlink{classChemin_a5acfc655d74effb1ed6eb14494c017b0}{list\_chemin}->end(), std::make\_pair(x,y)), \hyperlink{classChemin_a5acfc655d74effb1ed6eb14494c017b0}{list\_chemin}->end());
+24         \textcolor{keywordflow}{return} !\hyperlink{classChemin_aceccf541a2cdde27eb8f4bf541aff1b3}{has}(x,y);
+25     \}
+26         \textcolor{keywordflow}{return} \textcolor{keyword}{true}; \textcolor{comment}{//default true if isn't in table.}
+27 \}
+\end{DoxyCode}
+\hypertarget{classChemin_a3b1754233eb79fb9f7d119a42efbda3c}{\index{Chemin@{Chemin}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!Chemin@{Chemin}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}string Chemin\-::to\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{classChemin_a3b1754233eb79fb9f7d119a42efbda3c}
+
+
+Implémente \hyperlink{classMultipleObject_a5439a2ac4cc86c759ef1df8f6059947a}{Multiple\-Object}.
+
+
+
+Références list\-\_\-chemin.
+
+
+
+Référencé par Manager\-::to\-String().
+
+
+\begin{DoxyCode}
+33                        \{
+34     int16\_t size = \hyperlink{classChemin_a5acfc655d74effb1ed6eb14494c017b0}{list\_chemin}->size();
+35     stringstream value;
+36     value << \textcolor{stringliteral}{""};
+37     int16\_t i =0;
+38     std::for\_each(\hyperlink{classChemin_a5acfc655d74effb1ed6eb14494c017b0}{list\_chemin}->begin(), \hyperlink{classChemin_a5acfc655d74effb1ed6eb14494c017b0}{list\_chemin}->end(), [&](std::pair<int8\_t,
+       int8\_t> \_b)\{
+39         value << \textcolor{stringliteral}{"\(\backslash\)""}<<i<<\textcolor{stringliteral}{"\(\backslash\)": \(\backslash\)""}<<(int)\_b.first<< \textcolor{stringliteral}{","} <<(\textcolor{keywordtype}{int})\_b.second<<\textcolor{stringliteral}{"\(\backslash\)", "};
+40         ++i;
+41     \});
+42     stringstream buf;
+43     buf <<\textcolor{stringliteral}{" \(\backslash\)"Chemin\(\backslash\)": \{ \(\backslash\)"Number\(\backslash\)": "}<<size<<\textcolor{stringliteral}{", \(\backslash\)"Position\(\backslash\)": \{"}<<value.str().substr(0, value.str().size(
+      )-2)<<\textcolor{stringliteral}{"\} \}"};
+44     \textcolor{keywordflow}{return} buf.str();
+45 \}\end{DoxyCode}
+
+
+\subsection{Documentation des données membres}
+\hypertarget{classChemin_a068df8f068a5609d0e2db8442f5e3a38}{\index{Chemin@{Chemin}!instance@{instance}}
+\index{instance@{instance}!Chemin@{Chemin}}
+\subsubsection[{instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chemin} $\ast$ Chemin\-::instance = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classChemin_a068df8f068a5609d0e2db8442f5e3a38}
+
+
+Référencé par get\-Instance().
+
+\hypertarget{classChemin_a5acfc655d74effb1ed6eb14494c017b0}{\index{Chemin@{Chemin}!list\-\_\-chemin@{list\-\_\-chemin}}
+\index{list\-\_\-chemin@{list\-\_\-chemin}!Chemin@{Chemin}}
+\subsubsection[{list\-\_\-chemin}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$pair$<$int8\-\_\-t,int8\-\_\-t$>$ $>$$\ast$ Chemin\-::list\-\_\-chemin}}\label{classChemin_a5acfc655d74effb1ed6eb14494c017b0}
+
+
+Référencé par add(), Core\-::draw\-Debug(), has(), remove(), to\-String(), et Manager\-::update().
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+headers/manager/\hyperlink{chemin_8h}{chemin.\-h}\item 
+sources/\hyperlink{chemin_8cpp}{chemin.\-cpp}\end{DoxyCompactItemize}

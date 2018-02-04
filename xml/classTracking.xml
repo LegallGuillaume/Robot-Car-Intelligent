@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classTracking" kind="class" prot="public">
+    <compoundname>Tracking</compoundname>
+    <includes refid="tracking_8h" local="no">tracking.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classTracking_1a48f10566a108662402396857d9c33e6b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Tracking::halt</definition>
+        <argsstring></argsstring>
+        <name>halt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/tracking.h" line="28" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/tracking.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTracking_1a3eba07f069b521e4ea79c9c7e7933af0" prot="private" static="no" mutable="no">
+        <type><ref refid="tracking_8h_1a97602aa1ed0462d292d2e0407c75ad1d" kindref="member">TrackingType</ref></type>
+        <definition>TrackingType Tracking::tracking</definition>
+        <argsstring></argsstring>
+        <name>tracking</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/tracking.h" line="29" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/tracking.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTracking_1ac35bb489c0b55abac393ce129678450a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Tracking::Tracking</definition>
+        <argsstring>(TrackingType tracktype, VideoCapture &amp;capture)</argsstring>
+        <name>Tracking</name>
+        <param>
+          <type><ref refid="tracking_8h_1a97602aa1ed0462d292d2e0407c75ad1d" kindref="member">TrackingType</ref></type>
+          <declname>tracktype</declname>
+        </param>
+        <param>
+          <type>VideoCapture &amp;</type>
+          <declname>capture</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/tracking.h" line="17" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classTracking_1a1c57405d9a91d752d8e8328025004911" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Tracking::~Tracking</definition>
+        <argsstring>()</argsstring>
+        <name>~Tracking</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/tracking.h" line="18" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classTracking_1ade3c4f2f36044357a4c7f1d46664544a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Tracking::searchTarget</definition>
+        <argsstring>()</argsstring>
+        <name>searchTarget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/tracking.h" line="19" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classTracking_1ab9958f0cc01bbffe6d5a7dbecd38fdd2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Tracking::halt</definition>
+        <argsstring>()</argsstring>
+        <name>halt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/tracking.h" line="20" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/tracking.h" bodystart="20" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classTracking_1ac5775bd26c023e6857c87f2d0456aa74" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Tracking::morph</definition>
+        <argsstring>(Mat &amp;thresh)</argsstring>
+        <name>morph</name>
+        <param>
+          <type>Mat &amp;</type>
+          <declname>thresh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/tracking.h" line="26" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classTracking_1aad61fd64840f61edfbeaf55818882fa2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Tracking::track_objet</definition>
+        <argsstring>()</argsstring>
+        <name>track_objet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/tracking.h" line="27" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="106">
+        <label>Tracking</label>
+        <link refid="classTracking"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/tracking.h" line="13" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/tracking.h" bodystart="13" bodyend="31"/>
+    <listofallmembers>
+      <member refid="classTracking_1a48f10566a108662402396857d9c33e6b" prot="private" virt="non-virtual"><scope>Tracking</scope><name>halt</name></member>
+      <member refid="classTracking_1ab9958f0cc01bbffe6d5a7dbecd38fdd2" prot="public" virt="non-virtual"><scope>Tracking</scope><name>halt</name></member>
+      <member refid="classTracking_1ac5775bd26c023e6857c87f2d0456aa74" prot="private" virt="non-virtual"><scope>Tracking</scope><name>morph</name></member>
+      <member refid="classTracking_1ade3c4f2f36044357a4c7f1d46664544a" prot="public" virt="non-virtual"><scope>Tracking</scope><name>searchTarget</name></member>
+      <member refid="classTracking_1aad61fd64840f61edfbeaf55818882fa2" prot="private" virt="non-virtual"><scope>Tracking</scope><name>track_objet</name></member>
+      <member refid="classTracking_1ac35bb489c0b55abac393ce129678450a" prot="public" virt="non-virtual"><scope>Tracking</scope><name>Tracking</name></member>
+      <member refid="classTracking_1a3eba07f069b521e4ea79c9c7e7933af0" prot="private" virt="non-virtual"><scope>Tracking</scope><name>tracking</name></member>
+      <member refid="classTracking_1a1c57405d9a91d752d8e8328025004911" prot="public" virt="non-virtual"><scope>Tracking</scope><name>~Tracking</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

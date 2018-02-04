@@ -1,0 +1,116 @@
+\hypertarget{core_8h}{\section{Référence du fichier headers/core.h}
+\label{core_8h}\index{headers/core.\-h@{headers/core.\-h}}
+}
+{\ttfamily \#include \char`\"{}../headers/manager.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../headers/traitement/pathfinding.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../headers/traitement/images.\-h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{core_8h_struct__stateMachine}{\-\_\-state\-Machine}
+\item 
+class \hyperlink{classCore}{Core}
+\end{DoxyCompactItemize}
+\subsection*{Énumérations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{core_8h_a5d74787dedbc4e11c1ab15bf487e61f8}{State} \{ \hyperlink{core_8h_a5d74787dedbc4e11c1ab15bf487e61f8ab50339a10e1de285ac99d4c3990b8693}{State\-::\-N\-O\-N\-E} =0, 
+\hyperlink{core_8h_a5d74787dedbc4e11c1ab15bf487e61f8ae0aa021e21dddbd6d8cecec71e9cf564}{State\-::\-O\-K}, 
+\hyperlink{core_8h_a5d74787dedbc4e11c1ab15bf487e61f8ac2f3f489a00553e7a01d369c103c7251}{State\-::\-N\-O}, 
+\hyperlink{core_8h_a5d74787dedbc4e11c1ab15bf487e61f8abb1ca97ec761fc37101737ba0aa2e7c5}{State\-::\-E\-R\-R\-O\-R}
+ \}
+\item 
+enum \hyperlink{core_8h_a46c8a310cf4c094f8c80e1cb8dc1f911}{Mode} \{ \hyperlink{core_8h_a46c8a310cf4c094f8c80e1cb8dc1f911acf535b39ede8798cd6b56d99271afeef}{Mode\-::\-Stop\-\_\-\-Mode} =0, 
+\hyperlink{core_8h_a46c8a310cf4c094f8c80e1cb8dc1f911a62a2c1fd120cdb7005bf42408c887d9d}{Mode\-::\-Auto\-\_\-\-Mode}, 
+\hyperlink{core_8h_a46c8a310cf4c094f8c80e1cb8dc1f911a6879e8dabec58a1e3e670eaddfdc7bf7}{Mode\-::\-Virtual\-\_\-\-Mode}, 
+\hyperlink{core_8h_a46c8a310cf4c094f8c80e1cb8dc1f911a493c3024fdbbce51ec6d8d8b0feacf13}{Mode\-::\-Manual\-\_\-\-Mode}
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des classes}
+\index{\-\_\-state\-Machine@{\-\_\-state\-Machine}}\label{struct__stateMachine}
+\hypertarget{core_8h_struct__stateMachine}{}
+\subsubsection{struct \-\_\-state\-Machine}
+\begin{DoxyFields}{Membres de classe}
+\hypertarget{core_8h_a157036ced733a021849ebcbc98c27200}{\hyperlink{core_8h_a5d74787dedbc4e11c1ab15bf487e61f8}{State}}\label{core_8h_a157036ced733a021849ebcbc98c27200}
+&
+\-\_\-state\-Calibration&
+\\
+\hline
+
+\hypertarget{core_8h_adbc0e51d4bed9b6da5c44e921e37dc32}{\hyperlink{core_8h_a5d74787dedbc4e11c1ab15bf487e61f8}{State}}\label{core_8h_adbc0e51d4bed9b6da5c44e921e37dc32}
+&
+\-\_\-state\-Image\-Block&
+\\
+\hline
+
+\hypertarget{core_8h_aa6cc70d0567b403fb9e993a681f48b85}{\hyperlink{core_8h_a5d74787dedbc4e11c1ab15bf487e61f8}{State}}\label{core_8h_aa6cc70d0567b403fb9e993a681f48b85}
+&
+\-\_\-state\-I\-P\-C&
+\\
+\hline
+
+\hypertarget{core_8h_a79ce614ae01c3759d155c03026384ca7}{\hyperlink{core_8h_a5d74787dedbc4e11c1ab15bf487e61f8}{State}}\label{core_8h_a79ce614ae01c3759d155c03026384ca7}
+&
+\-\_\-state\-Pathfinding&
+\\
+\hline
+
+\hypertarget{core_8h_aaee24e4ab99a6f1243a46645188de8d0}{\hyperlink{core_8h_a5d74787dedbc4e11c1ab15bf487e61f8}{State}}\label{core_8h_aaee24e4ab99a6f1243a46645188de8d0}
+&
+\-\_\-state\-Server&
+\\
+\hline
+
+\hypertarget{core_8h_a88c6e0c15cdd29b3eec2e842fa09b08f}{\hyperlink{core_8h_a5d74787dedbc4e11c1ab15bf487e61f8}{State}}\label{core_8h_a88c6e0c15cdd29b3eec2e842fa09b08f}
+&
+\-\_\-state\-Trajectory&
+\\
+\hline
+
+\end{DoxyFields}
+
+
+\subsection{Documentation du type de l'énumération}
+\hypertarget{core_8h_a46c8a310cf4c094f8c80e1cb8dc1f911}{\index{core.\-h@{core.\-h}!Mode@{Mode}}
+\index{Mode@{Mode}!core.h@{core.\-h}}
+\subsubsection[{Mode}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Mode}\hspace{0.3cm}{\ttfamily [strong]}}}\label{core_8h_a46c8a310cf4c094f8c80e1cb8dc1f911}
+\begin{Desc}
+\item[Valeurs énumérées]\par
+\begin{description}
+\index{Stop\-\_\-\-Mode@{Stop\-\_\-\-Mode}!core.\-h@{core.\-h}}\index{core.\-h@{core.\-h}!Stop\-\_\-\-Mode@{Stop\-\_\-\-Mode}}\item[{\em 
+\hypertarget{core_8h_a46c8a310cf4c094f8c80e1cb8dc1f911acf535b39ede8798cd6b56d99271afeef}{Stop\-\_\-\-Mode}\label{core_8h_a46c8a310cf4c094f8c80e1cb8dc1f911acf535b39ede8798cd6b56d99271afeef}
+}]\index{Auto\-\_\-\-Mode@{Auto\-\_\-\-Mode}!core.\-h@{core.\-h}}\index{core.\-h@{core.\-h}!Auto\-\_\-\-Mode@{Auto\-\_\-\-Mode}}\item[{\em 
+\hypertarget{core_8h_a46c8a310cf4c094f8c80e1cb8dc1f911a62a2c1fd120cdb7005bf42408c887d9d}{Auto\-\_\-\-Mode}\label{core_8h_a46c8a310cf4c094f8c80e1cb8dc1f911a62a2c1fd120cdb7005bf42408c887d9d}
+}]\index{Virtual\-\_\-\-Mode@{Virtual\-\_\-\-Mode}!core.\-h@{core.\-h}}\index{core.\-h@{core.\-h}!Virtual\-\_\-\-Mode@{Virtual\-\_\-\-Mode}}\item[{\em 
+\hypertarget{core_8h_a46c8a310cf4c094f8c80e1cb8dc1f911a6879e8dabec58a1e3e670eaddfdc7bf7}{Virtual\-\_\-\-Mode}\label{core_8h_a46c8a310cf4c094f8c80e1cb8dc1f911a6879e8dabec58a1e3e670eaddfdc7bf7}
+}]\index{Manual\-\_\-\-Mode@{Manual\-\_\-\-Mode}!core.\-h@{core.\-h}}\index{core.\-h@{core.\-h}!Manual\-\_\-\-Mode@{Manual\-\_\-\-Mode}}\item[{\em 
+\hypertarget{core_8h_a46c8a310cf4c094f8c80e1cb8dc1f911a493c3024fdbbce51ec6d8d8b0feacf13}{Manual\-\_\-\-Mode}\label{core_8h_a46c8a310cf4c094f8c80e1cb8dc1f911a493c3024fdbbce51ec6d8d8b0feacf13}
+}]\end{description}
+\end{Desc}
+
+\begin{DoxyCode}
+20 \{ \hyperlink{core_8h_a46c8a310cf4c094f8c80e1cb8dc1f911acf535b39ede8798cd6b56d99271afeef}{Stop\_Mode}=0, \hyperlink{core_8h_a46c8a310cf4c094f8c80e1cb8dc1f911a62a2c1fd120cdb7005bf42408c887d9d}{Auto\_Mode}, \hyperlink{core_8h_a46c8a310cf4c094f8c80e1cb8dc1f911a6879e8dabec58a1e3e670eaddfdc7bf7}{Virtual\_Mode}, 
+      \hyperlink{core_8h_a46c8a310cf4c094f8c80e1cb8dc1f911a493c3024fdbbce51ec6d8d8b0feacf13}{Manual\_Mode} \};
+\end{DoxyCode}
+\hypertarget{core_8h_a5d74787dedbc4e11c1ab15bf487e61f8}{\index{core.\-h@{core.\-h}!State@{State}}
+\index{State@{State}!core.h@{core.\-h}}
+\subsubsection[{State}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf State}\hspace{0.3cm}{\ttfamily [strong]}}}\label{core_8h_a5d74787dedbc4e11c1ab15bf487e61f8}
+\begin{Desc}
+\item[Valeurs énumérées]\par
+\begin{description}
+\index{N\-O\-N\-E@{N\-O\-N\-E}!core.\-h@{core.\-h}}\index{core.\-h@{core.\-h}!N\-O\-N\-E@{N\-O\-N\-E}}\item[{\em 
+\hypertarget{core_8h_a5d74787dedbc4e11c1ab15bf487e61f8ab50339a10e1de285ac99d4c3990b8693}{N\-O\-N\-E}\label{core_8h_a5d74787dedbc4e11c1ab15bf487e61f8ab50339a10e1de285ac99d4c3990b8693}
+}]\index{O\-K@{O\-K}!core.\-h@{core.\-h}}\index{core.\-h@{core.\-h}!O\-K@{O\-K}}\item[{\em 
+\hypertarget{core_8h_a5d74787dedbc4e11c1ab15bf487e61f8ae0aa021e21dddbd6d8cecec71e9cf564}{O\-K}\label{core_8h_a5d74787dedbc4e11c1ab15bf487e61f8ae0aa021e21dddbd6d8cecec71e9cf564}
+}]\index{N\-O@{N\-O}!core.\-h@{core.\-h}}\index{core.\-h@{core.\-h}!N\-O@{N\-O}}\item[{\em 
+\hypertarget{core_8h_a5d74787dedbc4e11c1ab15bf487e61f8ac2f3f489a00553e7a01d369c103c7251}{N\-O}\label{core_8h_a5d74787dedbc4e11c1ab15bf487e61f8ac2f3f489a00553e7a01d369c103c7251}
+}]\index{E\-R\-R\-O\-R@{E\-R\-R\-O\-R}!core.\-h@{core.\-h}}\index{core.\-h@{core.\-h}!E\-R\-R\-O\-R@{E\-R\-R\-O\-R}}\item[{\em 
+\hypertarget{core_8h_a5d74787dedbc4e11c1ab15bf487e61f8abb1ca97ec761fc37101737ba0aa2e7c5}{E\-R\-R\-O\-R}\label{core_8h_a5d74787dedbc4e11c1ab15bf487e61f8abb1ca97ec761fc37101737ba0aa2e7c5}
+}]\end{description}
+\end{Desc}
+
+\begin{DoxyCode}
+8 \{ \hyperlink{core_8h_a5d74787dedbc4e11c1ab15bf487e61f8ab50339a10e1de285ac99d4c3990b8693}{NONE}=0, \hyperlink{core_8h_a5d74787dedbc4e11c1ab15bf487e61f8ae0aa021e21dddbd6d8cecec71e9cf564}{OK}, \hyperlink{core_8h_a5d74787dedbc4e11c1ab15bf487e61f8ac2f3f489a00553e7a01d369c103c7251}{NO}, \hyperlink{core_8h_a5d74787dedbc4e11c1ab15bf487e61f8abb1ca97ec761fc37101737ba0aa2e7c5}{ERROR} \}; \textcolor{comment}{//NO is for pathfinding or trajectory if car can't move}
+\end{DoxyCode}

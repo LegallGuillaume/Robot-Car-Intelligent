@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="client_8h" kind="file">
+    <compoundname>client.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">string</includes>
+    <includes local="no">cstdio</includes>
+    <includes local="no">cstdlib</includes>
+    <includedby refid="serveur_8h" local="yes">headers/manager/serveur.h</includedby>
+    <incdepgraph>
+      <node id="175">
+        <label>headers/serveur/client.h</label>
+        <link refid="client.h"/>
+        <childnode refid="176" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
+        </childnode>
+      </node>
+      <node id="177">
+        <label>string</label>
+      </node>
+      <node id="178">
+        <label>cstdio</label>
+      </node>
+      <node id="179">
+        <label>cstdlib</label>
+      </node>
+      <node id="176">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="182">
+        <label>sources/serveur.cpp</label>
+        <link refid="serveur_8cpp"/>
+      </node>
+      <node id="180">
+        <label>headers/serveur/client.h</label>
+        <link refid="client.h"/>
+        <childnode refid="181" relation="include">
+        </childnode>
+      </node>
+      <node id="181">
+        <label>headers/manager/serveur.h</label>
+        <link refid="serveur_8h"/>
+        <childnode refid="182" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classClient" prot="public">Client</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="client_8h_1adb8b7f0305183ffdba80cf2390ea33fa" prot="public" static="no">
+        <name>MAX_NAME_LENGHT</name>
+        <initializer>20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/serveur/client.h" line="9" column="9" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/serveur/client.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>CLIENT_H</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CLIENT_H</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdio&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdlib&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="client_8h_1adb8b7f0305183ffdba80cf2390ea33fa" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_NAME_LENGHT<sp/>20</highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="classClient" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classClient" kindref="compound">Client</ref><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="13" refid="classClient_1af29655fb85148cf9cff9c94af770c023" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classClient_1af29655fb85148cf9cff9c94af770c023" kindref="member">m_id</ref>;</highlight></codeline>
+<codeline lineno="14" refid="classClient_1a80564d281c880f1e80b6e1b54ae6e71e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="classClient_1a80564d281c880f1e80b6e1b54ae6e71e" kindref="member">m_sock</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17" refid="classClient_1ae51af7aa6b8f591496a8f6a4a87a14bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classClient_1ae51af7aa6b8f591496a8f6a4a87a14bf" kindref="member">Client</ref>(){</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classClient_1af29655fb85148cf9cff9c94af770c023" kindref="member">m_id</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/serveur/client.h"/>
+  </compounddef>
+</doxygen>

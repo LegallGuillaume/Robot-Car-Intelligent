@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classCellule" kind="class" prot="public">
+    <compoundname>Cellule</compoundname>
+    <includes refid="cellule_8h" local="no">cellule.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classCellule_1a3f4117017976fde614e72d38ea10d734" prot="public" static="no" mutable="no">
+        <type><ref refid="classCellule" kindref="compound">Cellule</ref> *</type>
+        <definition>Cellule* Cellule::m_parent</definition>
+        <argsstring></argsstring>
+        <name>m_parent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/cellule.h" line="27" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/cellule.h" bodystart="27" bodyend="-1"/>
+        <referencedby refid="classPathFinding_1a2cb53ee646709c2367a6819d758ec7c3" compoundref="pathfinding_8h" startline="53" endline="65">PathFinding::everParent</referencedby>
+        <referencedby refid="classPathFinding_1addc7b9eb5682e0de46fd59c4a1319a86" compoundref="pathfinding_8h" startline="151" endline="235">PathFinding::findPath</referencedby>
+        <referencedby refid="classPathFinding_1aff1ca43a0ea5e4b9e5e188f165f08cd2" compoundref="pathfinding_8h" startline="84" endline="103">PathFinding::getChemin</referencedby>
+        <referencedby refid="classCellule_1a62c79c012c471f8dc74714c3262a696c" compoundref="cellule_8h" startline="60" endline="63">~Cellule</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classCellule_1af7cb9856701ea3e423f58b09bb7dfdbd" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t Cellule::m_P</definition>
+        <argsstring></argsstring>
+        <name>m_P</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/cellule.h" line="39" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/cellule.h" bodystart="39" bodyend="-1"/>
+        <referencedby refid="classCellule_1af506f7549ec9855560d6e6c5f2988501" compoundref="cellule_8h" startline="19" endline="26">Cellule</referencedby>
+        <referencedby refid="classPathFinding_1addc7b9eb5682e0de46fd59c4a1319a86" compoundref="pathfinding_8h" startline="151" endline="235">PathFinding::findPath</referencedby>
+        <referencedby refid="classPathFinding_1aff5b197409e0489e6df3c2366ee6f8cd" compoundref="pathfinding_8h" startline="28" endline="51">PathFinding::PathFinding</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classCellule_1a9c368e6fb89c5ea1e31b810207eca9ee" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Cellule::everfind</definition>
+        <argsstring></argsstring>
+        <name>everfind</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/cellule.h" line="52" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/cellule.h" bodystart="52" bodyend="-1"/>
+        <referencedby refid="classCellule_1af506f7549ec9855560d6e6c5f2988501" compoundref="cellule_8h" startline="19" endline="26">Cellule</referencedby>
+        <referencedby refid="classPathFinding_1aff1ca43a0ea5e4b9e5e188f165f08cd2" compoundref="pathfinding_8h" startline="84" endline="103">PathFinding::getChemin</referencedby>
+        <referencedby refid="classPathFinding_1aff5b197409e0489e6df3c2366ee6f8cd" compoundref="pathfinding_8h" startline="28" endline="51">PathFinding::PathFinding</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCellule_1adf634a9bd573a298652d70a93f3e5c6e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Cellule::m_bloc</definition>
+        <argsstring></argsstring>
+        <name>m_bloc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/cellule.h" line="66" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/cellule.h" bodystart="66" bodyend="-1"/>
+        <referencedby refid="classCellule_1af506f7549ec9855560d6e6c5f2988501" compoundref="cellule_8h" startline="19" endline="26">Cellule</referencedby>
+        <referencedby refid="classCellule_1a4f021d3669d6688999f6299372670a60" compoundref="cellule_8h" startline="49" endline="51">isBloc</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classCellule_1abd3eef3d41bf99ca3a1d9edc97aa8282" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Cellule::is_center</definition>
+        <argsstring></argsstring>
+        <name>is_center</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/cellule.h" line="67" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/cellule.h" bodystart="67" bodyend="-1"/>
+        <referencedby refid="classCellule_1af506f7549ec9855560d6e6c5f2988501" compoundref="cellule_8h" startline="19" endline="26">Cellule</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classCellule_1a9573d226e0df26453a67fb3730794444" prot="private" static="no" mutable="no">
+        <type>std::pair&lt; int8_t, int8_t &gt;</type>
+        <definition>std::pair&lt;int8_t, int8_t&gt; Cellule::m_coord</definition>
+        <argsstring></argsstring>
+        <name>m_coord</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/cellule.h" line="68" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/cellule.h" bodystart="68" bodyend="-1"/>
+        <referencedby refid="classCellule_1af506f7549ec9855560d6e6c5f2988501" compoundref="cellule_8h" startline="19" endline="26">Cellule</referencedby>
+        <referencedby refid="classCellule_1a50698c84ba5a043a148a594552189427" compoundref="cellule_8h" startline="36" endline="38">getCoord</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCellule_1af506f7549ec9855560d6e6c5f2988501" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Cellule::Cellule</definition>
+        <argsstring>(int8_t x, int8_t y, bool is_bloc)</argsstring>
+        <name>Cellule</name>
+        <param>
+          <type>int8_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_bloc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/cellule.h" line="19" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/cellule.h" bodystart="19" bodyend="26"/>
+        <references refid="classCellule_1a9c368e6fb89c5ea1e31b810207eca9ee" compoundref="cellule_8h" startline="52">everfind</references>
+        <references refid="classCellule_1abd3eef3d41bf99ca3a1d9edc97aa8282" compoundref="cellule_8h" startline="67">is_center</references>
+        <references refid="classCellule_1adf634a9bd573a298652d70a93f3e5c6e" compoundref="cellule_8h" startline="66">m_bloc</references>
+        <references refid="classCellule_1a9573d226e0df26453a67fb3730794444" compoundref="cellule_8h" startline="68">m_coord</references>
+        <references refid="classCellule_1af7cb9856701ea3e423f58b09bb7dfdbd" compoundref="cellule_8h" startline="39">m_P</references>
+      </memberdef>
+      <memberdef kind="function" id="classCellule_1a50698c84ba5a043a148a594552189427" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::pair&lt; int8_t, int8_t &gt;</type>
+        <definition>std::pair&lt;int8_t, int8_t&gt; Cellule::getCoord</definition>
+        <argsstring>()</argsstring>
+        <name>getCoord</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/cellule.h" line="36" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/cellule.h" bodystart="36" bodyend="38"/>
+        <references refid="classCellule_1a9573d226e0df26453a67fb3730794444" compoundref="cellule_8h" startline="68">m_coord</references>
+        <referencedby refid="classPathFinding_1addc7b9eb5682e0de46fd59c4a1319a86" compoundref="pathfinding_8h" startline="151" endline="235">PathFinding::findPath</referencedby>
+        <referencedby refid="classPathFinding_1aff1ca43a0ea5e4b9e5e188f165f08cd2" compoundref="pathfinding_8h" startline="84" endline="103">PathFinding::getChemin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCellule_1a4f021d3669d6688999f6299372670a60" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Cellule::isBloc</definition>
+        <argsstring>()</argsstring>
+        <name>isBloc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/cellule.h" line="49" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/cellule.h" bodystart="49" bodyend="51"/>
+        <references refid="classCellule_1adf634a9bd573a298652d70a93f3e5c6e" compoundref="cellule_8h" startline="66">m_bloc</references>
+      </memberdef>
+      <memberdef kind="function" id="classCellule_1a62c79c012c471f8dc74714c3262a696c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Cellule::~Cellule</definition>
+        <argsstring>()</argsstring>
+        <name>~Cellule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/cellule.h" line="60" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/cellule.h" bodystart="60" bodyend="63"/>
+        <references refid="classCellule_1a3f4117017976fde614e72d38ea10d734" compoundref="cellule_8h" startline="27">m_parent</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="20">
+        <label>Cellule</label>
+        <link refid="classCellule"/>
+        <childnode refid="20" relation="usage">
+          <edgelabel>+m_parent</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/cellule.h" line="6" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/cellule.h" bodystart="6" bodyend="70"/>
+    <listofallmembers>
+      <member refid="classCellule_1af506f7549ec9855560d6e6c5f2988501" prot="public" virt="non-virtual"><scope>Cellule</scope><name>Cellule</name></member>
+      <member refid="classCellule_1a9c368e6fb89c5ea1e31b810207eca9ee" prot="public" virt="non-virtual"><scope>Cellule</scope><name>everfind</name></member>
+      <member refid="classCellule_1a50698c84ba5a043a148a594552189427" prot="public" virt="non-virtual"><scope>Cellule</scope><name>getCoord</name></member>
+      <member refid="classCellule_1abd3eef3d41bf99ca3a1d9edc97aa8282" prot="private" virt="non-virtual"><scope>Cellule</scope><name>is_center</name></member>
+      <member refid="classCellule_1a4f021d3669d6688999f6299372670a60" prot="public" virt="non-virtual"><scope>Cellule</scope><name>isBloc</name></member>
+      <member refid="classCellule_1adf634a9bd573a298652d70a93f3e5c6e" prot="private" virt="non-virtual"><scope>Cellule</scope><name>m_bloc</name></member>
+      <member refid="classCellule_1a9573d226e0df26453a67fb3730794444" prot="private" virt="non-virtual"><scope>Cellule</scope><name>m_coord</name></member>
+      <member refid="classCellule_1af7cb9856701ea3e423f58b09bb7dfdbd" prot="public" virt="non-virtual"><scope>Cellule</scope><name>m_P</name></member>
+      <member refid="classCellule_1a3f4117017976fde614e72d38ea10d734" prot="public" virt="non-virtual"><scope>Cellule</scope><name>m_parent</name></member>
+      <member refid="classCellule_1a62c79c012c471f8dc74714c3262a696c" prot="public" virt="non-virtual"><scope>Cellule</scope><name>~Cellule</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_6688cc571b52d3c928cdfdd227a6f221" kind="dir">
+    <compoundname>headers/manager</compoundname>
+    <innerfile refid="arrive_8h">arrive.h</innerfile>
+    <innerfile refid="bloc_8h">bloc.h</innerfile>
+    <innerfile refid="car_8h">car.h</innerfile>
+    <innerfile refid="chemin_8h">chemin.h</innerfile>
+    <innerfile refid="serveur_8h">serveur.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/"/>
+  </compounddef>
+</doxygen>

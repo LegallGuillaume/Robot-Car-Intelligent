@@ -1,0 +1,200 @@
+\hypertarget{classArrive}{\section{Référence de la classe Arrive}
+\label{classArrive}\index{Arrive@{Arrive}}
+}
+
+
+{\ttfamily \#include $<$arrive.\-h$>$}
+
+Graphe d'héritage de Arrive\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classArrive}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classArrive_ab0484a9338e3774c5fa824153b1470e2}{set\-Position} (int8\-\_\-t x, int8\-\_\-t y) override
+\item 
+pair$<$ int8\-\_\-t, int8\-\_\-t $>$ \hyperlink{classArrive_abe91e4a5bcf15ff987ab58c05b6bb537}{get\-Position} () override
+\item 
+string \hyperlink{classArrive_af97f0e7e0624cce7ca09d52675e19872}{to\-String} () override
+\item 
+\hyperlink{classArrive_a65994a8b59dad5bd69480fb85c07d72b}{$\sim$\-Arrive} ()
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classArrive}{Arrive} $\ast$ \hyperlink{classArrive_a0614a2400b23b0ec86294d1776067df2}{get\-Instance} ()
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classArrive_a55dd55358bedefc3f0c82dd83fdfec79}{Arrive} ()
+\end{DoxyCompactItemize}
+\subsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+pair$<$ int8\-\_\-t, int8\-\_\-t $>$ $\ast$ \hyperlink{classArrive_aa47d57970460b95cfbcdbe62e22dfac7}{position}
+\end{DoxyCompactItemize}
+\subsection*{Attributs privés statiques}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classArrive}{Arrive} $\ast$ \hyperlink{classArrive_a92c9b9165c713ff9151d8720660837ef}{instance} = nullptr
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{classArrive_a65994a8b59dad5bd69480fb85c07d72b}{\index{Arrive@{Arrive}!$\sim$\-Arrive@{$\sim$\-Arrive}}
+\index{$\sim$\-Arrive@{$\sim$\-Arrive}!Arrive@{Arrive}}
+\subsubsection[{$\sim$\-Arrive}]{\setlength{\rightskip}{0pt plus 5cm}Arrive\-::$\sim$\-Arrive (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classArrive_a65994a8b59dad5bd69480fb85c07d72b}
+
+\begin{DoxyCode}
+38              \{
+39         \textcolor{keyword}{delete} \hyperlink{classArrive_aa47d57970460b95cfbcdbe62e22dfac7}{position};
+40         \hyperlink{classArrive_aa47d57970460b95cfbcdbe62e22dfac7}{position} = \textcolor{keyword}{nullptr};
+41         \textcolor{keyword}{delete} \hyperlink{classArrive_a92c9b9165c713ff9151d8720660837ef}{instance};
+42         \hyperlink{classArrive_a92c9b9165c713ff9151d8720660837ef}{instance}=\textcolor{keyword}{nullptr};
+43     \}
+\end{DoxyCode}
+\hypertarget{classArrive_a55dd55358bedefc3f0c82dd83fdfec79}{\index{Arrive@{Arrive}!Arrive@{Arrive}}
+\index{Arrive@{Arrive}!Arrive@{Arrive}}
+\subsubsection[{Arrive}]{\setlength{\rightskip}{0pt plus 5cm}Arrive\-::\-Arrive (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{classArrive_a55dd55358bedefc3f0c82dd83fdfec79}
+
+
+Référencé par get\-Instance().
+
+
+\begin{DoxyCode}
+48             \{
+49         \hyperlink{classArrive_aa47d57970460b95cfbcdbe62e22dfac7}{position} = \textcolor{keyword}{new} pair<int8\_t, int8\_t>();
+50         \hyperlink{classArrive_aa47d57970460b95cfbcdbe62e22dfac7}{position}->first = -1;
+51         \hyperlink{classArrive_aa47d57970460b95cfbcdbe62e22dfac7}{position}->second = -1;
+52     \}
+\end{DoxyCode}
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{classArrive_a0614a2400b23b0ec86294d1776067df2}{\index{Arrive@{Arrive}!get\-Instance@{get\-Instance}}
+\index{get\-Instance@{get\-Instance}!Arrive@{Arrive}}
+\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Arrive} $\ast$ Arrive\-::get\-Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classArrive_a0614a2400b23b0ec86294d1776067df2}
+
+
+Références Arrive(), et instance.
+
+
+
+Référencé par Manager\-::\-Manager().
+
+
+\begin{DoxyCode}
+9                             \{
+10     \textcolor{keywordflow}{if}(\hyperlink{classArrive_a92c9b9165c713ff9151d8720660837ef}{instance} == \textcolor{keyword}{nullptr})\{
+11         \hyperlink{classArrive_a92c9b9165c713ff9151d8720660837ef}{instance} = \textcolor{keyword}{new} \hyperlink{classArrive_a55dd55358bedefc3f0c82dd83fdfec79}{Arrive}();
+12     \}
+13     \textcolor{keywordflow}{return} \hyperlink{classArrive_a92c9b9165c713ff9151d8720660837ef}{instance};
+14 \}
+\end{DoxyCode}
+\hypertarget{classArrive_abe91e4a5bcf15ff987ab58c05b6bb537}{\index{Arrive@{Arrive}!get\-Position@{get\-Position}}
+\index{get\-Position@{get\-Position}!Arrive@{Arrive}}
+\subsubsection[{get\-Position}]{\setlength{\rightskip}{0pt plus 5cm}pair$<$int8\-\_\-t, int8\-\_\-t$>$ Arrive\-::get\-Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}}\label{classArrive_abe91e4a5bcf15ff987ab58c05b6bb537}
+
+
+Implémente \hyperlink{classSimpleObject_ae417f1a285ceab5a04130aba01bac856}{Simple\-Object}.
+
+
+
+Référencé par Core\-::draw\-Debug(), Core\-::pathfinding(), to\-String(), unitest\-\_\-pathfinding(), et Manager\-::update().
+
+
+\begin{DoxyCode}
+34                                                \{
+35         \textcolor{keywordflow}{return} *\hyperlink{classArrive_aa47d57970460b95cfbcdbe62e22dfac7}{position};
+36     \}
+\end{DoxyCode}
+\hypertarget{classArrive_ab0484a9338e3774c5fa824153b1470e2}{\index{Arrive@{Arrive}!set\-Position@{set\-Position}}
+\index{set\-Position@{set\-Position}!Arrive@{Arrive}}
+\subsubsection[{set\-Position}]{\setlength{\rightskip}{0pt plus 5cm}bool Arrive\-::set\-Position (
+\begin{DoxyParamCaption}
+\item[{int8\-\_\-t}]{x, }
+\item[{int8\-\_\-t}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}}\label{classArrive_ab0484a9338e3774c5fa824153b1470e2}
+
+
+Implémente \hyperlink{classSimpleObject_ae9ea1f7ffe6d4aaf18f24e937e6b60ab}{Simple\-Object}.
+
+
+
+Référencé par Core\-::block\-Processing(), Manager\-::reset(), et unitest\-\_\-pathfinding().
+
+
+\begin{DoxyCode}
+29                                                  \{
+30         \hyperlink{classArrive_aa47d57970460b95cfbcdbe62e22dfac7}{position}->first = x;
+31         \hyperlink{classArrive_aa47d57970460b95cfbcdbe62e22dfac7}{position}->second = y;
+32         \textcolor{keywordflow}{return} (\hyperlink{classArrive_aa47d57970460b95cfbcdbe62e22dfac7}{position}->first == x && \hyperlink{classArrive_aa47d57970460b95cfbcdbe62e22dfac7}{position}->second == y);
+33     \}
+\end{DoxyCode}
+\hypertarget{classArrive_af97f0e7e0624cce7ca09d52675e19872}{\index{Arrive@{Arrive}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!Arrive@{Arrive}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Arrive\-::to\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{classArrive_af97f0e7e0624cce7ca09d52675e19872}
+
+
+Implémente \hyperlink{classSimpleObject_aedf0ddcc119ab40623b5b69badc9531a}{Simple\-Object}.
+
+
+
+Références get\-Position().
+
+
+
+Référencé par Manager\-::to\-String().
+
+
+\begin{DoxyCode}
+16                           \{
+17     stringstream buf;
+18     buf<<\textcolor{stringliteral}{"\(\backslash\)"Arrive\(\backslash\)": \{ \(\backslash\)"X\(\backslash\)": "}<<(int)\hyperlink{classArrive_abe91e4a5bcf15ff987ab58c05b6bb537}{getPosition}().first<<\textcolor{stringliteral}{", \(\backslash\)"Y\(\backslash\)": "}<<(int)
+      \hyperlink{classArrive_abe91e4a5bcf15ff987ab58c05b6bb537}{getPosition}().second<<\textcolor{stringliteral}{" \}"};
+19     \textcolor{keywordflow}{return} buf.str();
+20 \}\end{DoxyCode}
+
+
+\subsection{Documentation des données membres}
+\hypertarget{classArrive_a92c9b9165c713ff9151d8720660837ef}{\index{Arrive@{Arrive}!instance@{instance}}
+\index{instance@{instance}!Arrive@{Arrive}}
+\subsubsection[{instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Arrive} $\ast$ Arrive\-::instance = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classArrive_a92c9b9165c713ff9151d8720660837ef}
+
+
+Référencé par get\-Instance().
+
+\hypertarget{classArrive_aa47d57970460b95cfbcdbe62e22dfac7}{\index{Arrive@{Arrive}!position@{position}}
+\index{position@{position}!Arrive@{Arrive}}
+\subsubsection[{position}]{\setlength{\rightskip}{0pt plus 5cm}pair$<$int8\-\_\-t, int8\-\_\-t$>$$\ast$ Arrive\-::position\hspace{0.3cm}{\ttfamily [private]}}}\label{classArrive_aa47d57970460b95cfbcdbe62e22dfac7}
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+headers/manager/\hyperlink{arrive_8h}{arrive.\-h}\item 
+sources/\hyperlink{arrive_8cpp}{arrive.\-cpp}\end{DoxyCompactItemize}

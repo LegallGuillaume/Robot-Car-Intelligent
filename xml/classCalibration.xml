@@ -1,0 +1,437 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classCalibration" kind="class" prot="public">
+    <compoundname>Calibration</compoundname>
+    <includes refid="calibration_8h" local="no">calibration.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCalibration_1a062b450b8f24d5eadab562b3ed929f89" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; struct <ref refid="structColorInfo" kindref="compound">ColorInfo</ref> &gt; *</type>
+        <definition>std::vector&lt;struct ColorInfo&gt;* Calibration::calibrationColors</definition>
+        <argsstring></argsstring>
+        <name>calibrationColors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" line="45" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" bodystart="45" bodyend="-1"/>
+        <referencedby refid="classCalibration_1a108efb6ccd8c98e5cac950be4bf0ac26" compoundref="calibration_8h" startline="33" endline="36">~Calibration</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classCalibration_1aa3fc415d57199effd80858c330ba5caa" prot="private" static="no" mutable="no">
+        <type>cv::Rect</type>
+        <definition>cv::Rect Calibration::rectangleCalib</definition>
+        <argsstring></argsstring>
+        <name>rectangleCalib</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" line="46" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCalibration_1a9e0da36de8c79fd1a8f5952723f3e464" prot="private" static="no" mutable="no">
+        <type>cv::VideoCapture</type>
+        <definition>cv::VideoCapture Calibration::capture</definition>
+        <argsstring></argsstring>
+        <name>capture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" line="47" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCalibration_1a1d7d84d44fc3abbf136ce9dc964aa02a" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Calibration::iLowH</definition>
+        <argsstring></argsstring>
+        <name>iLowH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" line="48" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" bodystart="48" bodyend="-1"/>
+        <referencedby refid="classCalibration_1ad5f6fcb712cd2ad1a44e19ff4e9058be" compoundref="calibration_8h" startline="24" endline="26">getH</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classCalibration_1a91d2ce954d66d7c5156d331f67573921" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Calibration::iHighH</definition>
+        <argsstring></argsstring>
+        <name>iHighH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" line="49" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" bodystart="49" bodyend="-1"/>
+        <referencedby refid="classCalibration_1ad5f6fcb712cd2ad1a44e19ff4e9058be" compoundref="calibration_8h" startline="24" endline="26">getH</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classCalibration_1a258a3e9be8b3269a3e1e921da88e5b5a" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Calibration::iLowS</definition>
+        <argsstring></argsstring>
+        <name>iLowS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" line="50" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" bodystart="50" bodyend="-1"/>
+        <referencedby refid="classCalibration_1a6bf68284373ae2468bd85043e48b8f25" compoundref="calibration_8h" startline="27" endline="29">getS</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classCalibration_1a216315dfc878e13e9e5b0f487845a627" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Calibration::iHighS</definition>
+        <argsstring></argsstring>
+        <name>iHighS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" line="51" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" bodystart="51" bodyend="-1"/>
+        <referencedby refid="classCalibration_1a6bf68284373ae2468bd85043e48b8f25" compoundref="calibration_8h" startline="27" endline="29">getS</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classCalibration_1a852abbbb791c1625252d3d23825e7648" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Calibration::iLowV</definition>
+        <argsstring></argsstring>
+        <name>iLowV</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" line="52" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" bodystart="52" bodyend="-1"/>
+        <referencedby refid="classCalibration_1ac6b160de7e16702bb7938342c034477a" compoundref="calibration_8h" startline="30" endline="32">getV</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classCalibration_1ab9838bcf2d96445da4a79ccafc7aee4c" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Calibration::iHighV</definition>
+        <argsstring></argsstring>
+        <name>iHighV</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" line="53" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" bodystart="53" bodyend="-1"/>
+        <referencedby refid="classCalibration_1ac6b160de7e16702bb7938342c034477a" compoundref="calibration_8h" startline="30" endline="32">getV</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCalibration_1a420bea981d91ac69161e400644ec7dd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Calibration::Calibration</definition>
+        <argsstring>(cv::VideoCapture capVideo)</argsstring>
+        <name>Calibration</name>
+        <param>
+          <type>cv::VideoCapture</type>
+          <declname>capVideo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" line="22" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/sources/traitement/calibration.cpp" bodystart="18" bodyend="34"/>
+        <references refid="definition_8h_1ac88d2707293a4af9e155d57e3651162e" compoundref="definition_8h" startline="18">CAM_HEIGHT</references>
+        <references refid="definition_8h_1ad2cc26b8da12f6603455f84312aa649b" compoundref="definition_8h" startline="17">CAM_WIDTH</references>
+        <references refid="classManager_1a5d783bd86e9be93235898a46de80847f" compoundref="manager_8cpp" startline="8" endline="13">Manager::getInstance</references>
+        <references refid="classManager_1a18e77e06ef097db9e010835e7930bd3f" compoundref="manager_8h" startline="83" endline="85">Manager::getSceneCarrer</references>
+      </memberdef>
+      <memberdef kind="function" id="classCalibration_1a066922eb7b40419ed4f850b3c6b4148d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Calibration::start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" line="23" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/sources/traitement/calibration.cpp" bodystart="163" bodyend="174"/>
+        <references refid="structColorInfo_1ad6e7d1e25ecafb83a725f9ca95704745" compoundref="calibration_8h" startline="12">ColorInfo::iHighH</references>
+        <references refid="structColorInfo_1afc281afa74af4b6bb6ff3dd12e62ea8d" compoundref="calibration_8h" startline="14">ColorInfo::iHighS</references>
+        <references refid="structColorInfo_1af5f021160be39927fb5de69696b95a3b" compoundref="calibration_8h" startline="16">ColorInfo::iHighV</references>
+        <references refid="structColorInfo_1a5ceb201f85a16581f118c9e7ff83ff7f" compoundref="calibration_8h" startline="11">ColorInfo::iLowH</references>
+        <references refid="structColorInfo_1a032b2484868139023c36cb2c7ae7dd9e" compoundref="calibration_8h" startline="13">ColorInfo::iLowS</references>
+        <references refid="structColorInfo_1ab169dd6230117ce5c2d305c88313ac95" compoundref="calibration_8h" startline="15">ColorInfo::iLowV</references>
+      </memberdef>
+      <memberdef kind="function" id="classCalibration_1ad5f6fcb712cd2ad1a44e19ff4e9058be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::pair&lt; uint8_t, uint8_t &gt;</type>
+        <definition>std::pair&lt;uint8_t, uint8_t&gt; Calibration::getH</definition>
+        <argsstring>()</argsstring>
+        <name>getH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" line="24" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" bodystart="24" bodyend="26"/>
+        <references refid="classCalibration_1a91d2ce954d66d7c5156d331f67573921" compoundref="calibration_8h" startline="49">iHighH</references>
+        <references refid="classCalibration_1a1d7d84d44fc3abbf136ce9dc964aa02a" compoundref="calibration_8h" startline="48">iLowH</references>
+      </memberdef>
+      <memberdef kind="function" id="classCalibration_1a6bf68284373ae2468bd85043e48b8f25" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::pair&lt; uint8_t, uint8_t &gt;</type>
+        <definition>std::pair&lt;uint8_t, uint8_t&gt; Calibration::getS</definition>
+        <argsstring>()</argsstring>
+        <name>getS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" line="27" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" bodystart="27" bodyend="29"/>
+        <references refid="classCalibration_1a216315dfc878e13e9e5b0f487845a627" compoundref="calibration_8h" startline="51">iHighS</references>
+        <references refid="classCalibration_1a258a3e9be8b3269a3e1e921da88e5b5a" compoundref="calibration_8h" startline="50">iLowS</references>
+      </memberdef>
+      <memberdef kind="function" id="classCalibration_1ac6b160de7e16702bb7938342c034477a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::pair&lt; uint8_t, uint8_t &gt;</type>
+        <definition>std::pair&lt;uint8_t, uint8_t&gt; Calibration::getV</definition>
+        <argsstring>()</argsstring>
+        <name>getV</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" line="30" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" bodystart="30" bodyend="32"/>
+        <references refid="classCalibration_1ab9838bcf2d96445da4a79ccafc7aee4c" compoundref="calibration_8h" startline="53">iHighV</references>
+        <references refid="classCalibration_1a852abbbb791c1625252d3d23825e7648" compoundref="calibration_8h" startline="52">iLowV</references>
+      </memberdef>
+      <memberdef kind="function" id="classCalibration_1a108efb6ccd8c98e5cac950be4bf0ac26" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Calibration::~Calibration</definition>
+        <argsstring>()</argsstring>
+        <name>~Calibration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" line="33" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" bodystart="33" bodyend="36"/>
+        <references refid="classCalibration_1a062b450b8f24d5eadab562b3ed929f89" compoundref="calibration_8h" startline="45">calibrationColors</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classCalibration_1adef7ee6cc7d95ea809c1cccd4d41ce02" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Calibration::defineHSV</definition>
+        <argsstring>()</argsstring>
+        <name>defineHSV</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" line="39" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/sources/traitement/calibration.cpp" bodystart="126" bodyend="138"/>
+        <references refid="structColorInfo_1ad6e7d1e25ecafb83a725f9ca95704745" compoundref="calibration_8h" startline="12">ColorInfo::iHighH</references>
+        <references refid="structColorInfo_1afc281afa74af4b6bb6ff3dd12e62ea8d" compoundref="calibration_8h" startline="14">ColorInfo::iHighS</references>
+        <references refid="structColorInfo_1af5f021160be39927fb5de69696b95a3b" compoundref="calibration_8h" startline="16">ColorInfo::iHighV</references>
+        <references refid="structColorInfo_1a5ceb201f85a16581f118c9e7ff83ff7f" compoundref="calibration_8h" startline="11">ColorInfo::iLowH</references>
+        <references refid="structColorInfo_1a032b2484868139023c36cb2c7ae7dd9e" compoundref="calibration_8h" startline="13">ColorInfo::iLowS</references>
+        <references refid="structColorInfo_1ab169dd6230117ce5c2d305c88313ac95" compoundref="calibration_8h" startline="15">ColorInfo::iLowV</references>
+      </memberdef>
+      <memberdef kind="function" id="classCalibration_1ad8250297ea60fa9c0ad1e38a70cca880" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Calibration::search</definition>
+        <argsstring>(cv::Mat hsv_frame)</argsstring>
+        <name>search</name>
+        <param>
+          <type>cv::Mat</type>
+          <declname>hsv_frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" line="40" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/sources/traitement/calibration.cpp" bodystart="140" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classCalibration_1ac4bdcbef3a615877cbeed352ea74c312" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Calibration::addColor</definition>
+        <argsstring>(uint8_t H_min, uint8_t H_max, uint8_t S_min, uint8_t S_max, uint8_t V_min, uint8_t V_max)</argsstring>
+        <name>addColor</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>H_min</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>H_max</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>S_min</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>S_max</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>V_min</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>V_max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" line="41" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/sources/traitement/calibration.cpp" bodystart="36" bodyend="45"/>
+        <references refid="structColorInfo_1ad6e7d1e25ecafb83a725f9ca95704745" compoundref="calibration_8h" startline="12">ColorInfo::iHighH</references>
+        <references refid="structColorInfo_1afc281afa74af4b6bb6ff3dd12e62ea8d" compoundref="calibration_8h" startline="14">ColorInfo::iHighS</references>
+        <references refid="structColorInfo_1af5f021160be39927fb5de69696b95a3b" compoundref="calibration_8h" startline="16">ColorInfo::iHighV</references>
+        <references refid="structColorInfo_1a5ceb201f85a16581f118c9e7ff83ff7f" compoundref="calibration_8h" startline="11">ColorInfo::iLowH</references>
+        <references refid="structColorInfo_1a032b2484868139023c36cb2c7ae7dd9e" compoundref="calibration_8h" startline="13">ColorInfo::iLowS</references>
+        <references refid="structColorInfo_1ab169dd6230117ce5c2d305c88313ac95" compoundref="calibration_8h" startline="15">ColorInfo::iLowV</references>
+      </memberdef>
+      <memberdef kind="function" id="classCalibration_1a0eb486ca50923fab9a39d4403c18d4cf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Calibration::minC</definition>
+        <argsstring>(uint8_t, uint8_t, int8_t marge)</argsstring>
+        <name>minC</name>
+        <param>
+          <type>uint8_t</type>
+          <defname>min</defname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <defname>compare</defname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>marge</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" line="42" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/sources/traitement/calibration.cpp" bodystart="47" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classCalibration_1a26be0ee9644bd758d60a22ffe1281bd6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Calibration::maxC</definition>
+        <argsstring>(uint8_t, uint8_t, int8_t marge)</argsstring>
+        <name>maxC</name>
+        <param>
+          <type>uint8_t</type>
+          <defname>max</defname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <defname>compare</defname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>marge</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" line="43" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/sources/traitement/calibration.cpp" bodystart="56" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classCalibration_1ac016f08b033ba23b3036a87ab610946f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Calibration::filtreC</definition>
+        <argsstring>()</argsstring>
+        <name>filtreC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" line="44" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/sources/traitement/calibration.cpp" bodystart="65" bodyend="124"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="22">
+        <label>T</label>
+      </node>
+      <node id="21">
+        <label>std::vector&lt; T &gt;</label>
+        <childnode refid="22" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>ColorInfo</label>
+        <link refid="structColorInfo"/>
+      </node>
+      <node id="18">
+        <label>Calibration</label>
+        <link refid="classCalibration"/>
+        <childnode refid="19" relation="usage">
+          <edgelabel>-calibrationColors</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>std::vector&lt; struct ColorInfo &gt;</label>
+        <childnode refid="20" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="template-instance">
+          <edgelabel>&lt; struct ColorInfo &gt;</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" line="19" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/calibration.h" bodystart="19" bodyend="54"/>
+    <listofallmembers>
+      <member refid="classCalibration_1ac4bdcbef3a615877cbeed352ea74c312" prot="private" virt="non-virtual"><scope>Calibration</scope><name>addColor</name></member>
+      <member refid="classCalibration_1a420bea981d91ac69161e400644ec7dd8" prot="public" virt="non-virtual"><scope>Calibration</scope><name>Calibration</name></member>
+      <member refid="classCalibration_1a062b450b8f24d5eadab562b3ed929f89" prot="private" virt="non-virtual"><scope>Calibration</scope><name>calibrationColors</name></member>
+      <member refid="classCalibration_1a9e0da36de8c79fd1a8f5952723f3e464" prot="private" virt="non-virtual"><scope>Calibration</scope><name>capture</name></member>
+      <member refid="classCalibration_1adef7ee6cc7d95ea809c1cccd4d41ce02" prot="private" virt="non-virtual"><scope>Calibration</scope><name>defineHSV</name></member>
+      <member refid="classCalibration_1ac016f08b033ba23b3036a87ab610946f" prot="private" virt="non-virtual"><scope>Calibration</scope><name>filtreC</name></member>
+      <member refid="classCalibration_1ad5f6fcb712cd2ad1a44e19ff4e9058be" prot="public" virt="non-virtual"><scope>Calibration</scope><name>getH</name></member>
+      <member refid="classCalibration_1a6bf68284373ae2468bd85043e48b8f25" prot="public" virt="non-virtual"><scope>Calibration</scope><name>getS</name></member>
+      <member refid="classCalibration_1ac6b160de7e16702bb7938342c034477a" prot="public" virt="non-virtual"><scope>Calibration</scope><name>getV</name></member>
+      <member refid="classCalibration_1a91d2ce954d66d7c5156d331f67573921" prot="private" virt="non-virtual"><scope>Calibration</scope><name>iHighH</name></member>
+      <member refid="classCalibration_1a216315dfc878e13e9e5b0f487845a627" prot="private" virt="non-virtual"><scope>Calibration</scope><name>iHighS</name></member>
+      <member refid="classCalibration_1ab9838bcf2d96445da4a79ccafc7aee4c" prot="private" virt="non-virtual"><scope>Calibration</scope><name>iHighV</name></member>
+      <member refid="classCalibration_1a1d7d84d44fc3abbf136ce9dc964aa02a" prot="private" virt="non-virtual"><scope>Calibration</scope><name>iLowH</name></member>
+      <member refid="classCalibration_1a258a3e9be8b3269a3e1e921da88e5b5a" prot="private" virt="non-virtual"><scope>Calibration</scope><name>iLowS</name></member>
+      <member refid="classCalibration_1a852abbbb791c1625252d3d23825e7648" prot="private" virt="non-virtual"><scope>Calibration</scope><name>iLowV</name></member>
+      <member refid="classCalibration_1a26be0ee9644bd758d60a22ffe1281bd6" prot="private" virt="non-virtual"><scope>Calibration</scope><name>maxC</name></member>
+      <member refid="classCalibration_1a0eb486ca50923fab9a39d4403c18d4cf" prot="private" virt="non-virtual"><scope>Calibration</scope><name>minC</name></member>
+      <member refid="classCalibration_1aa3fc415d57199effd80858c330ba5caa" prot="private" virt="non-virtual"><scope>Calibration</scope><name>rectangleCalib</name></member>
+      <member refid="classCalibration_1ad8250297ea60fa9c0ad1e38a70cca880" prot="private" virt="non-virtual"><scope>Calibration</scope><name>search</name></member>
+      <member refid="classCalibration_1a066922eb7b40419ed4f850b3c6b4148d" prot="public" virt="non-virtual"><scope>Calibration</scope><name>start</name></member>
+      <member refid="classCalibration_1a108efb6ccd8c98e5cac950be4bf0ac26" prot="public" virt="non-virtual"><scope>Calibration</scope><name>~Calibration</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

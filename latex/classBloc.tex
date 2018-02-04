@@ -1,0 +1,304 @@
+\hypertarget{classBloc}{\section{Référence de la classe Bloc}
+\label{classBloc}\index{Bloc@{Bloc}}
+}
+
+
+{\ttfamily \#include $<$bloc.\-h$>$}
+
+Graphe d'héritage de Bloc\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classBloc}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classBloc_a02db4c95699ce40e8ad671ef759ebdb7}{add} (int8\-\_\-t x, int8\-\_\-t y) override
+\item 
+bool \hyperlink{classBloc_a259248faed302444ba5424cdf6178681}{remove} (int8\-\_\-t x, int8\-\_\-t y) override
+\item 
+bool \hyperlink{classBloc_a8e62a350fb01ea58c9a8bb4deb08639e}{set} (std\-::vector$<$ std\-::pair$<$ int8\-\_\-t, int8\-\_\-t $>$$>$ list)
+\item 
+bool \hyperlink{classBloc_a03799c83e18411ab4ae4bf3e03aec975}{has} (int8\-\_\-t x, int8\-\_\-t y) override
+\item 
+bool \hyperlink{classBloc_afa48be18bb2cd4e3240f4a165abef1c8}{clear} () override
+\item 
+string \hyperlink{classBloc_a040af8a2aefc1acaa0e2d9bfc5943fa3}{to\-String} () override
+\item 
+\hyperlink{classBloc_a1f40a68b1acb741fc91e07bbaa61dc22}{$\sim$\-Bloc} ()
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classBloc}{Bloc} $\ast$ \hyperlink{classBloc_af357c5eeff01b5b41d983b1e42f5c115}{get\-Instance} ()
+\end{DoxyCompactItemize}
+\subsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ pair$<$ int8\-\_\-t, int8\-\_\-t $>$ $>$ $\ast$ \hyperlink{classBloc_a51ad89062b91675830e0285f992f3210}{list\-\_\-bloc}
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBloc_ae3ac5cbad6363c4ab56262a94d0b982e}{Bloc} ()
+\end{DoxyCompactItemize}
+\subsection*{Attributs privés statiques}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classBloc}{Bloc} $\ast$ \hyperlink{classBloc_a39298425a48bcca70e70464f51193507}{instance} = nullptr
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{classBloc_a1f40a68b1acb741fc91e07bbaa61dc22}{\index{Bloc@{Bloc}!$\sim$\-Bloc@{$\sim$\-Bloc}}
+\index{$\sim$\-Bloc@{$\sim$\-Bloc}!Bloc@{Bloc}}
+\subsubsection[{$\sim$\-Bloc}]{\setlength{\rightskip}{0pt plus 5cm}Bloc\-::$\sim$\-Bloc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classBloc_a1f40a68b1acb741fc91e07bbaa61dc22}
+
+\begin{DoxyCode}
+48            \{
+49         \textcolor{keyword}{delete} []\hyperlink{classBloc_a51ad89062b91675830e0285f992f3210}{list\_bloc};
+50         \hyperlink{classBloc_a51ad89062b91675830e0285f992f3210}{list\_bloc} = \textcolor{keyword}{nullptr};
+51         \textcolor{keyword}{delete} \hyperlink{classBloc_a39298425a48bcca70e70464f51193507}{instance};
+52         \hyperlink{classBloc_a39298425a48bcca70e70464f51193507}{instance} = \textcolor{keyword}{nullptr};
+53     \}
+\end{DoxyCode}
+\hypertarget{classBloc_ae3ac5cbad6363c4ab56262a94d0b982e}{\index{Bloc@{Bloc}!Bloc@{Bloc}}
+\index{Bloc@{Bloc}!Bloc@{Bloc}}
+\subsubsection[{Bloc}]{\setlength{\rightskip}{0pt plus 5cm}Bloc\-::\-Bloc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{classBloc_ae3ac5cbad6363c4ab56262a94d0b982e}
+
+
+Références M\-A\-X\-\_\-\-B\-L\-O\-C\-\_\-\-S\-C\-E\-N\-E.
+
+
+
+Référencé par get\-Instance().
+
+
+\begin{DoxyCode}
+57           \{
+58         \hyperlink{classBloc_a51ad89062b91675830e0285f992f3210}{list\_bloc} = \textcolor{keyword}{new} vector<pair<int8\_t, int8\_t>>();
+59         \hyperlink{classBloc_a51ad89062b91675830e0285f992f3210}{list\_bloc}->reserve(\hyperlink{definition_8h_a9ddbbce2fd669544c295551b85ca01ff}{MAX\_BLOC\_SCENE});
+60     \}
+\end{DoxyCode}
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{classBloc_a02db4c95699ce40e8ad671ef759ebdb7}{\index{Bloc@{Bloc}!add@{add}}
+\index{add@{add}!Bloc@{Bloc}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}bool Bloc\-::add (
+\begin{DoxyParamCaption}
+\item[{int8\-\_\-t}]{x, }
+\item[{int8\-\_\-t}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{classBloc_a02db4c95699ce40e8ad671ef759ebdb7}
+
+
+Implémente \hyperlink{classMultipleObject_aa5e743143bdedeb901c8e234162b3db1}{Multiple\-Object}.
+
+
+
+Références list\-\_\-bloc.
+
+
+
+Référencé par Core\-::block\-Processing(), et unitest\-\_\-pathfinding().
+
+
+\begin{DoxyCode}
+16                                 \{
+17     \hyperlink{classBloc_a51ad89062b91675830e0285f992f3210}{list\_bloc}->push\_back(std::make\_pair(x,y));
+18     \textcolor{keywordflow}{return} std::find(\hyperlink{classBloc_a51ad89062b91675830e0285f992f3210}{list\_bloc}->begin(), \hyperlink{classBloc_a51ad89062b91675830e0285f992f3210}{list\_bloc}->end(), std::make\_pair(x,y)) != 
+      \hyperlink{classBloc_a51ad89062b91675830e0285f992f3210}{list\_bloc}->end();
+19 \}
+\end{DoxyCode}
+\hypertarget{classBloc_afa48be18bb2cd4e3240f4a165abef1c8}{\index{Bloc@{Bloc}!clear@{clear}}
+\index{clear@{clear}!Bloc@{Bloc}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}bool Bloc\-::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}}\label{classBloc_afa48be18bb2cd4e3240f4a165abef1c8}
+
+
+Implémente \hyperlink{classMultipleObject_a980acdfb99e25ec0d5e61396f60517c3}{Multiple\-Object}.
+
+
+
+Référencé par Manager\-::reset().
+
+
+\begin{DoxyCode}
+43                          \{
+44         \hyperlink{classBloc_a51ad89062b91675830e0285f992f3210}{list\_bloc}->clear();
+45         \textcolor{keywordflow}{return} \hyperlink{classBloc_a51ad89062b91675830e0285f992f3210}{list\_bloc}->size() == 0;
+46     \}
+\end{DoxyCode}
+\hypertarget{classBloc_af357c5eeff01b5b41d983b1e42f5c115}{\index{Bloc@{Bloc}!get\-Instance@{get\-Instance}}
+\index{get\-Instance@{get\-Instance}!Bloc@{Bloc}}
+\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bloc} $\ast$ Bloc\-::get\-Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classBloc_af357c5eeff01b5b41d983b1e42f5c115}
+
+
+Références Bloc(), et instance.
+
+
+
+Référencé par Manager\-::\-Manager(), et unitest\-\_\-pathfinding().
+
+
+\begin{DoxyCode}
+9                         \{
+10     \textcolor{keywordflow}{if}(\hyperlink{classBloc_a39298425a48bcca70e70464f51193507}{instance} == \textcolor{keyword}{nullptr})\{
+11         \hyperlink{classBloc_a39298425a48bcca70e70464f51193507}{instance} = \textcolor{keyword}{new} \hyperlink{classBloc_ae3ac5cbad6363c4ab56262a94d0b982e}{Bloc}();
+12     \}
+13     \textcolor{keywordflow}{return} \hyperlink{classBloc_a39298425a48bcca70e70464f51193507}{instance};
+14 \}
+\end{DoxyCode}
+\hypertarget{classBloc_a03799c83e18411ab4ae4bf3e03aec975}{\index{Bloc@{Bloc}!has@{has}}
+\index{has@{has}!Bloc@{Bloc}}
+\subsubsection[{has}]{\setlength{\rightskip}{0pt plus 5cm}bool Bloc\-::has (
+\begin{DoxyParamCaption}
+\item[{int8\-\_\-t}]{x, }
+\item[{int8\-\_\-t}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{classBloc_a03799c83e18411ab4ae4bf3e03aec975}
+
+
+Implémente \hyperlink{classMultipleObject_a1703b0c461708fbb6985e87624f4b17b}{Multiple\-Object}.
+
+
+
+Références list\-\_\-bloc.
+
+
+
+Référencé par remove(), et unitest\-\_\-pathfinding().
+
+
+\begin{DoxyCode}
+29                                 \{
+30     \textcolor{keywordflow}{return} std::find(\hyperlink{classBloc_a51ad89062b91675830e0285f992f3210}{list\_bloc}->begin(), \hyperlink{classBloc_a51ad89062b91675830e0285f992f3210}{list\_bloc}->end(), std::make\_pair(x,y)) != 
+      \hyperlink{classBloc_a51ad89062b91675830e0285f992f3210}{list\_bloc}->end();
+31 \}
+\end{DoxyCode}
+\hypertarget{classBloc_a259248faed302444ba5424cdf6178681}{\index{Bloc@{Bloc}!remove@{remove}}
+\index{remove@{remove}!Bloc@{Bloc}}
+\subsubsection[{remove}]{\setlength{\rightskip}{0pt plus 5cm}bool Bloc\-::remove (
+\begin{DoxyParamCaption}
+\item[{int8\-\_\-t}]{x, }
+\item[{int8\-\_\-t}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{classBloc_a259248faed302444ba5424cdf6178681}
+
+
+Implémente \hyperlink{classMultipleObject_ad57dd5fec65953bbce399afdca475a4c}{Multiple\-Object}.
+
+
+
+Références has(), et list\-\_\-bloc.
+
+
+
+Référencé par unitest\-\_\-pathfinding().
+
+
+\begin{DoxyCode}
+21                                    \{
+22     \textcolor{keywordflow}{if}(\hyperlink{classBloc_a03799c83e18411ab4ae4bf3e03aec975}{has}(x,y))\{
+23         \hyperlink{classBloc_a51ad89062b91675830e0285f992f3210}{list\_bloc}->erase(std::remove(\hyperlink{classBloc_a51ad89062b91675830e0285f992f3210}{list\_bloc}->begin(), 
+      \hyperlink{classBloc_a51ad89062b91675830e0285f992f3210}{list\_bloc}->end(), std::make\_pair(x,y)), \hyperlink{classBloc_a51ad89062b91675830e0285f992f3210}{list\_bloc}->end());
+24         \textcolor{keywordflow}{return} !\hyperlink{classBloc_a03799c83e18411ab4ae4bf3e03aec975}{has}(x,y);
+25     \}
+26         \textcolor{keywordflow}{return} \textcolor{keyword}{true}; \textcolor{comment}{//default true if isn't in table.}
+27 \}
+\end{DoxyCode}
+\hypertarget{classBloc_a8e62a350fb01ea58c9a8bb4deb08639e}{\index{Bloc@{Bloc}!set@{set}}
+\index{set@{set}!Bloc@{Bloc}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}bool Bloc\-::set (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ std\-::pair$<$ int8\-\_\-t, int8\-\_\-t $>$$>$}]{list}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classBloc_a8e62a350fb01ea58c9a8bb4deb08639e}
+
+\begin{DoxyCode}
+34                                                      \{
+35         \textcolor{keywordtype}{bool} ret = \hyperlink{classBloc_afa48be18bb2cd4e3240f4a165abef1c8}{clear}();
+36         \textcolor{keywordflow}{for}(int8\_t i=0; i<list.size(); ++i)
+37             \hyperlink{classBloc_a51ad89062b91675830e0285f992f3210}{list\_bloc}->push\_back(list[i]);
+38         \textcolor{keywordflow}{if}(\hyperlink{classBloc_a51ad89062b91675830e0285f992f3210}{list\_bloc}->size() > 0)
+39             ret = \textcolor{keyword}{false};
+40         \textcolor{keywordflow}{return} ret;
+41     \}    
+\end{DoxyCode}
+\hypertarget{classBloc_a040af8a2aefc1acaa0e2d9bfc5943fa3}{\index{Bloc@{Bloc}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!Bloc@{Bloc}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}string Bloc\-::to\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}}\label{classBloc_a040af8a2aefc1acaa0e2d9bfc5943fa3}
+
+
+Implémente \hyperlink{classMultipleObject_a5439a2ac4cc86c759ef1df8f6059947a}{Multiple\-Object}.
+
+
+
+Références list\-\_\-bloc.
+
+
+
+Référencé par Manager\-::to\-String(), et unitest\-\_\-pathfinding().
+
+
+\begin{DoxyCode}
+33                      \{
+34     int16\_t size = \hyperlink{classBloc_a51ad89062b91675830e0285f992f3210}{list\_bloc}->size();
+35     stringstream value;
+36     value << \textcolor{stringliteral}{""};
+37     int16\_t i =0;
+38     std::for\_each(\hyperlink{classBloc_a51ad89062b91675830e0285f992f3210}{list\_bloc}->begin(), \hyperlink{classBloc_a51ad89062b91675830e0285f992f3210}{list\_bloc}->end(), [&](std::pair<int8\_t, int8\_t> \_b)
+      \{
+39         value << \textcolor{stringliteral}{"\(\backslash\)""}<<i<<\textcolor{stringliteral}{"\(\backslash\)": \(\backslash\)""}<<(int)\_b.first<< \textcolor{stringliteral}{","} <<(\textcolor{keywordtype}{int})\_b.second<<\textcolor{stringliteral}{"\(\backslash\)", "};
+40         ++i;
+41     \});
+42     stringstream buf;
+43     buf <<\textcolor{stringliteral}{" \(\backslash\)"Bloc\(\backslash\)": \{ \(\backslash\)"Number\(\backslash\)": "}<<size<<\textcolor{stringliteral}{", \(\backslash\)"Position\(\backslash\)": \{"}<<value.str().substr(0, value.str().size()-
+      2)<<\textcolor{stringliteral}{"\} \}"};
+44     \textcolor{keywordflow}{return} buf.str();
+45 \}
+\end{DoxyCode}
+
+
+\subsection{Documentation des données membres}
+\hypertarget{classBloc_a39298425a48bcca70e70464f51193507}{\index{Bloc@{Bloc}!instance@{instance}}
+\index{instance@{instance}!Bloc@{Bloc}}
+\subsubsection[{instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bloc} $\ast$ Bloc\-::instance = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classBloc_a39298425a48bcca70e70464f51193507}
+
+
+Référencé par get\-Instance().
+
+\hypertarget{classBloc_a51ad89062b91675830e0285f992f3210}{\index{Bloc@{Bloc}!list\-\_\-bloc@{list\-\_\-bloc}}
+\index{list\-\_\-bloc@{list\-\_\-bloc}!Bloc@{Bloc}}
+\subsubsection[{list\-\_\-bloc}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$pair$<$int8\-\_\-t,int8\-\_\-t$>$ $>$$\ast$ Bloc\-::list\-\_\-bloc}}\label{classBloc_a51ad89062b91675830e0285f992f3210}
+
+
+Référencé par add(), Core\-::draw\-Debug(), has(), remove(), to\-String(), et Manager\-::update().
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+headers/manager/\hyperlink{bloc_8h}{bloc.\-h}\item 
+sources/\hyperlink{bloc_8cpp}{bloc.\-cpp}\end{DoxyCompactItemize}

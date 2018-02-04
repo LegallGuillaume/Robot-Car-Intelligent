@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_08d237fc27d4ecd563f71c5d52f2fecc" kind="dir">
+    <compoundname>sources</compoundname>
+    <innerdir refid="dir_0ae0286439a8e144cf485eb8e91d219b">sources/server</innerdir>
+    <innerdir refid="dir_0d11bb6c21e330acd532003853662301">sources/traitement</innerdir>
+    <innerfile refid="arrive_8cpp">arrive.cpp</innerfile>
+    <innerfile refid="bloc_8cpp">bloc.cpp</innerfile>
+    <innerfile refid="car_8cpp">car.cpp</innerfile>
+    <innerfile refid="chemin_8cpp">chemin.cpp</innerfile>
+    <innerfile refid="core_8cpp">core.cpp</innerfile>
+    <innerfile refid="manager_8cpp">manager.cpp</innerfile>
+    <innerfile refid="serveur_8cpp">serveur.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/glegall/prog_workspace/Robot_car/prog/sources/"/>
+  </compounddef>
+</doxygen>

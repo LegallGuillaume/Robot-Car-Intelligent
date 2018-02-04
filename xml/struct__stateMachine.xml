@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="struct__stateMachine" kind="struct" prot="public">
+    <compoundname>_stateMachine</compoundname>
+    <includes refid="core_8h" local="no">core.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__stateMachine_1aaee24e4ab99a6f1243a46645188de8d0" prot="public" static="no" mutable="no">
+        <type><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8" kindref="member">State</ref></type>
+        <definition>State _stateMachine::_stateServer</definition>
+        <argsstring></argsstring>
+        <name>_stateServer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/core.h" line="12" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/core.h" bodystart="12" bodyend="-1"/>
+        <referencedby refid="classCore_1a2ad48b714f575d3f3c25c80ffa72afad" compoundref="core_8cpp" startline="91" endline="102">Core::init</referencedby>
+        <referencedby refid="classCore_1a7fab8414125602f9f595143bb21d24c1" compoundref="core_8cpp" startline="117" endline="163">Core::autoVirtualMode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct__stateMachine_1aa6cc70d0567b403fb9e993a681f48b85" prot="public" static="no" mutable="no">
+        <type><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8" kindref="member">State</ref></type>
+        <definition>State _stateMachine::_stateIPC</definition>
+        <argsstring></argsstring>
+        <name>_stateIPC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/core.h" line="13" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/core.h" bodystart="13" bodyend="-1"/>
+        <referencedby refid="classCore_1a2ad48b714f575d3f3c25c80ffa72afad" compoundref="core_8cpp" startline="91" endline="102">Core::init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct__stateMachine_1a157036ced733a021849ebcbc98c27200" prot="public" static="no" mutable="no">
+        <type><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8" kindref="member">State</ref></type>
+        <definition>State _stateMachine::_stateCalibration</definition>
+        <argsstring></argsstring>
+        <name>_stateCalibration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/core.h" line="14" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/core.h" bodystart="14" bodyend="-1"/>
+        <referencedby refid="classCore_1a2ad48b714f575d3f3c25c80ffa72afad" compoundref="core_8cpp" startline="91" endline="102">Core::init</referencedby>
+        <referencedby refid="classCore_1a7fab8414125602f9f595143bb21d24c1" compoundref="core_8cpp" startline="117" endline="163">Core::autoVirtualMode</referencedby>
+        <referencedby refid="classCore_1a2d832a5e544b5e76d03a7fd596522b42" compoundref="core_8cpp" startline="181" endline="191">Core::calibration</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct__stateMachine_1adbc0e51d4bed9b6da5c44e921e37dc32" prot="public" static="no" mutable="no">
+        <type><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8" kindref="member">State</ref></type>
+        <definition>State _stateMachine::_stateImageBlock</definition>
+        <argsstring></argsstring>
+        <name>_stateImageBlock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/core.h" line="15" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/core.h" bodystart="15" bodyend="-1"/>
+        <referencedby refid="classCore_1a2ad48b714f575d3f3c25c80ffa72afad" compoundref="core_8cpp" startline="91" endline="102">Core::init</referencedby>
+        <referencedby refid="classCore_1a1dac5f63296f11309c2f25770b30912b" compoundref="core_8cpp" startline="108" endline="115">Core::setMode</referencedby>
+        <referencedby refid="classCore_1a7fab8414125602f9f595143bb21d24c1" compoundref="core_8cpp" startline="117" endline="163">Core::autoVirtualMode</referencedby>
+        <referencedby refid="classCore_1a8648fac82f0324cead88c8fa2731b286" compoundref="core_8cpp" startline="193" endline="212">Core::blockProcessing</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct__stateMachine_1a79ce614ae01c3759d155c03026384ca7" prot="public" static="no" mutable="no">
+        <type><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8" kindref="member">State</ref></type>
+        <definition>State _stateMachine::_statePathfinding</definition>
+        <argsstring></argsstring>
+        <name>_statePathfinding</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/core.h" line="16" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/core.h" bodystart="16" bodyend="-1"/>
+        <referencedby refid="classCore_1a722434c9873d07d6b26a74e40e08eb9c" compoundref="core_8cpp" startline="63" endline="89">Core::start</referencedby>
+        <referencedby refid="classCore_1a2ad48b714f575d3f3c25c80ffa72afad" compoundref="core_8cpp" startline="91" endline="102">Core::init</referencedby>
+        <referencedby refid="classCore_1a1dac5f63296f11309c2f25770b30912b" compoundref="core_8cpp" startline="108" endline="115">Core::setMode</referencedby>
+        <referencedby refid="classCore_1a7fab8414125602f9f595143bb21d24c1" compoundref="core_8cpp" startline="117" endline="163">Core::autoVirtualMode</referencedby>
+        <referencedby refid="classCore_1a333060e38c961d6fbf4ba4d01a84e48b" compoundref="core_8cpp" startline="214" endline="230">Core::pathfinding</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct__stateMachine_1a88c6e0c15cdd29b3eec2e842fa09b08f" prot="public" static="no" mutable="no">
+        <type><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8" kindref="member">State</ref></type>
+        <definition>State _stateMachine::_stateTrajectory</definition>
+        <argsstring></argsstring>
+        <name>_stateTrajectory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/core.h" line="17" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/core.h" bodystart="17" bodyend="-1"/>
+        <referencedby refid="classCore_1a2ad48b714f575d3f3c25c80ffa72afad" compoundref="core_8cpp" startline="91" endline="102">Core::init</referencedby>
+        <referencedby refid="classCore_1a1dac5f63296f11309c2f25770b30912b" compoundref="core_8cpp" startline="108" endline="115">Core::setMode</referencedby>
+        <referencedby refid="classCore_1a7fab8414125602f9f595143bb21d24c1" compoundref="core_8cpp" startline="117" endline="163">Core::autoVirtualMode</referencedby>
+        <referencedby refid="classCore_1a185801ec33fe24b0f36e4d9e474403ca" compoundref="core_8cpp" startline="241" endline="247">Core::trajectory</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>_stateMachine</label>
+        <link refid="struct__stateMachine"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/core.h" line="11" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/core.h" bodystart="10" bodyend="18"/>
+    <listofallmembers>
+      <member refid="struct__stateMachine_1a157036ced733a021849ebcbc98c27200" prot="public" virt="non-virtual"><scope>_stateMachine</scope><name>_stateCalibration</name></member>
+      <member refid="struct__stateMachine_1adbc0e51d4bed9b6da5c44e921e37dc32" prot="public" virt="non-virtual"><scope>_stateMachine</scope><name>_stateImageBlock</name></member>
+      <member refid="struct__stateMachine_1aa6cc70d0567b403fb9e993a681f48b85" prot="public" virt="non-virtual"><scope>_stateMachine</scope><name>_stateIPC</name></member>
+      <member refid="struct__stateMachine_1a79ce614ae01c3759d155c03026384ca7" prot="public" virt="non-virtual"><scope>_stateMachine</scope><name>_statePathfinding</name></member>
+      <member refid="struct__stateMachine_1aaee24e4ab99a6f1243a46645188de8d0" prot="public" virt="non-virtual"><scope>_stateMachine</scope><name>_stateServer</name></member>
+      <member refid="struct__stateMachine_1a88c6e0c15cdd29b3eec2e842fa09b08f" prot="public" virt="non-virtual"><scope>_stateMachine</scope><name>_stateTrajectory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

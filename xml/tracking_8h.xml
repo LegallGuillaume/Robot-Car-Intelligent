@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="tracking_8h" kind="file">
+    <compoundname>tracking.h</compoundname>
+    <includes local="yes">opencv2/highgui/highgui.hpp</includes>
+    <includes local="yes">opencv2/imgproc/imgproc.hpp</includes>
+    <incdepgraph>
+      <node id="266">
+        <label>opencv2/imgproc/imgproc.hpp</label>
+      </node>
+      <node id="265">
+        <label>opencv2/highgui/highgui.hpp</label>
+      </node>
+      <node id="264">
+        <label>headers/traitement/tracking.h</label>
+        <link refid="tracking.h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+        <childnode refid="266" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classTracking" prot="public">Tracking</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="tracking_8h_1a97602aa1ed0462d292d2e0407c75ad1d" prot="public" static="no">
+        <name>TrackingType</name>
+        <enumvalue id="tracking_8h_1a97602aa1ed0462d292d2e0407c75ad1da5fc54ebcb1dd4bf1e1b93cbc77b57b40" prot="public">
+          <name>CAR</name>
+          <initializer>=1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tracking_8h_1a97602aa1ed0462d292d2e0407c75ad1daabec81083b94f521744e24a37ca23657" prot="public">
+          <name>BLOC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tracking_8h_1a97602aa1ed0462d292d2e0407c75ad1da02ff486f2eb52876c8102e6871863627" prot="public">
+          <name>ARRIVE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/tracking.h" line="7" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/tracking.h" bodystart="7" bodyend="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>TRACKING_H</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TRACKING_H</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;opencv2/highgui/highgui.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;opencv2/imgproc/imgproc.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="tracking_8h_1a97602aa1ed0462d292d2e0407c75ad1d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="tracking_8h_1a97602aa1ed0462d292d2e0407c75ad1d" kindref="member">TrackingType</ref>{</highlight></codeline>
+<codeline lineno="8" refid="tracking_8h_1a97602aa1ed0462d292d2e0407c75ad1da5fc54ebcb1dd4bf1e1b93cbc77b57b40" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tracking_8h_1a97602aa1ed0462d292d2e0407c75ad1da5fc54ebcb1dd4bf1e1b93cbc77b57b40" kindref="member">CAR</ref>=1,</highlight></codeline>
+<codeline lineno="9" refid="tracking_8h_1a97602aa1ed0462d292d2e0407c75ad1daabec81083b94f521744e24a37ca23657" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tracking_8h_1a97602aa1ed0462d292d2e0407c75ad1daabec81083b94f521744e24a37ca23657" kindref="member">BLOC</ref>,</highlight></codeline>
+<codeline lineno="10" refid="tracking_8h_1a97602aa1ed0462d292d2e0407c75ad1da02ff486f2eb52876c8102e6871863627" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tracking_8h_1a97602aa1ed0462d292d2e0407c75ad1da02ff486f2eb52876c8102e6871863627" kindref="member">ARRIVE</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="classTracking" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classTracking" kindref="compound">Tracking</ref>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTracking_1ac35bb489c0b55abac393ce129678450a" kindref="member">Tracking</ref>(<ref refid="tracking_8h_1a97602aa1ed0462d292d2e0407c75ad1d" kindref="member">TrackingType</ref><sp/>tracktype,<sp/>VideoCapture<sp/>&amp;capture);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTracking_1a1c57405d9a91d752d8e8328025004911" kindref="member">~Tracking</ref>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classTracking_1ade3c4f2f36044357a4c7f1d46664544a" kindref="member">searchTarget</ref>();</highlight></codeline>
+<codeline lineno="20" refid="classTracking_1ab9958f0cc01bbffe6d5a7dbecd38fdd2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classTracking_1ab9958f0cc01bbffe6d5a7dbecd38fdd2" kindref="member">halt</ref>(){</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classTracking_1ab9958f0cc01bbffe6d5a7dbecd38fdd2" kindref="member">halt</ref>=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>halte;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTracking_1ac5775bd26c023e6857c87f2d0456aa74" kindref="member">morph</ref>(Mat<sp/>&amp;thresh);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classTracking_1aad61fd64840f61edfbeaf55818882fa2" kindref="member">track_objet</ref>();</highlight></codeline>
+<codeline lineno="28" refid="classTracking_1a48f10566a108662402396857d9c33e6b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classTracking_1a48f10566a108662402396857d9c33e6b" kindref="member">halt</ref>;</highlight></codeline>
+<codeline lineno="29" refid="classTracking_1a3eba07f069b521e4ea79c9c7e7933af0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tracking_8h_1a97602aa1ed0462d292d2e0407c75ad1d" kindref="member">TrackingType</ref><sp/><ref refid="classTracking_1a3eba07f069b521e4ea79c9c7e7933af0" kindref="member">tracking</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/tracking.h"/>
+  </compounddef>
+</doxygen>
