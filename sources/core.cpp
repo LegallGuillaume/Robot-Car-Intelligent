@@ -79,6 +79,8 @@ bool Core::start(){
                 break;
         }
         waitKey(100);
+        if(stateMachine._statePathfinding == State::OK)
+            break;
     }
     if(DEBUG){
         Mat frame(480, 480, CV_8UC3, Scalar(0));
@@ -172,7 +174,7 @@ void Core::listenIPC(){
 }
 
 State Core::server(){
-    //TODO do server function after all works.
+    //TODO do server function after all works. (connect to the server with IPC)
     return State::OK;
 }
 
@@ -199,10 +201,12 @@ State Core::blockProcessing(bool is_auto){
         manager->car->setPosition(process->getCarPosition().x, process->getCarPosition().y);
         manager->arrive->setPosition(process->getArrivalPosition().x, process->getArrivalPosition().y);
         manager->update();
-        if((int)process->getSizeMarker() > 3 && process->all_block.size() > 0)
+        if((int)process->getSizeMarker() >= 2){
             stateMachine._stateImageBlock = State::OK;
-        else
+        }
+        else{
             stateMachine._stateImageBlock = State::ERROR;
+        }
     }
     return State::OK;
 }
@@ -214,7 +218,7 @@ State Core::pathfinding(){
     );
     if(!path->hasPossibility()){
         stateMachine._statePathfinding = State::NO;
-        return State::No;
+        return State::NO;
     }
     waitKey(100);
     std::vector<std::pair<int8_t, int8_t>> *cheminTerminate = path->getChemin();
@@ -225,7 +229,19 @@ State Core::pathfinding(){
     return State::OK;
 }
 
+
+bool Core::forward(float angle){
+    return false;
+}
+
+bool Core::rotation(float angle){
+    return false;
+}
+
 State Core::trajectory(){
     stateMachine._stateTrajectory = State::OK;
+
+
+
     return State::OK;
 }

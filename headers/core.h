@@ -55,6 +55,10 @@ class Core{
         State server(); //TODO
         State trajectory(); //TODO /*if change mode, break while and return State::ERROR*/
 
+        /*trajectory function*/
+        bool forward(float angle); /*return false if the car is out of path*/
+        bool rotation(float angle); /*return true if rotation is success +- 3° */
+
 };
 
 #endif //CORE_H

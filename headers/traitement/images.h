@@ -30,6 +30,7 @@ public:
     Point getCarPosition();
     Point getArrivalPosition();
     uint8_t getSizeMarker();
+    void trackingCar();
 
 private:
     MarkerDetector MDetector;

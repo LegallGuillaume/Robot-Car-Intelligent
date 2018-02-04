@@ -236,15 +236,15 @@ Point ImagesP::getArrivalPosition(){
     return Point((int)posArrival.x, (int)posArrival.y);
 }
 
-/*
-Point2f ImagesP::trackingCar(std::vector<Marker> Markers){
-    Point2f centerCar(-1,-1);
+void ImagesP::trackingCar(){
+    //check posCar and angleCar after use this function !
+    posCar = Point(-1,-1);
+    angleCar = 0;
     for(int i=0; i<Markers.size();i++){
         if(Markers[i].id == MARKER_ID_CAR){
-            centerCar = Markers[i].getCenter();
+            posCar = Markers[i].getCenter();
+            angleCar = getAngle(Markers[i]);
             return;
         }
     }
-    return centerCar;
 }
-*/
