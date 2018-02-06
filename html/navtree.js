@@ -1,6 +1,6 @@
 var NAVTREE =
 [
-  [ "Robot avec intélligence déportée", "index.html", [
+  [ "Robot avec intelligence déportée", "index.html", [
     [ "Robot Car Intelligent", "md__r_e_a_d_m_e.html", null ],
     [ "Utiles de Savoir !", "md__utiles.html", null ],
     [ "Classes", null, [
