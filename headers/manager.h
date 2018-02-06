@@ -2,9 +2,9 @@
 #define MANAGER_H
 
 #include "manager/car.h"
-#include "manager/bloc.h"
-#include "manager/chemin.h"
-#include "manager/arrive.h"
+#include "manager/block.h"
+#include "manager/path.h"
+#include "manager/end.h"
 //#include "serveur/share_server.h"
 #include <string>
 #include <utility>
@@ -35,9 +35,9 @@ class Manager{
 public:
     static Manager * getInstance();
     Car *car;
-    Bloc *bloc;
-    Chemin *chemin;
-    Arrive *arrive;
+    Block *block;
+    Path *path;
+    End *end;
     //sServer *server;
 
     /**
@@ -80,8 +80,8 @@ public:
      * 
      * @return int8_t       return size 0 to 127
      */
-    int8_t getSceneCarrer(){
-        return scenecarrer;
+    int8_t getSceneSquare(){
+        return scenesquare;
     }
 
     /**
@@ -92,15 +92,15 @@ public:
      * @return true         matrix correctly created
      * @return false        matrix not correctly created
      */
-    bool initScene(int8_t nb_carrer){
-        scenecarrer = nb_carrer;
+    bool initArea(int8_t nb_square){
+        scenesquare = nb_square;
         bool boolean=true;
         uint8_t allocmem = 0;
         try{
-            generalTable = new int8_t * [nb_carrer];
-            std::fill_n( generalTable, nb_carrer, static_cast<int8_t*>(0));
-            for(allocmem = 0; allocmem < nb_carrer; ++allocmem){
-                generalTable[ allocmem ] = new int8_t[nb_carrer];
+            generalTable = new int8_t * [nb_square];
+            std::fill_n( generalTable, nb_square, static_cast<int8_t*>(0));
+            for(allocmem = 0; allocmem < nb_square; ++allocmem){
+                generalTable[ allocmem ] = new int8_t[nb_square];
             }
         }catch( const std::bad_alloc &) {
             for( uint8_t i = 0; i < allocmem; ++i ){
@@ -113,8 +113,8 @@ public:
     }
 
 
-    bool sceneIsDefine(){
-        return scenecarrer > -1;
+    bool areaIsDefine(){
+        return scenesquare > -1;
     }
 
     /**
@@ -141,7 +141,7 @@ public:
      * @version             1.0
      */
     ~Manager(){
-        for(int8_t i=0; i<scenecarrer; i++){
+        for(int8_t i=0; i<scenesquare; i++){
             delete [] generalTable[i];
             generalTable[i] = nullptr;
         }
@@ -153,8 +153,14 @@ public:
 private:
     int8_t **generalTable;
     static Manager * instance;
-    int8_t scenecarrer;
-    void cleanMatrice();
+    int8_t scenesquare;
+
+    /**
+     * @file                manager.h
+     * @brief               Clean matrix with 0 into it
+     * @version             1.0
+     */
+    void cleanMatrix();
 
     /**
      * @file                manager.h
@@ -164,11 +170,11 @@ private:
     Manager()
     {
         car = Car::getInstance();
-        bloc = Bloc::getInstance();
-        chemin = Chemin::getInstance();
-        arrive = Arrive::getInstance();
+        block = Block::getInstance();
+        path = Path::getInstance();
+        end = End::getInstance();
         //server = sServer::getInstance();
-        scenecarrer = -1;
+        scenesquare = -1;
     }
 };
 

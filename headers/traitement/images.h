@@ -52,7 +52,6 @@ private:
      * @function            call in start() (private function)
      * @version             1.0
      *
-     * @param std::vector<Marker> Markers   vector of Markers
      * @param Point2f centerPt      center of frame
      */
     void markersProcessing(Point2f centerPt);
@@ -65,6 +64,8 @@ private:
      *
      * @param int16_t x_matrix      x to 0 from 24
      * @param int16_t y_matrix      y tp 0 from 24
+     *
+     * @return Point        coord in matrix
      */
     Point getXYMatrix(int16_t x_matrix, int16_t y_matrix);
 
@@ -75,12 +76,61 @@ private:
      * @version             1.0
      *
      * @param Point2f center        center of frame
-     * @param int16_t x_pixel       
+     * @param int16_t x_pixel 
+     
+     * @return Point2f      coord in matrix       
      */
-    Point2f getBlockMatrice(Point2f center, int16_t x_pixel, int16_t y_pixel);
+    Point2f getBlockMatrix(Point2f center, int16_t x_pixel, int16_t y_pixel);
+
+    /**
+     * @file                images.h
+     * @brief               have angle from marker
+     * @version             1.0
+     *
+     * @param Marker marker  
+     *
+     * @return float        angle of marker
+     */
     float getAngle(Marker marker);
+
+    /**
+     * @file                images.h
+     * @brief               draw matrix in debug frame
+     * @version             1.0
+     *
+     * @param Mat& frame    to print debug matrix in this frame
+     * @param Point center  center of Area marker
+     *
+     * @return float        angle of marker
+     */
     void drawMatrix(Mat& frame, Point center);
+
+    /**
+     * @file                images.h
+     * @brief               allow know if there are more or less pixel
+     * @version             1.0
+     *
+     * @param Mat& frame        frame of processing images
+     * @param Point leftTop     leftTop of Marker
+     * @param int8_t pixelMax   consider as a block if there is this number of pixels in the square
+     *
+     * @return true             if there are more pixel in the block (matrix)
+     * @return false            if there are less pixel in the block (matrix)
+     */
     bool willbeBlock(Mat& frame, Point leftTop, int8_t pixelMax);
+
+    /**
+     * @file                images.h
+     * @brief               this function allow to display block physically into abstract matrix
+     * @version             1.0
+     *
+     * @param Mat& frame        frame of processing images
+     * @param Point center      center of Marker
+     * @param Size2f size       size of block (default is 150mm squared, like car or another block)
+     * @param Scalar color      white color in abstract matrix to recognize the block
+     * @param float angle       rotated rectangle from a specific angle
+     *
+     */
     void fillRotatedRect(Mat& frame, Point2f center, Size2f size, Scalar color, float angle);
 };
 

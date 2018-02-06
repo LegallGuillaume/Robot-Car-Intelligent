@@ -30,16 +30,16 @@ void Core::drawDebug(Mat& frame){
         RecY2 = RecY2 - 20;
         rectangle(frame, Point(RecX1, RecY1), Point(RecX2, RecY2), cv::Scalar(0, 255, 0));
     }
-    if(manager->chemin->list_chemin != nullptr){
-        for(int index=0; index < (int)manager->chemin->list_chemin->size() - 1; ++index){
-            std::pair<int8_t, int8_t> _p = manager->chemin->list_chemin->at(index);
+    if(manager->path->list_path != nullptr){
+        for(int index=0; index < (int)manager->path->list_path->size() - 1; ++index){
+            std::pair<int8_t, int8_t> _p = manager->path->list_path->at(index);
             Point point = Point((int)(_p.second*20), (int)(_p.first*20));
             rectangle(frame, point - Point(-2,-2),  point + Point(18,18), Scalar(255,255,255));
         }
     }
 
-    for(int index=0; index < (int)manager->bloc->list_bloc->size() - 1; ++index){
-        std::pair<int8_t, int8_t> _p = manager->bloc->list_bloc->at(index);
+    for(int index=0; index < (int)manager->block->list_block->size() - 1; ++index){
+        std::pair<int8_t, int8_t> _p = manager->block->list_block->at(index);
         Point point = Point((int)(_p.second*20), (int)(_p.first*20));
         rectangle(frame, point - Point(-2,-2),  point + Point(18,18), Scalar(0, 0, 255));
     }
@@ -49,7 +49,7 @@ void Core::drawDebug(Mat& frame){
     rectangle(frame, point - Point(-4,-4),  point + Point(16,16), Scalar(0, 255, 0));
     rectangle(frame, point - Point(-6,-6),  point + Point(14,14), Scalar(0, 255, 0));
 
-    point = Point((int)(manager->arrive->getPosition().second*20), (int)(manager->arrive->getPosition().first*20));
+    point = Point((int)(manager->end->getPosition().second*20), (int)(manager->end->getPosition().first*20));
     rectangle(frame, point - Point(-2,-2),  point + Point(18,18), Scalar(255, 0, 0));
     rectangle(frame, point - Point(-4,-4),  point + Point(16,16), Scalar(255, 0, 0));
     rectangle(frame, point - Point(-6,-6),  point + Point(14,14), Scalar(255, 0, 0));
@@ -61,7 +61,6 @@ void Core::drawDebug(Mat& frame){
 }
 
 bool Core::start(){
-    init();
     while(true){
         //listen to know what mode is select
         listenIPC();//change mode selected by Stop_Mode if we want stop car or any things as this
@@ -90,7 +89,7 @@ bool Core::start(){
 
 bool Core::init(){
     manager = Manager::getInstance();
-    manager->initScene(24);
+    manager->initArea(24);
     stateMachine._stateServer = State::NONE;
     stateMachine._stateIPC = State::NONE;
     stateMachine._stateCalibration = State::NONE;
@@ -123,6 +122,7 @@ void Core::autoVirtualMode(bool is_auto){
 /**/else if(stateMachine._stateServer == State::OK){
         if(DEBUG) std::cout<<"SERVER OK"<<std::endl;
         if(stateMachine._stateCalibration == State::NONE){
+            if(DEBUG) std::cout<<"CALIBRATION PROCESSING ..."<<std::endl;
             calibration();
         }else if(stateMachine._stateCalibration == State::ERROR){
             //TODO NO CENTER OF AREA NO FOUND, turn arround car
@@ -133,11 +133,11 @@ void Core::autoVirtualMode(bool is_auto){
             if(stateMachine._stateImageBlock == State::NONE){
                 blockProcessing(is_auto);
             }else if(stateMachine._stateImageBlock == State::ERROR){
-                //TODO ERROR detect block > 3 (Arrival, Car and Area) and 0 case found (Block devide 9)
+                //TODO ERROR detect block > 3 (Arrival, Car and Area) and 0 case found (block devide 9)
                 if(DEBUG) std::cout<<"IMAGES PROCESSING FAILED (no case found 1 of 9x9)"<<std::endl;
             }
         /**/else if(stateMachine._stateImageBlock == State::OK){
-                if(DEBUG) std::cout<<"IMAGES BLOCK OK"<<std::endl;
+                if(DEBUG) std::cout<<"IMAGES block OK"<<std::endl;
                 if(stateMachine._statePathfinding == State::NONE){
                     pathfinding();
                 }else if(stateMachine._statePathfinding == State::NO){
@@ -192,14 +192,17 @@ State Core::calibration(){
 
 State Core::blockProcessing(bool is_auto){
     if(is_auto){
-        if(DEBUG) std::cout<<"SEARCH BLOCK ... ";
+        if(DEBUG) std::cout<<"SEARCH block ... ";
         process->startBlock();
         for(int8_t i=0; i<process->all_block.size();++i){
-            manager->bloc->add(process->all_block.at(i).x, process->all_block.at(i).y);
+            manager->block->add(process->all_block.at(i).x, process->all_block.at(i).y);
         }
-        if(DEBUG) std::cout<<process->all_block.size()<<" FOUNDING"<<std::endl;
+        if(DEBUG){
+             std::cout<<process->all_block.size()<<" FOUNDING"<<std::endl;
+             std::cout<<"MARKERS "<<(int)process->getSizeMarker()<<" FOUNDING"<<std::endl;
+        }
         manager->car->setPosition(process->getCarPosition().x, process->getCarPosition().y);
-        manager->arrive->setPosition(process->getArrivalPosition().x, process->getArrivalPosition().y);
+        manager->end->setPosition(process->getArrivalPosition().x, process->getArrivalPosition().y);
         manager->update();
         if((int)process->getSizeMarker() >= 2){
             stateMachine._stateImageBlock = State::OK;
@@ -213,17 +216,17 @@ State Core::blockProcessing(bool is_auto){
 
 State Core::pathfinding(){
     path = new PathFinding(
-        manager->getGeneralTable(), manager->getSceneCarrer(), manager->getSceneCarrer(), 
-        manager->car->getPosition(), manager->arrive->getPosition()
+        manager->getGeneralTable(), manager->getSceneSquare(), manager->getSceneSquare(), 
+        manager->car->getPosition(), manager->end->getPosition()
     );
     if(!path->hasPossibility()){
         stateMachine._statePathfinding = State::NO;
         return State::NO;
     }
     waitKey(100);
-    std::vector<std::pair<int8_t, int8_t>> *cheminTerminate = path->getChemin();
-    for(int index=0; index < (int)cheminTerminate->size() - 1; ++index)
-        manager->chemin->add(cheminTerminate->at(index).first, cheminTerminate->at(index).second);
+    std::vector<std::pair<int8_t, int8_t>> *pathTerminate = path->getPath();
+    for(int index=0; index < (int)pathTerminate->size() - 1; ++index)
+        manager->path->add(pathTerminate->at(index).first, pathTerminate->at(index).second);
     manager->update();
     stateMachine._statePathfinding = State::OK;
     return State::OK;

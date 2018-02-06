@@ -68,7 +68,7 @@ bool ImagesP::willbeBlock(Mat& frame, Point leftTop, int8_t pixelMax){
     return false;
 }
 
-Point2f ImagesP::getBlockMatrice(Point2f center, int16_t x_pixel, int16_t y_pixel){
+Point2f ImagesP::getBlockMatrix(Point2f center, int16_t x_pixel, int16_t y_pixel){
     int16_t x_ref = center.x - 240;
     int16_t y_ref = center.y - 240;
     int16_t x_sta = x_pixel - x_ref;
@@ -121,7 +121,7 @@ void ImagesP::markersProcessing(Point2f centerPt){
             fillRotatedRect(
                 markerCpy, new_center, Size2f(60, 60), Scalar(255,255,255), getAngle(Markers[i])
             );
-            Point2f pts = getBlockMatrice(
+            Point2f pts = getBlockMatrix(
                 Point2f(240,240), 
                 new_center.x - (MARGE_BLOCK_PROCESSING*sqrt(2)), 
                 new_center.y - (MARGE_BLOCK_PROCESSING*sqrt(2))
@@ -155,7 +155,7 @@ void ImagesP::markersProcessing(Point2f centerPt){
 }
 
 void ImagesP::init(){
-    cap = VideoCapture(0);
+    cap = VideoCapture(CAM_EXTERN);
     markerCpy = Mat(480,480, CV_8UC3, Scalar(0));
     cap >> markerImg;
 

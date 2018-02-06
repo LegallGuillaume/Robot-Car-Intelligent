@@ -1,5 +1,5 @@
-#ifndef CAR_H
-#define CAR_H
+#ifndef END_H
+#define END_H
 
 #include <utility> //pair<>
 #include <string>
@@ -8,42 +8,44 @@
 using namespace std;
 
 /**
- * @file                car.h
+ * @file                end.h
  * @brief               Abstract of SimpleObject
  * @function            Virtual function
  * @version             1.0
  */
-class Car : public SimpleObject{
+class End : public SimpleObject{
 
 public:
     /**
-     * @file                car.h
+     * @file                end.h
      * @brief               Design patern singleton
      * @function            Singleton function
      * @version             1.0
      * 
-     * @return Car*       have Car
+     * @return End*       have Arrival
      */
-    static Car * getInstance();
-    void sendCommand(); //send command to car from position X & Y
+    static End * getInstance();
+
     bool setPosition(int8_t x, int8_t y) override{
         position->first = x;
         position->second = y;
+        return (position->first == x && position->second == y);
     }
     pair<int8_t, int8_t> getPosition() override{
         return *position;
     }
     string toString() override;
-    ~Car(){
+    ~End(){
         delete position;
         position = nullptr;
         delete instance;
-        instance = nullptr;
+        instance=nullptr;
     }
+    
 private:
-    static Car * instance;
+    static End * instance;
     pair<int8_t, int8_t> *position;
-    Car(){
+    End(){
         position = new pair<int8_t, int8_t>();
         position->first = -1;
         position->second = -1;
