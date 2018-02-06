@@ -1,9 +1,0 @@
-digraph "sources/server" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_08d237fc27d4ecd563f71c5d52f2fecc {
-    graph [ bgcolor="#ddddee", pencolor="black", label="sources" fontname="Helvetica", fontsize="10", URL="dir_08d237fc27d4ecd563f71c5d52f2fecc.html"]
-  dir_0ae0286439a8e144cf485eb8e91d219b [shape=box, label="server", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_0ae0286439a8e144cf485eb8e91d219b.html"];
-  }
-}
