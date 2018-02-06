@@ -1,0 +1,85 @@
+\hypertarget{manager_8h}{\section{headers/manager.h File Reference}
+\label{manager_8h}\index{headers/manager.\-h@{headers/manager.\-h}}
+}
+
+
+allow to know $\ast$\-\_\-\-D\-E\-F into the matrix (include \char`\"{}definition.\-h\char`\"{})  
+
+
+{\ttfamily \#include \char`\"{}manager/car.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}manager/block.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}manager/path.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}manager/end.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$utility$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+Include dependency graph for manager.\-h\-:
+This graph shows which files directly or indirectly include this file\-:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_manager}{Manager}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+allow to know $\ast$\-\_\-\-D\-E\-F into the matrix (include \char`\"{}definition.\-h\char`\"{}) Singleton \hyperlink{class_manager}{Manager()}
+
+Clean matrix with 0 into it.
+
+Destructor of the class.
+
+Display the matrix into terminal.
+
+Display info send to remote control (A\-P\-P\-L\-I)
+
+create the Matrix
+
+have the size of scene
+
+have the Matrix
+
+update add all block, car, arrive, path into matrix
+
+\begin{DoxyVersion}{Version}
+1.\-0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & position X 0 to 127 \\
+\hline
+{\em y} & position Y 0 to 127 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int8\-\_\-t return (B\-L\-O\-C\-\_\-\-D\-E\-F, V\-I\-D\-E\-\_\-\-D\-E\-F, C\-A\-R\-\_\-\-D\-E\-F, A\-R\-R\-I\-V\-E\-\_\-\-D\-E\-F, ...)
+\end{DoxyReturn}
+\begin{DoxyVersion}{Version}
+1.\-0
+
+1.\-0
+\end{DoxyVersion}
+\begin{DoxyReturn}{Returns}
+int8\-\_\-t$\ast$$\ast$ return the matrix max size 127x127
+\end{DoxyReturn}
+\begin{DoxyVersion}{Version}
+1.\-0
+\end{DoxyVersion}
+\begin{DoxyReturn}{Returns}
+int8\-\_\-t return size 0 to 127
+\end{DoxyReturn}
+\begin{DoxyVersion}{Version}
+1.\-0
+\end{DoxyVersion}
+\begin{DoxyReturn}{Returns}
+true matrix correctly created 
+
+false matrix not correctly created
+\end{DoxyReturn}
+\begin{DoxyVersion}{Version}
+1.\-0
+\end{DoxyVersion}
+\begin{DoxyReturn}{Returns}
+std\-::string String to send in remote control 
+\end{DoxyReturn}

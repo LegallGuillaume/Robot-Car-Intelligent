@@ -1,0 +1,242 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_block" kind="class" prot="public">
+    <compoundname>Block</compoundname>
+    <basecompoundref refid="class_multiple_object" prot="public" virt="non-virtual">MultipleObject</basecompoundref>
+    <includes refid="block_8h" local="no">block.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_block_1a45c3e71b45b9ef6364eac9354563aedd" prot="public" static="no" mutable="no">
+        <type>vector&lt; pair&lt; int8_t, int8_t &gt; &gt; *</type>
+        <definition>vector&lt;pair&lt;int8_t,int8_t&gt; &gt;* Block::list_block</definition>
+        <argsstring></argsstring>
+        <name>list_block</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/block.h" line="29" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/block.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_block_1a4a209ccb8f3dff3c431835e3cf952083" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_block" kindref="compound">Block</ref> *</type>
+        <definition>Block * Block::instance</definition>
+        <argsstring></argsstring>
+        <name>instance</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/block.h" line="54" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/block.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_block_1a2cf0004e7ab0f92b52bca2ebf8a1d52c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_block" kindref="compound">Block</ref> *</type>
+        <definition>Block * Block::getInstance</definition>
+        <argsstring>()</argsstring>
+        <name>getInstance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/block.h" line="28" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/sources/block.cpp" bodystart="9" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_block_1aed3bcda97836cd92c2856e5c5e06e883" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Block::add</definition>
+        <argsstring>(int8_t x, int8_t y) override</argsstring>
+        <name>add</name>
+        <reimplements refid="class_multiple_object_1aa5e743143bdedeb901c8e234162b3db1">add</reimplements>
+        <param>
+          <type>int8_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/block.h" line="30" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/sources/block.cpp" bodystart="16" bodyend="19"/>
+        <references refid="class_block_1a45c3e71b45b9ef6364eac9354563aedd" compoundref="block_8h" startline="29">list_block</references>
+      </memberdef>
+      <memberdef kind="function" id="class_block_1a51b901e4a8b6ad9b7dca8a7a0dee5180" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Block::remove</definition>
+        <argsstring>(int8_t x, int8_t y) override</argsstring>
+        <name>remove</name>
+        <reimplements refid="class_multiple_object_1ad57dd5fec65953bbce399afdca475a4c">remove</reimplements>
+        <param>
+          <type>int8_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/block.h" line="31" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/sources/block.cpp" bodystart="21" bodyend="27"/>
+        <references refid="class_block_1a3932c46f03bf956c2ae094b96eab67d3" compoundref="block_8cpp" startline="29" endline="31">has</references>
+        <references refid="class_block_1a45c3e71b45b9ef6364eac9354563aedd" compoundref="block_8h" startline="29">list_block</references>
+      </memberdef>
+      <memberdef kind="function" id="class_block_1a0876bcd3bdb4e627de3e78faa31163c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Block::set</definition>
+        <argsstring>(std::vector&lt; std::pair&lt; int8_t, int8_t &gt;&gt; list)</argsstring>
+        <name>set</name>
+        <param>
+          <type>std::vector&lt; std::pair&lt; int8_t, int8_t &gt;&gt;</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/block.h" line="32" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/block.h" bodystart="32" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_block_1a3932c46f03bf956c2ae094b96eab67d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Block::has</definition>
+        <argsstring>(int8_t x, int8_t y) override</argsstring>
+        <name>has</name>
+        <reimplements refid="class_multiple_object_1a1703b0c461708fbb6985e87624f4b17b">has</reimplements>
+        <param>
+          <type>int8_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/block.h" line="40" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/sources/block.cpp" bodystart="29" bodyend="31"/>
+        <references refid="class_block_1a45c3e71b45b9ef6364eac9354563aedd" compoundref="block_8h" startline="29">list_block</references>
+      </memberdef>
+      <memberdef kind="function" id="class_block_1a37bf8cd7e85de983bc56eb19b168575a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool Block::clear</definition>
+        <argsstring>() override</argsstring>
+        <name>clear</name>
+        <reimplements refid="class_multiple_object_1a980acdfb99e25ec0d5e61396f60517c3">clear</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/block.h" line="41" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/block.h" bodystart="41" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_block_1a012fdf4452ee116b61948e7cdf0475ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string Block::toString</definition>
+        <argsstring>() override</argsstring>
+        <name>toString</name>
+        <reimplements refid="class_multiple_object_1a5439a2ac4cc86c759ef1df8f6059947a">toString</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/block.h" line="45" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/sources/block.cpp" bodystart="33" bodyend="45"/>
+        <references refid="class_block_1a45c3e71b45b9ef6364eac9354563aedd" compoundref="block_8h" startline="29">list_block</references>
+      </memberdef>
+      <memberdef kind="function" id="class_block_1a19d1bd0e1cef6a865ed2745a2e648405" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Block::~Block</definition>
+        <argsstring>()</argsstring>
+        <name>~Block</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/block.h" line="46" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/block.h" bodystart="46" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_block_1a37658a946bf5067ad01d68d9ff086adc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Block::Block</definition>
+        <argsstring>()</argsstring>
+        <name>Block</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/block.h" line="55" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/block.h" bodystart="55" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="50">
+        <label>Block</label>
+        <link refid="class_block"/>
+        <childnode refid="51" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>MultipleObject</label>
+        <link refid="class_multiple_object"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="52">
+        <label>Block</label>
+        <link refid="class_block"/>
+        <childnode refid="53" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>MultipleObject</label>
+        <link refid="class_multiple_object"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/block.h" line="17" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/block.h" bodystart="17" bodyend="59"/>
+    <listofallmembers>
+      <member refid="class_block_1aed3bcda97836cd92c2856e5c5e06e883" prot="public" virt="virtual"><scope>Block</scope><name>add</name></member>
+      <member refid="class_block_1a37658a946bf5067ad01d68d9ff086adc" prot="private" virt="non-virtual"><scope>Block</scope><name>Block</name></member>
+      <member refid="class_block_1a37bf8cd7e85de983bc56eb19b168575a" prot="public" virt="virtual"><scope>Block</scope><name>clear</name></member>
+      <member refid="class_block_1a2cf0004e7ab0f92b52bca2ebf8a1d52c" prot="public" virt="non-virtual"><scope>Block</scope><name>getInstance</name></member>
+      <member refid="class_block_1a3932c46f03bf956c2ae094b96eab67d3" prot="public" virt="virtual"><scope>Block</scope><name>has</name></member>
+      <member refid="class_block_1a4a209ccb8f3dff3c431835e3cf952083" prot="private" virt="non-virtual"><scope>Block</scope><name>instance</name></member>
+      <member refid="class_block_1a45c3e71b45b9ef6364eac9354563aedd" prot="public" virt="non-virtual"><scope>Block</scope><name>list_block</name></member>
+      <member refid="class_block_1a51b901e4a8b6ad9b7dca8a7a0dee5180" prot="public" virt="virtual"><scope>Block</scope><name>remove</name></member>
+      <member refid="class_block_1a0876bcd3bdb4e627de3e78faa31163c5" prot="public" virt="non-virtual"><scope>Block</scope><name>set</name></member>
+      <member refid="class_block_1a012fdf4452ee116b61948e7cdf0475ca" prot="public" virt="virtual"><scope>Block</scope><name>toString</name></member>
+      <member refid="class_block_1a19d1bd0e1cef6a865ed2745a2e648405" prot="public" virt="non-virtual"><scope>Block</scope><name>~Block</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

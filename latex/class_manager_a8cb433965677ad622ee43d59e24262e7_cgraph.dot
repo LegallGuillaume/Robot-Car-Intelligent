@@ -1,0 +1,15 @@
+digraph "Manager::reset"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Manager::reset",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Car::setPosition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_car.html#a97e3c5de8eb65659ef520de6591f814d"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="End::setPosition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_end.html#a5be9587f22c8eb23249513a7b5e6db92"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Block::clear",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_block.html#a37bf8cd7e85de983bc56eb19b168575a"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Path::clear",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_path.html#a962e54c19be5fbe17f902ee6a7a3a706"];
+}

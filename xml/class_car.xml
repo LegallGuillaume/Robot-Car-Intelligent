@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_car" kind="class" prot="public">
+    <compoundname>Car</compoundname>
+    <basecompoundref refid="class_simple_object" prot="public" virt="non-virtual">SimpleObject</basecompoundref>
+    <includes refid="car_8h" local="no">car.h</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_car_1a4e8c86d0fa20de2108d524056cf4bc85" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_car" kindref="compound">Car</ref> *</type>
+        <definition>Car * Car::instance</definition>
+        <argsstring></argsstring>
+        <name>instance</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/car.h" line="44" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/car.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_car_1a43e9c00e78af10fc998624a811e014df" prot="private" static="no" mutable="no">
+        <type>pair&lt; int8_t, int8_t &gt; *</type>
+        <definition>pair&lt;int8_t, int8_t&gt;* Car::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/car.h" line="45" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/car.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_car_1a40cbec40dad9ddda76c277da17f23528" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_car" kindref="compound">Car</ref> *</type>
+        <definition>Car * Car::getInstance</definition>
+        <argsstring>()</argsstring>
+        <name>getInstance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/car.h" line="27" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/sources/car.cpp" bodystart="9" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_car_1a2d3353932e4028eef864813b8c65583b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Car::sendCommand</definition>
+        <argsstring>()</argsstring>
+        <name>sendCommand</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/car.h" line="28" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/sources/car.cpp" bodystart="16" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_car_1a97e3c5de8eb65659ef520de6591f814d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool Car::setPosition</definition>
+        <argsstring>(int8_t x, int8_t y) override</argsstring>
+        <name>setPosition</name>
+        <reimplements refid="class_simple_object_1ae9ea1f7ffe6d4aaf18f24e937e6b60ab">setPosition</reimplements>
+        <param>
+          <type>int8_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/car.h" line="29" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/car.h" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_car_1a20dd521474ee36b144bde58e3359eed6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>pair&lt; int8_t, int8_t &gt;</type>
+        <definition>pair&lt;int8_t, int8_t&gt; Car::getPosition</definition>
+        <argsstring>() override</argsstring>
+        <name>getPosition</name>
+        <reimplements refid="class_simple_object_1ae417f1a285ceab5a04130aba01bac856">getPosition</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/car.h" line="33" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/car.h" bodystart="33" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_car_1afb39c5a80ff1977ee13cb1e5cdf2fecd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>std::string Car::toString</definition>
+        <argsstring>() override</argsstring>
+        <name>toString</name>
+        <reimplements refid="class_simple_object_1aedf0ddcc119ab40623b5b69badc9531a">toString</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/car.h" line="36" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/sources/car.cpp" bodystart="20" bodyend="24"/>
+        <references refid="class_car_1a20dd521474ee36b144bde58e3359eed6" compoundref="car_8h" startline="33" endline="35">getPosition</references>
+      </memberdef>
+      <memberdef kind="function" id="class_car_1a5933bb06e96b159fe339a128abda888a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Car::~Car</definition>
+        <argsstring>()</argsstring>
+        <name>~Car</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/car.h" line="37" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/car.h" bodystart="37" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_car_1a1c803f7c5038d3e31b368b0d0a35493c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Car::Car</definition>
+        <argsstring>()</argsstring>
+        <name>Car</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/car.h" line="46" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/car.h" bodystart="46" bodyend="50"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="54">
+        <label>Car</label>
+        <link refid="class_car"/>
+        <childnode refid="55" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>SimpleObject</label>
+        <link refid="class_simple_object"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="56">
+        <label>Car</label>
+        <link refid="class_car"/>
+        <childnode refid="57" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>SimpleObject</label>
+        <link refid="class_simple_object"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/car.h" line="16" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/car.h" bodystart="16" bodyend="51"/>
+    <listofallmembers>
+      <member refid="class_car_1a1c803f7c5038d3e31b368b0d0a35493c" prot="private" virt="non-virtual"><scope>Car</scope><name>Car</name></member>
+      <member refid="class_car_1a40cbec40dad9ddda76c277da17f23528" prot="public" virt="non-virtual"><scope>Car</scope><name>getInstance</name></member>
+      <member refid="class_car_1a20dd521474ee36b144bde58e3359eed6" prot="public" virt="virtual"><scope>Car</scope><name>getPosition</name></member>
+      <member refid="class_car_1a4e8c86d0fa20de2108d524056cf4bc85" prot="private" virt="non-virtual"><scope>Car</scope><name>instance</name></member>
+      <member refid="class_car_1a43e9c00e78af10fc998624a811e014df" prot="private" virt="non-virtual"><scope>Car</scope><name>position</name></member>
+      <member refid="class_car_1a2d3353932e4028eef864813b8c65583b" prot="public" virt="non-virtual"><scope>Car</scope><name>sendCommand</name></member>
+      <member refid="class_car_1a97e3c5de8eb65659ef520de6591f814d" prot="public" virt="virtual"><scope>Car</scope><name>setPosition</name></member>
+      <member refid="class_car_1afb39c5a80ff1977ee13cb1e5cdf2fecd" prot="public" virt="virtual"><scope>Car</scope><name>toString</name></member>
+      <member refid="class_car_1a5933bb06e96b159fe339a128abda888a" prot="public" virt="non-virtual"><scope>Car</scope><name>~Car</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

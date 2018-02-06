@@ -1,0 +1,104 @@
+\hypertarget{pathfinding_8h}{\section{headers/traitement/pathfinding.h File Reference}
+\label{pathfinding_8h}\index{headers/traitement/pathfinding.\-h@{headers/traitement/pathfinding.\-h}}
+}
+
+
+Search the best way to go to Arrival.  
+
+
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$utility$>$}\\*
+{\ttfamily \#include $<$algorithm$>$}\\*
+{\ttfamily \#include \char`\"{}cell.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../definition.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../manager.\-h\char`\"{}}\\*
+Include dependency graph for pathfinding.\-h\-:
+This graph shows which files directly or indirectly include this file\-:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_path_finding}{Path\-Finding}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Search the best way to go to Arrival. Return true if the Arrival or Start surrounded Blockks.
+
+Get \hyperlink{class_cell}{Cell} from position X and position Y.
+
+Find \hyperlink{class_path}{Path}.
+
+Destructor to the class Pathfinding.
+
+return Way to go to Arrival
+
+Check if there are a solution.
+
+\begin{DoxyVersion}{Version}
+1.\-0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & Matrix do not exceed 127x127 (contains blocks) \\
+\hline
+{\em width\-\_\-scene} & Width of Matrix \\
+\hline
+{\em height\-\_\-scene} & Height of Matrix \\
+\hline
+{\em start} & pair$<$int8\-\_\-t,int8\-\_\-t$>$ position of start (x and y) \\
+\hline
+{\em end} & pair$<$int8\-\_\-t,int8\-\_\-t$>$ position of Arrival (x and y)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyVersion}{Version}
+1.\-0
+\end{DoxyVersion}
+\begin{DoxyReturn}{Returns}
+bool true if there are a Way to go to Arrival
+\end{DoxyReturn}
+\begin{DoxyVersion}{Version}
+1.\-0
+\end{DoxyVersion}
+\begin{DoxyReturn}{Returns}
+std\-::vector$<$std\-::pair$<$int8\-\_\-t, int8\-\_\-t$>$$>$$\ast$ return vector to pair (position of way, first order Arrival)
+\end{DoxyReturn}
+\begin{DoxyVersion}{Version}
+1.\-0
+
+1.\-0
+\end{DoxyVersion}
+recusive function
+
++-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---+ $\vert$ 0 0 0 $\vert$ 0 0 0 $\vert$ 0 0 0 $\vert$ $\vert$ 0 0 0 $\vert$ 0 0 0 $\vert$ 0 0 0 $\vert$ $\vert$ 0 0 0 $\vert$ A2 B1 C1 $\vert$ 0 0 0 $\vert$ +-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---+ $\vert$ 0 0 A1 $\vert$ A B C $\vert$ C2 0 0 $\vert$ $\vert$ 0 0 D1 $\vert$ D E F $\vert$ F1 0 0 $\vert$ $\vert$ 0 0 G2 $\vert$ G H I $\vert$ I2 0 0 $\vert$ +-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---+ $\vert$ 0 0 0 $\vert$ G1 H1 I1 $\vert$ 0 0 0 $\vert$ $\vert$ 0 0 0 $\vert$ 0 0 0 $\vert$ 0 0 0 $\vert$ $\vert$ 0 0 0 $\vert$ 0 0 0 $\vert$ 0 0 0 $\vert$ +-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---+
+
+\begin{DoxyVersion}{Version}
+1.\-0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Postion X into Matrix \\
+\hline
+{\em y} & Position Y into Matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Cell$\ast$ return the \hyperlink{class_cell}{Cell} choosen
+\end{DoxyReturn}
+\begin{DoxyVersion}{Version}
+1.\-0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Position X into Matrix \\
+\hline
+{\em y} & Position Y into Matrix \\
+\hline
+{\em matrix} & Matrix contains all blocks \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if Arrival or Start is surrounded by block 
+
+false if not surrounded by block 
+\end{DoxyReturn}

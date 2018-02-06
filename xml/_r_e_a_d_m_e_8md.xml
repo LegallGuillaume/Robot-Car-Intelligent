@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_r_e_a_d_m_e_8md" kind="file">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#<sp/>Robot<sp/>Car<sp/>Intelligent</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal">[![](https:</highlight><highlight class="comment">//camo.githubusercontent.com/e9051e09ea74cd530e75b9edec407dd2d058c943/68747470733a2f2f7261772e6769746875622e636f6d2f65737465692d6d61737465722f7365676d656e745f534f4c2f6d61737465722f504a2f536c6964652f636f6d6d6f6e2f65737465692e706e67)](http://estei.fr/)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">Robot<sp/><ref refid="class_car" kindref="compound">Car</ref><sp/>Intelligent<sp/>is<sp/>end<sp/>of<sp/>study<sp/>project<sp/>in<sp/>embedded<sp/>systems<sp/>in<sp/>a<sp/>French<sp/>school.</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">In<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>project<sp/>you<sp/>will<sp/>find:</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/>-<sp/><ref refid="class_core" kindref="compound">Core</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/>-<sp/>Images<sp/>processing</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/>-<sp/>Pathfinding</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/>-<sp/>Trajectory<sp/>Correction</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/>-<sp/>Machine<sp/>Statement</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/>-<sp/>Server<sp/>(who<sp/>send<sp/>command<sp/>to<sp/>car)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/>-<sp/>TODO<sp/>list<sp/>([TODO<sp/>here](https:</highlight><highlight class="comment">//github.com/LegallGuillaume/Robot-Car-Intelligent/blob/master/TODO))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/>-<sp/>Useful<sp/>things<sp/>([Utile](https:</highlight><highlight class="comment">//github.com/LegallGuillaume/Robot-Car-Intelligent/blob/master/Utiles.md))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">---</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">##<sp/>Currently</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/>-<sp/><ref refid="class_core" kindref="compound">Core</ref>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;<ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ae0aa021e21dddbd6d8cecec71e9cf564" kindref="member">OK</ref></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/>-<sp/>Images<sp/>Processing&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;<ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ae0aa021e21dddbd6d8cecec71e9cf564" kindref="member">OK</ref></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/>-<sp/>MAchine<sp/>Statement&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;<ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ae0aa021e21dddbd6d8cecec71e9cf564" kindref="member">OK</ref></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>-<sp/>Pathfinding&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;<ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ae0aa021e21dddbd6d8cecec71e9cf564" kindref="member">OK</ref></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>-<sp/>Trajectory<sp/>Correction&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;KO</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>-<sp/>Server&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;KO</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">---</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">##<sp/>Introduction</highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal">The<sp/>operating<sp/>principle<sp/>is<sp/>quite<sp/>simple,<sp/>first<sp/>of<sp/>all<sp/>diverse</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">equipment<sp/>will<sp/>be<sp/>needed:</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>-<sp/>Remote<sp/>Control<sp/>(with<sp/>screen<sp/>to<sp/>indicate<sp/>start/end<sp/>position,<sp/>or<sp/>without<sp/>just<sp/>move<sp/>manually)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>-<sp/><ref refid="class_car" kindref="compound">Car</ref><sp/>(Robot<sp/>about<sp/>150mm<sp/>x<sp/>150mm)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>-<sp/>This<sp/>code<sp/>on<sp/>a<sp/>server<sp/>(here<sp/>Asus<sp/>Thinkerboard).</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">three<sp/>modes<sp/>possible<sp/>soon<sp/>explained<sp/>below.</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal">&gt;<sp/>The<sp/>project<sp/>enriches<sp/>knowledge<sp/>on<sp/>different<sp/>points<sp/>such<sp/>as</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">&gt;<sp/>automatic<sp/>path<sp/>determination<sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>a<sp/>pathfinding<sp/>algorithm,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">&gt;<sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal"><sp/>recognition<sp/>(here<sp/>the<sp/>car<sp/>and<sp/>the<sp/>blocks)<sp/>thanks<sp/>to<sp/>the</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">&gt;<sp/>[OpenCV](https:</highlight><highlight class="comment">//opencv.org/),<sp/>automatic<sp/>trajectory<sp/>correction<sp/>thanks<sp/>to<sp/>an<sp/>algorithm,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">&gt;<sp/>and<sp/>the<sp/>singleton<sp/>design<sp/>pattern<sp/>mainly.</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">---</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">##<sp/>Development</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal">Want<sp/>to<sp/>contribute?<sp/>Great!</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal">Take<sp/>fork<sp/>and<sp/>develop<sp/>on<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>branch.</highlight></codeline>
+    </programlisting>
+    <location file="/home/glegall/prog_workspace/Robot_car/prog/README.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="struct__share_m" kind="struct" prot="public">
+    <compoundname>_shareM</compoundname>
+    <includes refid="share__server_8h" local="no">share_server.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__share_m_1a30792c4b007e8273d3832fe2d5e70987" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t _shareM::index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/server/share_server.h" line="14" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/server/share_server.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__share_m_1aba5b7eea37d1a2b8eade0ea20ad1b4d8" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char _shareM::id_code[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>id_code</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/server/share_server.h" line="15" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/server/share_server.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__share_m_1a3f1adf9dcef316bf853e709401b041fd" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char _shareM::tostring[255]</definition>
+        <argsstring>[255]</argsstring>
+        <name>tostring</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/server/share_server.h" line="16" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/server/share_server.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/server/share_server.h" line="13" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/server/share_server.h" bodystart="13" bodyend="17"/>
+    <listofallmembers>
+      <member refid="struct__share_m_1aba5b7eea37d1a2b8eade0ea20ad1b4d8" prot="public" virt="non-virtual"><scope>_shareM</scope><name>id_code</name></member>
+      <member refid="struct__share_m_1a30792c4b007e8273d3832fe2d5e70987" prot="public" virt="non-virtual"><scope>_shareM</scope><name>index</name></member>
+      <member refid="struct__share_m_1a3f1adf9dcef316bf853e709401b041fd" prot="public" virt="non-virtual"><scope>_shareM</scope><name>tostring</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

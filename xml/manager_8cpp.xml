@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="manager_8cpp" kind="file">
+    <compoundname>manager.cpp</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">sstream</includes>
+    <includes refid="manager_8h" local="yes">../headers/manager.h</includes>
+    <includes refid="definition_8h" local="yes">../headers/definition.h</includes>
+    <incdepgraph>
+      <node id="652">
+        <label>stdlib.h</label>
+      </node>
+      <node id="651">
+        <label>manager/end.h</label>
+        <link refid="end_8h"/>
+        <childnode refid="643" relation="include">
+        </childnode>
+        <childnode refid="644" relation="include">
+        </childnode>
+        <childnode refid="645" relation="include">
+        </childnode>
+      </node>
+      <node id="648">
+        <label>../abstract/multipleobject.h</label>
+        <link refid="multipleobject_8h"/>
+        <childnode refid="644" relation="include">
+        </childnode>
+      </node>
+      <node id="644">
+        <label>string</label>
+      </node>
+      <node id="646">
+        <label>manager/block.h</label>
+        <link refid="block_8h"/>
+        <childnode refid="643" relation="include">
+        </childnode>
+        <childnode refid="647" relation="include">
+        </childnode>
+        <childnode refid="644" relation="include">
+        </childnode>
+        <childnode refid="648" relation="include">
+        </childnode>
+        <childnode refid="649" relation="include">
+        </childnode>
+      </node>
+      <node id="642">
+        <label>manager/car.h</label>
+        <link refid="car_8h"/>
+        <childnode refid="643" relation="include">
+        </childnode>
+        <childnode refid="644" relation="include">
+        </childnode>
+        <childnode refid="645" relation="include">
+        </childnode>
+      </node>
+      <node id="647">
+        <label>vector</label>
+      </node>
+      <node id="643">
+        <label>utility</label>
+      </node>
+      <node id="640">
+        <label>sstream</label>
+      </node>
+      <node id="641">
+        <label>../headers/manager.h</label>
+        <link refid="manager_8h"/>
+        <childnode refid="642" relation="include">
+        </childnode>
+        <childnode refid="646" relation="include">
+        </childnode>
+        <childnode refid="650" relation="include">
+        </childnode>
+        <childnode refid="651" relation="include">
+        </childnode>
+        <childnode refid="644" relation="include">
+        </childnode>
+        <childnode refid="643" relation="include">
+        </childnode>
+        <childnode refid="652" relation="include">
+        </childnode>
+        <childnode refid="639" relation="include">
+        </childnode>
+      </node>
+      <node id="639">
+        <label>iostream</label>
+      </node>
+      <node id="638">
+        <label>sources/manager.cpp</label>
+        <link refid="manager.cpp"/>
+        <childnode refid="639" relation="include">
+        </childnode>
+        <childnode refid="640" relation="include">
+        </childnode>
+        <childnode refid="641" relation="include">
+        </childnode>
+        <childnode refid="649" relation="include">
+        </childnode>
+      </node>
+      <node id="645">
+        <label>../abstract/simpleobject.h</label>
+        <link refid="simpleobject_8h"/>
+        <childnode refid="640" relation="include">
+        </childnode>
+        <childnode refid="644" relation="include">
+        </childnode>
+        <childnode refid="643" relation="include">
+        </childnode>
+      </node>
+      <node id="650">
+        <label>manager/path.h</label>
+        <link refid="path_8h"/>
+        <childnode refid="643" relation="include">
+        </childnode>
+        <childnode refid="647" relation="include">
+        </childnode>
+        <childnode refid="644" relation="include">
+        </childnode>
+        <childnode refid="648" relation="include">
+        </childnode>
+      </node>
+      <node id="649">
+        <label>../definition.h</label>
+        <link refid="definition_8h"/>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../headers/manager.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../headers/definition.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><ref refid="class_manager" kindref="compound">Manager</ref><sp/>*<sp/>Manager::instance<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="class_manager_1a5d783bd86e9be93235898a46de80847f" refkind="member"><highlight class="normal"><ref refid="class_manager" kindref="compound">Manager</ref><sp/>*<sp/><ref refid="class_manager_1a5d783bd86e9be93235898a46de80847f" kindref="member">Manager::getInstance</ref>(){</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(instance<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>instance<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_manager" kindref="compound">Manager</ref>();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>instance;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="class_manager_1af43da42550bd9746c5ea61a6aeee80de" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_manager_1af43da42550bd9746c5ea61a6aeee80de" kindref="member">Manager::update</ref>(){</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="class_manager_1a5040d372e0142f22892fdce49ca96e03" kindref="member">areaIsDefine</ref>())</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>cleanMatrix();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Block*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(int16_t<sp/>index<sp/>=<sp/>0;<sp/>index<sp/>&lt;<sp/><ref refid="class_manager_1a9301f6e9bd2feee2719b2ff82b49a85e" kindref="member">block</ref>-&gt;<ref refid="class_block_1a45c3e71b45b9ef6364eac9354563aedd" kindref="member">list_block</ref>-&gt;size();<sp/>++index){</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>generalTable[<ref refid="class_manager_1a9301f6e9bd2feee2719b2ff82b49a85e" kindref="member">block</ref>-&gt;<ref refid="class_block_1a45c3e71b45b9ef6364eac9354563aedd" kindref="member">list_block</ref>-&gt;at(index).first][<ref refid="class_manager_1a9301f6e9bd2feee2719b2ff82b49a85e" kindref="member">block</ref>-&gt;<ref refid="class_block_1a45c3e71b45b9ef6364eac9354563aedd" kindref="member">list_block</ref>-&gt;at(index).second]<sp/>=<sp/><ref refid="definition_8h_1a4d275339ef3ddec11c63b8b925b5b358" kindref="member">BLOC_DEF</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*path*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(int16_t<sp/>index<sp/>=<sp/>0;<sp/>index<sp/>&lt;<sp/><ref refid="class_manager_1ad9b3bf0343fe49922b1874dcb2b5c6ca" kindref="member">path</ref>-&gt;<ref refid="class_path_1a1aeccb79c82441549c27f7874f78856e" kindref="member">list_path</ref>-&gt;size();<sp/>++index){</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>generalTable[<ref refid="class_manager_1ad9b3bf0343fe49922b1874dcb2b5c6ca" kindref="member">path</ref>-&gt;<ref refid="class_path_1a1aeccb79c82441549c27f7874f78856e" kindref="member">list_path</ref>-&gt;at(index).first][<ref refid="class_manager_1ad9b3bf0343fe49922b1874dcb2b5c6ca" kindref="member">path</ref>-&gt;<ref refid="class_path_1a1aeccb79c82441549c27f7874f78856e" kindref="member">list_path</ref>-&gt;at(index).second]<sp/>=<sp/><ref refid="definition_8h_1aff9c7c5f80f4fc67fbea9f7dce5cb5f7" kindref="member">CHEMIN_DEF</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Car*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_manager_1a2803dff8e8f2912242f4098991d91415" kindref="member">car</ref>-&gt;<ref refid="class_car_1a20dd521474ee36b144bde58e3359eed6" kindref="member">getPosition</ref>().first<sp/>&gt;=<sp/>0)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>generalTable[<ref refid="class_manager_1a2803dff8e8f2912242f4098991d91415" kindref="member">car</ref>-&gt;<ref refid="class_car_1a20dd521474ee36b144bde58e3359eed6" kindref="member">getPosition</ref>().first][<ref refid="class_manager_1a2803dff8e8f2912242f4098991d91415" kindref="member">car</ref>-&gt;<ref refid="class_car_1a20dd521474ee36b144bde58e3359eed6" kindref="member">getPosition</ref>().second]<sp/>=<sp/><ref refid="definition_8h_1a36aebf63f7666a150b14192119d9afa2" kindref="member">CAR_DEF</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*end*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_manager_1aec87028a71ab7b031977ac12a086658d" kindref="member">end</ref>-&gt;<ref refid="class_end_1ac1365bd526e9ca1f5c8e9d80dc750a36" kindref="member">getPosition</ref>().first<sp/>&gt;=<sp/>0)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>generalTable[<ref refid="class_manager_1aec87028a71ab7b031977ac12a086658d" kindref="member">end</ref>-&gt;<ref refid="class_end_1ac1365bd526e9ca1f5c8e9d80dc750a36" kindref="member">getPosition</ref>().first][<ref refid="class_manager_1aec87028a71ab7b031977ac12a086658d" kindref="member">end</ref>-&gt;<ref refid="class_end_1ac1365bd526e9ca1f5c8e9d80dc750a36" kindref="member">getPosition</ref>().second]<sp/>=<sp/><ref refid="definition_8h_1a71cf532814b2e708da69ec435950685d" kindref="member">ARRIVE_DEF</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Manager::cleanMatrix(){</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(int8_t<sp/>x<sp/>=<sp/>0;<sp/>x<sp/>&lt;<sp/><ref refid="class_manager_1a60f89ec1bf61d37a74b4cd67a57d5702" kindref="member">getSceneSquare</ref>();<sp/>++x){</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(int8_t<sp/>y<sp/>=<sp/>0;<sp/>y<sp/>&lt;<sp/><ref refid="class_manager_1a60f89ec1bf61d37a74b4cd67a57d5702" kindref="member">getSceneSquare</ref>();<sp/>++y){</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>generalTable[x][y]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="class_manager_1a21b3e54cbe4b045b9ac40ee53e403897" refkind="member"><highlight class="normal">std::string<sp/><ref refid="class_manager_1a21b3e54cbe4b045b9ac40ee53e403897" kindref="member">Manager::forDevelopper</ref>(){</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>stringstream<sp/>buf;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>buf<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;---|---|---|---|---|---|---|---\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(int8_t<sp/>x<sp/>=<sp/>0;<sp/>x<sp/>&lt;<sp/><ref refid="class_manager_1a60f89ec1bf61d37a74b4cd67a57d5702" kindref="member">getSceneSquare</ref>();++x){</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(int8_t<sp/>y<sp/>=<sp/>0;<sp/>y<sp/>&lt;<sp/><ref refid="class_manager_1a60f89ec1bf61d37a74b4cd67a57d5702" kindref="member">getSceneSquare</ref>();++y){</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buf<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;-&quot;</highlight><highlight class="normal"><sp/>+<sp/>to_string(generalTable[x][y])<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;-|&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buf<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>buf<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;---|---|---|---|---|---|---|---\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>buf.str();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="class_manager_1abfd21eccf46a73165312fb71293affc3" refkind="member"><highlight class="normal">std::string<sp/><ref refid="class_manager_1abfd21eccf46a73165312fb71293affc3" kindref="member">Manager::toString</ref>(){</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>stringstream<sp/>buf;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>buf<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;{&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>buf<sp/>&lt;&lt;</highlight><highlight class="stringliteral">&quot;\&quot;Scene\&quot;:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;(int)scenesquare&lt;&lt;</highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>buf<sp/>&lt;&lt;<ref refid="class_manager_1a9301f6e9bd2feee2719b2ff82b49a85e" kindref="member">block</ref>-&gt;<ref refid="class_block_1a012fdf4452ee116b61948e7cdf0475ca" kindref="member">toString</ref>()&lt;&lt;</highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>buf<sp/>&lt;&lt;<ref refid="class_manager_1aec87028a71ab7b031977ac12a086658d" kindref="member">end</ref>-&gt;<ref refid="class_end_1a842b7c55b27248102aee289c1337275b" kindref="member">toString</ref>()&lt;&lt;</highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>buf<sp/>&lt;&lt;<ref refid="class_manager_1a2803dff8e8f2912242f4098991d91415" kindref="member">car</ref>-&gt;<ref refid="class_car_1afb39c5a80ff1977ee13cb1e5cdf2fecd" kindref="member">toString</ref>()&lt;&lt;</highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>buf<sp/>&lt;&lt;<ref refid="class_manager_1ad9b3bf0343fe49922b1874dcb2b5c6ca" kindref="member">path</ref>-&gt;<ref refid="class_path_1ae9094dd83cfcbe9139a41f7aabda84ce" kindref="member">toString</ref>()&lt;&lt;</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>buf<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;}&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>buf.str();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="class_manager_1a8cb433965677ad622ee43d59e24262e7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_manager_1a8cb433965677ad622ee43d59e24262e7" kindref="member">Manager::reset</ref>(){</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>cleanMatrix();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_manager_1a2803dff8e8f2912242f4098991d91415" kindref="member">car</ref>-&gt;<ref refid="class_car_1a97e3c5de8eb65659ef520de6591f814d" kindref="member">setPosition</ref>(-1,-1);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_manager_1aec87028a71ab7b031977ac12a086658d" kindref="member">end</ref>-&gt;<ref refid="class_end_1a5be9587f22c8eb23249513a7b5e6db92" kindref="member">setPosition</ref>(-1,-1);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_manager_1a9301f6e9bd2feee2719b2ff82b49a85e" kindref="member">block</ref>-&gt;<ref refid="class_block_1a37bf8cd7e85de983bc56eb19b168575a" kindref="member">clear</ref>();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_manager_1ad9b3bf0343fe49922b1874dcb2b5c6ca" kindref="member">path</ref>-&gt;<ref refid="class_path_1a962e54c19be5fbe17f902ee6a7a3a706" kindref="member">clear</ref>();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/glegall/prog_workspace/Robot_car/prog/sources/manager.cpp"/>
+  </compounddef>
+</doxygen>

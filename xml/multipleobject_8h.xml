@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="multipleobject_8h" kind="file">
+    <compoundname>multipleobject.h</compoundname>
+    <includes local="no">string</includes>
+    <includedby refid="block_8h" local="yes">headers/manager/block.h</includedby>
+    <includedby refid="path_8h" local="yes">headers/manager/path.h</includedby>
+    <incdepgraph>
+      <node id="353">
+        <label>headers/abstract/multipleobject.h</label>
+        <link refid="multipleobject.h"/>
+        <childnode refid="354" relation="include">
+        </childnode>
+      </node>
+      <node id="354">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="355">
+        <label>headers/abstract/multipleobject.h</label>
+        <link refid="multipleobject.h"/>
+        <childnode refid="356" relation="include">
+        </childnode>
+        <childnode refid="365" relation="include">
+        </childnode>
+      </node>
+      <node id="356">
+        <label>headers/manager/block.h</label>
+        <link refid="block_8h"/>
+        <childnode refid="357" relation="include">
+        </childnode>
+        <childnode refid="364" relation="include">
+        </childnode>
+      </node>
+      <node id="358">
+        <label>headers/core.h</label>
+        <link refid="core_8h"/>
+        <childnode refid="359" relation="include">
+        </childnode>
+        <childnode refid="360" relation="include">
+        </childnode>
+      </node>
+      <node id="362">
+        <label>unitest.cpp</label>
+        <link refid="unitest_8cpp"/>
+      </node>
+      <node id="360">
+        <label>sources/core.cpp</label>
+        <link refid="core_8cpp"/>
+      </node>
+      <node id="366">
+        <label>sources/path.cpp</label>
+        <link refid="path_8cpp"/>
+      </node>
+      <node id="357">
+        <label>headers/manager.h</label>
+        <link refid="manager_8h"/>
+        <childnode refid="358" relation="include">
+        </childnode>
+        <childnode refid="361" relation="include">
+        </childnode>
+        <childnode refid="363" relation="include">
+        </childnode>
+        <childnode refid="362" relation="include">
+        </childnode>
+      </node>
+      <node id="359">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="363">
+        <label>sources/manager.cpp</label>
+        <link refid="manager_8cpp"/>
+      </node>
+      <node id="364">
+        <label>sources/block.cpp</label>
+        <link refid="block_8cpp"/>
+      </node>
+      <node id="365">
+        <label>headers/manager/path.h</label>
+        <link refid="path_8h"/>
+        <childnode refid="357" relation="include">
+        </childnode>
+        <childnode refid="366" relation="include">
+        </childnode>
+      </node>
+      <node id="361">
+        <label>headers/traitement/pathfinding.h</label>
+        <link refid="pathfinding_8h"/>
+        <childnode refid="358" relation="include">
+        </childnode>
+        <childnode refid="362" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_multiple_object" prot="public">MultipleObject</innerclass>
+    <briefdescription>
+<para>add Position with X and Y  Virtual function </para>    </briefdescription>
+    <detaileddescription>
+<para>return list of position  Virtual function</para><para>clear list of position  Virtual function</para><para>has Position  Virtual function</para><para>remove Position with X and Y  Virtual function</para><para><simplesect kind="version"><para>1.0</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position x 0 to 127 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position y 0 to 127 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true true if succefully added </para><simplesectsep/><para>false false if doesn&apos;t succefully added</para></simplesect>
+<simplesect kind="version"><para>1.0</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position x 0 to 127 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position y 0 to 127 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true true if succefully removed </para><simplesectsep/><para>false false if doesn&apos;t succefully removed</para></simplesect>
+<simplesect kind="version"><para>1.0</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position x 0 to 127 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position y 0 to 127 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true has position set </para><simplesectsep/><para>false has not position set</para></simplesect>
+<simplesect kind="version"><para>1.0</para></simplesect>
+<simplesect kind="return"><para>true true if succefully clear </para><simplesectsep/><para>false false if doesn&apos;t succefully clear</para></simplesect>
+<simplesect kind="version"><para>1.0</para></simplesect>
+<simplesect kind="return"><para>std::string toString() function list to string </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>MULTI_OBJECT_H</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MULTI_OBJECT_H</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="class_multiple_object" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_multiple_object" kindref="compound">MultipleObject</ref>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_multiple_object_1aa5e743143bdedeb901c8e234162b3db1" kindref="member">add</ref>(int8_t<sp/>x,<sp/>int8_t<sp/>y)<sp/>=0;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">remove</highlight><highlight class="normal">(int8_t<sp/>x,<sp/>int8_t<sp/>y)<sp/>=0;<sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_multiple_object_1a1703b0c461708fbb6985e87624f4b17b" kindref="member">has</ref>(int8_t<sp/>x,<sp/>int8_t<sp/>y)<sp/>=0;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_multiple_object_1a980acdfb99e25ec0d5e61396f60517c3" kindref="member">clear</ref>()<sp/>=0;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="class_multiple_object_1a5439a2ac4cc86c759ef1df8f6059947a" kindref="member">toString</ref>()<sp/>=0;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/abstract/multipleobject.h"/>
+  </compounddef>
+</doxygen>
