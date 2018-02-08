@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Robot avec intélligence déportée:  Fichier source de headers/manager.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="estei_logo.jpg"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Robot avec intélligence déportée
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Intélligence déportée</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('manager_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">manager.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="manager_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MANAGER_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MANAGER_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="car_8h.html">manager/car.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="block_8h.html">manager/block.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="path_8h.html">manager/path.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="end_8h.html">manager/end.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//#include &quot;serveur/share_server.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;utility&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_manager.html">   33</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_manager.html">Manager</a>{</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_manager.html">Manager</a> * <a class="code" href="class_manager.html#a5d783bd86e9be93235898a46de80847f">getInstance</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_manager.html#a2803dff8e8f2912242f4098991d91415">   37</a></span>&#160;    <a class="code" href="class_car.html">Car</a> *<a class="code" href="class_manager.html#a2803dff8e8f2912242f4098991d91415">car</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_manager.html#a9301f6e9bd2feee2719b2ff82b49a85e">   38</a></span>&#160;    <a class="code" href="class_block.html">Block</a> *<a class="code" href="class_manager.html#a9301f6e9bd2feee2719b2ff82b49a85e">block</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_manager.html#ad9b3bf0343fe49922b1874dcb2b5c6ca">   39</a></span>&#160;    <a class="code" href="class_path.html">Path</a> *<a class="code" href="class_manager.html#ad9b3bf0343fe49922b1874dcb2b5c6ca">path</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_manager.html#aec87028a71ab7b031977ac12a086658d">   40</a></span>&#160;    <a class="code" href="class_end.html">End</a> *<a class="code" href="class_manager.html#aec87028a71ab7b031977ac12a086658d">end</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">//sServer *server;</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_manager.html#ad8d432cd5aa2863d355d2e39d1936861">   54</a></span>&#160;    int8_t <a class="code" href="class_manager.html#ad8d432cd5aa2863d355d2e39d1936861">getCoordonate</a>(int8_t x, int8_t y){</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_manager.html#ad5d59f4a2b1de265115f4efbbbc60dcd">generalTable</a>[x][y];</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_manager.html#af43da42550bd9746c5ea61a6aeee80de">update</a>();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_manager.html#a963d327a438d93b100ff68b475d2cf83">   72</a></span>&#160;    int8_t** <a class="code" href="class_manager.html#a963d327a438d93b100ff68b475d2cf83">getGeneralTable</a>(){</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_manager.html#ad5d59f4a2b1de265115f4efbbbc60dcd">generalTable</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="class_manager.html#a60f89ec1bf61d37a74b4cd67a57d5702">   83</a></span>&#160;    int8_t <a class="code" href="class_manager.html#a60f89ec1bf61d37a74b4cd67a57d5702">getSceneSquare</a>(){</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_manager.html#aee110fd8a198d0355c0475e2a8b64380">scenesquare</a>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="class_manager.html#aaabcb64f4b95fcd10a778c3c033439fb">   95</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_manager.html#aaabcb64f4b95fcd10a778c3c033439fb">initArea</a>(int8_t nb_square){</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <a class="code" href="class_manager.html#aee110fd8a198d0355c0475e2a8b64380">scenesquare</a> = nb_square;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordtype">bool</span> <span class="keywordtype">boolean</span>=<span class="keyword">true</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        uint8_t allocmem = 0;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordflow">try</span>{</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <a class="code" href="class_manager.html#ad5d59f4a2b1de265115f4efbbbc60dcd">generalTable</a> = <span class="keyword">new</span> int8_t * [nb_square];</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            std::fill_n( <a class="code" href="class_manager.html#ad5d59f4a2b1de265115f4efbbbc60dcd">generalTable</a>, nb_square, static_cast&lt;int8_t*&gt;(0));</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="keywordflow">for</span>(allocmem = 0; allocmem &lt; nb_square; ++allocmem){</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                <a class="code" href="class_manager.html#ad5d59f4a2b1de265115f4efbbbc60dcd">generalTable</a>[ allocmem ] = <span class="keyword">new</span> int8_t[nb_square];</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        }<span class="keywordflow">catch</span>( <span class="keyword">const</span> std::bad_alloc &amp;) {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="keywordflow">for</span>( uint8_t i = 0; i &lt; allocmem; ++i ){</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                <span class="keyword">delete</span> [] <a class="code" href="class_manager.html#ad5d59f4a2b1de265115f4efbbbc60dcd">generalTable</a>[ i ];</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keyword">delete</span> [] <a class="code" href="class_manager.html#ad5d59f4a2b1de265115f4efbbbc60dcd">generalTable</a>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <span class="keywordflow">throw</span>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">return</span> boolean;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="class_manager.html#a5040d372e0142f22892fdce49ca96e03">  116</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_manager.html#a5040d372e0142f22892fdce49ca96e03">areaIsDefine</a>(){</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_manager.html#aee110fd8a198d0355c0475e2a8b64380">scenesquare</a> &gt; -1;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    std::string <a class="code" href="class_manager.html#abfd21eccf46a73165312fb71293affc3">toString</a>();</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    std::string <a class="code" href="class_manager.html#a21b3e54cbe4b045b9ac40ee53e403897">forDevelopper</a>();</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="class_manager.html#a322cad25d7007438b3a043ad02253d29">  143</a></span>&#160;    <a class="code" href="class_manager.html#a322cad25d7007438b3a043ad02253d29">~Manager</a>(){</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keywordflow">for</span>(int8_t i=0; i&lt;<a class="code" href="class_manager.html#aee110fd8a198d0355c0475e2a8b64380">scenesquare</a>; i++){</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            <span class="keyword">delete</span> [] <a class="code" href="class_manager.html#ad5d59f4a2b1de265115f4efbbbc60dcd">generalTable</a>[i];</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            <a class="code" href="class_manager.html#ad5d59f4a2b1de265115f4efbbbc60dcd">generalTable</a>[i] = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        }</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="keyword">delete</span> []<a class="code" href="class_manager.html#ad5d59f4a2b1de265115f4efbbbc60dcd">generalTable</a>;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <a class="code" href="class_manager.html#ad5d59f4a2b1de265115f4efbbbc60dcd">generalTable</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    }</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_manager.html#a8cb433965677ad622ee43d59e24262e7">reset</a>();</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="class_manager.html#ad5d59f4a2b1de265115f4efbbbc60dcd">  154</a></span>&#160;    int8_t **<a class="code" href="class_manager.html#ad5d59f4a2b1de265115f4efbbbc60dcd">generalTable</a>;</div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="class_manager.html#ac80f5ee151565f111593921bac645ad7">  155</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="class_manager.html">Manager</a> * <a class="code" href="class_manager.html#ac80f5ee151565f111593921bac645ad7">instance</a>;</div>
+<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="class_manager.html#aee110fd8a198d0355c0475e2a8b64380">  156</a></span>&#160;    int8_t <a class="code" href="class_manager.html#aee110fd8a198d0355c0475e2a8b64380">scenesquare</a>;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_manager.html#a1734887f37a6cc8e5837431b2875459f">cleanMatrix</a>();</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
+<div class="line"><a name="l00170"></a><span class="lineno"><a class="line" href="class_manager.html#a1658ff9f18e38ccd9cb8b0b371b9c20b">  170</a></span>&#160;    <a class="code" href="class_manager.html#a1658ff9f18e38ccd9cb8b0b371b9c20b">Manager</a>()</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    {</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <a class="code" href="class_manager.html#a2803dff8e8f2912242f4098991d91415">car</a> = <a class="code" href="class_car.html#a40cbec40dad9ddda76c277da17f23528">Car::getInstance</a>();</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <a class="code" href="class_manager.html#a9301f6e9bd2feee2719b2ff82b49a85e">block</a> = <a class="code" href="class_block.html#a2cf0004e7ab0f92b52bca2ebf8a1d52c">Block::getInstance</a>();</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <a class="code" href="class_manager.html#ad9b3bf0343fe49922b1874dcb2b5c6ca">path</a> = <a class="code" href="class_path.html#a183700997f2499f31dc2a533c9ace59a">Path::getInstance</a>();</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <a class="code" href="class_manager.html#aec87028a71ab7b031977ac12a086658d">end</a> = <a class="code" href="class_end.html#a527baaf33dbb6431d94759f75e8b9f5a">End::getInstance</a>();</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <span class="comment">//server = sServer::getInstance();</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <a class="code" href="class_manager.html#aee110fd8a198d0355c0475e2a8b64380">scenesquare</a> = -1;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    }</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;};</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_path_html_a183700997f2499f31dc2a533c9ace59a"><div class="ttname"><a href="class_path.html#a183700997f2499f31dc2a533c9ace59a">Path::getInstance</a></div><div class="ttdeci">static Path * getInstance()</div><div class="ttdef"><b>Definition:</b> <a href="path_8cpp_source.html#l00009">path.cpp:9</a></div></div>
+<div class="ttc" id="class_manager_html_aec87028a71ab7b031977ac12a086658d"><div class="ttname"><a href="class_manager.html#aec87028a71ab7b031977ac12a086658d">Manager::end</a></div><div class="ttdeci">End * end</div><div class="ttdef"><b>Definition:</b> <a href="manager_8h_source.html#l00040">manager.h:40</a></div></div>
+<div class="ttc" id="class_manager_html_ac80f5ee151565f111593921bac645ad7"><div class="ttname"><a href="class_manager.html#ac80f5ee151565f111593921bac645ad7">Manager::instance</a></div><div class="ttdeci">static Manager * instance</div><div class="ttdef"><b>Definition:</b> <a href="manager_8h_source.html#l00155">manager.h:155</a></div></div>
+<div class="ttc" id="class_manager_html_a9301f6e9bd2feee2719b2ff82b49a85e"><div class="ttname"><a href="class_manager.html#a9301f6e9bd2feee2719b2ff82b49a85e">Manager::block</a></div><div class="ttdeci">Block * block</div><div class="ttdef"><b>Definition:</b> <a href="manager_8h_source.html#l00038">manager.h:38</a></div></div>
+<div class="ttc" id="class_manager_html"><div class="ttname"><a href="class_manager.html">Manager</a></div><div class="ttdef"><b>Definition:</b> <a href="manager_8h_source.html#l00033">manager.h:33</a></div></div>
+<div class="ttc" id="class_manager_html_ad8d432cd5aa2863d355d2e39d1936861"><div class="ttname"><a href="class_manager.html#ad8d432cd5aa2863d355d2e39d1936861">Manager::getCoordonate</a></div><div class="ttdeci">int8_t getCoordonate(int8_t x, int8_t y)</div><div class="ttdef"><b>Definition:</b> <a href="manager_8h_source.html#l00054">manager.h:54</a></div></div>
+<div class="ttc" id="class_path_html"><div class="ttname"><a href="class_path.html">Path</a></div><div class="ttdef"><b>Definition:</b> <a href="path_8h_source.html#l00017">path.h:17</a></div></div>
+<div class="ttc" id="class_manager_html_ad5d59f4a2b1de265115f4efbbbc60dcd"><div class="ttname"><a href="class_manager.html#ad5d59f4a2b1de265115f4efbbbc60dcd">Manager::generalTable</a></div><div class="ttdeci">int8_t ** generalTable</div><div class="ttdef"><b>Definition:</b> <a href="manager_8h_source.html#l00154">manager.h:154</a></div></div>
+<div class="ttc" id="class_manager_html_a5d783bd86e9be93235898a46de80847f"><div class="ttname"><a href="class_manager.html#a5d783bd86e9be93235898a46de80847f">Manager::getInstance</a></div><div class="ttdeci">static Manager * getInstance()</div><div class="ttdef"><b>Definition:</b> <a href="manager_8cpp_source.html#l00008">manager.cpp:8</a></div></div>
+<div class="ttc" id="class_manager_html_a963d327a438d93b100ff68b475d2cf83"><div class="ttname"><a href="class_manager.html#a963d327a438d93b100ff68b475d2cf83">Manager::getGeneralTable</a></div><div class="ttdeci">int8_t ** getGeneralTable()</div><div class="ttdef"><b>Definition:</b> <a href="manager_8h_source.html#l00072">manager.h:72</a></div></div>
+<div class="ttc" id="class_manager_html_a5040d372e0142f22892fdce49ca96e03"><div class="ttname"><a href="class_manager.html#a5040d372e0142f22892fdce49ca96e03">Manager::areaIsDefine</a></div><div class="ttdeci">bool areaIsDefine()</div><div class="ttdef"><b>Definition:</b> <a href="manager_8h_source.html#l00116">manager.h:116</a></div></div>
+<div class="ttc" id="class_manager_html_a8cb433965677ad622ee43d59e24262e7"><div class="ttname"><a href="class_manager.html#a8cb433965677ad622ee43d59e24262e7">Manager::reset</a></div><div class="ttdeci">void reset()</div><div class="ttdef"><b>Definition:</b> <a href="manager_8cpp_source.html#l00073">manager.cpp:73</a></div></div>
+<div class="ttc" id="class_manager_html_af43da42550bd9746c5ea61a6aeee80de"><div class="ttname"><a href="class_manager.html#af43da42550bd9746c5ea61a6aeee80de">Manager::update</a></div><div class="ttdeci">void update()</div><div class="ttdef"><b>Definition:</b> <a href="manager_8cpp_source.html#l00015">manager.cpp:15</a></div></div>
+<div class="ttc" id="end_8h_html"><div class="ttname"><a href="end_8h.html">end.h</a></div><div class="ttdoc">Abstract of SimpleObject  Virtual function. </div></div>
+<div class="ttc" id="class_block_html"><div class="ttname"><a href="class_block.html">Block</a></div><div class="ttdef"><b>Definition:</b> <a href="block_8h_source.html#l00017">block.h:17</a></div></div>
+<div class="ttc" id="class_manager_html_aaabcb64f4b95fcd10a778c3c033439fb"><div class="ttname"><a href="class_manager.html#aaabcb64f4b95fcd10a778c3c033439fb">Manager::initArea</a></div><div class="ttdeci">bool initArea(int8_t nb_square)</div><div class="ttdef"><b>Definition:</b> <a href="manager_8h_source.html#l00095">manager.h:95</a></div></div>
+<div class="ttc" id="class_car_html_a40cbec40dad9ddda76c277da17f23528"><div class="ttname"><a href="class_car.html#a40cbec40dad9ddda76c277da17f23528">Car::getInstance</a></div><div class="ttdeci">static Car * getInstance()</div><div class="ttdef"><b>Definition:</b> <a href="car_8cpp_source.html#l00009">car.cpp:9</a></div></div>
+<div class="ttc" id="car_8h_html"><div class="ttname"><a href="car_8h.html">car.h</a></div><div class="ttdoc">Abstract of SimpleObject  Virtual function. </div></div>
+<div class="ttc" id="class_manager_html_a2803dff8e8f2912242f4098991d91415"><div class="ttname"><a href="class_manager.html#a2803dff8e8f2912242f4098991d91415">Manager::car</a></div><div class="ttdeci">Car * car</div><div class="ttdef"><b>Definition:</b> <a href="manager_8h_source.html#l00037">manager.h:37</a></div></div>
+<div class="ttc" id="class_manager_html_abfd21eccf46a73165312fb71293affc3"><div class="ttname"><a href="class_manager.html#abfd21eccf46a73165312fb71293affc3">Manager::toString</a></div><div class="ttdeci">std::string toString()</div><div class="ttdef"><b>Definition:</b> <a href="manager_8cpp_source.html#l00060">manager.cpp:60</a></div></div>
+<div class="ttc" id="class_manager_html_ad9b3bf0343fe49922b1874dcb2b5c6ca"><div class="ttname"><a href="class_manager.html#ad9b3bf0343fe49922b1874dcb2b5c6ca">Manager::path</a></div><div class="ttdeci">Path * path</div><div class="ttdef"><b>Definition:</b> <a href="manager_8h_source.html#l00039">manager.h:39</a></div></div>
+<div class="ttc" id="path_8h_html"><div class="ttname"><a href="path_8h.html">path.h</a></div><div class="ttdoc">Abstract of MultipleObject  Virtual function. </div></div>
+<div class="ttc" id="class_manager_html_a1658ff9f18e38ccd9cb8b0b371b9c20b"><div class="ttname"><a href="class_manager.html#a1658ff9f18e38ccd9cb8b0b371b9c20b">Manager::Manager</a></div><div class="ttdeci">Manager()</div><div class="ttdef"><b>Definition:</b> <a href="manager_8h_source.html#l00170">manager.h:170</a></div></div>
+<div class="ttc" id="class_manager_html_a60f89ec1bf61d37a74b4cd67a57d5702"><div class="ttname"><a href="class_manager.html#a60f89ec1bf61d37a74b4cd67a57d5702">Manager::getSceneSquare</a></div><div class="ttdeci">int8_t getSceneSquare()</div><div class="ttdef"><b>Definition:</b> <a href="manager_8h_source.html#l00083">manager.h:83</a></div></div>
+<div class="ttc" id="class_block_html_a2cf0004e7ab0f92b52bca2ebf8a1d52c"><div class="ttname"><a href="class_block.html#a2cf0004e7ab0f92b52bca2ebf8a1d52c">Block::getInstance</a></div><div class="ttdeci">static Block * getInstance()</div><div class="ttdef"><b>Definition:</b> <a href="block_8cpp_source.html#l00009">block.cpp:9</a></div></div>
+<div class="ttc" id="class_manager_html_a21b3e54cbe4b045b9ac40ee53e403897"><div class="ttname"><a href="class_manager.html#a21b3e54cbe4b045b9ac40ee53e403897">Manager::forDevelopper</a></div><div class="ttdeci">std::string forDevelopper()</div><div class="ttdef"><b>Definition:</b> <a href="manager_8cpp_source.html#l00047">manager.cpp:47</a></div></div>
+<div class="ttc" id="class_manager_html_a322cad25d7007438b3a043ad02253d29"><div class="ttname"><a href="class_manager.html#a322cad25d7007438b3a043ad02253d29">Manager::~Manager</a></div><div class="ttdeci">~Manager()</div><div class="ttdef"><b>Definition:</b> <a href="manager_8h_source.html#l00143">manager.h:143</a></div></div>
+<div class="ttc" id="class_end_html"><div class="ttname"><a href="class_end.html">End</a></div><div class="ttdef"><b>Definition:</b> <a href="end_8h_source.html#l00016">end.h:16</a></div></div>
+<div class="ttc" id="block_8h_html"><div class="ttname"><a href="block_8h.html">block.h</a></div><div class="ttdoc">Abstract of MultipleObject  Virtual function. </div></div>
+<div class="ttc" id="class_car_html"><div class="ttname"><a href="class_car.html">Car</a></div><div class="ttdef"><b>Definition:</b> <a href="car_8h_source.html#l00016">car.h:16</a></div></div>
+<div class="ttc" id="class_end_html_a527baaf33dbb6431d94759f75e8b9f5a"><div class="ttname"><a href="class_end.html#a527baaf33dbb6431d94759f75e8b9f5a">End::getInstance</a></div><div class="ttdeci">static End * getInstance()</div><div class="ttdef"><b>Definition:</b> <a href="end_8cpp_source.html#l00009">end.cpp:9</a></div></div>
+<div class="ttc" id="class_manager_html_aee110fd8a198d0355c0475e2a8b64380"><div class="ttname"><a href="class_manager.html#aee110fd8a198d0355c0475e2a8b64380">Manager::scenesquare</a></div><div class="ttdeci">int8_t scenesquare</div><div class="ttdef"><b>Definition:</b> <a href="manager_8h_source.html#l00156">manager.h:156</a></div></div>
+<div class="ttc" id="class_manager_html_a1734887f37a6cc8e5837431b2875459f"><div class="ttname"><a href="class_manager.html#a1734887f37a6cc8e5837431b2875459f">Manager::cleanMatrix</a></div><div class="ttdeci">void cleanMatrix()</div><div class="ttdef"><b>Definition:</b> <a href="manager_8cpp_source.html#l00039">manager.cpp:39</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_7f57b1e41c5acd0e859ae5f3a2b075a9.html">headers</a></li><li class="navelem"><a class="el" href="manager_8h.html">manager.h</a></li>
+    <li class="footer">Généré le Jeudi 8 Février 2018 23:13:35 pour Robot avec intélligence déportée par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

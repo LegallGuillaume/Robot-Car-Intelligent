@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="simpleobject_8h" kind="file">
+    <compoundname>simpleobject.h</compoundname>
+    <includes local="no">sstream</includes>
+    <includes local="no">string</includes>
+    <includes local="no">utility</includes>
+    <includedby refid="car_8h" local="yes">headers/manager/car.h</includedby>
+    <includedby refid="end_8h" local="yes">headers/manager/end.h</includedby>
+    <incdepgraph>
+      <node id="370">
+        <label>string</label>
+      </node>
+      <node id="371">
+        <label>utility</label>
+      </node>
+      <node id="369">
+        <label>sstream</label>
+      </node>
+      <node id="368">
+        <label>headers/abstract/simpleobject.h</label>
+        <link refid="simpleobject.h"/>
+        <childnode refid="369" relation="include">
+        </childnode>
+        <childnode refid="370" relation="include">
+        </childnode>
+        <childnode refid="371" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="382">
+        <label>headers/manager/end.h</label>
+        <link refid="end_8h"/>
+        <childnode refid="374" relation="include">
+        </childnode>
+        <childnode refid="383" relation="include">
+        </childnode>
+      </node>
+      <node id="375">
+        <label>headers/core.h</label>
+        <link refid="core_8h"/>
+        <childnode refid="376" relation="include">
+        </childnode>
+        <childnode refid="377" relation="include">
+        </childnode>
+      </node>
+      <node id="379">
+        <label>unitest.cpp</label>
+        <link refid="unitest_8cpp"/>
+      </node>
+      <node id="373">
+        <label>headers/manager/car.h</label>
+        <link refid="car_8h"/>
+        <childnode refid="374" relation="include">
+        </childnode>
+        <childnode refid="381" relation="include">
+        </childnode>
+      </node>
+      <node id="381">
+        <label>sources/car.cpp</label>
+        <link refid="car_8cpp"/>
+      </node>
+      <node id="383">
+        <label>sources/end.cpp</label>
+        <link refid="end_8cpp"/>
+      </node>
+      <node id="377">
+        <label>sources/core.cpp</label>
+        <link refid="core_8cpp"/>
+      </node>
+      <node id="374">
+        <label>headers/manager.h</label>
+        <link refid="manager_8h"/>
+        <childnode refid="375" relation="include">
+        </childnode>
+        <childnode refid="378" relation="include">
+        </childnode>
+        <childnode refid="380" relation="include">
+        </childnode>
+        <childnode refid="379" relation="include">
+        </childnode>
+      </node>
+      <node id="376">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="380">
+        <label>sources/manager.cpp</label>
+        <link refid="manager_8cpp"/>
+      </node>
+      <node id="372">
+        <label>headers/abstract/simpleobject.h</label>
+        <link refid="simpleobject.h"/>
+        <childnode refid="373" relation="include">
+        </childnode>
+        <childnode refid="382" relation="include">
+        </childnode>
+      </node>
+      <node id="378">
+        <label>headers/traitement/pathfinding.h</label>
+        <link refid="pathfinding_8h"/>
+        <childnode refid="375" relation="include">
+        </childnode>
+        <childnode refid="379" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_simple_object" prot="public">SimpleObject</innerclass>
+    <briefdescription>
+<para>set the position of object (car, arrival, start)  Virtual function </para>    </briefdescription>
+    <detaileddescription>
+<para>return the position to String  Virtual function</para><para>get the position of object (car, arrival, start)  Virtual function</para><para><simplesect kind="version"><para>1.0</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position x 0 to 127 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position y 0 to 127 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true true if position correctly change </para><simplesectsep/><para>false false if position not correctly change</para></simplesect>
+<simplesect kind="version"><para>1.0</para></simplesect>
+<simplesect kind="return"><para>std::pair&lt;int8_t, int8_t&gt; return the position of object</para></simplesect>
+<simplesect kind="version"><para>1.0</para></simplesect>
+<simplesect kind="return"><para>std::string toString() function position to string </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SIMPLE_OBJECT_H</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SIMPLE_OBJECT_H</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;utility&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="class_simple_object" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_simple_object" kindref="compound">SimpleObject</ref>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_simple_object_1ae9ea1f7ffe6d4aaf18f24e937e6b60ab" kindref="member">setPosition</ref>(int8_t<sp/>x,<sp/>int8_t<sp/>y)<sp/>=0;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::pair&lt;int8_t,<sp/>int8_t&gt;<sp/><ref refid="class_simple_object_1ae417f1a285ceab5a04130aba01bac856" kindref="member">getPosition</ref>()<sp/>=0;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="class_simple_object_1aedf0ddcc119ab40623b5b69badc9531a" kindref="member">toString</ref>()<sp/>=0;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/abstract/simpleobject.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_simple_object" kind="class" prot="public" abstract="yes">
+    <compoundname>SimpleObject</compoundname>
+    <derivedcompoundref refid="class_car" prot="public" virt="non-virtual">Car</derivedcompoundref>
+    <derivedcompoundref refid="class_end" prot="public" virt="non-virtual">End</derivedcompoundref>
+    <includes refid="simpleobject_8h" local="no">simpleobject.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_simple_object_1ae9ea1f7ffe6d4aaf18f24e937e6b60ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SimpleObject::setPosition</definition>
+        <argsstring>(int8_t x, int8_t y)=0</argsstring>
+        <name>setPosition</name>
+        <reimplementedby refid="class_end_1a5be9587f22c8eb23249513a7b5e6db92">setPosition</reimplementedby>
+        <reimplementedby refid="class_car_1a97e3c5de8eb65659ef520de6591f814d">setPosition</reimplementedby>
+        <param>
+          <type>int8_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/abstract/simpleobject.h" line="23" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_simple_object_1ae417f1a285ceab5a04130aba01bac856" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::pair&lt; int8_t, int8_t &gt;</type>
+        <definition>virtual std::pair&lt;int8_t, int8_t&gt; SimpleObject::getPosition</definition>
+        <argsstring>()=0</argsstring>
+        <name>getPosition</name>
+        <reimplementedby refid="class_car_1a20dd521474ee36b144bde58e3359eed6">getPosition</reimplementedby>
+        <reimplementedby refid="class_end_1ac1365bd526e9ca1f5c8e9d80dc750a36">getPosition</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/abstract/simpleobject.h" line="33" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_simple_object_1aedf0ddcc119ab40623b5b69badc9531a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::string</type>
+        <definition>virtual std::string SimpleObject::toString</definition>
+        <argsstring>()=0</argsstring>
+        <name>toString</name>
+        <reimplementedby refid="class_car_1afb39c5a80ff1977ee13cb1e5cdf2fecd">toString</reimplementedby>
+        <reimplementedby refid="class_end_1a842b7c55b27248102aee289c1337275b">toString</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/abstract/simpleobject.h" line="43" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="113">
+        <label>End</label>
+        <link refid="class_end"/>
+        <childnode refid="111" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="112">
+        <label>Car</label>
+        <link refid="class_car"/>
+        <childnode refid="111" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="111">
+        <label>SimpleObject</label>
+        <link refid="class_simple_object"/>
+      </node>
+    </inheritancegraph>
+    <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/abstract/simpleobject.h" line="8" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/abstract/simpleobject.h" bodystart="8" bodyend="44"/>
+    <listofallmembers>
+      <member refid="class_simple_object_1ae417f1a285ceab5a04130aba01bac856" prot="public" virt="pure-virtual"><scope>SimpleObject</scope><name>getPosition</name></member>
+      <member refid="class_simple_object_1ae9ea1f7ffe6d4aaf18f24e937e6b60ab" prot="public" virt="pure-virtual"><scope>SimpleObject</scope><name>setPosition</name></member>
+      <member refid="class_simple_object_1aedf0ddcc119ab40623b5b69badc9531a" prot="public" virt="pure-virtual"><scope>SimpleObject</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

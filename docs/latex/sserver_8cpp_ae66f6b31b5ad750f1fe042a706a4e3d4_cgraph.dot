@@ -1,0 +1,14 @@
+digraph "main"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="sServer::getInstance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classs_server.html#af98a4a292c1beaab9296a88dba9f0c13"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="sServer::sServer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classs_server.html#ade1889963bc8ec1d6c184f900f1c4977"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="sServer::sendThingsTo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classs_server.html#abcd4016d1b93c045f0847a48afee0ac2"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+}

@@ -1,0 +1,418 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Robot avec intélligence déportée:  Fichier source de sources/traitement/images.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="estei_logo.jpg"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Robot avec intélligence déportée
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Intélligence déportée</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('images_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">images.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="images_8cpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;../../headers/traitement/images.h&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;unistd.h&gt;</span> <span class="comment">/*timeout for calibration*/</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_images_p.html#a18ff58308b1ba5787e1d05f0acd7224a">    6</a></span>&#160;<a class="code" href="class_images_p.html#a18ff58308b1ba5787e1d05f0acd7224a">ImagesP::ImagesP</a>(){</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <a class="code" href="class_images_p.html#a0527e504ca88cece33edb90fef958c90">init</a>();</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;}</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_images_p.html#abd4ea58f9cb814dbb27feb5d2d793e53">   10</a></span>&#160;<a class="code" href="class_images_p.html#abd4ea58f9cb814dbb27feb5d2d793e53">ImagesP::~ImagesP</a>(){</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_images_p.html#a143a67baa23fdc4b1c28beda0bd964f5">cap</a>.release();</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_images_p.html#a002bb2f3148a85c46c954dcc98ad2760">   15</a></span>&#160;uint8_t <a class="code" href="class_images_p.html#a002bb2f3148a85c46c954dcc98ad2760">ImagesP::getSizeMarker</a>(){</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_images_p.html#ac2813bc8a3edac420df686902806172c">Markers</a>.size();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_images_p.html#a0b371e65a472c1cce7d6dc83bd171e4d">   19</a></span>&#160;Point <a class="code" href="class_images_p.html#a0b371e65a472c1cce7d6dc83bd171e4d">ImagesP::getXYMatrix</a>(int16_t x_matrix, int16_t y_matrix){</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">return</span> Point((<span class="keywordtype">int</span>)(x_matrix/20), (<span class="keywordtype">int</span>)(y_matrix/20));</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_images_p.html#a03b81fad0317e9939085c5e7538c2efe">   23</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="class_images_p.html#a03b81fad0317e9939085c5e7538c2efe">ImagesP::getAngle</a>(Marker marker){</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    Point2f p_a = marker[1];</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    Point2f p_b = marker[2];</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    Point2f p_m(0,-1);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    Point2f p_i((p_a.x+p_b.x)/2, (p_a.y+p_b.y)/2);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    Point2f vec = marker.getCenter() - p_i;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">float</span> scal = vec.x*p_m.x + vec.y*p_m.y;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">float</span> deno = sqrt(pow(vec.x,2) + pow(vec.y,2)) * sqrt(pow(p_m.x,2) + pow(p_m.y,2));</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">float</span> r = acos(scal/deno);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">float</span> result = (r*180/M_PI)-90;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">if</span>(p_a.x &gt; p_b.x &amp;&amp; p_a.y &gt;= p_b.y){</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        result = 0 - result - 180;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(p_a.x&lt;p_b.x &amp;&amp; p_a.y &gt; p_b.y){</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        result = 180 - result;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">/*Correction cause by pixel (angle sup 180 and inf to -180*/</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">if</span>(result &gt; 180){</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        result = 0 - 180 + (sqrt(pow(result,2)) - 180);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">if</span>(result &lt; -180){</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        result = 180 - (sqrt(pow(result,2)) - 180);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_images_p.html#a4e8b4ba0f6f6f408de4cc4c52ac29f27">   53</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_images_p.html#a4e8b4ba0f6f6f408de4cc4c52ac29f27">ImagesP::willbeBlock</a>(Mat&amp; frame, Point leftTop, int8_t pixelMax){</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    int16_t counter = 0;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">for</span>(int16_t x=leftTop.x; x&lt;leftTop.x+18;++x){</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;       <span class="keywordflow">for</span>(int16_t y=leftTop.y; y&lt;leftTop.y+18;++y){</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;           Vec3b intensity = frame.at&lt;Vec3b&gt;(y, x);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            uchar blue = intensity.val[0];</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            uchar green = intensity.val[1];</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            uchar red = intensity.val[2];</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordflow">if</span>(blue == 255 &amp;&amp; green == 255 &amp;&amp; red == 255){</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                counter++;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">if</span>(counter &gt;= pixelMax){</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_images_p.html#a50c2faf5197f1e0b5d54f4acdb9f82dd">   72</a></span>&#160;Point2f <a class="code" href="class_images_p.html#a50c2faf5197f1e0b5d54f4acdb9f82dd">ImagesP::getBlockMatrix</a>(Point2f center, int16_t x_pixel, int16_t y_pixel){</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    int16_t x_ref = center.x - 240;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    int16_t y_ref = center.y - 240;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    int16_t x_sta = x_pixel - x_ref;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    int16_t y_sta = y_pixel - y_ref;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    int16_t x = (int)(x_pixel/20)*20;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    int16_t y = (int)(y_pixel/20)*20;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">return</span> Point2f(x+x_ref, y+y_ref);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="class_images_p.html#a4eee68c40eb47b29e0b738ea38a55353">   84</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_images_p.html#a4eee68c40eb47b29e0b738ea38a55353">ImagesP::drawMatrix</a>(Mat&amp; frame, Point center){</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    int16_t RecX1 = center.x-240;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    int16_t RecX2 = center.x+240;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    int16_t RecY1 = center.y-240;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    int16_t RecY2 = center.y+240;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">for</span>(int16_t j=1; j&lt;25;j++){</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        RecX2 = RecX2 - 20;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        rectangle(frame, Point(RecX1, RecY1), Point(RecX2, RecY2), cv::Scalar(0, 255, 0));</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    RecX2 = center.x+240;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">//horizontal</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">for</span>(int16_t j=1; j&lt;25;j++){</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        RecY2 = RecY2 - 20;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        rectangle(frame, Point(RecX1, RecY1), Point(RecX2, RecY2), cv::Scalar(0, 255, 0));</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="class_images_p.html#aab5950c25ea44c06bc4026ce6dece7fa">  101</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_images_p.html#aab5950c25ea44c06bc4026ce6dece7fa">ImagesP::fillRotatedRect</a>(Mat&amp; frame, Point2f center, Size2f size, Scalar color, <span class="keywordtype">float</span> angle){</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    RotatedRect rect(center, size, angle);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    cv::Point2f vertices2f[4];</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    rect.points(vertices2f);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    cv::Point vertices[4];</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 4; ++i){</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        vertices[i] = vertices2f[i];</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    cv::fillConvexPoly(frame,vertices, 4, color);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="class_images_p.html#af8bad8cf7cb3be74c084a0efc86ca73f">  112</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_images_p.html#af8bad8cf7cb3be74c084a0efc86ca73f">ImagesP::markersProcessing</a>(Point2f centerPt){</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">for</span> (int16_t i=0;i&lt;<a class="code" href="class_images_p.html#ac2813bc8a3edac420df686902806172c">Markers</a>.size();i++) {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        int16_t x = (int16_t)<a class="code" href="class_images_p.html#ac2813bc8a3edac420df686902806172c">Markers</a>[i].getCenter().x;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        int16_t y = (int16_t)<a class="code" href="class_images_p.html#ac2813bc8a3edac420df686902806172c">Markers</a>[i].getCenter().y;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        Point2f new_center = <a class="code" href="class_images_p.html#ac2813bc8a3edac420df686902806172c">Markers</a>[i].getCenter() - centerPt;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        new_center += Point2f(240,240);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="class_images_p.html#ac2813bc8a3edac420df686902806172c">Markers</a>[i].<span class="keywordtype">id</span> == <a class="code" href="definition_8h.html#a6036f5d317ce1f843aae2fdd46d845c9">MARKER_ID_AREA</a>){</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            <a class="code" href="class_images_p.html#a4eee68c40eb47b29e0b738ea38a55353">drawMatrix</a>(<a class="code" href="class_images_p.html#adc6b2ffa6cbfab6c1b83ed4bef74f1b9">markerCpy</a>, Point(240,240));</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        }<span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="class_images_p.html#ac2813bc8a3edac420df686902806172c">Markers</a>[i].<span class="keywordtype">id</span> != <a class="code" href="definition_8h.html#aa0e4cfe3919e1b2633bd67fbbae28ec5">MARKER_ID_CAR</a> &amp;&amp; <a class="code" href="class_images_p.html#ac2813bc8a3edac420df686902806172c">Markers</a>[i].<span class="keywordtype">id</span> != <a class="code" href="definition_8h.html#a6b35f14504af015e91cc6963cb51d6f5">MARKER_ID_ARRIVAL</a>){ <span class="comment">/*bloc*/</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            std::vector&lt;Point&gt; point_marker;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <a class="code" href="class_images_p.html#aab5950c25ea44c06bc4026ce6dece7fa">fillRotatedRect</a>(</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                <a class="code" href="class_images_p.html#adc6b2ffa6cbfab6c1b83ed4bef74f1b9">markerCpy</a>, new_center, Size2f(60, 60), Scalar(255,255,255), <a class="code" href="class_images_p.html#a03b81fad0317e9939085c5e7538c2efe">getAngle</a>(<a class="code" href="class_images_p.html#ac2813bc8a3edac420df686902806172c">Markers</a>[i])</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            );</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            Point2f pts = <a class="code" href="class_images_p.html#a50c2faf5197f1e0b5d54f4acdb9f82dd">getBlockMatrix</a>(</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                Point2f(240,240), </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                new_center.x - (<a class="code" href="definition_8h.html#a7ff61b468299d760aa0a3187ab24dddc">MARGE_BLOCK_PROCESSING</a>*sqrt(2)), </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                new_center.y - (<a class="code" href="definition_8h.html#a7ff61b468299d760aa0a3187ab24dddc">MARGE_BLOCK_PROCESSING</a>*sqrt(2))</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            );</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            int16_t p_x = pts.x;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            int16_t p_y = pts.y;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            <span class="keywordflow">for</span>(int16_t ii=0; ii&lt;6; ++ii){</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                <span class="keywordflow">for</span>(int16_t jj=0; jj&lt;6;++jj){</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                    <span class="keywordtype">bool</span> bloc = <a class="code" href="class_images_p.html#a4e8b4ba0f6f6f408de4cc4c52ac29f27">willbeBlock</a>(<a class="code" href="class_images_p.html#adc6b2ffa6cbfab6c1b83ed4bef74f1b9">markerCpy</a>, Point(p_x+1,p_y+1), 16);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                    <span class="keywordflow">if</span>(bloc){</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                        point_marker.push_back(<a class="code" href="class_images_p.html#a0b371e65a472c1cce7d6dc83bd171e4d">getXYMatrix</a>(p_y, p_x)); <span class="comment">//inverser</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                        rectangle(<a class="code" href="class_images_p.html#adc6b2ffa6cbfab6c1b83ed4bef74f1b9">markerCpy</a>, Point2f(p_x+2,p_y+2), Point2f(p_x+18,p_y+18), Scalar(0, 0, 255));</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                    }</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                    p_y +=20;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                }</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                p_y = pts.y;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                p_x +=20;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            }</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            <a class="code" href="class_images_p.html#ab9e279526694a7ce421cfa11b9309ed1">all_block</a>.insert(<a class="code" href="class_images_p.html#ab9e279526694a7ce421cfa11b9309ed1">all_block</a>.end(), point_marker.begin(), point_marker.end());</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        }</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="class_images_p.html#ac2813bc8a3edac420df686902806172c">Markers</a>[i].<span class="keywordtype">id</span> == <a class="code" href="definition_8h.html#aa0e4cfe3919e1b2633bd67fbbae28ec5">MARKER_ID_CAR</a>){</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <a class="code" href="class_images_p.html#a39c69bdd9469b4b8a2c9666e27afa7b0">angleCar</a> = <a class="code" href="class_images_p.html#a03b81fad0317e9939085c5e7538c2efe">getAngle</a>(<a class="code" href="class_images_p.html#ac2813bc8a3edac420df686902806172c">Markers</a>[i]);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            <a class="code" href="class_images_p.html#a79d1d01bae703caeee1033425e4f8f18">posCar</a> = <a class="code" href="class_images_p.html#a0b371e65a472c1cce7d6dc83bd171e4d">getXYMatrix</a>(new_center.y,new_center.x); <span class="comment">//x and y are inversed with axis openCV</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        }</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="class_images_p.html#ac2813bc8a3edac420df686902806172c">Markers</a>[i].<span class="keywordtype">id</span> == <a class="code" href="definition_8h.html#a6b35f14504af015e91cc6963cb51d6f5">MARKER_ID_ARRIVAL</a>){</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            <a class="code" href="class_images_p.html#a408c61aeceb9175481adb2daca707a48">angleArrival</a> = <a class="code" href="class_images_p.html#a03b81fad0317e9939085c5e7538c2efe">getAngle</a>(<a class="code" href="class_images_p.html#ac2813bc8a3edac420df686902806172c">Markers</a>[i]);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            <a class="code" href="class_images_p.html#a621b649c63d3967849103c03082af64c">posArrival</a> = <a class="code" href="class_images_p.html#a0b371e65a472c1cce7d6dc83bd171e4d">getXYMatrix</a>(new_center.y,new_center.x); <span class="comment">//x and y are inversed with axis openCV</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        }</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    }</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;}</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="class_images_p.html#a0527e504ca88cece33edb90fef958c90">  158</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_images_p.html#a0527e504ca88cece33edb90fef958c90">ImagesP::init</a>(){</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <a class="code" href="class_images_p.html#a143a67baa23fdc4b1c28beda0bd964f5">cap</a> = VideoCapture(<a class="code" href="definition_8h.html#aa818b55bd43036cc3f26783302e4419b">CAM_EXTERN</a>);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <a class="code" href="class_images_p.html#adc6b2ffa6cbfab6c1b83ed4bef74f1b9">markerCpy</a> = Mat(480,480, CV_8UC3, Scalar(0));</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <a class="code" href="class_images_p.html#a143a67baa23fdc4b1c28beda0bd964f5">cap</a> &gt;&gt; <a class="code" href="class_images_p.html#add620ec27d299fe470cade4a6bc1e632">markerImg</a>;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <a class="code" href="class_images_p.html#a79d1d01bae703caeee1033425e4f8f18">posCar</a> = Point2f(-1,-1);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <a class="code" href="class_images_p.html#a621b649c63d3967849103c03082af64c">posArrival</a> = Point2f(-1,-1);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;}</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="class_images_p.html#a3c43049bf1ce2da9ffa88841e48c29e1">  167</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_images_p.html#a3c43049bf1ce2da9ffa88841e48c29e1">ImagesP::readyForPath</a>(){</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="class_images_p.html#a79d1d01bae703caeee1033425e4f8f18">posCar</a> != Point(-1,-1) &amp;&amp; <a class="code" href="class_images_p.html#a621b649c63d3967849103c03082af64c">posArrival</a> != Point(-1,-1));</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;}</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
+<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="class_images_p.html#aeb7483dee60e755fffcc9e6f9355fd43">  171</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_images_p.html#aeb7483dee60e755fffcc9e6f9355fd43">ImagesP::saveCalib</a>(std::string str){</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    ofstream file(<span class="stringliteral">&quot;ressources/calib_file.txt&quot;</span>);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    file &lt;&lt; str.c_str();</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    file.close();</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;}</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
+<div class="line"><a name="l00177"></a><span class="lineno"><a class="line" href="class_images_p.html#a4048e5f515cb51cbf25211ec8b4854b7">  177</a></span>&#160;Point2f <a class="code" href="class_images_p.html#a4048e5f515cb51cbf25211ec8b4854b7">ImagesP::loadCalib</a>(){</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    Point2f centerPt(-1,-1);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    std::string line;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    ifstream file(<span class="stringliteral">&quot;ressources/calib_file.txt&quot;</span>);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="keywordflow">if</span>(file.is_open()){</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        uint8_t count = 0;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <span class="keywordflow">while</span>(getline(file, line)){</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            <span class="keywordflow">if</span>(count == 0){</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                centerPt.x = std::stod(line);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                count++;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(count == 1){</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                centerPt.y = std::stod(line);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                <span class="keywordflow">return</span> centerPt;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            }</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        }</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        file.close();</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    }</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keywordflow">return</span> centerPt;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;}</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00198"></a><span class="lineno"><a class="line" href="class_images_p.html#a799c4550d96659d7d188b03f52bb9f4a">  198</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_images_p.html#a799c4550d96659d7d188b03f52bb9f4a">ImagesP::calibration</a>(){</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <a class="code" href="class_images_p.html#aeb7483dee60e755fffcc9e6f9355fd43">saveCalib</a>(<span class="stringliteral">&quot;-1\n-1\n&quot;</span>); <span class="comment">//reset last calib</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    std::vector&lt;Marker&gt; Markers_wait;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    uint8_t index=0;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    uint16_t timeout = 0;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keywordflow">while</span>(<span class="keyword">true</span>){</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="class_images_p.html#a143a67baa23fdc4b1c28beda0bd964f5">cap</a>.read(<a class="code" href="class_images_p.html#add620ec27d299fe470cade4a6bc1e632">markerImg</a>))</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        <a class="code" href="class_images_p.html#a43a0e66ed75a147c27474937f8c9112c">MDetector</a>.detect(<a class="code" href="class_images_p.html#add620ec27d299fe470cade4a6bc1e632">markerImg</a>,Markers_wait);</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        <span class="keywordflow">if</span>(Markers_wait.size() &gt; <a class="code" href="class_images_p.html#ac2813bc8a3edac420df686902806172c">Markers</a>.size()){</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;            Point2f centerPt(0,0);</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;Markers_wait.size();i++){</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                <span class="keywordflow">if</span>(Markers_wait[i].<span class="keywordtype">id</span> == <a class="code" href="definition_8h.html#a6036f5d317ce1f843aae2fdd46d845c9">MARKER_ID_AREA</a>){</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                    centerPt = Markers_wait[i].getCenter();</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                    std::string save(std::to_string(centerPt.x) +<span class="stringliteral">&quot;\n&quot;</span>+ std::to_string(centerPt.y));</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                    <a class="code" href="class_images_p.html#aeb7483dee60e755fffcc9e6f9355fd43">saveCalib</a>(save);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                }</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;            }</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;            <a class="code" href="class_images_p.html#ac2813bc8a3edac420df686902806172c">Markers</a> = Markers_wait;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;            ++index;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        }</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        <span class="keywordflow">if</span>(index==5)</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        usleep(50000);</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        <span class="keywordflow">if</span>(timeout &gt;= 20*<a class="code" href="definition_8h.html#ab2856357e321769fe3be828ba90bf154">TIMEOUT_CALIBRATION</a>)</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        ++timeout;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    }</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;}</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
+<div class="line"><a name="l00230"></a><span class="lineno"><a class="line" href="class_images_p.html#ae2aecf8db20e7b3bcd14a7182dfdaf29">  230</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_images_p.html#ae2aecf8db20e7b3bcd14a7182dfdaf29">ImagesP::startBlock</a>(){</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <a class="code" href="class_images_p.html#ab9e279526694a7ce421cfa11b9309ed1">all_block</a> = std::vector&lt;Point&gt;(0);</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    Point2f centerPt = <a class="code" href="class_images_p.html#a4048e5f515cb51cbf25211ec8b4854b7">loadCalib</a>();</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keywordflow">if</span>(centerPt.x &gt; 0){</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <a class="code" href="class_images_p.html#af8bad8cf7cb3be74c084a0efc86ca73f">markersProcessing</a>(centerPt);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        std::cout&lt;&lt;<span class="stringliteral">&quot;ERROR CALIB LOAD&quot;</span>&lt;&lt;std::endl;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    }</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;}</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
+<div class="line"><a name="l00240"></a><span class="lineno"><a class="line" href="class_images_p.html#afe9cff50f49fc67bd8938d8d0223fe81">  240</a></span>&#160;Point <a class="code" href="class_images_p.html#afe9cff50f49fc67bd8938d8d0223fe81">ImagesP::getCarPosition</a>(){</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="keywordflow">return</span> Point((<span class="keywordtype">int</span>)<a class="code" href="class_images_p.html#a79d1d01bae703caeee1033425e4f8f18">posCar</a>.x, (<span class="keywordtype">int</span>)<a class="code" href="class_images_p.html#a79d1d01bae703caeee1033425e4f8f18">posCar</a>.y);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;}</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
+<div class="line"><a name="l00245"></a><span class="lineno"><a class="line" href="class_images_p.html#aaf0d33634f747f1defec833fbc6dfae2">  245</a></span>&#160;Point <a class="code" href="class_images_p.html#aaf0d33634f747f1defec833fbc6dfae2">ImagesP::getArrivalPosition</a>(){</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keywordflow">return</span> Point((<span class="keywordtype">int</span>)<a class="code" href="class_images_p.html#a621b649c63d3967849103c03082af64c">posArrival</a>.x, (<span class="keywordtype">int</span>)<a class="code" href="class_images_p.html#a621b649c63d3967849103c03082af64c">posArrival</a>.y);</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;}</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
+<div class="line"><a name="l00249"></a><span class="lineno"><a class="line" href="class_images_p.html#adf17333e9b35092e96fef60bbbf80d74">  249</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_images_p.html#adf17333e9b35092e96fef60bbbf80d74">ImagesP::trackingCar</a>(){</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="comment">//check posCar and angleCar after use this function !</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <a class="code" href="class_images_p.html#a79d1d01bae703caeee1033425e4f8f18">posCar</a> = Point(-1,-1);</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <a class="code" href="class_images_p.html#a39c69bdd9469b4b8a2c9666e27afa7b0">angleCar</a> = 0;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;<a class="code" href="class_images_p.html#ac2813bc8a3edac420df686902806172c">Markers</a>.size();i++){</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="class_images_p.html#ac2813bc8a3edac420df686902806172c">Markers</a>[i].<span class="keywordtype">id</span> == <a class="code" href="definition_8h.html#aa0e4cfe3919e1b2633bd67fbbae28ec5">MARKER_ID_CAR</a>){</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;            <a class="code" href="class_images_p.html#a79d1d01bae703caeee1033425e4f8f18">posCar</a> = <a class="code" href="class_images_p.html#ac2813bc8a3edac420df686902806172c">Markers</a>[i].getCenter();</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            <a class="code" href="class_images_p.html#a39c69bdd9469b4b8a2c9666e27afa7b0">angleCar</a> = <a class="code" href="class_images_p.html#a03b81fad0317e9939085c5e7538c2efe">getAngle</a>(<a class="code" href="class_images_p.html#ac2813bc8a3edac420df686902806172c">Markers</a>[i]);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        }</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    }</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;}</div>
+<div class="ttc" id="class_images_p_html_a4e8b4ba0f6f6f408de4cc4c52ac29f27"><div class="ttname"><a href="class_images_p.html#a4e8b4ba0f6f6f408de4cc4c52ac29f27">ImagesP::willbeBlock</a></div><div class="ttdeci">bool willbeBlock(Mat &amp;frame, Point leftTop, int8_t pixelMax)</div><div class="ttdef"><b>Definition:</b> <a href="images_8cpp_source.html#l00053">images.cpp:53</a></div></div>
+<div class="ttc" id="class_images_p_html_a3c43049bf1ce2da9ffa88841e48c29e1"><div class="ttname"><a href="class_images_p.html#a3c43049bf1ce2da9ffa88841e48c29e1">ImagesP::readyForPath</a></div><div class="ttdeci">bool readyForPath()</div><div class="ttdef"><b>Definition:</b> <a href="images_8cpp_source.html#l00167">images.cpp:167</a></div></div>
+<div class="ttc" id="class_images_p_html_afe9cff50f49fc67bd8938d8d0223fe81"><div class="ttname"><a href="class_images_p.html#afe9cff50f49fc67bd8938d8d0223fe81">ImagesP::getCarPosition</a></div><div class="ttdeci">Point getCarPosition()</div><div class="ttdef"><b>Definition:</b> <a href="images_8cpp_source.html#l00240">images.cpp:240</a></div></div>
+<div class="ttc" id="class_images_p_html_adc6b2ffa6cbfab6c1b83ed4bef74f1b9"><div class="ttname"><a href="class_images_p.html#adc6b2ffa6cbfab6c1b83ed4bef74f1b9">ImagesP::markerCpy</a></div><div class="ttdeci">Mat markerCpy</div><div class="ttdef"><b>Definition:</b> <a href="images_8h_source.html#l00039">images.h:39</a></div></div>
+<div class="ttc" id="definition_8h_html_aa0e4cfe3919e1b2633bd67fbbae28ec5"><div class="ttname"><a href="definition_8h.html#aa0e4cfe3919e1b2633bd67fbbae28ec5">MARKER_ID_CAR</a></div><div class="ttdeci">#define MARKER_ID_CAR</div><div class="ttdef"><b>Definition:</b> <a href="definition_8h_source.html#l00023">definition.h:23</a></div></div>
+<div class="ttc" id="class_images_p_html_ae2aecf8db20e7b3bcd14a7182dfdaf29"><div class="ttname"><a href="class_images_p.html#ae2aecf8db20e7b3bcd14a7182dfdaf29">ImagesP::startBlock</a></div><div class="ttdeci">void startBlock()</div><div class="ttdef"><b>Definition:</b> <a href="images_8cpp_source.html#l00230">images.cpp:230</a></div></div>
+<div class="ttc" id="definition_8h_html_a6b35f14504af015e91cc6963cb51d6f5"><div class="ttname"><a href="definition_8h.html#a6b35f14504af015e91cc6963cb51d6f5">MARKER_ID_ARRIVAL</a></div><div class="ttdeci">#define MARKER_ID_ARRIVAL</div><div class="ttdef"><b>Definition:</b> <a href="definition_8h_source.html#l00024">definition.h:24</a></div></div>
+<div class="ttc" id="class_images_p_html_a79d1d01bae703caeee1033425e4f8f18"><div class="ttname"><a href="class_images_p.html#a79d1d01bae703caeee1033425e4f8f18">ImagesP::posCar</a></div><div class="ttdeci">Point posCar</div><div class="ttdef"><b>Definition:</b> <a href="images_8h_source.html#l00026">images.h:26</a></div></div>
+<div class="ttc" id="class_images_p_html_a143a67baa23fdc4b1c28beda0bd964f5"><div class="ttname"><a href="class_images_p.html#a143a67baa23fdc4b1c28beda0bd964f5">ImagesP::cap</a></div><div class="ttdeci">VideoCapture cap</div><div class="ttdef"><b>Definition:</b> <a href="images_8h_source.html#l00040">images.h:40</a></div></div>
+<div class="ttc" id="definition_8h_html_a7ff61b468299d760aa0a3187ab24dddc"><div class="ttname"><a href="definition_8h.html#a7ff61b468299d760aa0a3187ab24dddc">MARGE_BLOCK_PROCESSING</a></div><div class="ttdeci">#define MARGE_BLOCK_PROCESSING</div><div class="ttdef"><b>Definition:</b> <a href="definition_8h_source.html#l00022">definition.h:22</a></div></div>
+<div class="ttc" id="class_images_p_html_aeb7483dee60e755fffcc9e6f9355fd43"><div class="ttname"><a href="class_images_p.html#aeb7483dee60e755fffcc9e6f9355fd43">ImagesP::saveCalib</a></div><div class="ttdeci">void saveCalib(std::string str)</div><div class="ttdef"><b>Definition:</b> <a href="images_8cpp_source.html#l00171">images.cpp:171</a></div></div>
+<div class="ttc" id="class_images_p_html_a621b649c63d3967849103c03082af64c"><div class="ttname"><a href="class_images_p.html#a621b649c63d3967849103c03082af64c">ImagesP::posArrival</a></div><div class="ttdeci">Point posArrival</div><div class="ttdef"><b>Definition:</b> <a href="images_8h_source.html#l00026">images.h:26</a></div></div>
+<div class="ttc" id="class_images_p_html_adf17333e9b35092e96fef60bbbf80d74"><div class="ttname"><a href="class_images_p.html#adf17333e9b35092e96fef60bbbf80d74">ImagesP::trackingCar</a></div><div class="ttdeci">void trackingCar()</div><div class="ttdef"><b>Definition:</b> <a href="images_8cpp_source.html#l00249">images.cpp:249</a></div></div>
+<div class="ttc" id="class_images_p_html_ac2813bc8a3edac420df686902806172c"><div class="ttname"><a href="class_images_p.html#ac2813bc8a3edac420df686902806172c">ImagesP::Markers</a></div><div class="ttdeci">std::vector&lt; Marker &gt; Markers</div><div class="ttdef"><b>Definition:</b> <a href="images_8h_source.html#l00038">images.h:38</a></div></div>
+<div class="ttc" id="class_images_p_html_af8bad8cf7cb3be74c084a0efc86ca73f"><div class="ttname"><a href="class_images_p.html#af8bad8cf7cb3be74c084a0efc86ca73f">ImagesP::markersProcessing</a></div><div class="ttdeci">void markersProcessing(Point2f centerPt)</div><div class="ttdef"><b>Definition:</b> <a href="images_8cpp_source.html#l00112">images.cpp:112</a></div></div>
+<div class="ttc" id="class_images_p_html_a50c2faf5197f1e0b5d54f4acdb9f82dd"><div class="ttname"><a href="class_images_p.html#a50c2faf5197f1e0b5d54f4acdb9f82dd">ImagesP::getBlockMatrix</a></div><div class="ttdeci">Point2f getBlockMatrix(Point2f center, int16_t x_pixel, int16_t y_pixel)</div><div class="ttdef"><b>Definition:</b> <a href="images_8cpp_source.html#l00072">images.cpp:72</a></div></div>
+<div class="ttc" id="class_images_p_html_a4048e5f515cb51cbf25211ec8b4854b7"><div class="ttname"><a href="class_images_p.html#a4048e5f515cb51cbf25211ec8b4854b7">ImagesP::loadCalib</a></div><div class="ttdeci">Point2f loadCalib()</div><div class="ttdef"><b>Definition:</b> <a href="images_8cpp_source.html#l00177">images.cpp:177</a></div></div>
+<div class="ttc" id="definition_8h_html_ab2856357e321769fe3be828ba90bf154"><div class="ttname"><a href="definition_8h.html#ab2856357e321769fe3be828ba90bf154">TIMEOUT_CALIBRATION</a></div><div class="ttdeci">#define TIMEOUT_CALIBRATION</div><div class="ttdef"><b>Definition:</b> <a href="definition_8h_source.html#l00029">definition.h:29</a></div></div>
+<div class="ttc" id="class_images_p_html_aab5950c25ea44c06bc4026ce6dece7fa"><div class="ttname"><a href="class_images_p.html#aab5950c25ea44c06bc4026ce6dece7fa">ImagesP::fillRotatedRect</a></div><div class="ttdeci">void fillRotatedRect(Mat &amp;frame, Point2f center, Size2f size, Scalar color, float angle)</div><div class="ttdef"><b>Definition:</b> <a href="images_8cpp_source.html#l00101">images.cpp:101</a></div></div>
+<div class="ttc" id="definition_8h_html_a6036f5d317ce1f843aae2fdd46d845c9"><div class="ttname"><a href="definition_8h.html#a6036f5d317ce1f843aae2fdd46d845c9">MARKER_ID_AREA</a></div><div class="ttdeci">#define MARKER_ID_AREA</div><div class="ttdef"><b>Definition:</b> <a href="definition_8h_source.html#l00025">definition.h:25</a></div></div>
+<div class="ttc" id="class_images_p_html_a799c4550d96659d7d188b03f52bb9f4a"><div class="ttname"><a href="class_images_p.html#a799c4550d96659d7d188b03f52bb9f4a">ImagesP::calibration</a></div><div class="ttdeci">void calibration()</div><div class="ttdef"><b>Definition:</b> <a href="images_8cpp_source.html#l00198">images.cpp:198</a></div></div>
+<div class="ttc" id="class_images_p_html_a4eee68c40eb47b29e0b738ea38a55353"><div class="ttname"><a href="class_images_p.html#a4eee68c40eb47b29e0b738ea38a55353">ImagesP::drawMatrix</a></div><div class="ttdeci">void drawMatrix(Mat &amp;frame, Point center)</div><div class="ttdef"><b>Definition:</b> <a href="images_8cpp_source.html#l00084">images.cpp:84</a></div></div>
+<div class="ttc" id="class_images_p_html_abd4ea58f9cb814dbb27feb5d2d793e53"><div class="ttname"><a href="class_images_p.html#abd4ea58f9cb814dbb27feb5d2d793e53">ImagesP::~ImagesP</a></div><div class="ttdeci">~ImagesP()</div><div class="ttdef"><b>Definition:</b> <a href="images_8cpp_source.html#l00010">images.cpp:10</a></div></div>
+<div class="ttc" id="class_images_p_html_a43a0e66ed75a147c27474937f8c9112c"><div class="ttname"><a href="class_images_p.html#a43a0e66ed75a147c27474937f8c9112c">ImagesP::MDetector</a></div><div class="ttdeci">MarkerDetector MDetector</div><div class="ttdef"><b>Definition:</b> <a href="images_8h_source.html#l00037">images.h:37</a></div></div>
+<div class="ttc" id="class_images_p_html_a0b371e65a472c1cce7d6dc83bd171e4d"><div class="ttname"><a href="class_images_p.html#a0b371e65a472c1cce7d6dc83bd171e4d">ImagesP::getXYMatrix</a></div><div class="ttdeci">Point getXYMatrix(int16_t x_matrix, int16_t y_matrix)</div><div class="ttdef"><b>Definition:</b> <a href="images_8cpp_source.html#l00019">images.cpp:19</a></div></div>
+<div class="ttc" id="class_images_p_html_a408c61aeceb9175481adb2daca707a48"><div class="ttname"><a href="class_images_p.html#a408c61aeceb9175481adb2daca707a48">ImagesP::angleArrival</a></div><div class="ttdeci">float angleArrival</div><div class="ttdef"><b>Definition:</b> <a href="images_8h_source.html#l00027">images.h:27</a></div></div>
+<div class="ttc" id="class_images_p_html_aaf0d33634f747f1defec833fbc6dfae2"><div class="ttname"><a href="class_images_p.html#aaf0d33634f747f1defec833fbc6dfae2">ImagesP::getArrivalPosition</a></div><div class="ttdeci">Point getArrivalPosition()</div><div class="ttdef"><b>Definition:</b> <a href="images_8cpp_source.html#l00245">images.cpp:245</a></div></div>
+<div class="ttc" id="definition_8h_html_aa818b55bd43036cc3f26783302e4419b"><div class="ttname"><a href="definition_8h.html#aa818b55bd43036cc3f26783302e4419b">CAM_EXTERN</a></div><div class="ttdeci">#define CAM_EXTERN</div><div class="ttdef"><b>Definition:</b> <a href="definition_8h_source.html#l00017">definition.h:17</a></div></div>
+<div class="ttc" id="class_images_p_html_a0527e504ca88cece33edb90fef958c90"><div class="ttname"><a href="class_images_p.html#a0527e504ca88cece33edb90fef958c90">ImagesP::init</a></div><div class="ttdeci">void init()</div><div class="ttdef"><b>Definition:</b> <a href="images_8cpp_source.html#l00158">images.cpp:158</a></div></div>
+<div class="ttc" id="class_images_p_html_ab9e279526694a7ce421cfa11b9309ed1"><div class="ttname"><a href="class_images_p.html#ab9e279526694a7ce421cfa11b9309ed1">ImagesP::all_block</a></div><div class="ttdeci">std::vector&lt; Point &gt; all_block</div><div class="ttdef"><b>Definition:</b> <a href="images_8h_source.html#l00025">images.h:25</a></div></div>
+<div class="ttc" id="class_images_p_html_a03b81fad0317e9939085c5e7538c2efe"><div class="ttname"><a href="class_images_p.html#a03b81fad0317e9939085c5e7538c2efe">ImagesP::getAngle</a></div><div class="ttdeci">float getAngle(Marker marker)</div><div class="ttdef"><b>Definition:</b> <a href="images_8cpp_source.html#l00023">images.cpp:23</a></div></div>
+<div class="ttc" id="class_images_p_html_a39c69bdd9469b4b8a2c9666e27afa7b0"><div class="ttname"><a href="class_images_p.html#a39c69bdd9469b4b8a2c9666e27afa7b0">ImagesP::angleCar</a></div><div class="ttdeci">float angleCar</div><div class="ttdef"><b>Definition:</b> <a href="images_8h_source.html#l00027">images.h:27</a></div></div>
+<div class="ttc" id="class_images_p_html_add620ec27d299fe470cade4a6bc1e632"><div class="ttname"><a href="class_images_p.html#add620ec27d299fe470cade4a6bc1e632">ImagesP::markerImg</a></div><div class="ttdeci">Mat markerImg</div><div class="ttdef"><b>Definition:</b> <a href="images_8h_source.html#l00039">images.h:39</a></div></div>
+<div class="ttc" id="class_images_p_html_a002bb2f3148a85c46c954dcc98ad2760"><div class="ttname"><a href="class_images_p.html#a002bb2f3148a85c46c954dcc98ad2760">ImagesP::getSizeMarker</a></div><div class="ttdeci">uint8_t getSizeMarker()</div><div class="ttdef"><b>Definition:</b> <a href="images_8cpp_source.html#l00015">images.cpp:15</a></div></div>
+<div class="ttc" id="class_images_p_html_a18ff58308b1ba5787e1d05f0acd7224a"><div class="ttname"><a href="class_images_p.html#a18ff58308b1ba5787e1d05f0acd7224a">ImagesP::ImagesP</a></div><div class="ttdeci">ImagesP()</div><div class="ttdef"><b>Definition:</b> <a href="images_8cpp_source.html#l00006">images.cpp:6</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li><li class="navelem"><a class="el" href="dir_0d11bb6c21e330acd532003853662301.html">traitement</a></li><li class="navelem"><a class="el" href="images_8cpp.html">images.cpp</a></li>
+    <li class="footer">Généré le Jeudi 8 Février 2018 23:13:36 pour Robot avec intélligence déportée par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

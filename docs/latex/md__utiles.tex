@@ -1,0 +1,106 @@
+Valeur qui peut etre Négative !! /!\textbackslash{} A\-T\-T\-E\-N\-T\-I\-O\-N, P\-R\-E\-N\-D\-R\-E L\-A V\-A\-L\-E\-U\-R A\-S\-S\-O\-C\-I\-E\-R
+
+\subsection*{\#\# Nombres }
+
+\begin{quotation}
+Valeur signé\-:
+
+\end{quotation}
+
+
+\begin{quotation}
+int8\-\_\-t = valeur de -\/128 à 127
+
+\end{quotation}
+
+
+\begin{quotation}
+int16\-\_\-t = valeur de -\/32 768 à 32 767
+
+\end{quotation}
+
+
+\begin{quotation}
+int32\-\_\-t = valeur de -\/2 147 483 648 à 2 147 483 647
+
+\end{quotation}
+
+
+\begin{quotation}
+Valeur non signé\-:
+
+\end{quotation}
+
+
+\begin{quotation}
+uint8\-\_\-t = valeur de 0 à 255
+
+\end{quotation}
+
+
+\begin{quotation}
+uint16\-\_\-t = valeur de 0 à 65 535
+
+\end{quotation}
+
+
+\begin{quotation}
+uint32\-\_\-t = valeur de 0 à 4 294 967 295
+
+\end{quotation}
+
+
+\subsection*{Vector}
+
+
+
+
+
+
+\begin{DoxyItemize}
+\item 10 elements dans le tableau. ```cpp \#include $<$vector$>$ std\-::vector$<$int8\-\_\-t$>$ $\ast$ptr = new std\-::vector$<$int8\-\_\-t$>$(); std\-::vector$<$int8\-\_\-t$>$ non\-\_\-ptr;
+\end{DoxyItemize}
+
+ptr-\/$>$reserve(10); non\-\_\-ptr.\-reserve(10);
+
+delete ptr; ```
+
+\subsection*{Allocation dynamique}
+
+
+
+
+
+
+\begin{DoxyItemize}
+\item Création tableau à 2 dimensions de 20x20.
+\item -\/128 $<$ 20 $<$ 127 --$>$ int8\-\_\-t
+\end{DoxyItemize}
+
+```cpp int8\-\_\-t $\ast$$\ast$tableau; uint8\-\_\-t allocmem = 0; try\{ tableau = new int8\-\_\-t $\ast$ \mbox{[} 20 \mbox{]}; std\-::fill\-\_\-n( tableau, 20, static\-\_\-cast$<$int8\-\_\-t$\ast$$>$(0)); /$\ast$permet d'initialiser le tableau à 0 for(allocmem = 0; allocmem $<$ 20; ++allocmem) \{ tableau\mbox{[} allocmem \mbox{]} = new int8\-\_\-t\mbox{[} 20 \mbox{]}; \} \} catch( const std\-::bad\-\_\-alloc \&) \{ /$\ast$si l'allocation ne s'est pas bien passé, alors on libère l'espace utilisé for( uint8\-\_\-t i = 0; i $<$ allocmem; ++i )\{ delete \mbox{[}\mbox{]} tableau\mbox{[} i \mbox{]}; \} delete \mbox{[}\mbox{]} tableau; throw; \} ```
+
+
+\begin{DoxyItemize}
+\item Destruction du tableau 20x20
+\end{DoxyItemize}
+
+```cpp for(int8\-\_\-t i=0; i$<$20; i++)\{ delete \mbox{[}\mbox{]} tableau\mbox{[}i\mbox{]}; tableau\mbox{[}i\mbox{]} = nullptr; \} delete \mbox{[}\mbox{]}tableau; tableau = nullptr; ```
+
+\subsection*{\#\# Pair }
+
+
+\begin{DoxyItemize}
+\item position x3 \& y5
+\end{DoxyItemize}
+
+```cpp \#include $<$utility$>$
+
+std\-::pair$<$int8\-\_\-t, int8\-\_\-t$>$ position; position = std\-::make\-\_\-pair(3, 5);
+
+std\-::pair$<$int8\-\_\-t, int8\-\_\-t$>$ $\ast$pair; std\-::pair$<$int,int$>$ pt; pt = std\-::make\-\_\-pair(3, 5); paire = 
+
+printf(\char`\"{}\-Valeur de x\-: \%d, y\-: \%d\char`\"{}, pair-\/$>$first, position.\-second);
+
+delete pair; pair = nullptr; ```
+
+{\ttfamily Valeur de x\-: 3, y\-: 5} 

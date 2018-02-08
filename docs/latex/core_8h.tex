@@ -1,0 +1,230 @@
+\hypertarget{core_8h}{\section{Référence du fichier headers/core.h}
+\label{core_8h}\index{headers/core.\-h@{headers/core.\-h}}
+}
+
+
+State of State Machine.  
+
+
+{\ttfamily \#include \char`\"{}../headers/manager.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../headers/traitement/pathfinding.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../headers/traitement/images.\-h\char`\"{}}\\*
+Graphe des dépendances par inclusion de core.\-h\-:
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \-:
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__state_machine}{\-\_\-state\-Machine}
+\item 
+class \hyperlink{class_core}{Core}
+\end{DoxyCompactItemize}
+\subsection*{Énumérations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{core_8h_a5d74787dedbc4e11c1ab15bf487e61f8}{State} \{ \hyperlink{core_8h_a5d74787dedbc4e11c1ab15bf487e61f8ab50339a10e1de285ac99d4c3990b8693}{State\-::\-N\-O\-N\-E} =0, 
+\hyperlink{core_8h_a5d74787dedbc4e11c1ab15bf487e61f8ae0aa021e21dddbd6d8cecec71e9cf564}{State\-::\-O\-K}, 
+\hyperlink{core_8h_a5d74787dedbc4e11c1ab15bf487e61f8ac2f3f489a00553e7a01d369c103c7251}{State\-::\-N\-O}, 
+\hyperlink{core_8h_a5d74787dedbc4e11c1ab15bf487e61f8abb1ca97ec761fc37101737ba0aa2e7c5}{State\-::\-E\-R\-R\-O\-R}
+ \}
+\item 
+enum \hyperlink{core_8h_a46c8a310cf4c094f8c80e1cb8dc1f911}{Mode} \{ \hyperlink{core_8h_a46c8a310cf4c094f8c80e1cb8dc1f911acf535b39ede8798cd6b56d99271afeef}{Mode\-::\-Stop\-\_\-\-Mode} =0, 
+\hyperlink{core_8h_a46c8a310cf4c094f8c80e1cb8dc1f911a62a2c1fd120cdb7005bf42408c887d9d}{Mode\-::\-Auto\-\_\-\-Mode}, 
+\hyperlink{core_8h_a46c8a310cf4c094f8c80e1cb8dc1f911a6879e8dabec58a1e3e670eaddfdc7bf7}{Mode\-::\-Virtual\-\_\-\-Mode}, 
+\hyperlink{core_8h_a46c8a310cf4c094f8c80e1cb8dc1f911a493c3024fdbbce51ec6d8d8b0feacf13}{Mode\-::\-Manual\-\_\-\-Mode}
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+State of State Machine. start moving
+
+start server
+
+find pathfinding
+
+Find Markers.
+
+start calibration
+
+start manual fonctionment
+
+start automatic or virtual fonctionment
+
+listen shared memory with server
+
+get Mode selectionned
+
+change mode automatic manual virtual or stop
+
+restart the server
+
+display the abstract matrix with pathinfing, block and car
+
+reset the programme
+
+stop the programme
+
+start the programme
+
+destruction of the class  Desctructor Class \hyperlink{class_core}{Core}
+
+constructor of the class  Constructor Class \hyperlink{class_core}{Core}
+
+Operating Mode.
+
+State Machine.
+
+\begin{DoxyVersion}{Version}
+1.\-0
+
+1.\-0
+\end{DoxyVersion}
+\begin{DoxyReturn}{Renvoie}
+true if started 
+
+false if not started
+\end{DoxyReturn}
+\begin{DoxyVersion}{Version}
+1.\-0
+\end{DoxyVersion}
+\begin{DoxyReturn}{Renvoie}
+true if stopped 
+
+false if not stopped
+\end{DoxyReturn}
+\begin{DoxyVersion}{Version}
+1.\-0
+\end{DoxyVersion}
+\begin{DoxyReturn}{Renvoie}
+true if reseted 
+
+false if not reseted
+\end{DoxyReturn}
+\begin{DoxyVersion}{Version}
+1.\-0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Paramètres}
+{\em Mat\&} & frame frame to display this matrix\\
+\hline
+\end{DoxyParams}
+\begin{DoxyVersion}{Version}
+1.\-0   call in Constructor
+\end{DoxyVersion}
+\begin{DoxyReturn}{Renvoie}
+true if initialized 
+
+false if not initialized
+\end{DoxyReturn}
+\begin{DoxyVersion}{Version}
+1.\-0
+\end{DoxyVersion}
+\begin{DoxyReturn}{Renvoie}
+true if restarted server 
+
+false if not restarted
+\end{DoxyReturn}
+\begin{DoxyVersion}{Version}
+1.\-0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Paramètres}
+{\em Mode} & \-\_\-mode choose by enum Mode\\
+\hline
+\end{DoxyParams}
+\begin{DoxyVersion}{Version}
+1.\-0
+\end{DoxyVersion}
+\begin{DoxyReturn}{Renvoie}
+Mode choosen mode
+\end{DoxyReturn}
+\begin{DoxyVersion}{Version}
+1.\-0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Paramètres}
+{\em boolean} & is\-\_\-auto true if auto, false if virtual\\
+\hline
+\end{DoxyParams}
+\begin{DoxyVersion}{Version}
+1.\-0
+\end{DoxyVersion}
+\begin{DoxyReturn}{Renvoie}
+State O\-K = success, N\-O = markers area not found
+\end{DoxyReturn}
+\begin{DoxyVersion}{Version}
+1.\-0
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Paramètres}
+{\em boolean} & is\-\_\-auto if true find markers in area, if false markers is given by application\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+State O\-K = success
+\end{DoxyReturn}
+\begin{DoxyVersion}{Version}
+1.\-0
+\end{DoxyVersion}
+\begin{DoxyReturn}{Renvoie}
+State O\-K = have path , N\-O = have no path
+\end{DoxyReturn}
+\begin{DoxyVersion}{Version}
+1.\-0
+\end{DoxyVersion}
+\begin{DoxyReturn}{Renvoie}
+State O\-K = started, N\-O = not stated, E\-R\-R\-O\-R = communication or others
+\end{DoxyReturn}
+\begin{DoxyVersion}{Version}
+1.\-0
+\end{DoxyVersion}
+\begin{DoxyReturn}{Renvoie}
+State O\-K = finished path, N\-O = not finished, E\-R\-R\-O\-R = changed mode 
+\end{DoxyReturn}
+
+
+Définition dans le fichier \hyperlink{core_8h_source}{core.\-h}.
+
+
+
+\subsection{Documentation du type de l'énumération}
+\hypertarget{core_8h_a46c8a310cf4c094f8c80e1cb8dc1f911}{\index{core.\-h@{core.\-h}!Mode@{Mode}}
+\index{Mode@{Mode}!core.h@{core.\-h}}
+\subsubsection[{Mode}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Mode}\hspace{0.3cm}{\ttfamily [strong]}}}\label{core_8h_a46c8a310cf4c094f8c80e1cb8dc1f911}
+\begin{Desc}
+\item[Valeurs énumérées]\par
+\begin{description}
+\index{Stop\-\_\-\-Mode@{Stop\-\_\-\-Mode}!core.\-h@{core.\-h}}\index{core.\-h@{core.\-h}!Stop\-\_\-\-Mode@{Stop\-\_\-\-Mode}}\item[{\em 
+\hypertarget{core_8h_a46c8a310cf4c094f8c80e1cb8dc1f911acf535b39ede8798cd6b56d99271afeef}{Stop\-\_\-\-Mode}\label{core_8h_a46c8a310cf4c094f8c80e1cb8dc1f911acf535b39ede8798cd6b56d99271afeef}
+}]Default Mode \index{Auto\-\_\-\-Mode@{Auto\-\_\-\-Mode}!core.\-h@{core.\-h}}\index{core.\-h@{core.\-h}!Auto\-\_\-\-Mode@{Auto\-\_\-\-Mode}}\item[{\em 
+\hypertarget{core_8h_a46c8a310cf4c094f8c80e1cb8dc1f911a62a2c1fd120cdb7005bf42408c887d9d}{Auto\-\_\-\-Mode}\label{core_8h_a46c8a310cf4c094f8c80e1cb8dc1f911a62a2c1fd120cdb7005bf42408c887d9d}
+}]Automatic Mode \index{Virtual\-\_\-\-Mode@{Virtual\-\_\-\-Mode}!core.\-h@{core.\-h}}\index{core.\-h@{core.\-h}!Virtual\-\_\-\-Mode@{Virtual\-\_\-\-Mode}}\item[{\em 
+\hypertarget{core_8h_a46c8a310cf4c094f8c80e1cb8dc1f911a6879e8dabec58a1e3e670eaddfdc7bf7}{Virtual\-\_\-\-Mode}\label{core_8h_a46c8a310cf4c094f8c80e1cb8dc1f911a6879e8dabec58a1e3e670eaddfdc7bf7}
+}]Virtual Mode \index{Manual\-\_\-\-Mode@{Manual\-\_\-\-Mode}!core.\-h@{core.\-h}}\index{core.\-h@{core.\-h}!Manual\-\_\-\-Mode@{Manual\-\_\-\-Mode}}\item[{\em 
+\hypertarget{core_8h_a46c8a310cf4c094f8c80e1cb8dc1f911a493c3024fdbbce51ec6d8d8b0feacf13}{Manual\-\_\-\-Mode}\label{core_8h_a46c8a310cf4c094f8c80e1cb8dc1f911a493c3024fdbbce51ec6d8d8b0feacf13}
+}]Manual Mode \end{description}
+\end{Desc}
+
+
+Définition à la ligne 42 du fichier core.\-h.
+
+\hypertarget{core_8h_a5d74787dedbc4e11c1ab15bf487e61f8}{\index{core.\-h@{core.\-h}!State@{State}}
+\index{State@{State}!core.h@{core.\-h}}
+\subsubsection[{State}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf State}\hspace{0.3cm}{\ttfamily [strong]}}}\label{core_8h_a5d74787dedbc4e11c1ab15bf487e61f8}
+\begin{Desc}
+\item[Valeurs énumérées]\par
+\begin{description}
+\index{N\-O\-N\-E@{N\-O\-N\-E}!core.\-h@{core.\-h}}\index{core.\-h@{core.\-h}!N\-O\-N\-E@{N\-O\-N\-E}}\item[{\em 
+\hypertarget{core_8h_a5d74787dedbc4e11c1ab15bf487e61f8ab50339a10e1de285ac99d4c3990b8693}{N\-O\-N\-E}\label{core_8h_a5d74787dedbc4e11c1ab15bf487e61f8ab50339a10e1de285ac99d4c3990b8693}
+}]Default state \index{O\-K@{O\-K}!core.\-h@{core.\-h}}\index{core.\-h@{core.\-h}!O\-K@{O\-K}}\item[{\em 
+\hypertarget{core_8h_a5d74787dedbc4e11c1ab15bf487e61f8ae0aa021e21dddbd6d8cecec71e9cf564}{O\-K}\label{core_8h_a5d74787dedbc4e11c1ab15bf487e61f8ae0aa021e21dddbd6d8cecec71e9cf564}
+}]all these well unrolled \index{N\-O@{N\-O}!core.\-h@{core.\-h}}\index{core.\-h@{core.\-h}!N\-O@{N\-O}}\item[{\em 
+\hypertarget{core_8h_a5d74787dedbc4e11c1ab15bf487e61f8ac2f3f489a00553e7a01d369c103c7251}{N\-O}\label{core_8h_a5d74787dedbc4e11c1ab15bf487e61f8ac2f3f489a00553e7a01d369c103c7251}
+}]is for pathfinding or trajectory if car can't move \index{E\-R\-R\-O\-R@{E\-R\-R\-O\-R}!core.\-h@{core.\-h}}\index{core.\-h@{core.\-h}!E\-R\-R\-O\-R@{E\-R\-R\-O\-R}}\item[{\em 
+\hypertarget{core_8h_a5d74787dedbc4e11c1ab15bf487e61f8abb1ca97ec761fc37101737ba0aa2e7c5}{E\-R\-R\-O\-R}\label{core_8h_a5d74787dedbc4e11c1ab15bf487e61f8abb1ca97ec761fc37101737ba0aa2e7c5}
+}]there are an error \end{description}
+\end{Desc}
+
+
+Définition à la ligne 14 du fichier core.\-h.
+

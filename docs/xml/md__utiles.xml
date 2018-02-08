@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="md__utiles" kind="page">
+    <compoundname>md_Utiles</compoundname>
+    <title>Utiles de Savoir !</title>
+    <detaileddescription>
+<para>Valeur qui peut etre Négative !! /!\ ATTENTION, PRENDRE LA VALEUR ASSOCIER</para><para><heading level="2">## Nombres </heading>
+</para><para><blockquote><para>Valeur signé:</para><para></para></blockquote></para><para><blockquote><para>int8_t = valeur de -128 à 127</para><para></para></blockquote></para><para><blockquote><para>int16_t = valeur de -32 768 à 32 767</para><para></para></blockquote></para><para><blockquote><para>int32_t = valeur de -2 147 483 648 à 2 147 483 647</para><para></para></blockquote></para><para><blockquote><para>Valeur non signé:</para><para></para></blockquote></para><para><blockquote><para>uint8_t = valeur de 0 à 255</para><para></para></blockquote></para><para><blockquote><para>uint16_t = valeur de 0 à 65 535</para><para></para></blockquote></para><para><blockquote><para>uint32_t = valeur de 0 à 4 294 967 295</para><para></para></blockquote></para><para><heading level="2">Vector</heading>
+</para><para><hruler/>
+</para><para><itemizedlist>
+<listitem><para>10 elements dans le tableau. ```cpp #include &lt;vector&gt; std::vector&lt;int8_t&gt; *ptr = new std::vector&lt;int8_t&gt;(); std::vector&lt;int8_t&gt; non_ptr;</para></listitem></itemizedlist>
+</para><para>ptr-&gt;reserve(10); non_ptr.reserve(10);</para><para>delete ptr; ```</para><para><heading level="2">Allocation dynamique</heading>
+</para><para><hruler/>
+</para><para><itemizedlist>
+<listitem><para>Création tableau à 2 dimensions de 20x20.</para></listitem><listitem><para>-128 &lt; 20 &lt; 127 <ndash/>&gt; int8_t</para></listitem></itemizedlist>
+</para><para>```cpp int8_t **tableau; uint8_t allocmem = 0; try{ tableau = new int8_t * [ 20 ]; std::fill_n( tableau, 20, static_cast&lt;int8_t*&gt;(0)); /*permet d&apos;initialiser le tableau à 0 for(allocmem = 0; allocmem &lt; 20; ++allocmem) { tableau[ allocmem ] = new int8_t[ 20 ]; } } catch( const std::bad_alloc &amp;) { /*si l&apos;allocation ne s&apos;est pas bien passé, alors on libère l&apos;espace utilisé for( uint8_t i = 0; i &lt; allocmem; ++i ){ delete [] tableau[ i ]; } delete [] tableau; throw; } ```</para><para><itemizedlist>
+<listitem><para>Destruction du tableau 20x20</para></listitem></itemizedlist>
+</para><para>```cpp for(int8_t i=0; i&lt;20; i++){ delete [] tableau[i]; tableau[i] = nullptr; } delete []tableau; tableau = nullptr; ```</para><para><heading level="2">## Pair </heading>
+</para><para><itemizedlist>
+<listitem><para>position x3 &amp; y5</para></listitem></itemizedlist>
+</para><para>```cpp #include &lt;utility&gt;</para><para>std::pair&lt;int8_t, int8_t&gt; position; position = std::make_pair(3, 5);</para><para>std::pair&lt;int8_t, int8_t&gt; *pair; std::pair&lt;int,int&gt; pt; pt = std::make_pair(3, 5); paire = </para><para>printf(&quot;Valeur de x: %d, y: %d&quot;, pair-&gt;first, position.second);</para><para>delete pair; pair = nullptr; ```</para><para><computeroutput>Valeur de x: 3, y: 5</computeroutput> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

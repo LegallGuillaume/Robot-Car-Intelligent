@@ -1,0 +1,377 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_path_finding" kind="class" prot="public">
+    <compoundname>PathFinding</compoundname>
+    <includes refid="pathfinding_8h" local="no">pathfinding.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_path_finding_1a042d47e6d4115a112e0570afe6a88897" prot="private" static="no" mutable="no">
+        <type><ref refid="class_cell" kindref="compound">Cell</ref> *</type>
+        <definition>Cell* PathFinding::_pathfinding</definition>
+        <argsstring></argsstring>
+        <name>_pathfinding</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/pathfinding.h" line="124" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/pathfinding.h" bodystart="124" bodyend="-1"/>
+        <referencedby refid="class_path_finding_1a886575c3dc169578626ba9dbf45744be" compoundref="pathfinding_8h" startline="28" endline="48">PathFinding</referencedby>
+        <referencedby refid="class_path_finding_1a8d70d17f06400cdcd5787331d7be38e2" compoundref="pathfinding_8h" startline="70" endline="72">hasPossibility</referencedby>
+        <referencedby refid="class_path_finding_1a536055d11c630edc210d100d832a5ccf" compoundref="pathfinding_8h" startline="81" endline="100">getPath</referencedby>
+        <referencedby refid="class_path_finding_1a0fc7389a32fa31a194a940a89f252bdb" compoundref="pathfinding_8h" startline="108" endline="122">~PathFinding</referencedby>
+        <referencedby refid="class_path_finding_1addc7b9eb5682e0de46fd59c4a1319a86" compoundref="pathfinding_8h" startline="148" endline="232">findPath</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_path_finding_1a489cfbcdff32e661c7783caec686321a" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::pair&lt; int8_t, int8_t &gt; &gt; *</type>
+        <definition>std::vector&lt;std::pair&lt;int8_t,int8_t&gt; &gt;* PathFinding::list_pathOk</definition>
+        <argsstring></argsstring>
+        <name>list_pathOk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/pathfinding.h" line="125" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/pathfinding.h" bodystart="125" bodyend="-1"/>
+        <referencedby refid="class_path_finding_1a886575c3dc169578626ba9dbf45744be" compoundref="pathfinding_8h" startline="28" endline="48">PathFinding</referencedby>
+        <referencedby refid="class_path_finding_1a536055d11c630edc210d100d832a5ccf" compoundref="pathfinding_8h" startline="81" endline="100">getPath</referencedby>
+        <referencedby refid="class_path_finding_1a0fc7389a32fa31a194a940a89f252bdb" compoundref="pathfinding_8h" startline="108" endline="122">~PathFinding</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_path_finding_1a042ed04ef5c507a6a575bde3c7aee317" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="class_cell" kindref="compound">Cell</ref> * &gt;</type>
+        <definition>std::vector&lt;Cell*&gt; PathFinding::all_cells</definition>
+        <argsstring></argsstring>
+        <name>all_cells</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/pathfinding.h" line="293" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/pathfinding.h" bodystart="293" bodyend="-1"/>
+        <referencedby refid="class_path_finding_1a886575c3dc169578626ba9dbf45744be" compoundref="pathfinding_8h" startline="28" endline="48">PathFinding</referencedby>
+        <referencedby refid="class_path_finding_1a0fc7389a32fa31a194a940a89f252bdb" compoundref="pathfinding_8h" startline="108" endline="122">~PathFinding</referencedby>
+        <referencedby refid="class_path_finding_1a41966230b75e9e6e680b2ca0ac820399" compoundref="pathfinding_8h" startline="243" endline="252">getCell</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_path_finding_1a78443d74b8dfff09953f63f40a1768c8" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="class_cell" kindref="compound">Cell</ref> * &gt;</type>
+        <definition>std::vector&lt;Cell*&gt; PathFinding::current_list</definition>
+        <argsstring></argsstring>
+        <name>current_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/pathfinding.h" line="294" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/pathfinding.h" bodystart="294" bodyend="-1"/>
+        <referencedby refid="class_path_finding_1a886575c3dc169578626ba9dbf45744be" compoundref="pathfinding_8h" startline="28" endline="48">PathFinding</referencedby>
+        <referencedby refid="class_path_finding_1a0fc7389a32fa31a194a940a89f252bdb" compoundref="pathfinding_8h" startline="108" endline="122">~PathFinding</referencedby>
+        <referencedby refid="class_path_finding_1addc7b9eb5682e0de46fd59c4a1319a86" compoundref="pathfinding_8h" startline="148" endline="232">findPath</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_path_finding_1a50f9513402ad1113678635c3eb9da62d" prot="private" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t PathFinding::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/pathfinding.h" line="295" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/pathfinding.h" bodystart="295" bodyend="-1"/>
+        <referencedby refid="class_path_finding_1a886575c3dc169578626ba9dbf45744be" compoundref="pathfinding_8h" startline="28" endline="48">PathFinding</referencedby>
+        <referencedby refid="class_path_finding_1a41966230b75e9e6e680b2ca0ac820399" compoundref="pathfinding_8h" startline="243" endline="252">getCell</referencedby>
+        <referencedby refid="class_path_finding_1ade7cf2d6ced4a0d586ff7ebe3639f26d" compoundref="pathfinding_8h" startline="265" endline="291">surroundedBlocs</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_path_finding_1a61e5643d7459d24b07306a6886348ca1" prot="private" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t PathFinding::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/pathfinding.h" line="296" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/pathfinding.h" bodystart="296" bodyend="-1"/>
+        <referencedby refid="class_path_finding_1a886575c3dc169578626ba9dbf45744be" compoundref="pathfinding_8h" startline="28" endline="48">PathFinding</referencedby>
+        <referencedby refid="class_path_finding_1a41966230b75e9e6e680b2ca0ac820399" compoundref="pathfinding_8h" startline="243" endline="252">getCell</referencedby>
+        <referencedby refid="class_path_finding_1ade7cf2d6ced4a0d586ff7ebe3639f26d" compoundref="pathfinding_8h" startline="265" endline="291">surroundedBlocs</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_path_finding_1a33dac4c9b17f5e6032bc0fc60e7a8249" prot="private" static="no" mutable="no">
+        <type>std::pair&lt; int8_t, int8_t &gt;</type>
+        <definition>std::pair&lt;int8_t, int8_t&gt; PathFinding::start_coord</definition>
+        <argsstring></argsstring>
+        <name>start_coord</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/pathfinding.h" line="297" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/pathfinding.h" bodystart="297" bodyend="-1"/>
+        <referencedby refid="class_path_finding_1a886575c3dc169578626ba9dbf45744be" compoundref="pathfinding_8h" startline="28" endline="48">PathFinding</referencedby>
+        <referencedby refid="class_path_finding_1a536055d11c630edc210d100d832a5ccf" compoundref="pathfinding_8h" startline="81" endline="100">getPath</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_path_finding_1a7db7c62b00778fb60be8fdb10c471851" prot="private" static="no" mutable="no">
+        <type>std::pair&lt; int8_t, int8_t &gt;</type>
+        <definition>std::pair&lt;int8_t, int8_t&gt; PathFinding::end_coord</definition>
+        <argsstring></argsstring>
+        <name>end_coord</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/pathfinding.h" line="298" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/pathfinding.h" bodystart="298" bodyend="-1"/>
+        <referencedby refid="class_path_finding_1a886575c3dc169578626ba9dbf45744be" compoundref="pathfinding_8h" startline="28" endline="48">PathFinding</referencedby>
+        <referencedby refid="class_path_finding_1addc7b9eb5682e0de46fd59c4a1319a86" compoundref="pathfinding_8h" startline="148" endline="232">findPath</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_path_finding_1a886575c3dc169578626ba9dbf45744be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PathFinding::PathFinding</definition>
+        <argsstring>(int8_t **matrix, int8_t width_scene, int8_t height_scene, std::pair&lt; int8_t, int8_t &gt; start, std::pair&lt; int8_t, int8_t &gt; end)</argsstring>
+        <name>PathFinding</name>
+        <param>
+          <type>int8_t **</type>
+          <declname>matrix</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>width_scene</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>height_scene</declname>
+        </param>
+        <param>
+          <type>std::pair&lt; int8_t, int8_t &gt;</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>std::pair&lt; int8_t, int8_t &gt;</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/pathfinding.h" line="28" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/pathfinding.h" bodystart="28" bodyend="48"/>
+        <references refid="class_path_finding_1a33dac4c9b17f5e6032bc0fc60e7a8249" compoundref="pathfinding_8h" startline="297">start_coord</references>
+        <references refid="class_path_finding_1a7db7c62b00778fb60be8fdb10c471851" compoundref="pathfinding_8h" startline="298">end_coord</references>
+        <references refid="class_path_finding_1a50f9513402ad1113678635c3eb9da62d" compoundref="pathfinding_8h" startline="295">width</references>
+        <references refid="class_path_finding_1a61e5643d7459d24b07306a6886348ca1" compoundref="pathfinding_8h" startline="296">height</references>
+        <references refid="class_path_finding_1a042d47e6d4115a112e0570afe6a88897" compoundref="pathfinding_8h" startline="124">_pathfinding</references>
+        <references refid="definition_8h_1a4d275339ef3ddec11c63b8b925b5b358" compoundref="definition_8h" startline="11">BLOC_DEF</references>
+        <references refid="class_path_finding_1a042ed04ef5c507a6a575bde3c7aee317" compoundref="pathfinding_8h" startline="293">all_cells</references>
+        <references refid="class_path_finding_1a41966230b75e9e6e680b2ca0ac820399" compoundref="pathfinding_8h" startline="243" endline="252">getCell</references>
+        <references refid="class_cell_1aa47b258f5356e76a577a5035b6e1cf59" compoundref="cell_8h" startline="39">Cell::m_P</references>
+        <references refid="class_cell_1a1c2a62d76f46eb90b5d128fe30286e51" compoundref="cell_8h" startline="52">Cell::everfind</references>
+        <references refid="class_path_finding_1a78443d74b8dfff09953f63f40a1768c8" compoundref="pathfinding_8h" startline="294">current_list</references>
+        <references refid="class_path_finding_1addc7b9eb5682e0de46fd59c4a1319a86" compoundref="pathfinding_8h" startline="148" endline="232">findPath</references>
+        <references refid="class_path_finding_1a489cfbcdff32e661c7783caec686321a" compoundref="pathfinding_8h" startline="125">list_pathOk</references>
+      </memberdef>
+      <memberdef kind="function" id="class_path_finding_1a3ff60b1cb0a54bfd10dbc75bfce9b47d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PathFinding::everParent</definition>
+        <argsstring>(Cell *current, Cell *parent)</argsstring>
+        <name>everParent</name>
+        <param>
+          <type><ref refid="class_cell" kindref="compound">Cell</ref> *</type>
+          <declname>current</declname>
+        </param>
+        <param>
+          <type><ref refid="class_cell" kindref="compound">Cell</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/pathfinding.h" line="50" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/pathfinding.h" bodystart="50" bodyend="62"/>
+        <references refid="class_cell_1a1d30ec2a94e3ba2bec541d978f55c9bc" compoundref="cell_8h" startline="27">Cell::m_parent</references>
+        <referencedby refid="class_path_finding_1addc7b9eb5682e0de46fd59c4a1319a86" compoundref="pathfinding_8h" startline="148" endline="232">findPath</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_path_finding_1a8d70d17f06400cdcd5787331d7be38e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PathFinding::hasPossibility</definition>
+        <argsstring>()</argsstring>
+        <name>hasPossibility</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/pathfinding.h" line="70" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/pathfinding.h" bodystart="70" bodyend="72"/>
+        <references refid="class_path_finding_1a042d47e6d4115a112e0570afe6a88897" compoundref="pathfinding_8h" startline="124">_pathfinding</references>
+        <referencedby refid="class_core_1a333060e38c961d6fbf4ba4d01a84e48b" compoundref="core_8cpp" startline="218" endline="237">Core::pathfinding</referencedby>
+        <referencedby refid="unitest_8cpp_1a8fe7cee2b1a0e3b6c36ff74b48615626" compoundref="unitest_8cpp" startline="21" endline="75">unitest_pathfinding</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_path_finding_1a536055d11c630edc210d100d832a5ccf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::pair&lt; int8_t, int8_t &gt; &gt; *</type>
+        <definition>std::vector&lt;std::pair&lt;int8_t, int8_t&gt; &gt;* PathFinding::getPath</definition>
+        <argsstring>()</argsstring>
+        <name>getPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/pathfinding.h" line="81" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/pathfinding.h" bodystart="81" bodyend="100"/>
+        <references refid="class_path_finding_1a489cfbcdff32e661c7783caec686321a" compoundref="pathfinding_8h" startline="125">list_pathOk</references>
+        <references refid="class_path_finding_1a042d47e6d4115a112e0570afe6a88897" compoundref="pathfinding_8h" startline="124">_pathfinding</references>
+        <references refid="class_cell_1a6cb8051b31ce00b7a7f2cc1b6e14d6a4" compoundref="cell_8h" startline="36" endline="38">Cell::getCoord</references>
+        <references refid="class_path_finding_1a33dac4c9b17f5e6032bc0fc60e7a8249" compoundref="pathfinding_8h" startline="297">start_coord</references>
+        <references refid="class_cell_1a1d30ec2a94e3ba2bec541d978f55c9bc" compoundref="cell_8h" startline="27">Cell::m_parent</references>
+        <references refid="class_cell_1a1c2a62d76f46eb90b5d128fe30286e51" compoundref="cell_8h" startline="52">Cell::everfind</references>
+        <referencedby refid="class_core_1a333060e38c961d6fbf4ba4d01a84e48b" compoundref="core_8cpp" startline="218" endline="237">Core::pathfinding</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_path_finding_1a0fc7389a32fa31a194a940a89f252bdb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PathFinding::~PathFinding</definition>
+        <argsstring>()</argsstring>
+        <name>~PathFinding</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/pathfinding.h" line="108" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/pathfinding.h" bodystart="108" bodyend="122"/>
+        <references refid="class_path_finding_1a042d47e6d4115a112e0570afe6a88897" compoundref="pathfinding_8h" startline="124">_pathfinding</references>
+        <references refid="class_path_finding_1a489cfbcdff32e661c7783caec686321a" compoundref="pathfinding_8h" startline="125">list_pathOk</references>
+        <references refid="class_path_finding_1a042ed04ef5c507a6a575bde3c7aee317" compoundref="pathfinding_8h" startline="293">all_cells</references>
+        <references refid="class_path_finding_1a78443d74b8dfff09953f63f40a1768c8" compoundref="pathfinding_8h" startline="294">current_list</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_path_finding_1addc7b9eb5682e0de46fd59c4a1319a86" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PathFinding::findPath</definition>
+        <argsstring>()</argsstring>
+        <name>findPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/pathfinding.h" line="148" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/pathfinding.h" bodystart="148" bodyend="232"/>
+        <references refid="class_path_finding_1a042d47e6d4115a112e0570afe6a88897" compoundref="pathfinding_8h" startline="124">_pathfinding</references>
+        <references refid="class_path_finding_1a78443d74b8dfff09953f63f40a1768c8" compoundref="pathfinding_8h" startline="294">current_list</references>
+        <references refid="class_cell_1aa47b258f5356e76a577a5035b6e1cf59" compoundref="cell_8h" startline="39">Cell::m_P</references>
+        <references refid="class_path_finding_1a41966230b75e9e6e680b2ca0ac820399" compoundref="pathfinding_8h" startline="243" endline="252">getCell</references>
+        <references refid="class_cell_1a6cb8051b31ce00b7a7f2cc1b6e14d6a4" compoundref="cell_8h" startline="36" endline="38">Cell::getCoord</references>
+        <references refid="class_cell_1a1d30ec2a94e3ba2bec541d978f55c9bc" compoundref="cell_8h" startline="27">Cell::m_parent</references>
+        <references refid="class_path_finding_1a3ff60b1cb0a54bfd10dbc75bfce9b47d" compoundref="pathfinding_8h" startline="50" endline="62">everParent</references>
+        <references refid="class_path_finding_1a7db7c62b00778fb60be8fdb10c471851" compoundref="pathfinding_8h" startline="298">end_coord</references>
+        <referencedby refid="class_path_finding_1a886575c3dc169578626ba9dbf45744be" compoundref="pathfinding_8h" startline="28" endline="48">PathFinding</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_path_finding_1a41966230b75e9e6e680b2ca0ac820399" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_cell" kindref="compound">Cell</ref> *</type>
+        <definition>Cell* PathFinding::getCell</definition>
+        <argsstring>(int8_t x, int8_t y)</argsstring>
+        <name>getCell</name>
+        <param>
+          <type>int8_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/pathfinding.h" line="243" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/pathfinding.h" bodystart="243" bodyend="252"/>
+        <references refid="class_path_finding_1a50f9513402ad1113678635c3eb9da62d" compoundref="pathfinding_8h" startline="295">width</references>
+        <references refid="class_path_finding_1a61e5643d7459d24b07306a6886348ca1" compoundref="pathfinding_8h" startline="296">height</references>
+        <references refid="class_path_finding_1a042ed04ef5c507a6a575bde3c7aee317" compoundref="pathfinding_8h" startline="293">all_cells</references>
+        <referencedby refid="class_path_finding_1a886575c3dc169578626ba9dbf45744be" compoundref="pathfinding_8h" startline="28" endline="48">PathFinding</referencedby>
+        <referencedby refid="class_path_finding_1addc7b9eb5682e0de46fd59c4a1319a86" compoundref="pathfinding_8h" startline="148" endline="232">findPath</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_path_finding_1ade7cf2d6ced4a0d586ff7ebe3639f26d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PathFinding::surroundedBlocs</definition>
+        <argsstring>(int8_t x, int8_t y, int8_t **matrix)</argsstring>
+        <name>surroundedBlocs</name>
+        <param>
+          <type>int8_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int8_t **</type>
+          <declname>matrix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/pathfinding.h" line="265" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/pathfinding.h" bodystart="265" bodyend="291"/>
+        <references refid="class_path_finding_1a50f9513402ad1113678635c3eb9da62d" compoundref="pathfinding_8h" startline="295">width</references>
+        <references refid="class_path_finding_1a61e5643d7459d24b07306a6886348ca1" compoundref="pathfinding_8h" startline="296">height</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="110">
+        <label>Cell</label>
+        <link refid="class_cell"/>
+        <childnode refid="110" relation="usage">
+          <edgelabel>m_parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="109">
+        <label>PathFinding</label>
+        <link refid="class_path_finding"/>
+        <childnode refid="110" relation="usage">
+          <edgelabel>_pathfinding</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/pathfinding.h" line="13" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/traitement/pathfinding.h" bodystart="13" bodyend="300"/>
+    <listofallmembers>
+      <member refid="class_path_finding_1a042d47e6d4115a112e0570afe6a88897" prot="private" virt="non-virtual"><scope>PathFinding</scope><name>_pathfinding</name></member>
+      <member refid="class_path_finding_1a042ed04ef5c507a6a575bde3c7aee317" prot="private" virt="non-virtual"><scope>PathFinding</scope><name>all_cells</name></member>
+      <member refid="class_path_finding_1a78443d74b8dfff09953f63f40a1768c8" prot="private" virt="non-virtual"><scope>PathFinding</scope><name>current_list</name></member>
+      <member refid="class_path_finding_1a7db7c62b00778fb60be8fdb10c471851" prot="private" virt="non-virtual"><scope>PathFinding</scope><name>end_coord</name></member>
+      <member refid="class_path_finding_1a3ff60b1cb0a54bfd10dbc75bfce9b47d" prot="public" virt="non-virtual"><scope>PathFinding</scope><name>everParent</name></member>
+      <member refid="class_path_finding_1addc7b9eb5682e0de46fd59c4a1319a86" prot="private" virt="non-virtual"><scope>PathFinding</scope><name>findPath</name></member>
+      <member refid="class_path_finding_1a41966230b75e9e6e680b2ca0ac820399" prot="private" virt="non-virtual"><scope>PathFinding</scope><name>getCell</name></member>
+      <member refid="class_path_finding_1a536055d11c630edc210d100d832a5ccf" prot="public" virt="non-virtual"><scope>PathFinding</scope><name>getPath</name></member>
+      <member refid="class_path_finding_1a8d70d17f06400cdcd5787331d7be38e2" prot="public" virt="non-virtual"><scope>PathFinding</scope><name>hasPossibility</name></member>
+      <member refid="class_path_finding_1a61e5643d7459d24b07306a6886348ca1" prot="private" virt="non-virtual"><scope>PathFinding</scope><name>height</name></member>
+      <member refid="class_path_finding_1a489cfbcdff32e661c7783caec686321a" prot="private" virt="non-virtual"><scope>PathFinding</scope><name>list_pathOk</name></member>
+      <member refid="class_path_finding_1a886575c3dc169578626ba9dbf45744be" prot="public" virt="non-virtual"><scope>PathFinding</scope><name>PathFinding</name></member>
+      <member refid="class_path_finding_1a33dac4c9b17f5e6032bc0fc60e7a8249" prot="private" virt="non-virtual"><scope>PathFinding</scope><name>start_coord</name></member>
+      <member refid="class_path_finding_1ade7cf2d6ced4a0d586ff7ebe3639f26d" prot="private" virt="non-virtual"><scope>PathFinding</scope><name>surroundedBlocs</name></member>
+      <member refid="class_path_finding_1a50f9513402ad1113678635c3eb9da62d" prot="private" virt="non-virtual"><scope>PathFinding</scope><name>width</name></member>
+      <member refid="class_path_finding_1a0fc7389a32fa31a194a940a89f252bdb" prot="public" virt="non-virtual"><scope>PathFinding</scope><name>~PathFinding</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

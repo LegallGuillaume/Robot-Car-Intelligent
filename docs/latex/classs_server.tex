@@ -1,0 +1,183 @@
+\hypertarget{classs_server}{\section{Référence de la classe s\-Server}
+\label{classs_server}\index{s\-Server@{s\-Server}}
+}
+
+
+{\ttfamily \#include $<$share\-\_\-server.\-h$>$}
+
+
+
+Graphe de collaboration de s\-Server\-:
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classs_server_abcd4016d1b93c045f0847a48afee0ac2}{send\-Things\-To} (const char $\ast$, char $\ast$)
+\item 
+bool \hyperlink{classs_server_a62561438ad0563d99bf05e84795807f9}{is\-Connected} ()
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classs_server}{s\-Server} $\ast$ \hyperlink{classs_server_af98a4a292c1beaab9296a88dba9f0c13}{get\-Instance} ()
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classs_server_ade1889963bc8ec1d6c184f900f1c4977}{s\-Server} ()
+\item 
+\hyperlink{classs_server_a1c9ed39e48d26a4ed531741979ced7bd}{$\sim$s\-Server} ()
+\end{DoxyCompactItemize}
+\subsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classs_server_adeee5a2ac165a0d9df35757d2ddfc70d}{is\-\_\-connected}
+\item 
+key\-\_\-t \hyperlink{classs_server_a9300a483fb708e2e0208d5e1e53e0c97}{key\-\_\-send}
+\item 
+int \hyperlink{classs_server_ab7c99a899b82ac73c36c30da01ab7944}{shmid\-\_\-send}
+\item 
+\hyperlink{share__server_8h_ad73ea60fc164d7d224a2499bd77a1f35}{share\-Memory\-\_\-t} $\ast$ \hyperlink{classs_server_ad24c799f06a327db74a17fd30c78eff5}{data\-\_\-send}
+\end{DoxyCompactItemize}
+\subsection*{Attributs privés statiques}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classs_server}{s\-Server} $\ast$ \hyperlink{classs_server_a5567b4d6b98047dbc17c7c4072a71a62}{instance} = nullptr
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+
+
+Définition à la ligne 21 du fichier share\-\_\-server.\-h.
+
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{classs_server_ade1889963bc8ec1d6c184f900f1c4977}{\index{s\-Server@{s\-Server}!s\-Server@{s\-Server}}
+\index{s\-Server@{s\-Server}!sServer@{s\-Server}}
+\subsubsection[{s\-Server}]{\setlength{\rightskip}{0pt plus 5cm}s\-Server\-::s\-Server (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classs_server_ade1889963bc8ec1d6c184f900f1c4977}
+
+
+Définition à la ligne 22 du fichier sserver.\-cpp.
+
+
+
+Voici le graphe d'appel pour cette fonction \-:
+
+
+
+
+Voici le graphe des appelants de cette fonction \-:
+
+
+\hypertarget{classs_server_a1c9ed39e48d26a4ed531741979ced7bd}{\index{s\-Server@{s\-Server}!$\sim$s\-Server@{$\sim$s\-Server}}
+\index{$\sim$s\-Server@{$\sim$s\-Server}!sServer@{s\-Server}}
+\subsubsection[{$\sim$s\-Server}]{\setlength{\rightskip}{0pt plus 5cm}s\-Server\-::$\sim$s\-Server (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{classs_server_a1c9ed39e48d26a4ed531741979ced7bd}
+
+
+Définition à la ligne 36 du fichier share\-\_\-server.\-h.
+
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{classs_server_af98a4a292c1beaab9296a88dba9f0c13}{\index{s\-Server@{s\-Server}!get\-Instance@{get\-Instance}}
+\index{get\-Instance@{get\-Instance}!sServer@{s\-Server}}
+\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf s\-Server} $\ast$ s\-Server\-::get\-Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classs_server_af98a4a292c1beaab9296a88dba9f0c13}
+
+
+Définition à la ligne 15 du fichier sserver.\-cpp.
+
+
+
+Voici le graphe d'appel pour cette fonction \-:
+
+
+
+
+Voici le graphe des appelants de cette fonction \-:
+
+
+\hypertarget{classs_server_a62561438ad0563d99bf05e84795807f9}{\index{s\-Server@{s\-Server}!is\-Connected@{is\-Connected}}
+\index{is\-Connected@{is\-Connected}!sServer@{s\-Server}}
+\subsubsection[{is\-Connected}]{\setlength{\rightskip}{0pt plus 5cm}bool s\-Server\-::is\-Connected (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classs_server_a62561438ad0563d99bf05e84795807f9}
+
+
+Définition à la ligne 26 du fichier share\-\_\-server.\-h.
+
+\hypertarget{classs_server_abcd4016d1b93c045f0847a48afee0ac2}{\index{s\-Server@{s\-Server}!send\-Things\-To@{send\-Things\-To}}
+\index{send\-Things\-To@{send\-Things\-To}!sServer@{s\-Server}}
+\subsubsection[{send\-Things\-To}]{\setlength{\rightskip}{0pt plus 5cm}bool s\-Server\-::send\-Things\-To (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{id\-\_\-code, }
+\item[{char $\ast$}]{msg}
+\end{DoxyParamCaption}
+)}}\label{classs_server_abcd4016d1b93c045f0847a48afee0ac2}
+
+
+Définition à la ligne 33 du fichier sserver.\-cpp.
+
+
+
+Voici le graphe des appelants de cette fonction \-:
+
+
+
+
+\subsection{Documentation des données membres}
+\hypertarget{classs_server_ad24c799f06a327db74a17fd30c78eff5}{\index{s\-Server@{s\-Server}!data\-\_\-send@{data\-\_\-send}}
+\index{data\-\_\-send@{data\-\_\-send}!sServer@{s\-Server}}
+\subsubsection[{data\-\_\-send}]{\setlength{\rightskip}{0pt plus 5cm}{\bf share\-Memory\-\_\-t}$\ast$ s\-Server\-::data\-\_\-send\hspace{0.3cm}{\ttfamily [private]}}}\label{classs_server_ad24c799f06a327db74a17fd30c78eff5}
+
+
+Définition à la ligne 33 du fichier share\-\_\-server.\-h.
+
+\hypertarget{classs_server_a5567b4d6b98047dbc17c7c4072a71a62}{\index{s\-Server@{s\-Server}!instance@{instance}}
+\index{instance@{instance}!sServer@{s\-Server}}
+\subsubsection[{instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf s\-Server} $\ast$ s\-Server\-::instance = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classs_server_a5567b4d6b98047dbc17c7c4072a71a62}
+
+
+Définition à la ligne 34 du fichier share\-\_\-server.\-h.
+
+\hypertarget{classs_server_adeee5a2ac165a0d9df35757d2ddfc70d}{\index{s\-Server@{s\-Server}!is\-\_\-connected@{is\-\_\-connected}}
+\index{is\-\_\-connected@{is\-\_\-connected}!sServer@{s\-Server}}
+\subsubsection[{is\-\_\-connected}]{\setlength{\rightskip}{0pt plus 5cm}bool s\-Server\-::is\-\_\-connected\hspace{0.3cm}{\ttfamily [private]}}}\label{classs_server_adeee5a2ac165a0d9df35757d2ddfc70d}
+
+
+Définition à la ligne 30 du fichier share\-\_\-server.\-h.
+
+\hypertarget{classs_server_a9300a483fb708e2e0208d5e1e53e0c97}{\index{s\-Server@{s\-Server}!key\-\_\-send@{key\-\_\-send}}
+\index{key\-\_\-send@{key\-\_\-send}!sServer@{s\-Server}}
+\subsubsection[{key\-\_\-send}]{\setlength{\rightskip}{0pt plus 5cm}key\-\_\-t s\-Server\-::key\-\_\-send\hspace{0.3cm}{\ttfamily [private]}}}\label{classs_server_a9300a483fb708e2e0208d5e1e53e0c97}
+
+
+Définition à la ligne 31 du fichier share\-\_\-server.\-h.
+
+\hypertarget{classs_server_ab7c99a899b82ac73c36c30da01ab7944}{\index{s\-Server@{s\-Server}!shmid\-\_\-send@{shmid\-\_\-send}}
+\index{shmid\-\_\-send@{shmid\-\_\-send}!sServer@{s\-Server}}
+\subsubsection[{shmid\-\_\-send}]{\setlength{\rightskip}{0pt plus 5cm}int s\-Server\-::shmid\-\_\-send\hspace{0.3cm}{\ttfamily [private]}}}\label{classs_server_ab7c99a899b82ac73c36c30da01ab7944}
+
+
+Définition à la ligne 32 du fichier share\-\_\-server.\-h.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+headers/server/\hyperlink{share__server_8h}{share\-\_\-server.\-h}\item 
+sources/server/\hyperlink{sserver_8cpp}{sserver.\-cpp}\end{DoxyCompactItemize}

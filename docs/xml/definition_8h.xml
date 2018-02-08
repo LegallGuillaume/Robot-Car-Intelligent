@@ -1,0 +1,540 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="definition_8h" kind="file">
+    <compoundname>definition.h</compoundname>
+    <includedby refid="block_8h" local="yes">headers/manager/block.h</includedby>
+    <includedby refid="pathfinding_8h" local="yes">headers/traitement/pathfinding.h</includedby>
+    <includedby refid="images_8h" local="yes">headers/traitement/images.h</includedby>
+    <includedby refid="share__server_8h" local="yes">headers/server/share_server.h</includedby>
+    <includedby refid="block_8cpp" local="yes">sources/block.cpp</includedby>
+    <includedby refid="manager_8cpp" local="yes">sources/manager.cpp</includedby>
+    <includedby refid="path_8cpp" local="yes">sources/path.cpp</includedby>
+    <includedby refid="unitest_8cpp" local="yes">unitest.cpp</includedby>
+    <invincdepgraph>
+      <node id="422">
+        <label>headers/traitement/images.h</label>
+        <link refid="images_8h"/>
+        <childnode refid="415" relation="include">
+        </childnode>
+        <childnode refid="423" relation="include">
+        </childnode>
+      </node>
+      <node id="423">
+        <label>sources/traitement/images.cpp</label>
+        <link refid="images_8cpp"/>
+      </node>
+      <node id="413">
+        <label>headers/manager/block.h</label>
+        <link refid="block_8h"/>
+        <childnode refid="414" relation="include">
+        </childnode>
+        <childnode refid="421" relation="include">
+        </childnode>
+      </node>
+      <node id="415">
+        <label>headers/core.h</label>
+        <link refid="core_8h"/>
+        <childnode refid="416" relation="include">
+        </childnode>
+        <childnode refid="417" relation="include">
+        </childnode>
+      </node>
+      <node id="419">
+        <label>unitest.cpp</label>
+        <link refid="unitest_8cpp"/>
+      </node>
+      <node id="424">
+        <label>headers/server/share_server.h</label>
+        <link refid="share__server_8h"/>
+      </node>
+      <node id="417">
+        <label>sources/core.cpp</label>
+        <link refid="core_8cpp"/>
+      </node>
+      <node id="425">
+        <label>sources/path.cpp</label>
+        <link refid="path_8cpp"/>
+      </node>
+      <node id="414">
+        <label>headers/manager.h</label>
+        <link refid="manager_8h"/>
+        <childnode refid="415" relation="include">
+        </childnode>
+        <childnode refid="418" relation="include">
+        </childnode>
+        <childnode refid="420" relation="include">
+        </childnode>
+        <childnode refid="419" relation="include">
+        </childnode>
+      </node>
+      <node id="416">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="420">
+        <label>sources/manager.cpp</label>
+        <link refid="manager_8cpp"/>
+      </node>
+      <node id="421">
+        <label>sources/block.cpp</label>
+        <link refid="block_8cpp"/>
+      </node>
+      <node id="418">
+        <label>headers/traitement/pathfinding.h</label>
+        <link refid="pathfinding_8h"/>
+        <childnode refid="415" relation="include">
+        </childnode>
+        <childnode refid="419" relation="include">
+        </childnode>
+      </node>
+      <node id="412">
+        <label>headers/definition.h</label>
+        <link refid="definition.h"/>
+        <childnode refid="413" relation="include">
+        </childnode>
+        <childnode refid="418" relation="include">
+        </childnode>
+        <childnode refid="422" relation="include">
+        </childnode>
+        <childnode refid="424" relation="include">
+        </childnode>
+        <childnode refid="421" relation="include">
+        </childnode>
+        <childnode refid="420" relation="include">
+        </childnode>
+        <childnode refid="425" relation="include">
+        </childnode>
+        <childnode refid="419" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="definition_8h_1ad72dbcf6d0153db1b8d8a58001feed83" prot="public" static="no">
+        <name>DEBUG</name>
+        <initializer>1       /*enable/disable <ref refid="definition_8h_1ae6a018075cd2ce88abd30abf84807fac" kindref="member">debug</ref> mode*/</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" line="5" column="9" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" bodystart="5" bodyend="-1"/>
+        <referencedby refid="definition_8h_1ae6a018075cd2ce88abd30abf84807fac" compoundref="definition_8h" startline="54" endline="60">debug</referencedby>
+        <referencedby refid="class_core_1a722434c9873d07d6b26a74e40e08eb9c" compoundref="core_8cpp" startline="63" endline="88">Core::start</referencedby>
+        <referencedby refid="class_core_1a8648fac82f0324cead88c8fa2731b286" compoundref="core_8cpp" startline="194" endline="216">Core::blockProcessing</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="definition_8h_1a3ec5cb9d22ac76105cb244c099e62bfa" prot="public" static="no">
+        <name>VIDE_DEF</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" line="9" column="9" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="definition_8h_1a36aebf63f7666a150b14192119d9afa2" prot="public" static="no">
+        <name>CAR_DEF</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" line="10" column="9" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_manager_1af43da42550bd9746c5ea61a6aeee80de" compoundref="manager_8cpp" startline="15" endline="37">Manager::update</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="definition_8h_1a4d275339ef3ddec11c63b8b925b5b358" prot="public" static="no">
+        <name>BLOC_DEF</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" line="11" column="9" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_path_finding_1a886575c3dc169578626ba9dbf45744be" compoundref="pathfinding_8h" startline="28" endline="48">PathFinding::PathFinding</referencedby>
+        <referencedby refid="class_manager_1af43da42550bd9746c5ea61a6aeee80de" compoundref="manager_8cpp" startline="15" endline="37">Manager::update</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="definition_8h_1aff9c7c5f80f4fc67fbea9f7dce5cb5f7" prot="public" static="no">
+        <name>CHEMIN_DEF</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" line="12" column="9" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_manager_1af43da42550bd9746c5ea61a6aeee80de" compoundref="manager_8cpp" startline="15" endline="37">Manager::update</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="definition_8h_1a71cf532814b2e708da69ec435950685d" prot="public" static="no">
+        <name>ARRIVE_DEF</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" line="13" column="9" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_manager_1af43da42550bd9746c5ea61a6aeee80de" compoundref="manager_8cpp" startline="15" endline="37">Manager::update</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="definition_8h_1aa818b55bd43036cc3f26783302e4419b" prot="public" static="no">
+        <name>CAM_EXTERN</name>
+        <initializer>1                   /*0 = default CAM, 1 = extern CAM*/</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" line="17" column="9" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_images_p_1a0527e504ca88cece33edb90fef958c90" compoundref="images_8cpp" startline="158" endline="165">ImagesP::init</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="definition_8h_1ad2cc26b8da12f6603455f84312aa649b" prot="public" static="no">
+        <name>CAM_WIDTH</name>
+        <initializer>640</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" line="18" column="9" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="definition_8h_1ac88d2707293a4af9e155d57e3651162e" prot="public" static="no">
+        <name>CAM_HEIGHT</name>
+        <initializer>480</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" line="19" column="9" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="definition_8h_1a9ddbbce2fd669544c295551b85ca01ff" prot="public" static="no">
+        <name>MAX_BLOC_SCENE</name>
+        <initializer>30                  /*Maximum block on the area*/</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" line="20" column="9" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" bodystart="20" bodyend="-1"/>
+        <referencedby refid="class_block_1a37658a946bf5067ad01d68d9ff086adc" compoundref="block_8h" startline="55" endline="58">Block::Block</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="definition_8h_1a7ff61b468299d760aa0a3187ab24dddc" prot="public" static="no">
+        <name>MARGE_BLOCK_PROCESSING</name>
+        <initializer>30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" line="22" column="9" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" bodystart="22" bodyend="-1"/>
+        <referencedby refid="class_images_p_1af8bad8cf7cb3be74c084a0efc86ca73f" compoundref="images_8cpp" startline="112" endline="156">ImagesP::markersProcessing</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="definition_8h_1aa0e4cfe3919e1b2633bd67fbbae28ec5" prot="public" static="no">
+        <name>MARKER_ID_CAR</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" line="23" column="9" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" bodystart="23" bodyend="-1"/>
+        <referencedby refid="class_images_p_1af8bad8cf7cb3be74c084a0efc86ca73f" compoundref="images_8cpp" startline="112" endline="156">ImagesP::markersProcessing</referencedby>
+        <referencedby refid="class_images_p_1adf17333e9b35092e96fef60bbbf80d74" compoundref="images_8cpp" startline="249" endline="260">ImagesP::trackingCar</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="definition_8h_1a6b35f14504af015e91cc6963cb51d6f5" prot="public" static="no">
+        <name>MARKER_ID_ARRIVAL</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" line="24" column="9" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" bodystart="24" bodyend="-1"/>
+        <referencedby refid="class_images_p_1af8bad8cf7cb3be74c084a0efc86ca73f" compoundref="images_8cpp" startline="112" endline="156">ImagesP::markersProcessing</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="definition_8h_1a6036f5d317ce1f843aae2fdd46d845c9" prot="public" static="no">
+        <name>MARKER_ID_AREA</name>
+        <initializer>12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" line="25" column="9" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" bodystart="25" bodyend="-1"/>
+        <referencedby refid="class_images_p_1af8bad8cf7cb3be74c084a0efc86ca73f" compoundref="images_8cpp" startline="112" endline="156">ImagesP::markersProcessing</referencedby>
+        <referencedby refid="class_images_p_1a799c4550d96659d7d188b03f52bb9f4a" compoundref="images_8cpp" startline="198" endline="228">ImagesP::calibration</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="definition_8h_1ab2856357e321769fe3be828ba90bf154" prot="public" static="no">
+        <name>TIMEOUT_CALIBRATION</name>
+        <initializer>5                   /*force break the calibration after TIMEOUT_CALIBRATION seconds, if there are no markers*/</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" line="29" column="9" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" bodystart="29" bodyend="-1"/>
+        <referencedby refid="class_images_p_1a799c4550d96659d7d188b03f52bb9f4a" compoundref="images_8cpp" startline="198" endline="228">ImagesP::calibration</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="definition_8h_1a5c060ba02a1c2de42097ec04c0da0ea7" prot="public" static="no">
+        <name>MAX_CONNECTION_CLIENT</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" line="33" column="9" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="definition_8h_1a752f5b785b69372034ac87e1a1598ce3" prot="public" static="no">
+        <name>PORT_SERVEUR</name>
+        <initializer>975</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" line="34" column="9" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="definition_8h_1a0dec0c631f90a14aa6ff21617d54707a" prot="public" static="no">
+        <name>ID_PC</name>
+        <initializer>&quot;bFd6-a2e8-9Dff\n&quot;          /*Module connect with code*/</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" line="36" column="9" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" bodystart="36" bodyend="-1"/>
+        <referencedby refid="sserver_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="sserver_8cpp" startline="41" endline="50">main</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="definition_8h_1aecf05b6e6a060d8da044532e9db74e2f" prot="public" static="no">
+        <name>ID_CAR</name>
+        <initializer>&quot;59ef-6F70-4bM7\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" line="37" column="9" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" bodystart="37" bodyend="-1"/>
+        <referencedby refid="sserver_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="sserver_8cpp" startline="41" endline="50">main</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="definition_8h_1ad6b283a2d2326d0e040305c75ff08dc4" prot="public" static="no">
+        <name>ID_REMOTE</name>
+        <initializer>&quot;c3Z8-4b86-95Ax\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" line="38" column="9" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" bodystart="38" bodyend="-1"/>
+        <referencedby refid="sserver_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="sserver_8cpp" startline="41" endline="50">main</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="definition_8h_1a55cf28f8aea41b4d12a2ad4a4b0bf714" prot="public" static="no">
+        <name>ID_TABLET</name>
+        <initializer>&quot;E34x-8Jkp-77Go\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" line="39" column="9" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="definition_8h_1abc8437510f986871fa5cdbcc7ca4bc31" prot="public" static="no">
+        <name>ID_CONNECTION</name>
+        <initializer>&quot;xxxx-xxxx-xxxx\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" line="40" column="9" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" bodystart="40" bodyend="-1"/>
+        <referencedby refid="classs_server_1ade1889963bc8ec1d6c184f900f1c4977" compoundref="sserver_8cpp" startline="22" endline="31">sServer::sServer</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="definition_8h_1a21b057a10e6f83a147922faf49652ac5" prot="public" static="no">
+        <name>INTER_PROC</name>
+        <initializer>&quot;&lt;PROC_ESTABLISHED&gt;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" line="42" column="9" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" bodystart="42" bodyend="-1"/>
+        <referencedby refid="classs_server_1ade1889963bc8ec1d6c184f900f1c4977" compoundref="sserver_8cpp" startline="22" endline="31">sServer::sServer</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="definition_8h_1adffc78b5b975243958cd1258f3cfb911" prot="public" static="no">
+        <name>REQ_CODE</name>
+        <initializer>&quot;&lt;ID-CODE&gt;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" line="43" column="9" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="definition_8h_1a812f73a3ea946dbc24662a8736f64e55" prot="public" static="no">
+        <name>VAL_CODE</name>
+        <initializer>&quot;&lt;ID-VALID&gt;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" line="44" column="9" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="definition_8h_1a6360244e5a8f026f28f31db5966308b4" prot="public" static="no">
+        <name>INVAL_CODE</name>
+        <initializer>&quot;&lt;ID-INVALID&gt;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" line="45" column="9" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="definition_8h_1ab172dfb54371246ff3b8edc32639c033" prot="public" static="no">
+        <name>STOP_CONN</name>
+        <initializer>&quot;&lt;STOP&gt;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" line="46" column="9" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="definition_8h_1adfdf63066430fb60a56b109f0bcf8c7b" prot="public" static="no">
+        <name>WAIT_CONN</name>
+        <initializer>&quot;&lt;WAIT&gt;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" line="47" column="9" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="definition_8h_1ae6a018075cd2ce88abd30abf84807fac" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void debug</definition>
+        <argsstring>(char *_msg, bool endl)</argsstring>
+        <name>debug</name>
+        <param>
+          <type>char *</type>
+          <declname>_msg</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>endl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" line="52" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h" bodystart="54" bodyend="60"/>
+        <references refid="definition_8h_1ad72dbcf6d0153db1b8d8a58001feed83" compoundref="definition_8h" startline="5">DEBUG</references>
+        <referencedby refid="class_core_1a7fab8414125602f9f595143bb21d24c1" compoundref="core_8cpp" startline="116" endline="164">Core::autoVirtualMode</referencedby>
+        <referencedby refid="class_core_1a8648fac82f0324cead88c8fa2731b286" compoundref="core_8cpp" startline="194" endline="216">Core::blockProcessing</referencedby>
+        <referencedby refid="class_core_1a333060e38c961d6fbf4ba4d01a84e48b" compoundref="core_8cpp" startline="218" endline="237">Core::pathfinding</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>CONST_DEFINITION</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CONST_DEFINITION</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="definition_8h_1ad72dbcf6d0153db1b8d8a58001feed83" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEBUG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*enable/disable<sp/>debug<sp/>mode*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="6"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">/*MATRIX<sp/>AREA<sp/>DEFINITION*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="definition_8h_1a3ec5cb9d22ac76105cb244c099e62bfa" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VIDE_DEF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="10" refid="definition_8h_1a36aebf63f7666a150b14192119d9afa2" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CAR_DEF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight></codeline>
+<codeline lineno="11" refid="definition_8h_1a4d275339ef3ddec11c63b8b925b5b358" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BLOC_DEF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="12" refid="definition_8h_1aff9c7c5f80f4fc67fbea9f7dce5cb5f7" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CHEMIN_DEF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight></codeline>
+<codeline lineno="13" refid="definition_8h_1a71cf532814b2e708da69ec435950685d" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ARRIVE_DEF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">/*AREA<sp/>DEFINITION*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="definition_8h_1aa818b55bd43036cc3f26783302e4419b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CAM_EXTERN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*0<sp/>=<sp/>default<sp/>CAM,<sp/>1<sp/>=<sp/>extern<sp/>CAM*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="18" refid="definition_8h_1ad2cc26b8da12f6603455f84312aa649b" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CAM_WIDTH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>640<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="19" refid="definition_8h_1ac88d2707293a4af9e155d57e3651162e" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CAM_HEIGHT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>480</highlight></codeline>
+<codeline lineno="20" refid="definition_8h_1a9ddbbce2fd669544c295551b85ca01ff" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MAX_BLOC_SCENE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>30<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Maximum<sp/>block<sp/>on<sp/>the<sp/>area*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="definition_8h_1a7ff61b468299d760aa0a3187ab24dddc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MARGE_BLOCK_PROCESSING<sp/><sp/>30</highlight></codeline>
+<codeline lineno="23" refid="definition_8h_1aa0e4cfe3919e1b2633bd67fbbae28ec5" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MARKER_ID_CAR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="24" refid="definition_8h_1a6b35f14504af015e91cc6963cb51d6f5" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MARKER_ID_ARRIVAL<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="25" refid="definition_8h_1a6036f5d317ce1f843aae2fdd46d845c9" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MARKER_ID_AREA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>12</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">/*TIMEOUT<sp/>ALLOW<sp/>TO<sp/>UNBLOCKED<sp/>PROG*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="definition_8h_1ab2856357e321769fe3be828ba90bf154" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIMEOUT_CALIBRATION<sp/><sp/><sp/><sp/><sp/>5<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*force<sp/>break<sp/>the<sp/>calibration<sp/>after<sp/>TIMEOUT_CALIBRATION<sp/>seconds,<sp/>if<sp/>there<sp/>are<sp/>no<sp/>markers*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">/*SERVER<sp/>DEFINITION*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="definition_8h_1a5c060ba02a1c2de42097ec04c0da0ea7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_CONNECTION_CLIENT<sp/><sp/><sp/>5</highlight></codeline>
+<codeline lineno="34" refid="definition_8h_1a752f5b785b69372034ac87e1a1598ce3" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PORT_SERVEUR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>975</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="definition_8h_1a0dec0c631f90a14aa6ff21617d54707a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ID_PC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;bFd6-a2e8-9Dff\n&quot;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Module<sp/>connect<sp/>with<sp/>code*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="37" refid="definition_8h_1aecf05b6e6a060d8da044532e9db74e2f" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ID_CAR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;59ef-6F70-4bM7\n&quot;</highlight></codeline>
+<codeline lineno="38" refid="definition_8h_1ad6b283a2d2326d0e040305c75ff08dc4" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ID_REMOTE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;c3Z8-4b86-95Ax\n&quot;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="39" refid="definition_8h_1a55cf28f8aea41b4d12a2ad4a4b0bf714" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ID_TABLET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;E34x-8Jkp-77Go\n&quot;</highlight></codeline>
+<codeline lineno="40" refid="definition_8h_1abc8437510f986871fa5cdbcc7ca4bc31" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ID_CONNECTION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;xxxx-xxxx-xxxx\n&quot;</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="definition_8h_1a21b057a10e6f83a147922faf49652ac5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INTER_PROC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&lt;PROC_ESTABLISHED&gt;&quot;</highlight></codeline>
+<codeline lineno="43" refid="definition_8h_1adffc78b5b975243958cd1258f3cfb911" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>REQ_CODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&lt;ID-CODE&gt;&quot;</highlight></codeline>
+<codeline lineno="44" refid="definition_8h_1a812f73a3ea946dbc24662a8736f64e55" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>VAL_CODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&lt;ID-VALID&gt;&quot;</highlight></codeline>
+<codeline lineno="45" refid="definition_8h_1a6360244e5a8f026f28f31db5966308b4" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>INVAL_CODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&lt;ID-INVALID&gt;&quot;</highlight></codeline>
+<codeline lineno="46" refid="definition_8h_1ab172dfb54371246ff3b8edc32639c033" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STOP_CONN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&lt;STOP&gt;&quot;</highlight></codeline>
+<codeline lineno="47" refid="definition_8h_1adfdf63066430fb60a56b109f0bcf8c7b" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>WAIT_CONN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&lt;WAIT&gt;&quot;</highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">/*FUNCTION<sp/>IN<sp/>ALL<sp/>PROG*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="definition_8h_1ae6a018075cd2ce88abd30abf84807fac" kindref="member">debug</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>_msg,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>endl);<sp/></highlight><highlight class="comment">/*endl<sp/>is<sp/>std::endl;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="definition_8h_1ae6a018075cd2ce88abd30abf84807fac" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="definition_8h_1ae6a018075cd2ce88abd30abf84807fac" kindref="member">debug</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>_msg,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>endl){</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="definition_8h_1ad72dbcf6d0153db1b8d8a58001feed83" kindref="member">DEBUG</ref>){</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout&lt;&lt;_msg;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(endl)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/definition.h"/>
+  </compounddef>
+</doxygen>

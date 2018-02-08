@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classs_server" kind="class" prot="public">
+    <compoundname>sServer</compoundname>
+    <includes refid="share__server_8h" local="no">share_server.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classs_server_1adeee5a2ac165a0d9df35757d2ddfc70d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool sServer::is_connected</definition>
+        <argsstring></argsstring>
+        <name>is_connected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/server/share_server.h" line="30" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/server/share_server.h" bodystart="30" bodyend="-1"/>
+        <referencedby refid="classs_server_1a62561438ad0563d99bf05e84795807f9" compoundref="share__server_8h" startline="26" endline="28">isConnected</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classs_server_1a9300a483fb708e2e0208d5e1e53e0c97" prot="private" static="no" mutable="no">
+        <type>key_t</type>
+        <definition>key_t sServer::key_send</definition>
+        <argsstring></argsstring>
+        <name>key_send</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/server/share_server.h" line="31" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/server/share_server.h" bodystart="31" bodyend="-1"/>
+        <referencedby refid="classs_server_1ade1889963bc8ec1d6c184f900f1c4977" compoundref="sserver_8cpp" startline="22" endline="31">sServer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classs_server_1ab7c99a899b82ac73c36c30da01ab7944" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int sServer::shmid_send</definition>
+        <argsstring></argsstring>
+        <name>shmid_send</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/server/share_server.h" line="32" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/server/share_server.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="classs_server_1a1c9ed39e48d26a4ed531741979ced7bd" compoundref="share__server_8h" startline="36" endline="39">~sServer</referencedby>
+        <referencedby refid="classs_server_1ade1889963bc8ec1d6c184f900f1c4977" compoundref="sserver_8cpp" startline="22" endline="31">sServer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classs_server_1ad24c799f06a327db74a17fd30c78eff5" prot="private" static="no" mutable="no">
+        <type><ref refid="share__server_8h_1ad73ea60fc164d7d224a2499bd77a1f35" kindref="member">shareMemory_t</ref> *</type>
+        <definition>shareMemory_t* sServer::data_send</definition>
+        <argsstring></argsstring>
+        <name>data_send</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/server/share_server.h" line="33" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/server/share_server.h" bodystart="33" bodyend="-1"/>
+        <referencedby refid="classs_server_1a1c9ed39e48d26a4ed531741979ced7bd" compoundref="share__server_8h" startline="36" endline="39">~sServer</referencedby>
+        <referencedby refid="classs_server_1ade1889963bc8ec1d6c184f900f1c4977" compoundref="sserver_8cpp" startline="22" endline="31">sServer</referencedby>
+        <referencedby refid="classs_server_1abcd4016d1b93c045f0847a48afee0ac2" compoundref="sserver_8cpp" startline="33" endline="38">sendThingsTo</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classs_server_1a5567b4d6b98047dbc17c7c4072a71a62" prot="private" static="yes" mutable="no">
+        <type><ref refid="classs_server" kindref="compound">sServer</ref> *</type>
+        <definition>sServer * sServer::instance</definition>
+        <argsstring></argsstring>
+        <name>instance</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/server/share_server.h" line="34" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/server/share_server.h" bodystart="34" bodyend="-1"/>
+        <referencedby refid="classs_server_1af98a4a292c1beaab9296a88dba9f0c13" compoundref="sserver_8cpp" startline="15" endline="20">getInstance</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classs_server_1af98a4a292c1beaab9296a88dba9f0c13" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classs_server" kindref="compound">sServer</ref> *</type>
+        <definition>sServer * sServer::getInstance</definition>
+        <argsstring>()</argsstring>
+        <name>getInstance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/server/share_server.h" line="24" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/sources/server/sserver.cpp" bodystart="15" bodyend="20"/>
+        <references refid="classs_server_1a5567b4d6b98047dbc17c7c4072a71a62" compoundref="share__server_8h" startline="34">instance</references>
+        <references refid="classs_server_1ade1889963bc8ec1d6c184f900f1c4977" compoundref="sserver_8cpp" startline="22" endline="31">sServer</references>
+        <referencedby refid="sserver_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="sserver_8cpp" startline="41" endline="50">main</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classs_server_1abcd4016d1b93c045f0847a48afee0ac2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sServer::sendThingsTo</definition>
+        <argsstring>(const char *, char *)</argsstring>
+        <name>sendThingsTo</name>
+        <param>
+          <type>const char *</type>
+          <defname>id_code</defname>
+        </param>
+        <param>
+          <type>char *</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/server/share_server.h" line="25" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/sources/server/sserver.cpp" bodystart="33" bodyend="38"/>
+        <references refid="classs_server_1ad24c799f06a327db74a17fd30c78eff5" compoundref="share__server_8h" startline="33">data_send</references>
+        <references refid="struct__share_m_1a30792c4b007e8273d3832fe2d5e70987" compoundref="share__server_8h" startline="14">_shareM::index</references>
+        <references refid="struct__share_m_1aba5b7eea37d1a2b8eade0ea20ad1b4d8" compoundref="share__server_8h" startline="15">_shareM::id_code</references>
+        <references refid="struct__share_m_1a3f1adf9dcef316bf853e709401b041fd" compoundref="share__server_8h" startline="16">_shareM::tostring</references>
+        <referencedby refid="classs_server_1ade1889963bc8ec1d6c184f900f1c4977" compoundref="sserver_8cpp" startline="22" endline="31">sServer</referencedby>
+        <referencedby refid="sserver_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="sserver_8cpp" startline="41" endline="50">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classs_server_1a62561438ad0563d99bf05e84795807f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sServer::isConnected</definition>
+        <argsstring>()</argsstring>
+        <name>isConnected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/server/share_server.h" line="26" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/server/share_server.h" bodystart="26" bodyend="28"/>
+        <references refid="classs_server_1adeee5a2ac165a0d9df35757d2ddfc70d" compoundref="share__server_8h" startline="30">is_connected</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classs_server_1ade1889963bc8ec1d6c184f900f1c4977" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sServer::sServer</definition>
+        <argsstring>()</argsstring>
+        <name>sServer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/server/share_server.h" line="35" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/sources/server/sserver.cpp" bodystart="22" bodyend="31"/>
+        <references refid="classs_server_1ad24c799f06a327db74a17fd30c78eff5" compoundref="share__server_8h" startline="33">data_send</references>
+        <references refid="struct__share_m_1a30792c4b007e8273d3832fe2d5e70987" compoundref="share__server_8h" startline="14">_shareM::index</references>
+        <references refid="classs_server_1a9300a483fb708e2e0208d5e1e53e0c97" compoundref="share__server_8h" startline="31">key_send</references>
+        <references refid="classs_server_1ab7c99a899b82ac73c36c30da01ab7944" compoundref="share__server_8h" startline="32">shmid_send</references>
+        <references refid="classs_server_1abcd4016d1b93c045f0847a48afee0ac2" compoundref="sserver_8cpp" startline="33" endline="38">sendThingsTo</references>
+        <references refid="definition_8h_1abc8437510f986871fa5cdbcc7ca4bc31" compoundref="definition_8h" startline="40">ID_CONNECTION</references>
+        <references refid="definition_8h_1a21b057a10e6f83a147922faf49652ac5" compoundref="definition_8h" startline="42">INTER_PROC</references>
+        <referencedby refid="classs_server_1af98a4a292c1beaab9296a88dba9f0c13" compoundref="sserver_8cpp" startline="15" endline="20">getInstance</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classs_server_1a1c9ed39e48d26a4ed531741979ced7bd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sServer::~sServer</definition>
+        <argsstring>()</argsstring>
+        <name>~sServer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/server/share_server.h" line="36" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/server/share_server.h" bodystart="36" bodyend="39"/>
+        <references refid="classs_server_1ab7c99a899b82ac73c36c30da01ab7944" compoundref="share__server_8h" startline="32">shmid_send</references>
+        <references refid="classs_server_1ad24c799f06a327db74a17fd30c78eff5" compoundref="share__server_8h" startline="33">data_send</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="117">
+        <label>_shareM</label>
+        <link refid="struct__share_m"/>
+      </node>
+      <node id="116">
+        <label>sServer</label>
+        <link refid="classs_server"/>
+        <childnode refid="116" relation="usage">
+          <edgelabel>instance</edgelabel>
+        </childnode>
+        <childnode refid="117" relation="usage">
+          <edgelabel>data_send</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/server/share_server.h" line="21" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/server/share_server.h" bodystart="21" bodyend="41"/>
+    <listofallmembers>
+      <member refid="classs_server_1ad24c799f06a327db74a17fd30c78eff5" prot="private" virt="non-virtual"><scope>sServer</scope><name>data_send</name></member>
+      <member refid="classs_server_1af98a4a292c1beaab9296a88dba9f0c13" prot="public" virt="non-virtual"><scope>sServer</scope><name>getInstance</name></member>
+      <member refid="classs_server_1a5567b4d6b98047dbc17c7c4072a71a62" prot="private" virt="non-virtual"><scope>sServer</scope><name>instance</name></member>
+      <member refid="classs_server_1adeee5a2ac165a0d9df35757d2ddfc70d" prot="private" virt="non-virtual"><scope>sServer</scope><name>is_connected</name></member>
+      <member refid="classs_server_1a62561438ad0563d99bf05e84795807f9" prot="public" virt="non-virtual"><scope>sServer</scope><name>isConnected</name></member>
+      <member refid="classs_server_1a9300a483fb708e2e0208d5e1e53e0c97" prot="private" virt="non-virtual"><scope>sServer</scope><name>key_send</name></member>
+      <member refid="classs_server_1abcd4016d1b93c045f0847a48afee0ac2" prot="public" virt="non-virtual"><scope>sServer</scope><name>sendThingsTo</name></member>
+      <member refid="classs_server_1ab7c99a899b82ac73c36c30da01ab7944" prot="private" virt="non-virtual"><scope>sServer</scope><name>shmid_send</name></member>
+      <member refid="classs_server_1ade1889963bc8ec1d6c184f900f1c4977" prot="private" virt="non-virtual"><scope>sServer</scope><name>sServer</name></member>
+      <member refid="classs_server_1a1c9ed39e48d26a4ed531741979ced7bd" prot="private" virt="non-virtual"><scope>sServer</scope><name>~sServer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

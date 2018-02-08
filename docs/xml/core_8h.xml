@@ -1,0 +1,444 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="core_8h" kind="file">
+    <compoundname>core.h</compoundname>
+    <includes refid="manager_8h" local="yes">../headers/manager.h</includes>
+    <includes refid="pathfinding_8h" local="yes">../headers/traitement/pathfinding.h</includes>
+    <includes refid="images_8h" local="yes">../headers/traitement/images.h</includes>
+    <includedby refid="main_8cpp" local="yes">main.cpp</includedby>
+    <includedby refid="core_8cpp" local="yes">sources/core.cpp</includedby>
+    <incdepgraph>
+      <node id="402">
+        <label>../headers/traitement/images.h</label>
+        <link refid="images_8h"/>
+        <childnode refid="398" relation="include">
+        </childnode>
+        <childnode refid="403" relation="include">
+        </childnode>
+        <childnode refid="392" relation="include">
+        </childnode>
+        <childnode refid="404" relation="include">
+        </childnode>
+        <childnode refid="405" relation="include">
+        </childnode>
+        <childnode refid="406" relation="include">
+        </childnode>
+        <childnode refid="407" relation="include">
+        </childnode>
+        <childnode refid="394" relation="include">
+        </childnode>
+      </node>
+      <node id="405">
+        <label>aruco/cvdrawingutils.h</label>
+      </node>
+      <node id="397">
+        <label>stdlib.h</label>
+      </node>
+      <node id="396">
+        <label>manager/end.h</label>
+        <link refid="end_8h"/>
+        <childnode refid="387" relation="include">
+        </childnode>
+        <childnode refid="388" relation="include">
+        </childnode>
+        <childnode refid="389" relation="include">
+        </childnode>
+      </node>
+      <node id="403">
+        <label>cmath</label>
+      </node>
+      <node id="393">
+        <label>../abstract/multipleobject.h</label>
+        <link refid="multipleobject_8h"/>
+        <childnode refid="388" relation="include">
+        </childnode>
+      </node>
+      <node id="388">
+        <label>string</label>
+      </node>
+      <node id="404">
+        <label>aruco/aruco.h</label>
+      </node>
+      <node id="391">
+        <label>manager/block.h</label>
+        <link refid="block_8h"/>
+        <childnode refid="387" relation="include">
+        </childnode>
+        <childnode refid="392" relation="include">
+        </childnode>
+        <childnode refid="388" relation="include">
+        </childnode>
+        <childnode refid="393" relation="include">
+        </childnode>
+        <childnode refid="394" relation="include">
+        </childnode>
+      </node>
+      <node id="384">
+        <label>headers/core.h</label>
+        <link refid="core.h"/>
+        <childnode refid="385" relation="include">
+        </childnode>
+        <childnode refid="399" relation="include">
+        </childnode>
+        <childnode refid="402" relation="include">
+        </childnode>
+      </node>
+      <node id="407">
+        <label>opencv2/imgproc/imgproc.hpp</label>
+      </node>
+      <node id="401">
+        <label>cell.h</label>
+        <link refid="cell_8h"/>
+        <childnode refid="387" relation="include">
+        </childnode>
+      </node>
+      <node id="386">
+        <label>manager/car.h</label>
+        <link refid="car_8h"/>
+        <childnode refid="387" relation="include">
+        </childnode>
+        <childnode refid="388" relation="include">
+        </childnode>
+        <childnode refid="389" relation="include">
+        </childnode>
+      </node>
+      <node id="392">
+        <label>vector</label>
+      </node>
+      <node id="387">
+        <label>utility</label>
+      </node>
+      <node id="390">
+        <label>sstream</label>
+      </node>
+      <node id="406">
+        <label>opencv2/highgui/highgui.hpp</label>
+      </node>
+      <node id="385">
+        <label>../headers/manager.h</label>
+        <link refid="manager_8h"/>
+        <childnode refid="386" relation="include">
+        </childnode>
+        <childnode refid="391" relation="include">
+        </childnode>
+        <childnode refid="395" relation="include">
+        </childnode>
+        <childnode refid="396" relation="include">
+        </childnode>
+        <childnode refid="388" relation="include">
+        </childnode>
+        <childnode refid="387" relation="include">
+        </childnode>
+        <childnode refid="397" relation="include">
+        </childnode>
+        <childnode refid="398" relation="include">
+        </childnode>
+      </node>
+      <node id="398">
+        <label>iostream</label>
+      </node>
+      <node id="389">
+        <label>../abstract/simpleobject.h</label>
+        <link refid="simpleobject_8h"/>
+        <childnode refid="390" relation="include">
+        </childnode>
+        <childnode refid="388" relation="include">
+        </childnode>
+        <childnode refid="387" relation="include">
+        </childnode>
+      </node>
+      <node id="395">
+        <label>manager/path.h</label>
+        <link refid="path_8h"/>
+        <childnode refid="387" relation="include">
+        </childnode>
+        <childnode refid="392" relation="include">
+        </childnode>
+        <childnode refid="388" relation="include">
+        </childnode>
+        <childnode refid="393" relation="include">
+        </childnode>
+      </node>
+      <node id="400">
+        <label>algorithm</label>
+      </node>
+      <node id="399">
+        <label>../headers/traitement/pathfinding.h</label>
+        <link refid="pathfinding_8h"/>
+        <childnode refid="398" relation="include">
+        </childnode>
+        <childnode refid="392" relation="include">
+        </childnode>
+        <childnode refid="387" relation="include">
+        </childnode>
+        <childnode refid="400" relation="include">
+        </childnode>
+        <childnode refid="401" relation="include">
+        </childnode>
+        <childnode refid="394" relation="include">
+        </childnode>
+        <childnode refid="385" relation="include">
+        </childnode>
+      </node>
+      <node id="394">
+        <label>../definition.h</label>
+        <link refid="definition_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="408">
+        <label>headers/core.h</label>
+        <link refid="core.h"/>
+        <childnode refid="409" relation="include">
+        </childnode>
+        <childnode refid="410" relation="include">
+        </childnode>
+      </node>
+      <node id="410">
+        <label>sources/core.cpp</label>
+        <link refid="core_8cpp"/>
+      </node>
+      <node id="409">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct__state_machine" prot="public">_stateMachine</innerclass>
+    <innerclass refid="class_core" prot="public">Core</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8" prot="public" static="no">
+        <name>State</name>
+        <enumvalue id="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ab50339a10e1de285ac99d4c3990b8693" prot="public">
+          <name>NONE</name>
+          <initializer>=0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default state </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ae0aa021e21dddbd6d8cecec71e9cf564" prot="public">
+          <name>OK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>all these well unrolled </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ac2f3f489a00553e7a01d369c103c7251" prot="public">
+          <name>NO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>is for pathfinding or trajectory if car can&apos;t move </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8abb1ca97ec761fc37101737ba0aa2e7c5" prot="public">
+          <name>ERROR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>there are an error </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/core.h" line="14" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/core.h" bodystart="14" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="enum" id="core_8h_1a46c8a310cf4c094f8c80e1cb8dc1f911" prot="public" static="no">
+        <name>Mode</name>
+        <enumvalue id="core_8h_1a46c8a310cf4c094f8c80e1cb8dc1f911acf535b39ede8798cd6b56d99271afeef" prot="public">
+          <name>Stop_Mode</name>
+          <initializer>=0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default Mode </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="core_8h_1a46c8a310cf4c094f8c80e1cb8dc1f911a62a2c1fd120cdb7005bf42408c887d9d" prot="public">
+          <name>Auto_Mode</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Automatic Mode </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="core_8h_1a46c8a310cf4c094f8c80e1cb8dc1f911a6879e8dabec58a1e3e670eaddfdc7bf7" prot="public">
+          <name>Virtual_Mode</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Virtual Mode </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="core_8h_1a46c8a310cf4c094f8c80e1cb8dc1f911a493c3024fdbbce51ec6d8d8b0feacf13" prot="public">
+          <name>Manual_Mode</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Manual Mode </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/core.h" line="42" column="1" bodyfile="/home/glegall/prog_workspace/Robot_car/prog/headers/core.h" bodystart="42" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>State of State Machine. </para>    </briefdescription>
+    <detaileddescription>
+<para>start moving</para><para>start server</para><para>find pathfinding</para><para>Find Markers.</para><para>start calibration</para><para>start manual fonctionment</para><para>start automatic or virtual fonctionment</para><para>listen shared memory with server</para><para>get Mode selectionned</para><para>change mode automatic manual virtual or stop</para><para>restart the server</para><para>display the abstract matrix with pathinfing, block and car</para><para>reset the programme</para><para>stop the programme</para><para>start the programme</para><para>destruction of the class  Desctructor Class <ref refid="class_core" kindref="compound">Core</ref></para><para>constructor of the class  Constructor Class <ref refid="class_core" kindref="compound">Core</ref></para><para>Operating Mode.</para><para>State Machine.</para><para><simplesect kind="version"><para>1.0</para><simplesectsep/><para>1.0</para></simplesect>
+<simplesect kind="return"><para>true if started </para><simplesectsep/><para>false if not started</para></simplesect>
+<simplesect kind="version"><para>1.0</para></simplesect>
+<simplesect kind="return"><para>true if stopped </para><simplesectsep/><para>false if not stopped</para></simplesect>
+<simplesect kind="version"><para>1.0</para></simplesect>
+<simplesect kind="return"><para>true if reseted </para><simplesectsep/><para>false if not reseted</para></simplesect>
+<simplesect kind="version"><para>1.0</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Mat&amp;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frame frame to display this matrix</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="version"><para>1.0   call in Constructor</para></simplesect>
+<simplesect kind="return"><para>true if initialized </para><simplesectsep/><para>false if not initialized</para></simplesect>
+<simplesect kind="version"><para>1.0</para></simplesect>
+<simplesect kind="return"><para>true if restarted server </para><simplesectsep/><para>false if not restarted</para></simplesect>
+<simplesect kind="version"><para>1.0</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>_mode choose by enum Mode</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="version"><para>1.0</para></simplesect>
+<simplesect kind="return"><para>Mode choosen mode</para></simplesect>
+<simplesect kind="version"><para>1.0</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>boolean</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is_auto true if auto, false if virtual</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="version"><para>1.0</para></simplesect>
+<simplesect kind="return"><para>State OK = success, NO = markers area not found</para></simplesect>
+<simplesect kind="version"><para>1.0</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>boolean</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is_auto if true find markers in area, if false markers is given by application</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>State OK = success</para></simplesect>
+<simplesect kind="version"><para>1.0</para></simplesect>
+<simplesect kind="return"><para>State OK = have path , NO = have no path</para></simplesect>
+<simplesect kind="version"><para>1.0</para></simplesect>
+<simplesect kind="return"><para>State OK = started, NO = not stated, ERROR = communication or others</para></simplesect>
+<simplesect kind="version"><para>1.0</para></simplesect>
+<simplesect kind="return"><para>State OK = finished path, NO = not finished, ERROR = changed mode </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>CORE_H</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CORE_H</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../headers/manager.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../headers/traitement/pathfinding.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../headers/traitement/images.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8" refkind="member"><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8" kindref="member">State</ref><sp/>{<sp/></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ab50339a10e1de285ac99d4c3990b8693" kindref="member">NONE</ref>=0,<sp/></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ae0aa021e21dddbd6d8cecec71e9cf564" kindref="member">OK</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8ac2f3f489a00553e7a01d369c103c7251" kindref="member">NO</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8abb1ca97ec761fc37101737ba0aa2e7c5" kindref="member">ERROR</ref><sp/><sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">};<sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="struct__state_machine" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__state_machine" kindref="compound">_stateMachine</ref></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29" refid="struct__state_machine_1aaee24e4ab99a6f1243a46645188de8d0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8" kindref="member">State</ref><sp/><ref refid="struct__state_machine_1aaee24e4ab99a6f1243a46645188de8d0" kindref="member">_stateServer</ref>;<sp/></highlight></codeline>
+<codeline lineno="30" refid="struct__state_machine_1aa6cc70d0567b403fb9e993a681f48b85" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8" kindref="member">State</ref><sp/><ref refid="struct__state_machine_1aa6cc70d0567b403fb9e993a681f48b85" kindref="member">_stateIPC</ref>;<sp/></highlight></codeline>
+<codeline lineno="31" refid="struct__state_machine_1a157036ced733a021849ebcbc98c27200" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8" kindref="member">State</ref><sp/><ref refid="struct__state_machine_1a157036ced733a021849ebcbc98c27200" kindref="member">_stateCalibration</ref>;<sp/></highlight></codeline>
+<codeline lineno="32" refid="struct__state_machine_1adbc0e51d4bed9b6da5c44e921e37dc32" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8" kindref="member">State</ref><sp/><ref refid="struct__state_machine_1adbc0e51d4bed9b6da5c44e921e37dc32" kindref="member">_stateImageBlock</ref>;<sp/></highlight></codeline>
+<codeline lineno="33" refid="struct__state_machine_1a79ce614ae01c3759d155c03026384ca7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8" kindref="member">State</ref><sp/><ref refid="struct__state_machine_1a79ce614ae01c3759d155c03026384ca7" kindref="member">_statePathfinding</ref>;<sp/></highlight></codeline>
+<codeline lineno="34" refid="struct__state_machine_1a88c6e0c15cdd29b3eec2e842fa09b08f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8" kindref="member">State</ref><sp/><ref refid="struct__state_machine_1a88c6e0c15cdd29b3eec2e842fa09b08f" kindref="member">_stateTrajectory</ref>;<sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="core_8h_1a46c8a310cf4c094f8c80e1cb8dc1f911" refkind="member"><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="core_8h_1a46c8a310cf4c094f8c80e1cb8dc1f911" kindref="member">Mode</ref><sp/>{<sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core_8h_1a46c8a310cf4c094f8c80e1cb8dc1f911acf535b39ede8798cd6b56d99271afeef" kindref="member">Stop_Mode</ref>=0,<sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core_8h_1a46c8a310cf4c094f8c80e1cb8dc1f911a62a2c1fd120cdb7005bf42408c887d9d" kindref="member">Auto_Mode</ref>,<sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core_8h_1a46c8a310cf4c094f8c80e1cb8dc1f911a6879e8dabec58a1e3e670eaddfdc7bf7" kindref="member">Virtual_Mode</ref>,<sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="core_8h_1a46c8a310cf4c094f8c80e1cb8dc1f911a493c3024fdbbce51ec6d8d8b0feacf13" kindref="member">Manual_Mode</ref><sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="class_core" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_core" kindref="compound">Core</ref>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_core_1a14e63188e0aa7c4a6f72d5501384d1f9" kindref="member">Core</ref>();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_core_1a776f8c46504b14183883c6273f93eaed" kindref="member">~Core</ref>();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_core_1a722434c9873d07d6b26a74e40e08eb9c" kindref="member">start</ref>();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_core_1a01ec355d4fc9be14623bb7b249ad9562" kindref="member">stop</ref>();</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_core_1a85d7a4a5672973830aa10185b121ded9" kindref="member">reset</ref>();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="99" refid="class_core_1a2eaa56d6855905faec8a1764db40892b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__state_machine" kindref="compound">_stateMachine</ref><sp/><ref refid="class_core_1a2eaa56d6855905faec8a1764db40892b" kindref="member">stateMachine</ref>;</highlight></codeline>
+<codeline lineno="100" refid="class_core_1a92f7a9f089b3dca665ec0537fb554d1b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_core_1a92f7a9f089b3dca665ec0537fb554d1b" kindref="member">changeMode</ref>;</highlight></codeline>
+<codeline lineno="101" refid="class_core_1a05fa4660e945441b917880d1e148c89a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="core_8h_1a46c8a310cf4c094f8c80e1cb8dc1f911" kindref="member">Mode</ref><sp/><ref refid="class_core_1a05fa4660e945441b917880d1e148c89a" kindref="member">avm_mode</ref>;<sp/></highlight><highlight class="comment">//Auto<sp/>Virtual<sp/>Manual<sp/>mode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="103" refid="class_core_1a834f8de7a2b8f18b19af83d6c05b9b3a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_manager" kindref="compound">Manager</ref><sp/>*<ref refid="class_core_1a834f8de7a2b8f18b19af83d6c05b9b3a" kindref="member">manager</ref>;</highlight></codeline>
+<codeline lineno="104" refid="class_core_1a7a18e37fde7d3ca4b1568225b51eaf0d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_images_p" kindref="compound">ImagesP</ref><sp/>*<ref refid="class_core_1a7a18e37fde7d3ca4b1568225b51eaf0d" kindref="member">process</ref>;</highlight></codeline>
+<codeline lineno="105" refid="class_core_1a55b925c8acc13a0002112d48a054984e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_path_finding" kindref="compound">PathFinding</ref><sp/>*<ref refid="class_core_1a55b925c8acc13a0002112d48a054984e" kindref="member">path</ref>;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_core_1ae03caf8d8abe9d4c3b875c6f6a5d40dd" kindref="member">drawDebug</ref>(Mat&amp;<sp/>frame);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_core_1a2ad48b714f575d3f3c25c80ffa72afad" kindref="member">init</ref>();</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_core_1a2197457d525b6f0eface1f8712fd2084" kindref="member">restartServer</ref>();</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_core_1a1dac5f63296f11309c2f25770b30912b" kindref="member">setMode</ref>(<ref refid="core_8h_1a46c8a310cf4c094f8c80e1cb8dc1f911" kindref="member">Mode</ref><sp/>_mode);<sp/></highlight><highlight class="comment">//do</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="core_8h_1a46c8a310cf4c094f8c80e1cb8dc1f911" kindref="member">Mode</ref><sp/><ref refid="class_core_1a0d0ccf9b40761ed8f88fe1d9a348fc02" kindref="member">getCurrentMode</ref>();<sp/></highlight><highlight class="comment">//do</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_core_1a9677503611528b6d6f2039eff6f80912" kindref="member">listenIPC</ref>();</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_core_1a7fab8414125602f9f595143bb21d24c1" kindref="member">autoVirtualMode</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_auto);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_core_1afcdd1611a6528fd3d597d719405493b4" kindref="member">manualMode</ref>();</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*function*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8" kindref="member">State</ref><sp/><ref refid="class_core_1a2d832a5e544b5e76d03a7fd596522b42" kindref="member">calibration</ref>();<sp/></highlight><highlight class="comment">//do</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8" kindref="member">State</ref><sp/><ref refid="class_core_1a8648fac82f0324cead88c8fa2731b286" kindref="member">blockProcessing</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_auto);<sp/></highlight><highlight class="comment">//do</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8" kindref="member">State</ref><sp/><ref refid="class_core_1a333060e38c961d6fbf4ba4d01a84e48b" kindref="member">pathfinding</ref>();<sp/></highlight><highlight class="comment">//do</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8" kindref="member">State</ref><sp/><ref refid="class_core_1a2a8efb95fadd86481ba62c98b72c7f1c" kindref="member">server</ref>();<sp/></highlight><highlight class="comment">//TODO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="core_8h_1a5d74787dedbc4e11c1ab15bf487e61f8" kindref="member">State</ref><sp/><ref refid="class_core_1a185801ec33fe24b0f36e4d9e474403ca" kindref="member">trajectory</ref>();<sp/></highlight><highlight class="comment">//TODO<sp/>/*if<sp/>change<sp/>mode,<sp/>break<sp/>while<sp/>and<sp/>return<sp/>State::ERROR*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*trajectory<sp/>function*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_core_1a180fe625431721a94959a694fe91ef3f" kindref="member">forward</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angle);<sp/></highlight><highlight class="comment">/*return<sp/>false<sp/>if<sp/>the<sp/>car<sp/>is<sp/>out<sp/>of<sp/>path*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_core_1a0639e803afd1447272759b6b0fa22f60" kindref="member">rotation</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angle);<sp/></highlight><highlight class="comment">/*return<sp/>true<sp/>if<sp/>rotation<sp/>is<sp/>success<sp/>+-<sp/>3°<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//CORE_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/core.h"/>
+  </compounddef>
+</doxygen>

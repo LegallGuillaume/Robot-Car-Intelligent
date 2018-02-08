@@ -1,0 +1,21 @@
+digraph "Core::setMode"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Core::setMode",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Manager::reset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_manager.html#a8cb433965677ad622ee43d59e24262e7"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Manager::cleanMatrix",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_manager.html#a1734887f37a6cc8e5837431b2875459f"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Manager::getSceneSquare",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_manager.html#a60f89ec1bf61d37a74b4cd67a57d5702"];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Car::setPosition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_car.html#a97e3c5de8eb65659ef520de6591f814d"];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="End::setPosition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_end.html#a5be9587f22c8eb23249513a7b5e6db92"];
+  Node2 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Block::clear",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_block.html#a37bf8cd7e85de983bc56eb19b168575a"];
+  Node2 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Path::clear",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_path.html#a962e54c19be5fbe17f902ee6a7a3a706"];
+}

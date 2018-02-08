@@ -1,0 +1,493 @@
+\hypertarget{class_images_p}{\section{Référence de la classe Images\-P}
+\label{class_images_p}\index{Images\-P@{Images\-P}}
+}
+
+
+{\ttfamily \#include $<$images.\-h$>$}
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_images_p_a18ff58308b1ba5787e1d05f0acd7224a}{Images\-P} ()
+\item 
+\hyperlink{class_images_p_abd4ea58f9cb814dbb27feb5d2d793e53}{$\sim$\-Images\-P} ()
+\item 
+bool \hyperlink{class_images_p_a3c43049bf1ce2da9ffa88841e48c29e1}{ready\-For\-Path} ()
+\item 
+void \hyperlink{class_images_p_ae2aecf8db20e7b3bcd14a7182dfdaf29}{start\-Block} ()
+\item 
+void \hyperlink{class_images_p_aeb7483dee60e755fffcc9e6f9355fd43}{save\-Calib} (std\-::string str)
+\item 
+Point2f \hyperlink{class_images_p_a4048e5f515cb51cbf25211ec8b4854b7}{load\-Calib} ()
+\item 
+void \hyperlink{class_images_p_a799c4550d96659d7d188b03f52bb9f4a}{calibration} ()
+\item 
+Point \hyperlink{class_images_p_afe9cff50f49fc67bd8938d8d0223fe81}{get\-Car\-Position} ()
+\item 
+Point \hyperlink{class_images_p_aaf0d33634f747f1defec833fbc6dfae2}{get\-Arrival\-Position} ()
+\item 
+uint8\-\_\-t \hyperlink{class_images_p_a002bb2f3148a85c46c954dcc98ad2760}{get\-Size\-Marker} ()
+\item 
+void \hyperlink{class_images_p_adf17333e9b35092e96fef60bbbf80d74}{tracking\-Car} ()
+\end{DoxyCompactItemize}
+\subsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+std\-::vector$<$ Point $>$ \hyperlink{class_images_p_ab9e279526694a7ce421cfa11b9309ed1}{all\-\_\-block}
+\item 
+Point \hyperlink{class_images_p_a79d1d01bae703caeee1033425e4f8f18}{pos\-Car}
+\item 
+Point \hyperlink{class_images_p_a621b649c63d3967849103c03082af64c}{pos\-Arrival}
+\item 
+float \hyperlink{class_images_p_a39c69bdd9469b4b8a2c9666e27afa7b0}{angle\-Car}
+\item 
+float \hyperlink{class_images_p_a408c61aeceb9175481adb2daca707a48}{angle\-Arrival}
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_images_p_a0527e504ca88cece33edb90fef958c90}{init} ()
+\item 
+void \hyperlink{class_images_p_af8bad8cf7cb3be74c084a0efc86ca73f}{markers\-Processing} (Point2f center\-Pt)
+\item 
+Point \hyperlink{class_images_p_a0b371e65a472c1cce7d6dc83bd171e4d}{get\-X\-Y\-Matrix} (int16\-\_\-t x\-\_\-matrix, int16\-\_\-t y\-\_\-matrix)
+\item 
+Point2f \hyperlink{class_images_p_a50c2faf5197f1e0b5d54f4acdb9f82dd}{get\-Block\-Matrix} (Point2f center, int16\-\_\-t x\-\_\-pixel, int16\-\_\-t y\-\_\-pixel)
+\item 
+float \hyperlink{class_images_p_a03b81fad0317e9939085c5e7538c2efe}{get\-Angle} (Marker marker)
+\item 
+void \hyperlink{class_images_p_a4eee68c40eb47b29e0b738ea38a55353}{draw\-Matrix} (Mat \&frame, Point center)
+\item 
+bool \hyperlink{class_images_p_a4e8b4ba0f6f6f408de4cc4c52ac29f27}{willbe\-Block} (Mat \&frame, Point left\-Top, int8\-\_\-t pixel\-Max)
+\item 
+void \hyperlink{class_images_p_aab5950c25ea44c06bc4026ce6dece7fa}{fill\-Rotated\-Rect} (Mat \&frame, Point2f center, Size2f size, Scalar color, float angle)
+\end{DoxyCompactItemize}
+\subsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Marker\-Detector \hyperlink{class_images_p_a43a0e66ed75a147c27474937f8c9112c}{M\-Detector}
+\item 
+std\-::vector$<$ Marker $>$ \hyperlink{class_images_p_ac2813bc8a3edac420df686902806172c}{Markers}
+\item 
+Mat \hyperlink{class_images_p_add620ec27d299fe470cade4a6bc1e632}{marker\-Img}
+\item 
+Mat \hyperlink{class_images_p_adc6b2ffa6cbfab6c1b83ed4bef74f1b9}{marker\-Cpy}
+\item 
+Video\-Capture \hyperlink{class_images_p_a143a67baa23fdc4b1c28beda0bd964f5}{cap}
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+
+
+Définition à la ligne 18 du fichier images.\-h.
+
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{class_images_p_a18ff58308b1ba5787e1d05f0acd7224a}{\index{Images\-P@{Images\-P}!Images\-P@{Images\-P}}
+\index{Images\-P@{Images\-P}!ImagesP@{Images\-P}}
+\subsubsection[{Images\-P}]{\setlength{\rightskip}{0pt plus 5cm}Images\-P\-::\-Images\-P (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_images_p_a18ff58308b1ba5787e1d05f0acd7224a}
+
+
+Définition à la ligne 6 du fichier images.\-cpp.
+
+
+
+Voici le graphe d'appel pour cette fonction \-:
+
+
+\hypertarget{class_images_p_abd4ea58f9cb814dbb27feb5d2d793e53}{\index{Images\-P@{Images\-P}!$\sim$\-Images\-P@{$\sim$\-Images\-P}}
+\index{$\sim$\-Images\-P@{$\sim$\-Images\-P}!ImagesP@{Images\-P}}
+\subsubsection[{$\sim$\-Images\-P}]{\setlength{\rightskip}{0pt plus 5cm}Images\-P\-::$\sim$\-Images\-P (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_images_p_abd4ea58f9cb814dbb27feb5d2d793e53}
+
+
+Définition à la ligne 10 du fichier images.\-cpp.
+
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{class_images_p_a799c4550d96659d7d188b03f52bb9f4a}{\index{Images\-P@{Images\-P}!calibration@{calibration}}
+\index{calibration@{calibration}!ImagesP@{Images\-P}}
+\subsubsection[{calibration}]{\setlength{\rightskip}{0pt plus 5cm}void Images\-P\-::calibration (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_images_p_a799c4550d96659d7d188b03f52bb9f4a}
+
+
+Définition à la ligne 198 du fichier images.\-cpp.
+
+
+
+Voici le graphe d'appel pour cette fonction \-:
+
+
+
+
+Voici le graphe des appelants de cette fonction \-:
+
+
+\hypertarget{class_images_p_a4eee68c40eb47b29e0b738ea38a55353}{\index{Images\-P@{Images\-P}!draw\-Matrix@{draw\-Matrix}}
+\index{draw\-Matrix@{draw\-Matrix}!ImagesP@{Images\-P}}
+\subsubsection[{draw\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}void Images\-P\-::draw\-Matrix (
+\begin{DoxyParamCaption}
+\item[{Mat \&}]{frame, }
+\item[{Point}]{center}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_images_p_a4eee68c40eb47b29e0b738ea38a55353}
+
+
+Définition à la ligne 84 du fichier images.\-cpp.
+
+
+
+Voici le graphe des appelants de cette fonction \-:
+
+
+\hypertarget{class_images_p_aab5950c25ea44c06bc4026ce6dece7fa}{\index{Images\-P@{Images\-P}!fill\-Rotated\-Rect@{fill\-Rotated\-Rect}}
+\index{fill\-Rotated\-Rect@{fill\-Rotated\-Rect}!ImagesP@{Images\-P}}
+\subsubsection[{fill\-Rotated\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}void Images\-P\-::fill\-Rotated\-Rect (
+\begin{DoxyParamCaption}
+\item[{Mat \&}]{frame, }
+\item[{Point2f}]{center, }
+\item[{Size2f}]{size, }
+\item[{Scalar}]{color, }
+\item[{float}]{angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_images_p_aab5950c25ea44c06bc4026ce6dece7fa}
+
+
+Définition à la ligne 101 du fichier images.\-cpp.
+
+
+
+Voici le graphe des appelants de cette fonction \-:
+
+
+\hypertarget{class_images_p_a03b81fad0317e9939085c5e7538c2efe}{\index{Images\-P@{Images\-P}!get\-Angle@{get\-Angle}}
+\index{get\-Angle@{get\-Angle}!ImagesP@{Images\-P}}
+\subsubsection[{get\-Angle}]{\setlength{\rightskip}{0pt plus 5cm}float Images\-P\-::get\-Angle (
+\begin{DoxyParamCaption}
+\item[{Marker}]{marker}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_images_p_a03b81fad0317e9939085c5e7538c2efe}
+
+
+Définition à la ligne 23 du fichier images.\-cpp.
+
+
+
+Voici le graphe des appelants de cette fonction \-:
+
+
+\hypertarget{class_images_p_aaf0d33634f747f1defec833fbc6dfae2}{\index{Images\-P@{Images\-P}!get\-Arrival\-Position@{get\-Arrival\-Position}}
+\index{get\-Arrival\-Position@{get\-Arrival\-Position}!ImagesP@{Images\-P}}
+\subsubsection[{get\-Arrival\-Position}]{\setlength{\rightskip}{0pt plus 5cm}Point Images\-P\-::get\-Arrival\-Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_images_p_aaf0d33634f747f1defec833fbc6dfae2}
+
+
+Définition à la ligne 245 du fichier images.\-cpp.
+
+
+
+Voici le graphe des appelants de cette fonction \-:
+
+
+\hypertarget{class_images_p_a50c2faf5197f1e0b5d54f4acdb9f82dd}{\index{Images\-P@{Images\-P}!get\-Block\-Matrix@{get\-Block\-Matrix}}
+\index{get\-Block\-Matrix@{get\-Block\-Matrix}!ImagesP@{Images\-P}}
+\subsubsection[{get\-Block\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}Point2f Images\-P\-::get\-Block\-Matrix (
+\begin{DoxyParamCaption}
+\item[{Point2f}]{center, }
+\item[{int16\-\_\-t}]{x\-\_\-pixel, }
+\item[{int16\-\_\-t}]{y\-\_\-pixel}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_images_p_a50c2faf5197f1e0b5d54f4acdb9f82dd}
+
+
+Définition à la ligne 72 du fichier images.\-cpp.
+
+
+
+Voici le graphe des appelants de cette fonction \-:
+
+
+\hypertarget{class_images_p_afe9cff50f49fc67bd8938d8d0223fe81}{\index{Images\-P@{Images\-P}!get\-Car\-Position@{get\-Car\-Position}}
+\index{get\-Car\-Position@{get\-Car\-Position}!ImagesP@{Images\-P}}
+\subsubsection[{get\-Car\-Position}]{\setlength{\rightskip}{0pt plus 5cm}Point Images\-P\-::get\-Car\-Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_images_p_afe9cff50f49fc67bd8938d8d0223fe81}
+
+
+Définition à la ligne 240 du fichier images.\-cpp.
+
+
+
+Voici le graphe des appelants de cette fonction \-:
+
+
+\hypertarget{class_images_p_a002bb2f3148a85c46c954dcc98ad2760}{\index{Images\-P@{Images\-P}!get\-Size\-Marker@{get\-Size\-Marker}}
+\index{get\-Size\-Marker@{get\-Size\-Marker}!ImagesP@{Images\-P}}
+\subsubsection[{get\-Size\-Marker}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t Images\-P\-::get\-Size\-Marker (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_images_p_a002bb2f3148a85c46c954dcc98ad2760}
+
+
+Définition à la ligne 15 du fichier images.\-cpp.
+
+
+
+Voici le graphe des appelants de cette fonction \-:
+
+
+\hypertarget{class_images_p_a0b371e65a472c1cce7d6dc83bd171e4d}{\index{Images\-P@{Images\-P}!get\-X\-Y\-Matrix@{get\-X\-Y\-Matrix}}
+\index{get\-X\-Y\-Matrix@{get\-X\-Y\-Matrix}!ImagesP@{Images\-P}}
+\subsubsection[{get\-X\-Y\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}Point Images\-P\-::get\-X\-Y\-Matrix (
+\begin{DoxyParamCaption}
+\item[{int16\-\_\-t}]{x\-\_\-matrix, }
+\item[{int16\-\_\-t}]{y\-\_\-matrix}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_images_p_a0b371e65a472c1cce7d6dc83bd171e4d}
+
+
+Définition à la ligne 19 du fichier images.\-cpp.
+
+
+
+Voici le graphe des appelants de cette fonction \-:
+
+
+\hypertarget{class_images_p_a0527e504ca88cece33edb90fef958c90}{\index{Images\-P@{Images\-P}!init@{init}}
+\index{init@{init}!ImagesP@{Images\-P}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void Images\-P\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_images_p_a0527e504ca88cece33edb90fef958c90}
+
+
+Définition à la ligne 158 du fichier images.\-cpp.
+
+
+
+Voici le graphe des appelants de cette fonction \-:
+
+
+\hypertarget{class_images_p_a4048e5f515cb51cbf25211ec8b4854b7}{\index{Images\-P@{Images\-P}!load\-Calib@{load\-Calib}}
+\index{load\-Calib@{load\-Calib}!ImagesP@{Images\-P}}
+\subsubsection[{load\-Calib}]{\setlength{\rightskip}{0pt plus 5cm}Point2f Images\-P\-::load\-Calib (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_images_p_a4048e5f515cb51cbf25211ec8b4854b7}
+
+
+Définition à la ligne 177 du fichier images.\-cpp.
+
+
+
+Voici le graphe des appelants de cette fonction \-:
+
+
+\hypertarget{class_images_p_af8bad8cf7cb3be74c084a0efc86ca73f}{\index{Images\-P@{Images\-P}!markers\-Processing@{markers\-Processing}}
+\index{markers\-Processing@{markers\-Processing}!ImagesP@{Images\-P}}
+\subsubsection[{markers\-Processing}]{\setlength{\rightskip}{0pt plus 5cm}void Images\-P\-::markers\-Processing (
+\begin{DoxyParamCaption}
+\item[{Point2f}]{center\-Pt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_images_p_af8bad8cf7cb3be74c084a0efc86ca73f}
+
+
+Définition à la ligne 112 du fichier images.\-cpp.
+
+
+
+Voici le graphe d'appel pour cette fonction \-:
+
+
+
+
+Voici le graphe des appelants de cette fonction \-:
+
+
+\hypertarget{class_images_p_a3c43049bf1ce2da9ffa88841e48c29e1}{\index{Images\-P@{Images\-P}!ready\-For\-Path@{ready\-For\-Path}}
+\index{ready\-For\-Path@{ready\-For\-Path}!ImagesP@{Images\-P}}
+\subsubsection[{ready\-For\-Path}]{\setlength{\rightskip}{0pt plus 5cm}bool Images\-P\-::ready\-For\-Path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_images_p_a3c43049bf1ce2da9ffa88841e48c29e1}
+
+
+Définition à la ligne 167 du fichier images.\-cpp.
+
+
+
+Voici le graphe des appelants de cette fonction \-:
+
+
+\hypertarget{class_images_p_aeb7483dee60e755fffcc9e6f9355fd43}{\index{Images\-P@{Images\-P}!save\-Calib@{save\-Calib}}
+\index{save\-Calib@{save\-Calib}!ImagesP@{Images\-P}}
+\subsubsection[{save\-Calib}]{\setlength{\rightskip}{0pt plus 5cm}void Images\-P\-::save\-Calib (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{str}
+\end{DoxyParamCaption}
+)}}\label{class_images_p_aeb7483dee60e755fffcc9e6f9355fd43}
+
+
+Définition à la ligne 171 du fichier images.\-cpp.
+
+
+
+Voici le graphe des appelants de cette fonction \-:
+
+
+\hypertarget{class_images_p_ae2aecf8db20e7b3bcd14a7182dfdaf29}{\index{Images\-P@{Images\-P}!start\-Block@{start\-Block}}
+\index{start\-Block@{start\-Block}!ImagesP@{Images\-P}}
+\subsubsection[{start\-Block}]{\setlength{\rightskip}{0pt plus 5cm}void Images\-P\-::start\-Block (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_images_p_ae2aecf8db20e7b3bcd14a7182dfdaf29}
+
+
+Définition à la ligne 230 du fichier images.\-cpp.
+
+
+
+Voici le graphe d'appel pour cette fonction \-:
+
+
+
+
+Voici le graphe des appelants de cette fonction \-:
+
+
+\hypertarget{class_images_p_adf17333e9b35092e96fef60bbbf80d74}{\index{Images\-P@{Images\-P}!tracking\-Car@{tracking\-Car}}
+\index{tracking\-Car@{tracking\-Car}!ImagesP@{Images\-P}}
+\subsubsection[{tracking\-Car}]{\setlength{\rightskip}{0pt plus 5cm}void Images\-P\-::tracking\-Car (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_images_p_adf17333e9b35092e96fef60bbbf80d74}
+
+
+Définition à la ligne 249 du fichier images.\-cpp.
+
+
+
+Voici le graphe d'appel pour cette fonction \-:
+
+
+\hypertarget{class_images_p_a4e8b4ba0f6f6f408de4cc4c52ac29f27}{\index{Images\-P@{Images\-P}!willbe\-Block@{willbe\-Block}}
+\index{willbe\-Block@{willbe\-Block}!ImagesP@{Images\-P}}
+\subsubsection[{willbe\-Block}]{\setlength{\rightskip}{0pt plus 5cm}bool Images\-P\-::willbe\-Block (
+\begin{DoxyParamCaption}
+\item[{Mat \&}]{frame, }
+\item[{Point}]{left\-Top, }
+\item[{int8\-\_\-t}]{pixel\-Max}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_images_p_a4e8b4ba0f6f6f408de4cc4c52ac29f27}
+
+
+Définition à la ligne 53 du fichier images.\-cpp.
+
+
+
+Voici le graphe des appelants de cette fonction \-:
+
+
+
+
+\subsection{Documentation des données membres}
+\hypertarget{class_images_p_ab9e279526694a7ce421cfa11b9309ed1}{\index{Images\-P@{Images\-P}!all\-\_\-block@{all\-\_\-block}}
+\index{all\-\_\-block@{all\-\_\-block}!ImagesP@{Images\-P}}
+\subsubsection[{all\-\_\-block}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$Point$>$ Images\-P\-::all\-\_\-block}}\label{class_images_p_ab9e279526694a7ce421cfa11b9309ed1}
+
+
+Définition à la ligne 25 du fichier images.\-h.
+
+\hypertarget{class_images_p_a408c61aeceb9175481adb2daca707a48}{\index{Images\-P@{Images\-P}!angle\-Arrival@{angle\-Arrival}}
+\index{angle\-Arrival@{angle\-Arrival}!ImagesP@{Images\-P}}
+\subsubsection[{angle\-Arrival}]{\setlength{\rightskip}{0pt plus 5cm}float Images\-P\-::angle\-Arrival}}\label{class_images_p_a408c61aeceb9175481adb2daca707a48}
+
+
+Définition à la ligne 27 du fichier images.\-h.
+
+\hypertarget{class_images_p_a39c69bdd9469b4b8a2c9666e27afa7b0}{\index{Images\-P@{Images\-P}!angle\-Car@{angle\-Car}}
+\index{angle\-Car@{angle\-Car}!ImagesP@{Images\-P}}
+\subsubsection[{angle\-Car}]{\setlength{\rightskip}{0pt plus 5cm}float Images\-P\-::angle\-Car}}\label{class_images_p_a39c69bdd9469b4b8a2c9666e27afa7b0}
+
+
+Définition à la ligne 27 du fichier images.\-h.
+
+\hypertarget{class_images_p_a143a67baa23fdc4b1c28beda0bd964f5}{\index{Images\-P@{Images\-P}!cap@{cap}}
+\index{cap@{cap}!ImagesP@{Images\-P}}
+\subsubsection[{cap}]{\setlength{\rightskip}{0pt plus 5cm}Video\-Capture Images\-P\-::cap\hspace{0.3cm}{\ttfamily [private]}}}\label{class_images_p_a143a67baa23fdc4b1c28beda0bd964f5}
+
+
+Définition à la ligne 40 du fichier images.\-h.
+
+\hypertarget{class_images_p_adc6b2ffa6cbfab6c1b83ed4bef74f1b9}{\index{Images\-P@{Images\-P}!marker\-Cpy@{marker\-Cpy}}
+\index{marker\-Cpy@{marker\-Cpy}!ImagesP@{Images\-P}}
+\subsubsection[{marker\-Cpy}]{\setlength{\rightskip}{0pt plus 5cm}Mat Images\-P\-::marker\-Cpy\hspace{0.3cm}{\ttfamily [private]}}}\label{class_images_p_adc6b2ffa6cbfab6c1b83ed4bef74f1b9}
+
+
+Définition à la ligne 39 du fichier images.\-h.
+
+\hypertarget{class_images_p_add620ec27d299fe470cade4a6bc1e632}{\index{Images\-P@{Images\-P}!marker\-Img@{marker\-Img}}
+\index{marker\-Img@{marker\-Img}!ImagesP@{Images\-P}}
+\subsubsection[{marker\-Img}]{\setlength{\rightskip}{0pt plus 5cm}Mat Images\-P\-::marker\-Img\hspace{0.3cm}{\ttfamily [private]}}}\label{class_images_p_add620ec27d299fe470cade4a6bc1e632}
+
+
+Définition à la ligne 39 du fichier images.\-h.
+
+\hypertarget{class_images_p_ac2813bc8a3edac420df686902806172c}{\index{Images\-P@{Images\-P}!Markers@{Markers}}
+\index{Markers@{Markers}!ImagesP@{Images\-P}}
+\subsubsection[{Markers}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$Marker$>$ Images\-P\-::\-Markers\hspace{0.3cm}{\ttfamily [private]}}}\label{class_images_p_ac2813bc8a3edac420df686902806172c}
+
+
+Définition à la ligne 38 du fichier images.\-h.
+
+\hypertarget{class_images_p_a43a0e66ed75a147c27474937f8c9112c}{\index{Images\-P@{Images\-P}!M\-Detector@{M\-Detector}}
+\index{M\-Detector@{M\-Detector}!ImagesP@{Images\-P}}
+\subsubsection[{M\-Detector}]{\setlength{\rightskip}{0pt plus 5cm}Marker\-Detector Images\-P\-::\-M\-Detector\hspace{0.3cm}{\ttfamily [private]}}}\label{class_images_p_a43a0e66ed75a147c27474937f8c9112c}
+
+
+Définition à la ligne 37 du fichier images.\-h.
+
+\hypertarget{class_images_p_a621b649c63d3967849103c03082af64c}{\index{Images\-P@{Images\-P}!pos\-Arrival@{pos\-Arrival}}
+\index{pos\-Arrival@{pos\-Arrival}!ImagesP@{Images\-P}}
+\subsubsection[{pos\-Arrival}]{\setlength{\rightskip}{0pt plus 5cm}Point Images\-P\-::pos\-Arrival}}\label{class_images_p_a621b649c63d3967849103c03082af64c}
+
+
+Définition à la ligne 26 du fichier images.\-h.
+
+\hypertarget{class_images_p_a79d1d01bae703caeee1033425e4f8f18}{\index{Images\-P@{Images\-P}!pos\-Car@{pos\-Car}}
+\index{pos\-Car@{pos\-Car}!ImagesP@{Images\-P}}
+\subsubsection[{pos\-Car}]{\setlength{\rightskip}{0pt plus 5cm}Point Images\-P\-::pos\-Car}}\label{class_images_p_a79d1d01bae703caeee1033425e4f8f18}
+
+
+Définition à la ligne 26 du fichier images.\-h.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+headers/traitement/\hyperlink{images_8h}{images.\-h}\item 
+sources/traitement/\hyperlink{images_8cpp}{images.\-cpp}\end{DoxyCompactItemize}

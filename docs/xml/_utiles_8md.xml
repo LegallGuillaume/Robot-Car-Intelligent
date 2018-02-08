@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_utiles_8md" kind="file">
+    <compoundname>Utiles.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#<sp/>Utiles<sp/>de<sp/>Savoir<sp/>!</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal">Valeur<sp/>qui<sp/>peut<sp/>etre<sp/>Négative<sp/>!!<sp/>/!\<sp/>ATTENTION,<sp/>PRENDRE<sp/>LA<sp/>VALEUR<sp/>ASSOCIER</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">##<sp/>Nombres</highlight></codeline>
+<codeline lineno="6"><highlight class="preprocessor"></highlight><highlight class="normal">---</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">&gt;<sp/>Valeur<sp/>signé:</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">&gt;<sp/>int8_t<sp/>=<sp/>valeur<sp/>de<sp/>-128<sp/>à<sp/>127</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">&gt;<sp/>int16_t<sp/>=<sp/>valeur<sp/>de<sp/>-32<sp/>768<sp/>à<sp/>32<sp/>767</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">&gt;<sp/>int32_t<sp/>=<sp/>valeur<sp/>de<sp/>-2<sp/>147<sp/>483<sp/>648<sp/>à<sp/>2<sp/>147<sp/>483<sp/>647</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">&gt;<sp/>Valeur<sp/>non<sp/>signé:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">&gt;<sp/>uint8_t<sp/>=<sp/>valeur<sp/>de<sp/>0<sp/>à<sp/>255</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">&gt;<sp/>uint16_t<sp/>=<sp/>valeur<sp/>de<sp/>0<sp/>à<sp/>65<sp/>535</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">&gt;<sp/>uint32_t<sp/>=<sp/>valeur<sp/>de<sp/>0<sp/>à<sp/>4<sp/>294<sp/>967<sp/>295</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">##<sp/>Vector</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">---</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">-<sp/>10<sp/>elements<sp/>dans<sp/>le<sp/>tableau.</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">```cpp</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">std::vector&lt;int8_t&gt;<sp/>*ptr<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>std::vector&lt;int8_t&gt;();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">std::vector&lt;int8_t&gt;<sp/>non_ptr;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">ptr-&gt;reserve(10);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">non_ptr.reserve(10);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>ptr;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">```</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">##<sp/>Allocation<sp/>dynamique</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal">---</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">-<sp/>Création<sp/>tableau<sp/>à<sp/>2<sp/>dimensions<sp/>de<sp/>20x20.</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">-<sp/>-128<sp/>&lt;<sp/>20<sp/>&lt;<sp/>127<sp/>--&gt;<sp/>int8_t</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">```cpp</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">int8_t<sp/>**tableau;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">uint8_t<sp/>allocmem<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keywordflow">try</highlight><highlight class="normal">{<sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>tableau<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>int8_t<sp/>*<sp/>[<sp/>20<sp/>];</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>std::fill_n(<sp/>tableau,<sp/>20,<sp/>static_cast&lt;int8_t*&gt;(0));<sp/></highlight><highlight class="comment">/*permet<sp/>d&apos;initialiser<sp/>le<sp/>tableau<sp/>à<sp/>0*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(allocmem<sp/>=<sp/>0;<sp/>allocmem<sp/>&lt;<sp/>20;<sp/>++allocmem)<sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tableau[<sp/>allocmem<sp/>]<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>int8_t[<sp/>20<sp/>];<sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}<sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal">(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::bad_alloc<sp/>&amp;)<sp/>{<sp/></highlight><highlight class="comment">/*si<sp/>l&apos;allocation<sp/>ne<sp/>s&apos;est<sp/>pas<sp/>bien<sp/>passé,<sp/>alors<sp/>on<sp/>libère<sp/>l&apos;espace<sp/>utilisé*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(<sp/>uint8_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>allocmem;<sp/>++i<sp/>){<sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>[]<sp/>tableau[<sp/>i<sp/>];<sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>[]<sp/>tableau;<sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal">;<sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">```</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal">-<sp/>Destruction<sp/>du<sp/>tableau<sp/>20x20</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal">```cpp</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(int8_t<sp/>i=0;<sp/>i&lt;20;<sp/>i++){</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>[]<sp/>tableau[i];</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>tableau[i]<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>[]tableau;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">tableau<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">```</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">##<sp/>Pair</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"></highlight><highlight class="normal">---</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal">-<sp/>position<sp/>x3<sp/>&amp;<sp/>y5</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal">```cpp</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;utility&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal">std::pair&lt;int8_t,<sp/>int8_t&gt;<sp/>position;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">position<sp/>=<sp/>std::make_pair(3,<sp/>5);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal">std::pair&lt;int8_t,<sp/>int8_t&gt;<sp/>*pair;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">std::pair&lt;int,int&gt;<sp/>pt;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">pt<sp/>=<sp/>std::make_pair(3,<sp/>5);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">paire<sp/>=<sp/>&amp;pt;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal">printf(</highlight><highlight class="stringliteral">&quot;Valeur<sp/>de<sp/>x:<sp/>%d,<sp/>y:<sp/>%d&quot;</highlight><highlight class="normal">,<sp/>pair-&gt;first,<sp/>position.second);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>pair;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">pair<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">```</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal">``Valeur<sp/>de<sp/>x:<sp/>3,<sp/>y:<sp/>5``</highlight></codeline>
+    </programlisting>
+    <location file="/home/glegall/prog_workspace/Robot_car/prog/Utiles.md"/>
+  </compounddef>
+</doxygen>

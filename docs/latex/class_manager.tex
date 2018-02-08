@@ -1,0 +1,383 @@
+\hypertarget{class_manager}{\section{Référence de la classe Manager}
+\label{class_manager}\index{Manager@{Manager}}
+}
+
+
+{\ttfamily \#include $<$manager.\-h$>$}
+
+
+
+Graphe de collaboration de Manager\-:
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+int8\-\_\-t \hyperlink{class_manager_ad8d432cd5aa2863d355d2e39d1936861}{get\-Coordonate} (int8\-\_\-t x, int8\-\_\-t y)
+\item 
+void \hyperlink{class_manager_af43da42550bd9746c5ea61a6aeee80de}{update} ()
+\item 
+int8\-\_\-t $\ast$$\ast$ \hyperlink{class_manager_a963d327a438d93b100ff68b475d2cf83}{get\-General\-Table} ()
+\item 
+int8\-\_\-t \hyperlink{class_manager_a60f89ec1bf61d37a74b4cd67a57d5702}{get\-Scene\-Square} ()
+\item 
+bool \hyperlink{class_manager_aaabcb64f4b95fcd10a778c3c033439fb}{init\-Area} (int8\-\_\-t nb\-\_\-square)
+\item 
+bool \hyperlink{class_manager_a5040d372e0142f22892fdce49ca96e03}{area\-Is\-Define} ()
+\item 
+std\-::string \hyperlink{class_manager_abfd21eccf46a73165312fb71293affc3}{to\-String} ()
+\item 
+std\-::string \hyperlink{class_manager_a21b3e54cbe4b045b9ac40ee53e403897}{for\-Developper} ()
+\item 
+\hyperlink{class_manager_a322cad25d7007438b3a043ad02253d29}{$\sim$\-Manager} ()
+\item 
+void \hyperlink{class_manager_a8cb433965677ad622ee43d59e24262e7}{reset} ()
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_manager}{Manager} $\ast$ \hyperlink{class_manager_a5d783bd86e9be93235898a46de80847f}{get\-Instance} ()
+\end{DoxyCompactItemize}
+\subsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_car}{Car} $\ast$ \hyperlink{class_manager_a2803dff8e8f2912242f4098991d91415}{car}
+\item 
+\hyperlink{class_block}{Block} $\ast$ \hyperlink{class_manager_a9301f6e9bd2feee2719b2ff82b49a85e}{block}
+\item 
+\hyperlink{class_path}{Path} $\ast$ \hyperlink{class_manager_ad9b3bf0343fe49922b1874dcb2b5c6ca}{path}
+\item 
+\hyperlink{class_end}{End} $\ast$ \hyperlink{class_manager_aec87028a71ab7b031977ac12a086658d}{end}
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_manager_a1734887f37a6cc8e5837431b2875459f}{clean\-Matrix} ()
+\item 
+\hyperlink{class_manager_a1658ff9f18e38ccd9cb8b0b371b9c20b}{Manager} ()
+\end{DoxyCompactItemize}
+\subsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+int8\-\_\-t $\ast$$\ast$ \hyperlink{class_manager_ad5d59f4a2b1de265115f4efbbbc60dcd}{general\-Table}
+\item 
+int8\-\_\-t \hyperlink{class_manager_aee110fd8a198d0355c0475e2a8b64380}{scenesquare}
+\end{DoxyCompactItemize}
+\subsection*{Attributs privés statiques}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_manager}{Manager} $\ast$ \hyperlink{class_manager_ac80f5ee151565f111593921bac645ad7}{instance} = nullptr
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Example of Scene Matrice Scene = 6x6 (X,Y)
+
+\begin{TabularC}{6}
+\hline
+\rowcolor{lightgray}{\bf (0,0) }&{\bf (0,1) }&{\bf (0,2) }&{\bf (0,3) }&{\bf (0,4) }&{\bf (0,5)  }\\\cline{1-6}
+(1,0) &(1,1) &(1,2) &(1,3) &(1,4) &(1,5) \\\cline{1-6}
+-\/-\/-\/-\/---&-\/-\/-\/-\/---&-\/-\/-\/-\/---&-\/-\/-\/-\/---&-\/-\/-\/-\/---&-\/-\/-\/-\/--- \\\cline{1-6}
+(2,0) &(2,1) &(2,2) &(2,3) &(2,4) &(2,5) \\\cline{1-6}
+-\/-\/-\/-\/---&-\/-\/-\/-\/---&-\/-\/-\/-\/---&-\/-\/-\/-\/---&-\/-\/-\/-\/---&-\/-\/-\/-\/--- \\\cline{1-6}
+(3,0) &(3,1) &(3,2) &(3,3) &(3,4) &(3,5) \\\cline{1-6}
+-\/-\/-\/-\/---&-\/-\/-\/-\/---&-\/-\/-\/-\/---&-\/-\/-\/-\/---&-\/-\/-\/-\/---&-\/-\/-\/-\/--- \\\cline{1-6}
+(4,0) &(4,1) &(4,2) &(4,3) &(4,4) &(4,5) \\\cline{1-6}
+-\/-\/-\/-\/---&-\/-\/-\/-\/---&-\/-\/-\/-\/---&-\/-\/-\/-\/---&-\/-\/-\/-\/---&-\/-\/-\/-\/--- \\\cline{1-6}
+(5,0) &(5,1) &(5,2) &(5,3) &(5,4) &(5,5) \\\cline{1-6}
+\end{TabularC}
+
+
+Définition à la ligne 33 du fichier manager.\-h.
+
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{class_manager_a322cad25d7007438b3a043ad02253d29}{\index{Manager@{Manager}!$\sim$\-Manager@{$\sim$\-Manager}}
+\index{$\sim$\-Manager@{$\sim$\-Manager}!Manager@{Manager}}
+\subsubsection[{$\sim$\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}Manager\-::$\sim$\-Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_manager_a322cad25d7007438b3a043ad02253d29}
+
+
+Définition à la ligne 143 du fichier manager.\-h.
+
+\hypertarget{class_manager_a1658ff9f18e38ccd9cb8b0b371b9c20b}{\index{Manager@{Manager}!Manager@{Manager}}
+\index{Manager@{Manager}!Manager@{Manager}}
+\subsubsection[{Manager}]{\setlength{\rightskip}{0pt plus 5cm}Manager\-::\-Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_manager_a1658ff9f18e38ccd9cb8b0b371b9c20b}
+
+
+Définition à la ligne 170 du fichier manager.\-h.
+
+
+
+Voici le graphe d'appel pour cette fonction \-:
+
+
+
+
+Voici le graphe des appelants de cette fonction \-:
+
+
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{class_manager_a5040d372e0142f22892fdce49ca96e03}{\index{Manager@{Manager}!area\-Is\-Define@{area\-Is\-Define}}
+\index{area\-Is\-Define@{area\-Is\-Define}!Manager@{Manager}}
+\subsubsection[{area\-Is\-Define}]{\setlength{\rightskip}{0pt plus 5cm}bool Manager\-::area\-Is\-Define (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_manager_a5040d372e0142f22892fdce49ca96e03}
+
+
+Définition à la ligne 116 du fichier manager.\-h.
+
+
+
+Voici le graphe des appelants de cette fonction \-:
+
+
+\hypertarget{class_manager_a1734887f37a6cc8e5837431b2875459f}{\index{Manager@{Manager}!clean\-Matrix@{clean\-Matrix}}
+\index{clean\-Matrix@{clean\-Matrix}!Manager@{Manager}}
+\subsubsection[{clean\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}void Manager\-::clean\-Matrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_manager_a1734887f37a6cc8e5837431b2875459f}
+
+
+Définition à la ligne 39 du fichier manager.\-cpp.
+
+
+
+Voici le graphe d'appel pour cette fonction \-:
+
+
+
+
+Voici le graphe des appelants de cette fonction \-:
+
+
+\hypertarget{class_manager_a21b3e54cbe4b045b9ac40ee53e403897}{\index{Manager@{Manager}!for\-Developper@{for\-Developper}}
+\index{for\-Developper@{for\-Developper}!Manager@{Manager}}
+\subsubsection[{for\-Developper}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Manager\-::for\-Developper (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_manager_a21b3e54cbe4b045b9ac40ee53e403897}
+
+
+Définition à la ligne 47 du fichier manager.\-cpp.
+
+
+
+Voici le graphe d'appel pour cette fonction \-:
+
+
+
+
+Voici le graphe des appelants de cette fonction \-:
+
+
+\hypertarget{class_manager_ad8d432cd5aa2863d355d2e39d1936861}{\index{Manager@{Manager}!get\-Coordonate@{get\-Coordonate}}
+\index{get\-Coordonate@{get\-Coordonate}!Manager@{Manager}}
+\subsubsection[{get\-Coordonate}]{\setlength{\rightskip}{0pt plus 5cm}int8\-\_\-t Manager\-::get\-Coordonate (
+\begin{DoxyParamCaption}
+\item[{int8\-\_\-t}]{x, }
+\item[{int8\-\_\-t}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_manager_ad8d432cd5aa2863d355d2e39d1936861}
+
+
+Définition à la ligne 54 du fichier manager.\-h.
+
+\hypertarget{class_manager_a963d327a438d93b100ff68b475d2cf83}{\index{Manager@{Manager}!get\-General\-Table@{get\-General\-Table}}
+\index{get\-General\-Table@{get\-General\-Table}!Manager@{Manager}}
+\subsubsection[{get\-General\-Table}]{\setlength{\rightskip}{0pt plus 5cm}int8\-\_\-t$\ast$$\ast$ Manager\-::get\-General\-Table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_manager_a963d327a438d93b100ff68b475d2cf83}
+
+
+Définition à la ligne 72 du fichier manager.\-h.
+
+
+
+Voici le graphe des appelants de cette fonction \-:
+
+
+\hypertarget{class_manager_a5d783bd86e9be93235898a46de80847f}{\index{Manager@{Manager}!get\-Instance@{get\-Instance}}
+\index{get\-Instance@{get\-Instance}!Manager@{Manager}}
+\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Manager} $\ast$ Manager\-::get\-Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_manager_a5d783bd86e9be93235898a46de80847f}
+
+
+Définition à la ligne 8 du fichier manager.\-cpp.
+
+
+
+Voici le graphe d'appel pour cette fonction \-:
+
+
+
+
+Voici le graphe des appelants de cette fonction \-:
+
+
+\hypertarget{class_manager_a60f89ec1bf61d37a74b4cd67a57d5702}{\index{Manager@{Manager}!get\-Scene\-Square@{get\-Scene\-Square}}
+\index{get\-Scene\-Square@{get\-Scene\-Square}!Manager@{Manager}}
+\subsubsection[{get\-Scene\-Square}]{\setlength{\rightskip}{0pt plus 5cm}int8\-\_\-t Manager\-::get\-Scene\-Square (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_manager_a60f89ec1bf61d37a74b4cd67a57d5702}
+
+
+Définition à la ligne 83 du fichier manager.\-h.
+
+
+
+Voici le graphe des appelants de cette fonction \-:
+
+
+\hypertarget{class_manager_aaabcb64f4b95fcd10a778c3c033439fb}{\index{Manager@{Manager}!init\-Area@{init\-Area}}
+\index{init\-Area@{init\-Area}!Manager@{Manager}}
+\subsubsection[{init\-Area}]{\setlength{\rightskip}{0pt plus 5cm}bool Manager\-::init\-Area (
+\begin{DoxyParamCaption}
+\item[{int8\-\_\-t}]{nb\-\_\-square}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_manager_aaabcb64f4b95fcd10a778c3c033439fb}
+
+
+Définition à la ligne 95 du fichier manager.\-h.
+
+
+
+Voici le graphe des appelants de cette fonction \-:
+
+
+\hypertarget{class_manager_a8cb433965677ad622ee43d59e24262e7}{\index{Manager@{Manager}!reset@{reset}}
+\index{reset@{reset}!Manager@{Manager}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}void Manager\-::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_manager_a8cb433965677ad622ee43d59e24262e7}
+
+
+Définition à la ligne 73 du fichier manager.\-cpp.
+
+
+
+Voici le graphe d'appel pour cette fonction \-:
+
+
+
+
+Voici le graphe des appelants de cette fonction \-:
+
+
+\hypertarget{class_manager_abfd21eccf46a73165312fb71293affc3}{\index{Manager@{Manager}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!Manager@{Manager}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Manager\-::to\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_manager_abfd21eccf46a73165312fb71293affc3}
+
+
+Définition à la ligne 60 du fichier manager.\-cpp.
+
+
+
+Voici le graphe d'appel pour cette fonction \-:
+
+
+\hypertarget{class_manager_af43da42550bd9746c5ea61a6aeee80de}{\index{Manager@{Manager}!update@{update}}
+\index{update@{update}!Manager@{Manager}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void Manager\-::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_manager_af43da42550bd9746c5ea61a6aeee80de}
+
+
+Définition à la ligne 15 du fichier manager.\-cpp.
+
+
+
+Voici le graphe d'appel pour cette fonction \-:
+
+
+
+
+Voici le graphe des appelants de cette fonction \-:
+
+
+
+
+\subsection{Documentation des données membres}
+\hypertarget{class_manager_a9301f6e9bd2feee2719b2ff82b49a85e}{\index{Manager@{Manager}!block@{block}}
+\index{block@{block}!Manager@{Manager}}
+\subsubsection[{block}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Block}$\ast$ Manager\-::block}}\label{class_manager_a9301f6e9bd2feee2719b2ff82b49a85e}
+
+
+Définition à la ligne 38 du fichier manager.\-h.
+
+\hypertarget{class_manager_a2803dff8e8f2912242f4098991d91415}{\index{Manager@{Manager}!car@{car}}
+\index{car@{car}!Manager@{Manager}}
+\subsubsection[{car}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Car}$\ast$ Manager\-::car}}\label{class_manager_a2803dff8e8f2912242f4098991d91415}
+
+
+Définition à la ligne 37 du fichier manager.\-h.
+
+\hypertarget{class_manager_aec87028a71ab7b031977ac12a086658d}{\index{Manager@{Manager}!end@{end}}
+\index{end@{end}!Manager@{Manager}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}{\bf End}$\ast$ Manager\-::end}}\label{class_manager_aec87028a71ab7b031977ac12a086658d}
+
+
+Définition à la ligne 40 du fichier manager.\-h.
+
+\hypertarget{class_manager_ad5d59f4a2b1de265115f4efbbbc60dcd}{\index{Manager@{Manager}!general\-Table@{general\-Table}}
+\index{general\-Table@{general\-Table}!Manager@{Manager}}
+\subsubsection[{general\-Table}]{\setlength{\rightskip}{0pt plus 5cm}int8\-\_\-t$\ast$$\ast$ Manager\-::general\-Table\hspace{0.3cm}{\ttfamily [private]}}}\label{class_manager_ad5d59f4a2b1de265115f4efbbbc60dcd}
+
+
+Définition à la ligne 154 du fichier manager.\-h.
+
+\hypertarget{class_manager_ac80f5ee151565f111593921bac645ad7}{\index{Manager@{Manager}!instance@{instance}}
+\index{instance@{instance}!Manager@{Manager}}
+\subsubsection[{instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Manager} $\ast$ Manager\-::instance = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_manager_ac80f5ee151565f111593921bac645ad7}
+
+
+Définition à la ligne 155 du fichier manager.\-h.
+
+\hypertarget{class_manager_ad9b3bf0343fe49922b1874dcb2b5c6ca}{\index{Manager@{Manager}!path@{path}}
+\index{path@{path}!Manager@{Manager}}
+\subsubsection[{path}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Path}$\ast$ Manager\-::path}}\label{class_manager_ad9b3bf0343fe49922b1874dcb2b5c6ca}
+
+
+Définition à la ligne 39 du fichier manager.\-h.
+
+\hypertarget{class_manager_aee110fd8a198d0355c0475e2a8b64380}{\index{Manager@{Manager}!scenesquare@{scenesquare}}
+\index{scenesquare@{scenesquare}!Manager@{Manager}}
+\subsubsection[{scenesquare}]{\setlength{\rightskip}{0pt plus 5cm}int8\-\_\-t Manager\-::scenesquare\hspace{0.3cm}{\ttfamily [private]}}}\label{class_manager_aee110fd8a198d0355c0475e2a8b64380}
+
+
+Définition à la ligne 156 du fichier manager.\-h.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+headers/\hyperlink{manager_8h}{manager.\-h}\item 
+sources/\hyperlink{manager_8cpp}{manager.\-cpp}\end{DoxyCompactItemize}

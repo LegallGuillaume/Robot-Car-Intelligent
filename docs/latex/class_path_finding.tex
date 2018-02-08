@@ -1,0 +1,266 @@
+\hypertarget{class_path_finding}{\section{Référence de la classe Path\-Finding}
+\label{class_path_finding}\index{Path\-Finding@{Path\-Finding}}
+}
+
+
+{\ttfamily \#include $<$pathfinding.\-h$>$}
+
+
+
+Graphe de collaboration de Path\-Finding\-:
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_path_finding_a886575c3dc169578626ba9dbf45744be}{Path\-Finding} (int8\-\_\-t $\ast$$\ast$matrix, int8\-\_\-t width\-\_\-scene, int8\-\_\-t height\-\_\-scene, std\-::pair$<$ int8\-\_\-t, int8\-\_\-t $>$ start, std\-::pair$<$ int8\-\_\-t, int8\-\_\-t $>$ end)
+\item 
+bool \hyperlink{class_path_finding_a3ff60b1cb0a54bfd10dbc75bfce9b47d}{ever\-Parent} (\hyperlink{class_cell}{Cell} $\ast$current, \hyperlink{class_cell}{Cell} $\ast$parent)
+\item 
+bool \hyperlink{class_path_finding_a8d70d17f06400cdcd5787331d7be38e2}{has\-Possibility} ()
+\item 
+std\-::vector$<$ std\-::pair$<$ int8\-\_\-t, \\*
+int8\-\_\-t $>$ $>$ $\ast$ \hyperlink{class_path_finding_a536055d11c630edc210d100d832a5ccf}{get\-Path} ()
+\item 
+\hyperlink{class_path_finding_a0fc7389a32fa31a194a940a89f252bdb}{$\sim$\-Path\-Finding} ()
+\end{DoxyCompactItemize}
+\subsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_path_finding_addc7b9eb5682e0de46fd59c4a1319a86}{find\-Path} ()
+\item 
+\hyperlink{class_cell}{Cell} $\ast$ \hyperlink{class_path_finding_a41966230b75e9e6e680b2ca0ac820399}{get\-Cell} (int8\-\_\-t x, int8\-\_\-t y)
+\item 
+bool \hyperlink{class_path_finding_ade7cf2d6ced4a0d586ff7ebe3639f26d}{surrounded\-Blocs} (int8\-\_\-t x, int8\-\_\-t y, int8\-\_\-t $\ast$$\ast$matrix)
+\end{DoxyCompactItemize}
+\subsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_cell}{Cell} $\ast$ \hyperlink{class_path_finding_a042d47e6d4115a112e0570afe6a88897}{\-\_\-pathfinding}
+\item 
+std\-::vector$<$ std\-::pair$<$ int8\-\_\-t, \\*
+int8\-\_\-t $>$ $>$ $\ast$ \hyperlink{class_path_finding_a489cfbcdff32e661c7783caec686321a}{list\-\_\-path\-Ok}
+\item 
+std\-::vector$<$ \hyperlink{class_cell}{Cell} $\ast$ $>$ \hyperlink{class_path_finding_a042ed04ef5c507a6a575bde3c7aee317}{all\-\_\-cells}
+\item 
+std\-::vector$<$ \hyperlink{class_cell}{Cell} $\ast$ $>$ \hyperlink{class_path_finding_a78443d74b8dfff09953f63f40a1768c8}{current\-\_\-list}
+\item 
+int8\-\_\-t \hyperlink{class_path_finding_a50f9513402ad1113678635c3eb9da62d}{width}
+\item 
+int8\-\_\-t \hyperlink{class_path_finding_a61e5643d7459d24b07306a6886348ca1}{height}
+\item 
+std\-::pair$<$ int8\-\_\-t, int8\-\_\-t $>$ \hyperlink{class_path_finding_a33dac4c9b17f5e6032bc0fc60e7a8249}{start\-\_\-coord}
+\item 
+std\-::pair$<$ int8\-\_\-t, int8\-\_\-t $>$ \hyperlink{class_path_finding_a7db7c62b00778fb60be8fdb10c471851}{end\-\_\-coord}
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+
+
+Définition à la ligne 13 du fichier pathfinding.\-h.
+
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\hypertarget{class_path_finding_a886575c3dc169578626ba9dbf45744be}{\index{Path\-Finding@{Path\-Finding}!Path\-Finding@{Path\-Finding}}
+\index{Path\-Finding@{Path\-Finding}!PathFinding@{Path\-Finding}}
+\subsubsection[{Path\-Finding}]{\setlength{\rightskip}{0pt plus 5cm}Path\-Finding\-::\-Path\-Finding (
+\begin{DoxyParamCaption}
+\item[{int8\-\_\-t $\ast$$\ast$}]{matrix, }
+\item[{int8\-\_\-t}]{width\-\_\-scene, }
+\item[{int8\-\_\-t}]{height\-\_\-scene, }
+\item[{std\-::pair$<$ int8\-\_\-t, int8\-\_\-t $>$}]{start, }
+\item[{std\-::pair$<$ int8\-\_\-t, int8\-\_\-t $>$}]{end}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_path_finding_a886575c3dc169578626ba9dbf45744be}
+
+
+Définition à la ligne 28 du fichier pathfinding.\-h.
+
+
+
+Voici le graphe d'appel pour cette fonction \-:
+
+
+\hypertarget{class_path_finding_a0fc7389a32fa31a194a940a89f252bdb}{\index{Path\-Finding@{Path\-Finding}!$\sim$\-Path\-Finding@{$\sim$\-Path\-Finding}}
+\index{$\sim$\-Path\-Finding@{$\sim$\-Path\-Finding}!PathFinding@{Path\-Finding}}
+\subsubsection[{$\sim$\-Path\-Finding}]{\setlength{\rightskip}{0pt plus 5cm}Path\-Finding\-::$\sim$\-Path\-Finding (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_path_finding_a0fc7389a32fa31a194a940a89f252bdb}
+
+
+Définition à la ligne 108 du fichier pathfinding.\-h.
+
+
+
+\subsection{Documentation des fonctions membres}
+\hypertarget{class_path_finding_a3ff60b1cb0a54bfd10dbc75bfce9b47d}{\index{Path\-Finding@{Path\-Finding}!ever\-Parent@{ever\-Parent}}
+\index{ever\-Parent@{ever\-Parent}!PathFinding@{Path\-Finding}}
+\subsubsection[{ever\-Parent}]{\setlength{\rightskip}{0pt plus 5cm}bool Path\-Finding\-::ever\-Parent (
+\begin{DoxyParamCaption}
+\item[{{\bf Cell} $\ast$}]{current, }
+\item[{{\bf Cell} $\ast$}]{parent}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_path_finding_a3ff60b1cb0a54bfd10dbc75bfce9b47d}
+
+
+Définition à la ligne 50 du fichier pathfinding.\-h.
+
+
+
+Voici le graphe des appelants de cette fonction \-:
+
+
+\hypertarget{class_path_finding_addc7b9eb5682e0de46fd59c4a1319a86}{\index{Path\-Finding@{Path\-Finding}!find\-Path@{find\-Path}}
+\index{find\-Path@{find\-Path}!PathFinding@{Path\-Finding}}
+\subsubsection[{find\-Path}]{\setlength{\rightskip}{0pt plus 5cm}void Path\-Finding\-::find\-Path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_path_finding_addc7b9eb5682e0de46fd59c4a1319a86}
+
+
+Définition à la ligne 148 du fichier pathfinding.\-h.
+
+
+
+Voici le graphe d'appel pour cette fonction \-:
+
+
+
+
+Voici le graphe des appelants de cette fonction \-:
+
+
+\hypertarget{class_path_finding_a41966230b75e9e6e680b2ca0ac820399}{\index{Path\-Finding@{Path\-Finding}!get\-Cell@{get\-Cell}}
+\index{get\-Cell@{get\-Cell}!PathFinding@{Path\-Finding}}
+\subsubsection[{get\-Cell}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cell}$\ast$ Path\-Finding\-::get\-Cell (
+\begin{DoxyParamCaption}
+\item[{int8\-\_\-t}]{x, }
+\item[{int8\-\_\-t}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_path_finding_a41966230b75e9e6e680b2ca0ac820399}
+
+
+Définition à la ligne 243 du fichier pathfinding.\-h.
+
+
+
+Voici le graphe des appelants de cette fonction \-:
+
+
+\hypertarget{class_path_finding_a536055d11c630edc210d100d832a5ccf}{\index{Path\-Finding@{Path\-Finding}!get\-Path@{get\-Path}}
+\index{get\-Path@{get\-Path}!PathFinding@{Path\-Finding}}
+\subsubsection[{get\-Path}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$std\-::pair$<$int8\-\_\-t, int8\-\_\-t$>$ $>$$\ast$ Path\-Finding\-::get\-Path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_path_finding_a536055d11c630edc210d100d832a5ccf}
+
+
+Définition à la ligne 81 du fichier pathfinding.\-h.
+
+
+
+Voici le graphe d'appel pour cette fonction \-:
+
+
+
+
+Voici le graphe des appelants de cette fonction \-:
+
+
+\hypertarget{class_path_finding_a8d70d17f06400cdcd5787331d7be38e2}{\index{Path\-Finding@{Path\-Finding}!has\-Possibility@{has\-Possibility}}
+\index{has\-Possibility@{has\-Possibility}!PathFinding@{Path\-Finding}}
+\subsubsection[{has\-Possibility}]{\setlength{\rightskip}{0pt plus 5cm}bool Path\-Finding\-::has\-Possibility (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_path_finding_a8d70d17f06400cdcd5787331d7be38e2}
+
+
+Définition à la ligne 70 du fichier pathfinding.\-h.
+
+
+
+Voici le graphe des appelants de cette fonction \-:
+
+
+\hypertarget{class_path_finding_ade7cf2d6ced4a0d586ff7ebe3639f26d}{\index{Path\-Finding@{Path\-Finding}!surrounded\-Blocs@{surrounded\-Blocs}}
+\index{surrounded\-Blocs@{surrounded\-Blocs}!PathFinding@{Path\-Finding}}
+\subsubsection[{surrounded\-Blocs}]{\setlength{\rightskip}{0pt plus 5cm}bool Path\-Finding\-::surrounded\-Blocs (
+\begin{DoxyParamCaption}
+\item[{int8\-\_\-t}]{x, }
+\item[{int8\-\_\-t}]{y, }
+\item[{int8\-\_\-t $\ast$$\ast$}]{matrix}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_path_finding_ade7cf2d6ced4a0d586ff7ebe3639f26d}
+
+
+Définition à la ligne 265 du fichier pathfinding.\-h.
+
+
+
+\subsection{Documentation des données membres}
+\hypertarget{class_path_finding_a042d47e6d4115a112e0570afe6a88897}{\index{Path\-Finding@{Path\-Finding}!\-\_\-pathfinding@{\-\_\-pathfinding}}
+\index{\-\_\-pathfinding@{\-\_\-pathfinding}!PathFinding@{Path\-Finding}}
+\subsubsection[{\-\_\-pathfinding}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cell}$\ast$ Path\-Finding\-::\-\_\-pathfinding\hspace{0.3cm}{\ttfamily [private]}}}\label{class_path_finding_a042d47e6d4115a112e0570afe6a88897}
+
+
+Définition à la ligne 124 du fichier pathfinding.\-h.
+
+\hypertarget{class_path_finding_a042ed04ef5c507a6a575bde3c7aee317}{\index{Path\-Finding@{Path\-Finding}!all\-\_\-cells@{all\-\_\-cells}}
+\index{all\-\_\-cells@{all\-\_\-cells}!PathFinding@{Path\-Finding}}
+\subsubsection[{all\-\_\-cells}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Cell}$\ast$$>$ Path\-Finding\-::all\-\_\-cells\hspace{0.3cm}{\ttfamily [private]}}}\label{class_path_finding_a042ed04ef5c507a6a575bde3c7aee317}
+
+
+Définition à la ligne 293 du fichier pathfinding.\-h.
+
+\hypertarget{class_path_finding_a78443d74b8dfff09953f63f40a1768c8}{\index{Path\-Finding@{Path\-Finding}!current\-\_\-list@{current\-\_\-list}}
+\index{current\-\_\-list@{current\-\_\-list}!PathFinding@{Path\-Finding}}
+\subsubsection[{current\-\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Cell}$\ast$$>$ Path\-Finding\-::current\-\_\-list\hspace{0.3cm}{\ttfamily [private]}}}\label{class_path_finding_a78443d74b8dfff09953f63f40a1768c8}
+
+
+Définition à la ligne 294 du fichier pathfinding.\-h.
+
+\hypertarget{class_path_finding_a7db7c62b00778fb60be8fdb10c471851}{\index{Path\-Finding@{Path\-Finding}!end\-\_\-coord@{end\-\_\-coord}}
+\index{end\-\_\-coord@{end\-\_\-coord}!PathFinding@{Path\-Finding}}
+\subsubsection[{end\-\_\-coord}]{\setlength{\rightskip}{0pt plus 5cm}std\-::pair$<$int8\-\_\-t, int8\-\_\-t$>$ Path\-Finding\-::end\-\_\-coord\hspace{0.3cm}{\ttfamily [private]}}}\label{class_path_finding_a7db7c62b00778fb60be8fdb10c471851}
+
+
+Définition à la ligne 298 du fichier pathfinding.\-h.
+
+\hypertarget{class_path_finding_a61e5643d7459d24b07306a6886348ca1}{\index{Path\-Finding@{Path\-Finding}!height@{height}}
+\index{height@{height}!PathFinding@{Path\-Finding}}
+\subsubsection[{height}]{\setlength{\rightskip}{0pt plus 5cm}int8\-\_\-t Path\-Finding\-::height\hspace{0.3cm}{\ttfamily [private]}}}\label{class_path_finding_a61e5643d7459d24b07306a6886348ca1}
+
+
+Définition à la ligne 296 du fichier pathfinding.\-h.
+
+\hypertarget{class_path_finding_a489cfbcdff32e661c7783caec686321a}{\index{Path\-Finding@{Path\-Finding}!list\-\_\-path\-Ok@{list\-\_\-path\-Ok}}
+\index{list\-\_\-path\-Ok@{list\-\_\-path\-Ok}!PathFinding@{Path\-Finding}}
+\subsubsection[{list\-\_\-path\-Ok}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$std\-::pair$<$int8\-\_\-t,int8\-\_\-t$>$ $>$$\ast$ Path\-Finding\-::list\-\_\-path\-Ok\hspace{0.3cm}{\ttfamily [private]}}}\label{class_path_finding_a489cfbcdff32e661c7783caec686321a}
+
+
+Définition à la ligne 125 du fichier pathfinding.\-h.
+
+\hypertarget{class_path_finding_a33dac4c9b17f5e6032bc0fc60e7a8249}{\index{Path\-Finding@{Path\-Finding}!start\-\_\-coord@{start\-\_\-coord}}
+\index{start\-\_\-coord@{start\-\_\-coord}!PathFinding@{Path\-Finding}}
+\subsubsection[{start\-\_\-coord}]{\setlength{\rightskip}{0pt plus 5cm}std\-::pair$<$int8\-\_\-t, int8\-\_\-t$>$ Path\-Finding\-::start\-\_\-coord\hspace{0.3cm}{\ttfamily [private]}}}\label{class_path_finding_a33dac4c9b17f5e6032bc0fc60e7a8249}
+
+
+Définition à la ligne 297 du fichier pathfinding.\-h.
+
+\hypertarget{class_path_finding_a50f9513402ad1113678635c3eb9da62d}{\index{Path\-Finding@{Path\-Finding}!width@{width}}
+\index{width@{width}!PathFinding@{Path\-Finding}}
+\subsubsection[{width}]{\setlength{\rightskip}{0pt plus 5cm}int8\-\_\-t Path\-Finding\-::width\hspace{0.3cm}{\ttfamily [private]}}}\label{class_path_finding_a50f9513402ad1113678635c3eb9da62d}
+
+
+Définition à la ligne 295 du fichier pathfinding.\-h.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \-:\begin{DoxyCompactItemize}
+\item 
+headers/traitement/\hyperlink{pathfinding_8h}{pathfinding.\-h}\end{DoxyCompactItemize}

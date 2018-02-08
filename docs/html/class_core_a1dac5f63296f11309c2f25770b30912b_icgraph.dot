@@ -1,0 +1,20 @@
+digraph "Core::setMode"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Core::setMode",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Core::init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_core.html#a2ad48b714f575d3f3c25c80ffa72afad"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Core::Core",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_core.html#a14e63188e0aa7c4a6f72d5501384d1f9"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Core::autoVirtualMode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_core.html#a7fab8414125602f9f595143bb21d24c1"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Core::start",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_core.html#a722434c9873d07d6b26a74e40e08eb9c"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Core::listenIPC",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_core.html#a9677503611528b6d6f2039eff6f80912"];
+  Node7 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

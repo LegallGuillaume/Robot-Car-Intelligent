@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="car_8h" kind="file">
+    <compoundname>car.h</compoundname>
+    <includes local="no">utility</includes>
+    <includes local="no">string</includes>
+    <includes refid="simpleobject_8h" local="yes">../abstract/simpleobject.h</includes>
+    <includedby refid="manager_8h" local="yes">headers/manager.h</includedby>
+    <includedby refid="car_8cpp" local="yes">sources/car.cpp</includedby>
+    <incdepgraph>
+      <node id="464">
+        <label>string</label>
+      </node>
+      <node id="462">
+        <label>headers/manager/car.h</label>
+        <link refid="car.h"/>
+        <childnode refid="463" relation="include">
+        </childnode>
+        <childnode refid="464" relation="include">
+        </childnode>
+        <childnode refid="465" relation="include">
+        </childnode>
+      </node>
+      <node id="463">
+        <label>utility</label>
+      </node>
+      <node id="466">
+        <label>sstream</label>
+      </node>
+      <node id="465">
+        <label>../abstract/simpleobject.h</label>
+        <link refid="simpleobject_8h"/>
+        <childnode refid="466" relation="include">
+        </childnode>
+        <childnode refid="464" relation="include">
+        </childnode>
+        <childnode refid="463" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="469">
+        <label>headers/core.h</label>
+        <link refid="core_8h"/>
+        <childnode refid="470" relation="include">
+        </childnode>
+        <childnode refid="471" relation="include">
+        </childnode>
+      </node>
+      <node id="473">
+        <label>unitest.cpp</label>
+        <link refid="unitest_8cpp"/>
+      </node>
+      <node id="467">
+        <label>headers/manager/car.h</label>
+        <link refid="car.h"/>
+        <childnode refid="468" relation="include">
+        </childnode>
+        <childnode refid="475" relation="include">
+        </childnode>
+      </node>
+      <node id="475">
+        <label>sources/car.cpp</label>
+        <link refid="car_8cpp"/>
+      </node>
+      <node id="471">
+        <label>sources/core.cpp</label>
+        <link refid="core_8cpp"/>
+      </node>
+      <node id="468">
+        <label>headers/manager.h</label>
+        <link refid="manager_8h"/>
+        <childnode refid="469" relation="include">
+        </childnode>
+        <childnode refid="472" relation="include">
+        </childnode>
+        <childnode refid="474" relation="include">
+        </childnode>
+        <childnode refid="473" relation="include">
+        </childnode>
+      </node>
+      <node id="470">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="474">
+        <label>sources/manager.cpp</label>
+        <link refid="manager_8cpp"/>
+      </node>
+      <node id="472">
+        <label>headers/traitement/pathfinding.h</label>
+        <link refid="pathfinding_8h"/>
+        <childnode refid="469" relation="include">
+        </childnode>
+        <childnode refid="473" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_car" prot="public">Car</innerclass>
+    <briefdescription>
+<para>Abstract of <ref refid="class_simple_object" kindref="compound">SimpleObject</ref>  Virtual function. </para>    </briefdescription>
+    <detaileddescription>
+<para>Design patern singleton  Singleton function.</para><para><simplesect kind="version"><para>1.0</para><simplesectsep/><para>1.0</para></simplesect>
+<simplesect kind="return"><para>Car* have <ref refid="class_car" kindref="compound">Car</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>CAR_H</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CAR_H</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;utility&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//pair&lt;&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../abstract/simpleobject.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="class_car" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_car" kindref="compound">Car</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_simple_object" kindref="compound">SimpleObject</ref>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_car" kindref="compound">Car</ref><sp/>*<sp/>getInstance();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sendCommand();<sp/></highlight><highlight class="comment">//send<sp/>command<sp/>to<sp/>car<sp/>from<sp/>position<sp/>X<sp/>&amp;<sp/>Y</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="class_car_1a97e3c5de8eb65659ef520de6591f814d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_car_1a97e3c5de8eb65659ef520de6591f814d" kindref="member">setPosition</ref>(int8_t<sp/>x,<sp/>int8_t<sp/>y)</highlight><highlight class="keyword"><sp/>override</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>position-&gt;first<sp/>=<sp/>x;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>position-&gt;second<sp/>=<sp/>y;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33" refid="class_car_1a20dd521474ee36b144bde58e3359eed6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>pair&lt;int8_t,<sp/>int8_t&gt;<sp/><ref refid="class_car_1a20dd521474ee36b144bde58e3359eed6" kindref="member">getPosition</ref>()</highlight><highlight class="keyword"><sp/>override</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*position;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>toString()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37" refid="class_car_1a5933bb06e96b159fe339a128abda888a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_car_1a5933bb06e96b159fe339a128abda888a" kindref="member">~Car</ref>(){</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>position;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>position<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>instance;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>instance<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="44" refid="class_car_1a4e8c86d0fa20de2108d524056cf4bc85" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_car" kindref="compound">Car</ref><sp/>*<sp/><ref refid="class_car_1a4e8c86d0fa20de2108d524056cf4bc85" kindref="member">instance</ref>;</highlight></codeline>
+<codeline lineno="45" refid="class_car_1a43e9c00e78af10fc998624a811e014df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>pair&lt;int8_t,<sp/>int8_t&gt;<sp/>*<ref refid="class_car_1a43e9c00e78af10fc998624a811e014df" kindref="member">position</ref>;</highlight></codeline>
+<codeline lineno="46" refid="class_car_1a1c803f7c5038d3e31b368b0d0a35493c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_car_1a1c803f7c5038d3e31b368b0d0a35493c" kindref="member">Car</ref>(){</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>position<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>pair&lt;int8_t,<sp/>int8_t&gt;();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>position-&gt;first<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>position-&gt;second<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/glegall/prog_workspace/Robot_car/prog/headers/manager/car.h"/>
+  </compounddef>
+</doxygen>

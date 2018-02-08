@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="car_8cpp" kind="file">
+    <compoundname>car.cpp</compoundname>
+    <includes local="no">iostream</includes>
+    <includes refid="car_8h" local="yes">../headers/manager/car.h</includes>
+    <includes local="no">string</includes>
+    <includes local="no">sstream</includes>
+    <incdepgraph>
+      <node id="601">
+        <label>string</label>
+      </node>
+      <node id="599">
+        <label>../headers/manager/car.h</label>
+        <link refid="car_8h"/>
+        <childnode refid="600" relation="include">
+        </childnode>
+        <childnode refid="601" relation="include">
+        </childnode>
+        <childnode refid="602" relation="include">
+        </childnode>
+      </node>
+      <node id="597">
+        <label>sources/car.cpp</label>
+        <link refid="car.cpp"/>
+        <childnode refid="598" relation="include">
+        </childnode>
+        <childnode refid="599" relation="include">
+        </childnode>
+        <childnode refid="601" relation="include">
+        </childnode>
+        <childnode refid="603" relation="include">
+        </childnode>
+      </node>
+      <node id="600">
+        <label>utility</label>
+      </node>
+      <node id="603">
+        <label>sstream</label>
+      </node>
+      <node id="598">
+        <label>iostream</label>
+      </node>
+      <node id="602">
+        <label>../abstract/simpleobject.h</label>
+        <link refid="simpleobject_8h"/>
+        <childnode refid="603" relation="include">
+        </childnode>
+        <childnode refid="601" relation="include">
+        </childnode>
+        <childnode refid="600" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../headers/manager/car.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><ref refid="class_car" kindref="compound">Car</ref><sp/>*<sp/><ref refid="class_car_1a4e8c86d0fa20de2108d524056cf4bc85" kindref="member">Car::instance</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_car_1a40cbec40dad9ddda76c277da17f23528" refkind="member"><highlight class="normal"><ref refid="class_car" kindref="compound">Car</ref><sp/>*<sp/><ref refid="class_car_1a40cbec40dad9ddda76c277da17f23528" kindref="member">Car::getInstance</ref>(){</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_car_1a4e8c86d0fa20de2108d524056cf4bc85" kindref="member">instance</ref><sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_car_1a4e8c86d0fa20de2108d524056cf4bc85" kindref="member">instance</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_car_1a1c803f7c5038d3e31b368b0d0a35493c" kindref="member">Car</ref>();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_car_1a4e8c86d0fa20de2108d524056cf4bc85" kindref="member">instance</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="class_car_1a2d3353932e4028eef864813b8c65583b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_car_1a2d3353932e4028eef864813b8c65583b" kindref="member">Car::sendCommand</ref>(){</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//TODO<sp/>send<sp/>command<sp/>from<sp/>wifi<sp/>to<sp/>Car</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="class_car_1afb39c5a80ff1977ee13cb1e5cdf2fecd" refkind="member"><highlight class="normal">std::string<sp/><ref refid="class_car_1afb39c5a80ff1977ee13cb1e5cdf2fecd" kindref="member">Car::toString</ref>(){</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>stringstream<sp/>buf;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>buf&lt;&lt;</highlight><highlight class="stringliteral">&quot;\&quot;Voiture\&quot;:<sp/>{<sp/>\&quot;X\&quot;:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;(int)<ref refid="class_car_1a20dd521474ee36b144bde58e3359eed6" kindref="member">getPosition</ref>().first&lt;&lt;</highlight><highlight class="stringliteral">&quot;,<sp/>\&quot;Y\&quot;:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;(int)<ref refid="class_car_1a20dd521474ee36b144bde58e3359eed6" kindref="member">getPosition</ref>().second&lt;&lt;</highlight><highlight class="stringliteral">&quot; }&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>buf.str();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/glegall/prog_workspace/Robot_car/prog/sources/car.cpp"/>
+  </compounddef>
+</doxygen>
