@@ -32,9 +32,6 @@ public:
             width = width_scene;
             height = height_scene;
             _pathfinding = nullptr;
-            if(surroundedBlocs(end.first, end.second, matrix) || surroundedBlocs(start.first, start.second, matrix)){
-                return;
-            }
             for(int8_t i_width = 0; i_width < width_scene; ++i_width){
                 for(int8_t i_height= 0; i_height < height_scene; ++i_height){
                     bool isblock = (matrix[i_width][i_height] == BLOC_DEF);
@@ -230,7 +227,7 @@ private:
         }
         if(_pathfinding == nullptr){
             findPath();
-        } 
+        }
         return;
     }
 

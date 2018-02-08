@@ -118,39 +118,40 @@ void Core::autoVirtualMode(bool is_auto){
         stateMachine._stateServer = server();
     }else if(stateMachine._stateServer == State::ERROR){
         //TODO ERROR ecrit dans un fichier de log une erreur
+        debug((char*)"THE SERVER COULD NOT START", true);
     }
 /**/else if(stateMachine._stateServer == State::OK){
-        if(DEBUG) std::cout<<"SERVER OK"<<std::endl;
+        debug((char*)"SERVER OK", true);
         if(stateMachine._stateCalibration == State::NONE){
-            if(DEBUG) std::cout<<"CALIBRATION PROCESSING ..."<<std::endl;
+            debug((char*)"CALIBRATION PROCESSING ...", true);
             calibration();
         }else if(stateMachine._stateCalibration == State::ERROR){
             //TODO NO CENTER OF AREA NO FOUND, turn arround car
-            if(DEBUG) std::cout<<"CALIBRATION FAILED (no QRcenter)"<<std::endl;
+            debug((char*)"CALIBRATION FAILED TIMEOUT(no QRcenter)", true);
         }
     /**/else if(stateMachine._stateCalibration == State::OK){
-            if(DEBUG) std::cout<<"CALIBRATION OK"<<std::endl;
+            debug((char*)"CALIBRATION OK", true);
             if(stateMachine._stateImageBlock == State::NONE){
                 blockProcessing(is_auto);
             }else if(stateMachine._stateImageBlock == State::ERROR){
-                //TODO ERROR detect block > 3 (Arrival, Car and Area) and 0 case found (block devide 9)
-                if(DEBUG) std::cout<<"IMAGES PROCESSING FAILED (no case found 1 of 9x9)"<<std::endl;
+                //missing markers car & arrival
+                debug((char*)"IMAGES PROCESSING FAILED (missing CAR or ARRIVAL)", true);
             }
         /**/else if(stateMachine._stateImageBlock == State::OK){
-                if(DEBUG) std::cout<<"IMAGES block OK"<<std::endl;
+                debug((char*)"IMAGES BLOCK OK", true);
                 if(stateMachine._statePathfinding == State::NONE){
                     pathfinding();
                 }else if(stateMachine._statePathfinding == State::NO){
                     //TODO no possibility to found arrival
-                    if(DEBUG) std::cout<<"NO POSSIBILITY PATHFINDING"<<std::endl;
+                    debug((char*)"NO POSSIBILITY PATHFINDING", true);
                 }
             /**/else if(stateMachine._statePathfinding == State::OK){
-                    if(DEBUG) std::cout<<"PATHFINDING OK"<<std::endl;
+                    debug((char*)"PATHFINDING OK", true);
                     if(stateMachine._stateTrajectory == State::NONE){
                         trajectory();
                     }else if(stateMachine._stateTrajectory == State::ERROR){
                         //TODO Car is blocked or some things like this
-                        if(DEBUG) std::cout<<"CAR is blocked"<<std::endl;
+                        debug((char*)"CAR is blocked", true);
                     }
                 /**/else if(stateMachine._stateTrajectory == State::OK){
                         //TODO Car is on Arrival !!
@@ -192,7 +193,7 @@ State Core::calibration(){
 
 State Core::blockProcessing(bool is_auto){
     if(is_auto){
-        if(DEBUG) std::cout<<"SEARCH block ... ";
+        debug((char*)"SEARCH BLOCK ... ", false);
         process->startBlock();
         for(int8_t i=0; i<process->all_block.size();++i){
             manager->block->add(process->all_block.at(i).x, process->all_block.at(i).y);
@@ -204,7 +205,7 @@ State Core::blockProcessing(bool is_auto){
         manager->car->setPosition(process->getCarPosition().x, process->getCarPosition().y);
         manager->end->setPosition(process->getArrivalPosition().x, process->getArrivalPosition().y);
         manager->update();
-        if((int)process->getSizeMarker() >= 2){
+        if(process->readyForPath()){
             stateMachine._stateImageBlock = State::OK;
         }
         else{
@@ -215,14 +216,17 @@ State Core::blockProcessing(bool is_auto){
 }
 
 State Core::pathfinding(){
+    debug((char*)"STARTING PATHFINDING ...", false);
     path = new PathFinding(
         manager->getGeneralTable(), manager->getSceneSquare(), manager->getSceneSquare(), 
         manager->car->getPosition(), manager->end->getPosition()
     );
     if(!path->hasPossibility()){
         stateMachine._statePathfinding = State::NO;
+        debug((char*)"NOT FOUND", true);
         return State::NO;
     }
+    debug((char*)"FOUND", true);
     waitKey(100);
     std::vector<std::pair<int8_t, int8_t>> *pathTerminate = path->getPath();
     for(int index=0; index < (int)pathTerminate->size() - 1; ++index)

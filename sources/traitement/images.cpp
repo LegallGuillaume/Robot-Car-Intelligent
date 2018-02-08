@@ -1,5 +1,6 @@
 #include "../../headers/traitement/images.h"
 #include <fstream>
+#include <unistd.h> /*timeout for calibration*/
 
 
 ImagesP::ImagesP(){
@@ -163,6 +164,10 @@ void ImagesP::init(){
     posArrival = Point2f(-1,-1);
 }
 
+bool ImagesP::readyForPath(){
+    return (posCar != Point(-1,-1) && posArrival != Point(-1,-1));
+}
+
 void ImagesP::saveCalib(std::string str){
     ofstream file("ressources/calib_file.txt");
     file << str.c_str();
@@ -193,7 +198,8 @@ Point2f ImagesP::loadCalib(){
 void ImagesP::calibration(){
     saveCalib("-1\n-1\n"); //reset last calib
     std::vector<Marker> Markers_wait;
-    int index=0;
+    uint8_t index=0;
+    uint16_t timeout = 0;
     while(true){
         if(!cap.read(markerImg))
             break;
@@ -210,10 +216,14 @@ void ImagesP::calibration(){
             }
             Markers = Markers_wait;
         }else{
-            index++;
+            ++index;
         }
         if(index==5)
             break;
+        usleep(50000);
+        if(timeout >= 20*TIMEOUT_CALIBRATION)
+            break;
+        ++timeout;
     }
 }
 

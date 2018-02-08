@@ -20,6 +20,7 @@ class ImagesP{
 public:
     ImagesP();
     ~ImagesP();
+    bool readyForPath(); /*check posCar != -1, posArrival != -1 and markers != -1*/
     void startBlock();
     std::vector<Point> all_block;
     Point posCar, posArrival;

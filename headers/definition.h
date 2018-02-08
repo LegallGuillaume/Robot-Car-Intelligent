@@ -2,7 +2,7 @@
 #define CONST_DEFINITION
 
 
-static bool DEBUG = true;
+#define DEBUG                   1       /*enable/disable debug mode*/
 
 /*MATRIX AREA DEFINITION*/
 
@@ -24,6 +24,9 @@ static bool DEBUG = true;
 #define MARKER_ID_ARRIVAL       0
 #define MARKER_ID_AREA          12
 
+/*TIMEOUT ALLOW TO UNBLOCKED PROG*/
+
+#define TIMEOUT_CALIBRATION     5                   /*force break the calibration after TIMEOUT_CALIBRATION seconds, if there are no markers*/
 
 /*SERVER DEFINITION*/
 
@@ -42,5 +45,18 @@ static bool DEBUG = true;
 #define INVAL_CODE              "<ID-INVALID>"
 #define STOP_CONN               "<STOP>"
 #define WAIT_CONN               "<WAIT>"
+
+
+/*FUNCTION IN ALL PROG*/
+
+static void debug(char* _msg, bool endl); /*endl is std::endl;*/
+
+static void debug(char* _msg, bool endl){
+    if(DEBUG){
+        std::cout<<_msg;
+        if(endl)
+            std::cout<<""<<std::endl;
+    }
+}
 
 #endif
