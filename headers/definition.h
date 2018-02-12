@@ -33,11 +33,11 @@
 #define MAX_CONNECTION_CLIENT   5
 #define PORT_SERVEUR            975
 
-#define ID_PC                   "bFd6-a2e8-9Dff\n"          /*Module connect with code*/
+#define ID_PC                   "bFd6-a2e8-9Dff\n"          /*Client connect with code*/
 #define ID_CAR                  "59ef-6F70-4bM7\n"
-#define ID_REMOTE               "c3Z8-4b86-95Ax\n"          
-#define ID_TABLET               "E34x-8Jkp-77Go\n"
-#define ID_CONNECTION           "xxxx-xxxx-xxxx\n"
+#define ID_REMOTE               "c3Z8-4b86-95Ax\n"
+#define ID_SMARTPHONE           "azertyuiop1234\n"
+#define ID_TABLETTE             "azertyuiop4321\n"
 
 #define INTER_PROC              "<PROC_ESTABLISHED>"
 #define REQ_CODE                "<ID-CODE>"
@@ -46,6 +46,10 @@
 #define STOP_CONN               "<STOP>"
 #define WAIT_CONN               "<WAIT>"
 
+#define AUTO_MODE               "<AUTO_MODE>\n"
+#define MANUAL_MODE             "<MANUAL_MODE>\n"
+#define CALIBRATION             "<CALIBRATION>\n"
+#define REMOTE_CONTROL          "<REMOTE_CONTROL>\n"
 
 /*FUNCTION IN ALL PROG*/
 
@@ -60,3 +64,4 @@ static void debug(char* _msg, bool endl){
 }
 
 #endif
+
