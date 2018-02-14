@@ -8,7 +8,7 @@
 #include <aruco/cvdrawingutils.h>
 #include <opencv2/highgui/highgui.hpp>
 #include "opencv2/imgproc/imgproc.hpp"
-
+#include "../manager.h"
 #include "../definition.h"
 
 using namespace cv;
@@ -24,6 +24,7 @@ public:
     void startBlock();
     std::vector<Point> all_block;
     Point posCar, posArrival;
+    Point2f centerPoint;
     float angleCar, angleArrival;
     void saveCalib(std::string str);
     Point2f loadCalib();

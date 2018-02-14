@@ -205,11 +205,10 @@ void ImagesP::calibration(){
             break;
         MDetector.detect(markerImg,Markers_wait);
         if(Markers_wait.size() > Markers.size()){
-            Point2f centerPt(0,0);
             for(int i=0; i<Markers_wait.size();i++){
                 if(Markers_wait[i].id == MARKER_ID_AREA){
-                    centerPt = Markers_wait[i].getCenter();
-                    std::string save(std::to_string(centerPt.x) +"\n"+ std::to_string(centerPt.y));
+                    centerPoint = Markers_wait[i].getCenter();
+                    std::string save(std::to_string(centerPoint.x) +"\n"+ std::to_string(centerPoint.y));
                     saveCalib(save);
                     break;
                 }
@@ -229,9 +228,25 @@ void ImagesP::calibration(){
 
 void ImagesP::startBlock(){
     all_block = std::vector<Point>(0);
-    Point2f centerPt = loadCalib();
-    if(centerPt.x > 0){
-        markersProcessing(centerPt);
+    if(centerPoint == Point2f(-1, -1))
+        centerPoint = loadCalib();
+    if(centerPoint.x > 0){
+        std::vector<Marker> Markers_wait;
+        uint8_t index=0;
+            while(true){
+                if(!cap.read(markerImg))
+                    break;
+                MDetector.detect(markerImg,Markers_wait);
+                if(Markers_wait.size() > Markers.size()){
+                    Markers = Markers_wait;
+                }else{
+                    ++index;
+                }
+                if(index==5)
+                    break;
+                usleep(20000);
+        }
+        markersProcessing(centerPoint);
     }else{
         std::cout<<"ERROR CALIB LOAD"<<std::endl;
     }
@@ -250,11 +265,24 @@ void ImagesP::trackingCar(){
     //check posCar and angleCar after use this function !
     posCar = Point(-1,-1);
     angleCar = 0;
-    for(int i=0; i<Markers.size();i++){
-        if(Markers[i].id == MARKER_ID_CAR){
-            posCar = Markers[i].getCenter();
-            angleCar = getAngle(Markers[i]);
-            return;
+    bool car_found = false;
+    uint8_t index=0;
+    cap.release();
+    cap = VideoCapture(CAM_EXTERN);
+    cap >> markerImg;
+    while(!car_found){
+        if(!cap.read(markerImg))
+            break;
+        MDetector.detect(markerImg,Markers);
+        for(int i=0; i<Markers.size();i++){
+            if(Markers[i].id == MARKER_ID_CAR){
+                Point2f new_center = Markers[i].getCenter() - centerPoint;
+                new_center += Point2f(240,240);
+                posCar = getXYMatrix(new_center.y, new_center.x);
+                angleCar = getAngle(Markers[i]);
+                car_found = true;
+                break;
+            }
         }
     }
 }

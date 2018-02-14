@@ -51,12 +51,16 @@ public:
         Cell *_current = current;
         if(current->m_parent == nullptr)
             return false;
+        uint16_t maxsize = 3;
         while(_current != nullptr){
+            maxsize--;
             if(_current == parent){
                 return true;
             }else{
                 _current = _current->m_parent;
             }
+            if(maxsize <= 0)
+                break;
         }
         return false;
     }
@@ -95,7 +99,8 @@ public:
         }
         if(current != nullptr)
             list_pathOk->push_back(current->getCoord());
-        //list_pathOk->pop_back();
+        if(current->m_parent != nullptr) /*first 1/3block after start block*/
+            list_pathOk->push_back(current->m_parent->getCoord());
         return list_pathOk;
     }
 
@@ -106,18 +111,13 @@ public:
      * 
      */
     ~PathFinding(){
-        delete _pathfinding;
+        free(_pathfinding);
         _pathfinding = nullptr;
-        delete []list_pathOk;
+        list_pathOk->clear();
+        free(list_pathOk);
         list_pathOk = nullptr;
-        for(uint8_t i=0; i<all_cells.size(); ++i){
-            delete all_cells[i];
-            all_cells[i] = nullptr;
-        }
-        for(uint8_t i=0; i<current_list.size(); ++i){
-            delete current_list[i];
-            current_list[i] = nullptr;
-        }
+        all_cells.clear();
+        current_list.clear();
         
     }
 private:

@@ -11,6 +11,8 @@ Core::~Core(){
     path = nullptr;
     delete process;
     process = nullptr;
+    delete trajectory;
+    trajectory = nullptr;
     delete manager;
     manager = nullptr;
 }
@@ -61,9 +63,10 @@ void Core::drawDebug(Mat& frame){
 }
 
 bool Core::start(){
+    avm_mode = Mode::Auto_Mode;
     while(true){
         //listen to know what mode is select
-        listenIPC();//change mode selected by Stop_Mode if we want stop car or any things as this
+        //listenIPC();//change mode selected by Stop_Mode if we want stop car or any things as this
         switch (avm_mode){
             case Mode::Stop_Mode:
                 break;
@@ -78,8 +81,9 @@ bool Core::start(){
                 break;
         }
         waitKey(100);
-        if(stateMachine._statePathfinding == State::OK)
+        if(stateMachine._stateTrajectory == State::OK){
             break;
+        }
     }
     if(DEBUG){
         Mat frame(480, 480, CV_8UC3, Scalar(0));
@@ -97,6 +101,7 @@ bool Core::init(){
     stateMachine._statePathfinding = State::NONE;
     stateMachine._stateTrajectory = State::NONE;
     changeMode=false;
+    calibration_pt = Point2f(-1,-1);
     setMode(Mode::Stop_Mode);
 }
 
@@ -110,7 +115,14 @@ void Core::setMode(Mode _mode){
     stateMachine._stateImageBlock = State::NONE;
     stateMachine._statePathfinding = State::NONE;
     stateMachine._stateTrajectory = State::NONE;
+
+    delete process;
+    process= nullptr;
+    delete trajectory;
+    trajectory=nullptr;
     delete path;
+    path = nullptr;
+    
 }
 
 void Core::autoVirtualMode(bool is_auto){
@@ -148,14 +160,18 @@ void Core::autoVirtualMode(bool is_auto){
             /**/else if(stateMachine._statePathfinding == State::OK){
                     debug((char*)"PATHFINDING OK", true);
                     if(stateMachine._stateTrajectory == State::NONE){
-                        trajectory();
+                        followTrajectory();
+                    }else if(stateMachine._stateTrajectory == State::NO){
+                        //
+                        debug((char*)"CAR failed, jump pathfinding", true);
+                        setMode(Mode::Auto_Mode);
                     }else if(stateMachine._stateTrajectory == State::ERROR){
                         //TODO Car is blocked or some things like this
                         debug((char*)"CAR is blocked", true);
                     }
                 /**/else if(stateMachine._stateTrajectory == State::OK){
                         //TODO Car is on Arrival !!
-                        setMode(Mode::Stop_Mode); //wait new 
+                        setMode(Mode::Stop_Mode); //wait new command
                     }
                 }
             }
@@ -183,6 +199,7 @@ State Core::calibration(){
     if(process == nullptr)
         process = new ImagesP();
     process->calibration();
+    calibration_pt = process->centerPoint;
     if(process->loadCalib() != Point2f(-1,-1)){
         stateMachine._stateCalibration = State::OK;
     }else{
@@ -192,6 +209,12 @@ State Core::calibration(){
 }
 
 State Core::blockProcessing(bool is_auto){
+    if(process == nullptr){
+        process = new ImagesP();
+        if(calibration_pt != Point2f(-1,-1)){
+            process->centerPoint = calibration_pt;
+        }
+    }
     if(is_auto){
         debug((char*)"SEARCH BLOCK ... ", false);
         process->startBlock();
@@ -245,10 +268,9 @@ bool Core::rotation(float angle){
     return false;
 }
 
-State Core::trajectory(){
-    stateMachine._stateTrajectory = State::OK;
+State Core::followTrajectory(){
+    trajectory = new Trajectory(path, process);
+    stateMachine._stateTrajectory = (trajectory->start() ? State::OK : State::NO);
 
-
-
-    return State::OK;
+    return stateMachine._stateTrajectory;
 }

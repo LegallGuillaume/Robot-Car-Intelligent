@@ -40,9 +40,9 @@ public:
         delete instance;
         instance = nullptr;
     }
+    pair<int8_t, int8_t> *position;
 private:
     static Car * instance;
-    pair<int8_t, int8_t> *position;
     Car(){
         position = new pair<int8_t, int8_t>();
         position->first = -1;

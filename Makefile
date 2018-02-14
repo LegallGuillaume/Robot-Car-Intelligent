@@ -2,7 +2,7 @@ GPP = g++
 TARGET = robot
 SRC = $(wildcard *.cpp) 
 COMPILE_FILE = main.cpp sources/manager.cpp sources/block.cpp sources/car.cpp sources/path.cpp sources/end.cpp \
-					sources/traitement/images.cpp sources/core.cpp
+					sources/traitement/images.cpp sources/core.cpp sources/trajectory.cpp
 CFLAGS = -std=c++11 #-pthread
 OPENCV = `pkg-config --cflags --libs opencv`
 ARUCO = `pkg-config --cflags --libs aruco`

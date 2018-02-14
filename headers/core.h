@@ -4,6 +4,7 @@
 #include "../headers/manager.h"
 #include "../headers/traitement/pathfinding.h"
 #include "../headers/traitement/images.h"
+#include "../headers/trajectory.h"
 
 
 /**
@@ -103,6 +104,8 @@ class Core{
         Manager *manager;
         ImagesP *process;
         PathFinding *path;
+        Trajectory *trajectory;
+        Point2f calibration_pt;
 
         /**
          * @file                core.h
@@ -224,7 +227,7 @@ class Core{
          *
          * @return State    OK = finished path, NO =  not finished, ERROR = changed mode   
         */
-        State trajectory(); //TODO /*if change mode, break while and return State::ERROR*/
+        State followTrajectory(); //TODO /*if change mode, break while and return State::ERROR*/
 
         /*trajectory function*/
         bool forward(float angle); /*return false if the car is out of path*/
