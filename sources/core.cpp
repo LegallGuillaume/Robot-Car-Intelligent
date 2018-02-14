@@ -81,9 +81,6 @@ bool Core::start(){
                 break;
         }
         waitKey(100);
-        if(stateMachine._stateTrajectory == State::OK){
-            break;
-        }
     }
     if(DEBUG){
         Mat frame(480, 480, CV_8UC3, Scalar(0));

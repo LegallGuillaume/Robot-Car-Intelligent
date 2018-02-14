@@ -5,6 +5,7 @@
 #include <iostream>
 #include <vector>
 #include <utility>
+#include <cstring>
 #include <algorithm>
 #include "cell.h"
 #include "../definition.h"
@@ -47,23 +48,6 @@ public:
             list_pathOk->reserve(width_scene*(width_scene/2));
         }
 
-    bool everParent(Cell *current, Cell *parent){
-        Cell *_current = current;
-        if(current->m_parent == nullptr)
-            return false;
-        uint16_t maxsize = 3;
-        while(_current != nullptr){
-            maxsize--;
-            if(_current == parent){
-                return true;
-            }else{
-                _current = _current->m_parent;
-            }
-            if(maxsize <= 0)
-                break;
-        }
-        return false;
-    }
     /**
      * @file                pathfinding.h
      * @brief               Check if there are a solution
@@ -174,7 +158,7 @@ private:
 
             if(g1 != nullptr && h1 != nullptr && i1 != nullptr && down->m_parent != _currentCell){
                 if(!g1->isBlock() && !h1->isBlock() && !i1->isBlock()){
-                    if(newP < down->m_P && !everParent(_currentCell->m_parent, down)){
+                    if(newP < down->m_P){
                         down->m_parent = _currentCell;
                         down->m_P = newP;
                         current_list.push_back(down);
@@ -187,7 +171,7 @@ private:
             }
             if(a2 != nullptr && b1 != nullptr && c1 != nullptr && up->m_parent != _currentCell){
                 if(!a2->isBlock() && !b1->isBlock() && !c1->isBlock()){
-                    if(newP < up->m_P && !everParent(_currentCell, up)){
+                    if(newP < up->m_P){
                         up->m_parent = _currentCell;
                         up->m_P = newP;
                         current_list.push_back(up);
@@ -200,7 +184,7 @@ private:
             }
             if(a1 != nullptr && d1 != nullptr && g2 != nullptr && left->m_parent != _currentCell){
                 if(!a1->isBlock() && !d1->isBlock() && !g2->isBlock()){
-                    if(newP < left->m_P && !everParent(_currentCell->m_parent, left)){
+                    if(newP < left->m_P){
                         left->m_parent = _currentCell;
                         left->m_P = newP;
                         current_list.push_back(left);
@@ -213,7 +197,7 @@ private:
             }
             if(c2 != nullptr && f1 !=nullptr && i2 != nullptr && right->m_parent != _currentCell){
                 if(!c2->isBlock() && !f1->isBlock() && !i2->isBlock()){
-                    if(newP < right->m_P && !everParent(_currentCell->m_parent, right)){
+                    if(newP < right->m_P){
                         right->m_parent = _currentCell;
                         right->m_P = newP;
                         current_list.push_back(right);
