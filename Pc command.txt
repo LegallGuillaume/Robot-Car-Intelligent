@@ -1,0 +1,30 @@
+
+Pc command :
+------------------------------------------------------
+<TAKE_CONTROL>\n
+take control of the car.disable each client to send command to the car.
+
+<GIVE_CONTROL>\n
+give back the control of the car
+-----------------------------------------------------
+<CONNECTED?>\n
+show each conected client.
+
+<STOP_CLIENT_CAR>\n
+disconnect the car.
+
+<STOP_CLIENT_REMOTE>\n
+disconnect the remote.
+
+<STOP_CLIENT_SMARTPHONE>\n
+disconnect the smartphone.
+
+<STOP_CLIENT_TABLETTE>\n
+disconnect the tablette.
+
+<STOP_CLIENT_ALL>\n
+disconnect all clients without PC client.
+
+-----------------------------------------------------
+<STOP>\n
+disconnect
